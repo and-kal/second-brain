@@ -19,7 +19,24 @@ Computer programming aids our expression of "procedural thoughts"
 
 "complex programs are constructed by building, step by step, computational objects of increasing complexity"
 
-variables are stored in an environment
+name-object association (variables) are stored in an environment
+
+> the evaluation rule is recursive in nature; that is, it includes, as one of its steps, the need to invoke the rule itself"
+
+the environment also stores the machine instructions that do the operations associated with an operator ("+" -> addition -> machine instruction)
+
+* __environment is the context in which evaluation takes place__
+
+(define _name_ _object_) is a "special form", no general evaluation
+
+<!-- * "Numbers and arithmetic operations are primitive data and procedures."
+* "Nesting of combinations provides a means of combining operations."
+* "Definitions that associate names with values provide a limited means of abstraction." -->
+
+"procedure definition" = function definition
+
+general form of a procedure definition: 
+`( define ( name ) ( formal parameters ) ) ( body ) )`
 
 ## LISP specificialities
 
@@ -28,3 +45,8 @@ variables are stored in an environment
 *   processes can be treated as data as well
 *   every expression has a value
 *   LISP programs are usually composed of several simple procedures
+* LISP has a comparatively simple syntax
+
+## Trivia
+
+* _syntactic sugar_ is a phrase coined by Peter Landin
