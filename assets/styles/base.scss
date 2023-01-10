@@ -1,12 +1,42 @@
 // Replace this with your own font imports!
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;700&display=swap");
 :root {
-  --font-body: "Source Sans Pro";
-  --font-header: "Inter";
+  --font-body: "DM Sans";
+  // --font-header: "Inter";
+  --font-header: "Facultad";
   --font-mono: "Fira Code";
 }
 
-// typography
+@font-face {
+  font-family: "DM Sans";
+  src: url("/DMSans-BoldItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/DMSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/DMSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Facultad";
+  src: url("/Facultad-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
   &:lang(ar) {
@@ -38,7 +68,7 @@ body {
   width: 100vw;
   max-width: 100%;
   box-sizing: border-box;
-  background-color: var(--light);
+  background-color: (var(--light));
 }
 
 h1,
@@ -293,11 +323,17 @@ a {
   }
 }
 
+ul {
+  list-style-type: armenian;
+}
+
 pre {
   font-family: var(--font-mono);
   padding: 0.75em;
   border-radius: 3px;
   overflow-x: scroll;
+  background-color: var(--light);
+  color: var(--secondary);
 }
 
 code {
@@ -384,12 +420,14 @@ hr {
 
 header {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   align-items: center;
   margin: 1em 0 2em;
 
   & > h1 {
-    font-size: 2em;
+    text-align: center;
+    font-size: 2.5em;
+    flex-basis: 100%;
   }
 
   & > nav {
@@ -533,7 +571,7 @@ header {
   margin-bottom: 1em;
 
   & > .section {
-    display: flex;
+    display: grid;
     align-items: center;
 
     @media all and (max-width: 600px) {
@@ -550,7 +588,7 @@ header {
     & p {
       margin: 0;
       padding-right: 1em;
-      flex-basis: 6em;
+      // flex-basis: 7em;
     }
   }
 

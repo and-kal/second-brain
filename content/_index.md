@@ -1,12 +1,12 @@
 ---
-title: André's Second Brain.
+title: "Limited Entertainment"
 enableToc: false
 ---
 
-## Welcome to my second brain. 
+## /dir
 
-- [Music blog](/musicblog) 
-- [Thoughts on the future of music](/futureofmusic) 
-- [Tech stuff](/musicblog) (tech-related notes to self mostly - not super interesting) 
-- [Books](/musicblog) (excerpts and personal notes)
-- [Miscellaneous content](/miscellaneous) (check it)
+- [/books](/books) — excerpts and personal notes
+- [/musicblog](/musicblog) — sharing music and thoughts on music 
+- [/tech](/tech) — tech-related notes to self - probably not super interesting for you
+- [/arguments](/arguments) — pondering various topics
+- [/miscellaneous](/miscellaneous) — this, that and all

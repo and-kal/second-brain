@@ -1,1 +1,1 @@
-Personal Second Brain using jackyzha0's Quartz
+Personal Digital Garden using jackyzha0's Quartz

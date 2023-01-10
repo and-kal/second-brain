@@ -1,58 +1,5 @@
-Nitre Pit - Lo! (1994,)
-
-<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/CA_SWF_d5HM/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/CA_SWF_d5HM?feature=player_embedded" width="320"></iframe></div>
-<br />
-Sole album by this band of Greg Saunier and Rob Fisk who later played in Deerhoof. Further members of Nitre Pit are Aaron Russell (who later played in The Weird Weeds) and Tasha Riggins. It's a self-released album and is probably improvised to large parts. Sounds pretty solid, though, song-development-wise and has this 90's noise/post-rock feel to it—think of bands like Unwound. Also, you can definitely detect his Saunier's idiosyncratic drumming style on this one already. 
-
 ---
-
-Cpt. Kirk &.: Reformhölle (1992, What's So Funny About)
-
-<iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/fmDj9VDCl7Y/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/fmDj9VDCl7Y?feature=player_embedded" width="320"></iframe></div>
-<br />
-
-Might be the best German language albums of the 90's—it has Tobias Levin on vocals, who produced a lot of important albums from German bands back then and later on (and some not that great albums, too, to be honest). Somewhere I read that this album was conceived as a concept album about the monetary reform in Germany in the 90's. The sound is maybe jazzy, or post-rockish, which are horrible descriptors. So, how to describe this music, without sounding even duller than I already do? The sound might remind you of bands like Shipping News or Rodan and the lyrics are really unique. A new, own language. Here's the lyrics to the song above, which is about queer/trans* liberation, I'd say:
-
-    Alle Menschen sind Menschen,
-    sind Menschen alle,
-    Menschen sind Menschen,
-    sind Menschen alle,
-    Menschen sind Menschen,
-    sind Menschen alle,
-    Menschen sind Menschen,
-    sind Menschen alle,
-    nur nicht gleich und nur
-
-    Kummer sammeln und stapeln
-    ist Arbeit des Mannes an sich selbst.
-    Und Sprache mit Männern im Namen
-    steht doch für Mann, der nur den
-    Vorwurf unter anderen aufteilt,
-    nur den Vorwurf durch zwei teilt.
-    Und so Mann unter Menschen, lieber da,
-    auf sich angesprochen das
-    und kein Bruder im Geist ist.
-
-    Männlich kommt von weiblich und verändert sich
-    Gleich nach meiner Geburt
-    ging ich und vergaß ich dich.
-    Männlich kommt von weiblich und verändert sich
-    Gleich nach meiner Geburt
-    ging ich und vergaß ich dich.
-
-    Alle Menschen sind Menschen,
-    sind Menschen alle, nur nicht gleich und nur
-    zu Unrecht gleich gehandelt,
-    die Mutter ist Doris Fuhrfrau,
-    geborene Schnabel und ich heiße Fuhrmann,
-    weil ich anders als Doris zur Welt kam.
-
-    Und nichts erinnert hier,
-    daß ihr der Junge schon vor Geburt
-    schonmal als Frau im Bauch lag.
-    Weil ich zunächst da und später
-    alles anders lag, erinnert nichts.
-
+title: "old entries"
 ---
 
 Woelv: Tout Seul dans la Forêt en Plein Jour, Avez-Vous Peur ?
@@ -88,7 +35,7 @@ On: On (2006, Celebrate Psi Phenomenon)
 <iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/efY6b2goebo/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/efY6b2goebo?feature=player_embedded" width="320"></iframe></div>
 <br />
 There's only this one album by that band and an earlier demo tape as far as I know. I remember a time when music like this would've been given ephemeral descriptions such as »shitgaze«. Ultra-noisy garage-punk from Melbourne, mostly instrumental, occasional male-female vocals (very great!).
-The record was out 2006 on (maybe Saucerlike Recordings, or maybe not, and on) the obviously great label Celebrate Psi Phenomenon—owned by Campbell Kneale, who also founded Battlecruiser and, moreover, plays in Black Boned Angel among other projects. Just starting to check out his stuff. Australian/New Zealandian noise rock? I seem to know far too little...
+The record was out 2006 on (maybe Saucerlike Recordings, or maybe not, and on) the obviously great label Celebrate Psi Phenomenon—owned by Campbell Kneale, who also founded Battlecruiser and, moreover, plays in Black Boned Angel among other projects. Just starting to check out his stuff. Australian/New Zealandian noise rock I seem to know far too little here.
 
 ---
 
@@ -161,7 +108,7 @@ Quotes:
 "In a new kitchen we will dance on the symptoms."
 "In a new kitchen, to the women, to the children, there are men looking up to them, listening and learning what feeling is and how to feel."
 
-The band's comprised of members the later came to play in Gang Gang Dance and Blood Lines. But this won't give you any idea about what The Crainium sound like anyway.
+The band's comprised of members the later came to play in Gang Gang Dance and Blood Lines. But this won't give you any idea about what The Crainium sound like.
 
 ---
 
@@ -170,7 +117,7 @@ Units: Digital Stimulation
 <iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/OFcOQuilOPk/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/OFcOQuilOPk?feature=player_embedded" width="320"></iframe>
 This is the début album by a band called (the) Units from San Francisco - released in 1980. Kicking synthwavepostpunk. Think Devo, think the socialist cause, think a world without guitars!
 
----
+--- 
 
 Mother Mallard's Portable Masterpiece Company - 1970-73
 
