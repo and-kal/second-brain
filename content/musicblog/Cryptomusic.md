@@ -1,5 +1,5 @@
 ---
-title: "Cryptomusic"
+title: "Why I'm not excited by crypto-music"
 date: "2023-01-07"
 ---
 
@@ -15,3 +15,7 @@ Plus, I miss the excitement of MySpace/tumblr days, when fan-artist interaction 
 <!-- 
 First time I got in touch with the concept of NFTs was through this episode of the Intelligence Squared podcast: [NFT's and Why Blockchain Means Business, with Sheila Warren and Carl Miller](https://harkaudio.com/p/intelligence-squared-business-intelligence-squared/nfts-and-why-blockchain-means-business-with-sheila-warren-and-carl-miller-intelligence-squared-1616174678000). The general idea of having nw means for artists to monetize their work was quite intriguing to me and even though I didn't really have an idea of what these digital assets might look like and what ther value will eventually be based on, concepts like "creator earnings" (when the original creator of an NFT gets some percentage of every resale of the NFT) seemed quite innovative.
  -->
+
+
+In [S02E34 of the Future Histories podcast](https://www.futurehistories.today/episoden-blog/s02/e34-tante-zu-crypto-imaginaries-und-alternativen-technologischen-infrastrukturen/) tante argues that there definitely are well-intentioned people in the cryto and web3 sphere that care for compensating artists in a fair manner and are genuinely interested in creating viable alternatives to current models, but is skeptical about the idea that some a new technology (like DAOs or NFTs) coming along will solve all these issues. That idea kind of matches the vibe I sometimes get from the Interdependence podcast, that often times sounds too salvific in its favouring of web3 technologies. I'm sure Herndon and Dryhurst see the bigger political problem that lies behind the issues of compensating artistic labour. (...) Which is why I wonder, why talking about web3 is getting so much airtime on their podcast. Sure, there might be some artists that can profit from going crypto, selling NFTs etc., but I'm skeptical that there will be a critical mass of web3 artists anytime soon to make a fundamental change to our current models of consuming music. I'd love to hear more on that, instead of being told [that artists should all just watch some tutorial videos on web3 and get started with it](https://interdependence.fm/episodes/the-state-of-streaming-crypto-and-perpetual-musical-nostalgia-with-david-turner-penny-fractions).
+

@@ -1,6 +1,6 @@
 ---
-title: "A list of interesting Max patches"
-date: "2022-12-25"
+title: "A list of interesting Max/MSP patches"
+date: "2023-01-18"
 ---
 
 Here's an expanding list of Max/MSP and Max4Live patches that I have discovered, used, or just thought seemed worth checking out. Lots of interesting DSP, algorithmic composition and sample manipulation stuff.
@@ -17,6 +17,7 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - Live Stream Frag Granulator
 - [Mutable Instruments Max port](https://github.com/v7b1/vb.mi-dev) (by vboehm)
 - [Nobuyasu Sakonda's patches](http://formantbros.jp/sako/download.html)
+- [ppooll](https://ppooll.klingt.org/?title=Main_Page)✨✨✨
 - synthcore (gen~ DSP Library) (by Ernest Leonardo Meyer)
 - [Tom Cosm - External Resampler 1.0](https://tomcosm.gumroad.com/l/gjVM)
 - [Tom Hall's patches](https://www.tomhall.xyz/maxmsp/patches/)

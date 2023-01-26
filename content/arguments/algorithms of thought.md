@@ -1,6 +1,7 @@
 ---
-title: "Algorithms of Thought"
+title: "Algorithms of thought"
 date: "2023-01-05"
+draft: true
 ---
 
 One can only argue over cognitive algorithms, not about the reality of things.
@@ -24,3 +25,5 @@ ambiguity and disagreements can be resolved by agreeing on a common authority (e
 
 NOS = not otherwise specified 
 -> objects that fit the category-criteria somewhat, but not completely
+
+<!-- https://www.lesswrong.com/posts/895quRDaK6gR2rM82/diseased-thinking-dissolving-questions-about-disease -->

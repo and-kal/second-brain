@@ -1,5 +1,6 @@
 ---
 title: "Edirol UA-25 Audio Interface"
+date: "2022-12-30"
 ---
 
 ### Running it on Windows 11

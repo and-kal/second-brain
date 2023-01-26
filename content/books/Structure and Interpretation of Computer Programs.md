@@ -38,6 +38,20 @@ the environment also stores the machine instructions that do the operations asso
 general form of a procedure definition: 
 `( define ( name ) ( formal parameters ) ) ( body ) )`
 
+a procedure definition is a **special form** and exempt from the *general evaluation rule* and has its own evaluation rule
+
+### conditional  expressions
+
+`(cond (p1) (e1))` 
+
+- *p1* is predicate
+- *e1* is consequent expression
+- together they form a *clause* 
+
+`( if ( predicate ) ( consequent ) ( alternative ) )`
+
+*logical composition operations*: `and`, `or`, `not`
+- `not` is a procedure, `and` and `or` are special forms
 ## LISP specificialities
 
 *   uses prefix notation
@@ -46,7 +60,8 @@ general form of a procedure definition:
 *   every expression has a value
 *   LISP programs are usually composed of several simple procedures
 * LISP has a comparatively simple syntax
-
+* Lisp uses *applicative-order evaluation* (not *normal-order evaluation*)
+* case analysis is done with `cond`
 ## Trivia
 
 * _syntactic sugar_ is a phrase coined by Peter Landin
