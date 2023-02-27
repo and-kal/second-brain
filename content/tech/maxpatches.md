@@ -34,6 +34,7 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - [RE:MIX](https://github.com/el-quinto/mix)
 - [Stepic](https://devicemeister.com/stepic-for-live/) ($)
 - [swirlytape](https://maxforlive.com/library/device/3014/swirlytape)
+- [VIZZable-2](https://github.com/zealtv/VIZZable-2)
 
 ## other stuff
 - "To find related tech like [CataRT](https://ircam-ismm.github.io/max-msp/catart.html), [bbcut2](https://composerprogrammer.com/bbcut2.html), [eargram](https://sites.google.com/site/eargram/) and [sCrAmBlEd?HaCkZ!](https://www.youtube.com/watch?v=eRlhKaxcKpA) search up [granular synthesis](http://granularsynthesis.com/guide.php), [concatenative synthesis](https://hal.archives-ouvertes.fr/hal-01161337), [neural audio synthesis](https://github.com/acids-ircam/RAVE), [sinewave speech](http://www.lifesci.sussex.ac.uk/home/Chris_Darwin/SWS/), automated breakbeat cutting, audio mosaicing and plunderphonics/plundermatics." (quote: [aeiouaeiouaeiouaeiouaeiouaeiou](https://github.com/aeiouaeiouaeiouaeiouaeiouaeiou/samplebrain))
