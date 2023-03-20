@@ -1,0 +1,16 @@
+---
+title: "Maggie Nelson quote dump"
+date: "2023-03-04"
+draft: false
+---
+
+I'm constantly amazed by the lucidity of Maggie Nelson's writing and here's multi-faceted analyses. Damn, even the [@MaggieNelsonBot on Twitter](https://twitter.com/MaggieNelsonBot) that generates mostly nonsensical aphorisms from parts of sentences out of Maggie Nelson's books is a great read. (Their actually not nonsensical to me, just oftentimes syntactically incorrent—just like poetry.) Since her essays are often so dense that a lot of ideas slip through my fingers when I don't contemplate them again, I collect a bunch of quotes here.
+
+> The image of the Marlboro man riding his horse and smoking his cigarette has struck with me for many years…all it means is that the image seduced me…it didn’t widen my sensibilities, compassion or intuition. Whereas an art that affects you in the moment, but which you then find hard to remember, is straining to bring you to another level. It offers images and ideas from that other level, that other way of being, which is why you find them hard to remember. But it has opened you to the possibility of growing into what you are not yet, which is exactly what art should do. 
+(Richard Foreman: *Unbalancing Acts. Foundations for a Theatre*)
+
+> We abide by cultural directives that urge us: clarify each thought, each experience, so you can cull from them their single, dominant meaning and, in the process, become a responsible adult who knows what he or she thinks,' Foreman has said. 'But what I try to show is the opposite: how at every moment, the world presents us with a composition in which a multitude of meanings and realities are available, and you are able to swim, lucid and self-contained, in that turbulent sea of multiplicity.
+(Richard Foreman: *Unbalancing Acts. Foundations for a Theatre*)
+
+> 'Trans' may work well enough as shorthand, but the quickly developing mainstream narrative it evokes ('born in the wrong body,' necessitating an orthopedic pilgrimage between two fixed destinations) is useless for some—but partially, or even profoundly, useful for others? That for some, 'transitioning' may mean leaving one gender entirely behind, while for others—like Harry [Dodge], who is happy to identify as a butch on T—it doesn’t? I’m not on my way anywhere, Harry sometimes tells inquirers. How to explain, in a culture frantic for resolution, that sometimes the shit stays messy? I do not want the female gender that has been assigned to me at birth. Neither do I want the male gender that transsexual medicine can furnish and that the state will award me if I behave in the right way. I don’t want any of it. How to explain that for some, or for some at some times, this irresolution is OK—desirable, even (e.g., 'gender hackers')—whereas for others, or for others at some times, it stays a source of conflict or grief? How does one get across the fact that the best way to find out how people feel about their gender or their sexuality—or anything else, really—is to listen to what they tell you, and to try to treat them accordingly, without shellacking over their version of reality with yours?' 
+(*The Argonauts*)

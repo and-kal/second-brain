@@ -1,0 +1,17 @@
+---
+title: "Why is it that good doctors offer bad treatment?"
+date: "2023-02-28"
+draft: true 
+---
+
+Sich über Gesundheitsversorgung in Deutschland aufzuregen ist in Betracht der Lage in vielen anderen Ländern Jammern auf hohem Niveau. Abgesehen von *failed cities* wie Berlin ist es hierzulange meiner Erfahrung nach relativ einfach einen Hausarzt zu finden, einen Termin in der Sprechstunde zu bekommen etc. und die meisten Hausärzte mit denen ich hier zu tun hatte, machen auch gute Arbeit. Was mir jedoch immer wieder auffällt und mir ein Rätsel ist, ist der enorm hohe Anteil an Hausärzten und Allgemeinmedizinern, die auf ihrer Plakette fragwürde Behandlungsmethoden wie Akupunktur, Akupressur, viszerale Osteopathie stehen haben. Selbst mein Hausarzt hat auf seiner Plakette "manuelle Medizin, Akupunktur, Naturheilverfahren & Neuraltherapie" stehen, also auch zwei Begriffe bei denen zurecht stutzig werden kann. Dabei halte ich ihn für ziemlich kompetent und vernünftig. Ich habe auch nie Akupunktur oder Homöopathie oder sonst etwas Derartiges von ihm verschrieben bekommen und mir stellt sich die Frage, wie es dazu kommt, dass ausgebildete Ärzte und Mediziner dubiose Heilverfahren auf ihr Aushängeschild schreiben. Wieso ist der Anteil unter ausgebildeten Medizinern, Leuten also, die eine akademische Laufbahn hinter sich, wissen wie man Studien liest, auswertet und hinterfragt, wissen, was echte und falsche Evidenzen sind und ein wissenschaftlich geprägtes Weltbild haben müssten, die aber trotzdem kein Problem damit haben, unwissenschaftliche und zweifelhafte Heilmethoden anzuwenden, so enorm hoch? Ich habe leider überhaupt keine Einsichten aus erster Hand hierein und kann nur über ein paar mögliche Antworten mutmaßen.
+
+## Zweifelhafte Heilverfahren als schnelle Lösung
+
+Meine erste Vermutung war zu sagen, dass Homöopathie und Akupunktur von vielen Patienten als wirksam erfahren werden. Auch wenn deren Wirkung über den Placebo-Effekt hinaus bisher nicht bewiesen werden konnte, haben doch viele Menschen positive Erfahrungen hiermit gemacht und vielleicht sind diese Methoden einfach ein schnelles Mittel um Patienten Linderung zu verschaffen und schnell wieder Platz im Wartezimmer für die nächsten Patienten zu schaffen. Allerdings sind Akupunktur und Homöopathie, wie ich beim Recherchieren darüber herausgefunden habe, keine schnellen Verfahren, sondern sehr zeitintensiv und erfordern mehrere oder lange Sitzungen, in denen der behandelnde Arzt ein bestimmtes Profil des Patienten entwirft.
+
+## ...oder als lukrative Lösung
+
+Wenn beispielsweise Akupunktur also kein schnelles Heilverfahren ist, vielleicht ist es dann aber ein lukratives Heilverfahren. Besteht der Reiz für Ärzte, ihren Patienten eine Akupunktur-Behandlung zu verschreiben also darin, dass sie durch diese Behandlung schnell ihre Kassen füllen können, da die deutschen Krankenkassen die Kosten für klassische Körperakupunktur übernehmen? Wissen die Ärzte darüber, dass die Wirksamkeit dieser Verfahren nicht belegt ist, sehen aber darüber hinweg, weil es einträglicher ist für sie, ihren Patienten eine Akupunktur-Behandlung zu verschreiben anstatt sie beispielsweise zu einem Facharzt für Neurologie zu überweisen?
+
+## 
