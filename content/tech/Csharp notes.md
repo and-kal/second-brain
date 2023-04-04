@@ -1,0 +1,34 @@
+---
+title: "Things I'm likely to forget about C#"
+date: "2023-03-28"
+draft: false
+---
+
+Constructors in C# are defined by implementing a method whose name is the same as the name of its type. An access modifier for the constructor is optional. It doesn't have a return type.
+
+```csharp
+public class Animal
+{
+   private string kind;
+
+   public Animal(string species)
+   {
+      kind = species;
+   }
+   // ...
+}
+```
+
+`internal` visibility in C# is used for classes or functions that should only be accessible within the same .exe or .dll (i.e. the same _assembly_).
+
+In a `using` statement one instantiates an object and uses it inside the `using` block, e.g.:
+```csharp
+using(SqlHelper sqlHelper = new SqlHelper())
+{
+    sqlHelper.run();
+}
+```
+This use of `using` has some features:
+- The object is scoped and only available inside the statement.
+- The object is read-only.
+- At the end of the block the `Dispose()` method will be called (whether there was an exception or not) and all disposable instances will be disposed.
