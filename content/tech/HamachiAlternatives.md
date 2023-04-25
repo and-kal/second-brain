@@ -1,5 +1,5 @@
 ---
-title: "Hamachi alternatives"
+title: "Virtual gaming networks with something other than Hamachi"
 date: "2023-01-10"
 ---
 
@@ -11,4 +11,5 @@ However, my intuition was that you can also use Wire Guard-based tools these day
     - [Tailscale](https://tailscale.com/blog/hamachi/)
 
 I'll post my experiences with these two here, as soon as I've tried them out. 
+
 Note that, Tailscale provides a default coordination/control server with some limitations. For example you can only have one user account, so if your gaming via Tailscale, you'll all need to log in to the same account. That being said, when you don't trust your co-players or your infrastructure scales, you might consider hosting your own control server with [headscale](https://github.com/juanfont/headscale) or paying for a Tailscale plan. `innernet` however is completely free and self-hosted by default.

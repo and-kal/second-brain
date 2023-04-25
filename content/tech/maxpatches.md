@@ -1,5 +1,5 @@
 ---
-title: "A list of interesting Max/MSP patches"
+title: "A list of interesting Max/MSP patches and M4L devices"
 date: "2023-01-18"
 ---
 

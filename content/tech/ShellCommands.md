@@ -4,10 +4,13 @@ date: "2023-04-04"
 draft: false
 ---
 
+## Unix shell
+
+...because I can't memorize all of them easily.
 
 `cat` -> 
 
-`cp` -> copy a file (copy-paste)
+`cp` / `copy` -> copy a file (copy-paste)
 
 `ls` -> list files and folders
 
@@ -78,6 +81,11 @@ draft: false
 
 `whoami` ->
 
-## Some useful combinations
+### Some useful combinations
 
 `ps -ef | grep processname` -> pipe ps into grep, i.e. list the currently running processes, send the list to `grep` which searches for lines containing the pattern `processname` (as regular expression)
+
+## Powershell
+
+...because I can't memorize those even less easily.
+

@@ -4,8 +4,9 @@ date: "2023-03-15"
 draft: true
 ---
 
-- They are software architectural patterns, aimed to achieve *separation of concerns*. 
-- In MVVM we seperate business model, UI, and business logic.
+They are software architectural patterns, aimed to achieve *separation of concerns*. 
+
+In MVVM we seperate business model, UI, and business logic.
 
 ## View 
 

@@ -27,3 +27,4 @@ NOS = not otherwise specified
 -> objects that fit the category-criteria somewhat, but not completely
 
 <!-- https://www.lesswrong.com/posts/895quRDaK6gR2rM82/diseased-thinking-dissolving-questions-about-disease -->
+<!-- https://www.lesswrong.com/posts/WBw8dDkAWohFjWQSk/the-cluster-structure-of-thingspace -->

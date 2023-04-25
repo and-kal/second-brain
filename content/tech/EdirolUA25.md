@@ -1,5 +1,5 @@
 ---
-title: "Edirol UA-25 Audio Interface"
+title: "Using an Edirol UA-25 audio interface on Windows 11"
 date: "2022-12-30"
 ---
 
