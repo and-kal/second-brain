@@ -138,4 +138,40 @@ Accent colors are used to highlight and emphasize things and communicate certain
 
 When creating palettes of shades it's a good idea to start with the middle color and then find the lightest and the darkest shade and then interpolate for the shades in between.
 
-For lighter shades of a color it's advisable to add some saturation in order to not have them look too pale.
+For lighter shades of a color it's advisable to add some saturation in order to not have them look too pale. You can also try *to rotate the hue*. So instead of increasing the L value in HSL, try to move the H value towards the nearest bright hue (i.e. 60°,
+180°, or 300°). Coversely, to make it look darker, move the H value towards the nearest dark hue (0°, 120°, or 240°). Changing hue and changing lightness can also be combined in order to arrive at a well-balanced colour palette.
+
+> Don’t rotate the hue more than 20-30° or it will look like a totally different color instead of just lighter or darker.
+
+**Greys** by definition have a saturation of 0 (so chaging the hue won't change the grey). In order to get more interesting pseudo-grey colours, add some saturation to them. 
+
+> If you want your greys to feel cool, saturate them with a bit of blue [...] To give your greys a warmer feel, saturate them with a bit of yellow or orange.
+
+## Accessibility ('a11y')
+
+Many guiding rules are defined by the *Web Content Accessibility Guidelines*.
+
+Colur shouldn't be the only source of meaning or means of conveying information, because people with colour blindness might not be able to grasp the informartion. So also use additional icons or something. If that's not an option, create contrasts, so even colour blind people can discern the elements. 
+
+> Always use color to support something that your design is already saying; never use it as the only means of communication.
+
+### Font size
+
+> [N]ormal text (under ~18px) has a contrast ratio of at least 4.5:1, and [...]] larger text has a contrast ratio of at least 3.
+
+### Contrasts 
+
+In order to achieve contrast between text and background, you don't always need to darken to background when using light text for example. 
+
+> Instead of using light text on a dark colored background, use dark colored text on a light colored background.
+
+In case of dark coloured backgrounds, changing lightness and saturation in order to get a text color with a good contrast can result in a color that is almost white. Changing the hue towards cyan, yellow, or magenta will produce better results.
+
+<!-- 
+## Depth / Shadows
+
+> Small shadows with a tight blur radius make an element feel only slightly raised off of the background, while larger shadows with a higher blur radius make an element feel much closer to the user. The closer something feels to the user, the more it will attract their focus. 
+
+Establish an elevation system, i.e. a hierarchy of elements and components in terms of how close they appear (for example modal to dropdown menu to button)
+
+-->
