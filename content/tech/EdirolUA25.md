@@ -1,6 +1,7 @@
 ---
 title: "Using an Edirol UA-25 audio interface on Windows 11"
 date: "2022-12-30"
+draft: false
 ---
 
 Since the Edirol UA-25 is no class compliant device, it's not plug & play and needs a dedicated driver in order to run. The official driver is only supported up to Windows 8, but there's a little trick on how to still get it to run on Windows 11.

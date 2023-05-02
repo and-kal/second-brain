@@ -1,0 +1,9 @@
+---
+title: "Implementing a 'Remember me' function in PHP"
+date: "2023-05-02"
+draft: true
+---
+
+There's surprisingly little articles out there, which explain how to securely keep a user logged in by using cookies in PHP. Even some articles claiming to show the [best approach](https://www.geeksforgeeks.org/best-approach-for-keep-me-logged-in-using-php/) to do so, [will advise you](http://www.phpnerds.com/article/using-cookies-in-php/2) to e.g. store the MD5-hashed username and password in a client-side cookie (via the `setcookie()` function), which is actually [not a good practice](https://stackoverflow.com/a/17266448). If you can avoid it (and in most cases you really can) you shouldn't let user information like their password leave the server. All you need to have in a cookie is something to identify the user (their UID) and the token. Store the token in a database and you can now use that cookie to check your database for the user via the UID and see, if they have the respective 'remember me' token. Consider [adding some salt](https://excellium-services.com/2021/01/18/password-hashing-be-careful-about-what-you-hash/) to your cookie for example by using [a hashing algorithm](https://www.php.net/manual/en/function.hash-hmac.php) (with some secret key that you have stored on your server, e.g. in an environment variable). 
+
+As for best practices and an additional security layer, you can also generate a new token and overwrite the old one in the cookie and in your database (as to keep it ever changing), so if a hacker gets hold of your cookie it's already invalid once you re-visit the page.
