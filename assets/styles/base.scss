@@ -323,8 +323,11 @@ a {
   }
 }
 
+ol {
+  list-style-type: arabic-indic;
+}
 ul {
-  list-style-type: armenian;
+  list-style-type:disc;
 }
 
 pre {

@@ -1,5 +1,5 @@
 ---
-title: "Personal Shell Commands Cheat Sheet"
+title: "Personal shell commands cheat sheet"
 date: "2023-04-04"
 draft: false
 ---

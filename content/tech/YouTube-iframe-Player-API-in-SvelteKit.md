@@ -1,5 +1,5 @@
 ---
-title: "Using the YouTube iframe Player API in SvelteKit"
+title: "SvelteKit: Using the YouTube iframe Player API"
 date: "2023-04-30"
 draft: false
 ---
@@ -105,13 +105,14 @@ The component looks as follows and you'll need to call it with the respective Yo
 			margin-left: -100%;
 			height: 100%;
 			object-position: center center;
+			pointer-events: none; // prevent displaying video title etc. on hover
 		}
 	}
 </style>
 ```
 
-Two things you should note here:
- - There's a bunch of [player parameters](https://developers.google.com/youtube/player_parameters.html?playerVersion=HTML5&hl=de) you can set in order to hide video info, controls etc. from the video and have the video autostart on mute. Unfortunately, the `showinfo` parameter has been deprecated in 2018 (same as `rel`), so you'll always have the YouTube logo and the video title displayed, no matter what. There's a [little CSS hack by adamgreenough on Codepen](https://codepen.io/adamgreenough/pen/bGrgoNb) though that gets rid of the logo and the title. I utilized that in my example. 
- - I use the `id` in order to identify the YouTube video I want to play, but also in order to reference the `div` which will be transformed into an `iframe` via the `new YT.Player(id)` instantiation. This allows me to use multiple videos in a page with the YouTube ID as the unique id. But you could also give the `div` a different id property and use that as parameter when instantiating the `YT.Player` object.
-- One thing I noticed is that the `YT.Player` object only gets instantiated on first mount. So when I navigate back and forth between routes, the second I visit the route with the video, it won't actually load. 
-- Thus, make sure to give the `container` element some background image, which will function as a fallback in case the video is not displaying.
+Two things you should note here: 
+- There's a bunch of [player parameters](https://developers.google.com/youtube/player_parameters.html?playerVersion=HTML5&hl=de) you can set in order to hide video info, controls etc. from the video and have the video autostart on mute. Unfortunately, the `showinfo` parameter has been deprecated in 2018 (same as `rel`), so you'll always have the YouTube logo and the video title displayed, no matter what. There's a [little CSS hack by adamgreenough on Codepen](https://codepen.io/adamgreenough/pen/bGrgoNb) though that gets rid of the logo and the title. I utilized that in my example, along with setting `pointer-events` to `none` (so that hovering over the video won't trigger the video title being displayed either).
+- I use the `id` in order to identify the YouTube video I want to play, but also in order to reference the `div` which will be transformed into an `iframe` via the `new YT.Player(id)` instantiation. This allows me to use multiple videos in a page with the YouTube ID as the unique id. But you could also give the `div` a different id property and use that as parameter when instantiating the `YT.Player` object.
+- One thing I noticed is that the `YT.Player` object only gets instantiated on first mount. So when I navigate back and forth between routes, the second time I visit the route with the video, the player won't actually load. 
+	- Thus, make sure to give the `container` element some background image, which will function as a fallback in case the video is not displaying.

@@ -5,8 +5,8 @@ enableToc: false
 
 ## /dir
 
-- [/books](/books) — excerpts and personal notes
-- [/musicblog](/musicblog) — sharing music and thoughts on music 
-- [/tech](/tech) — tech-related notes to self - probably not super interesting for you
-- [/arguments](/arguments) — pondering various topics
-- [/miscellaneous](/miscellaneous) — this, that and all
+1. [/books](/books) — excerpts and personal notes
+2. [/musicblog](/musicblog) — sharing music and thoughts on music 
+3. [/tech](/tech) — coding and tech-related notes to self
+4. [/arguments](/arguments) — pondering on certain topics
+5. [/miscellaneous](/miscellaneous) — this, that and all

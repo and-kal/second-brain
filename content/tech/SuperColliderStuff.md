@@ -1,7 +1,7 @@
 ---
 title: "Synths and apps built with SuperCollider"
 date: "2023-03-28"
-draft: false
+draft: true
 ---
 
 all the [monome norns](https://norns.community/) scripts, which are usually written in SuperCollider (and [Lua](http://www.lua.org/))

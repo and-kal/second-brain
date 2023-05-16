@@ -32,9 +32,9 @@ using(SqlHelper sqlHelper = new SqlHelper())
 
 This use of `using` has some features:
 
-- The object is scoped and only available inside the statement.
-- The object is read-only.
-- At the end of the block the `Dispose()` method will be called (whether there was an exception or not) and all disposable instances will be disposed.
+* The object is scoped and only available inside the statement.
+* The object is read-only.
+* At the end of the block the `Dispose()` method will be called (whether there was an exception or not) and all disposable instances will be disposed.
 
 ## Jump statements
 
