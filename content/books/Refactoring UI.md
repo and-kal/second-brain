@@ -1,9 +1,12 @@
 ---
 title: "Refactoring UI by Steve Schoger & Adam Wathan (2018)"
 date: "2023-03-17"
+draft: false
 ---
 
-Some takeaways from the *Refactoring UI* book:
+Here's some personal takeaways from the *Refactoring UI* (2018) book by Steve Schoger and Adam Wathan. I really recommended [buying the actual book](https://www.refactoringui.com/), not least for all the example images in there. While those examples are really not anything I would feel excited about rebuilding (it's mostly just typical corporate website designs really), they still are really helpful in order to develop some intuition and sensibility what looks pleasing and balanced.
+
+----
 
 ## Limit your choices
 
@@ -167,11 +170,46 @@ In order to achieve contrast between text and background, you don't always need 
 
 In case of dark coloured backgrounds, changing lightness and saturation in order to get a text color with a good contrast can result in a color that is almost white. Changing the hue towards cyan, yellow, or magenta will produce better results.
 
-<!-- 
-## Depth / Shadows
+
+## Depth 
 
 > Small shadows with a tight blur radius make an element feel only slightly raised off of the background, while larger shadows with a higher blur radius make an element feel much closer to the user. The closer something feels to the user, the more it will attract their focus. 
 
 Establish an elevation system, i.e. a hierarchy of elements and components in terms of how close they appear (for example modal to dropdown menu to button)
 
--->
+Shadows can have two parts: one that simulates the shadow cast by direct light and another as cast by ambient light: one larger, blurry, diffuse shadow plus one small, sharp, defined shadow. The second one should be less sharp the more elevated you want the shadow to look. In a flat design, you can still use sharp, vertical, unblurred shadows. However, establishing hierarchy will be tricky here.
+
+You can also create a sensation of depth without shadows, only by using colours, because »lighter objects feel closer to us and darker objects feel further away.«
+
+Another option to create depth is by overlapping elements and thus creating layers.
+
+## Images and photos
+
+> Bad photos will ruin a design, even if everything else about it looks great.
+
+When trying to place text on top of a photo in order for the text to be readable still, you should a semi-transparent overlay to the image: a dark overlay for light text; for dark text add a light overlay or reduce contrast. Other than that you can also apply a glow or very blurry shadow to set the text apart from the background image.
+
+You can also colourize the image to a colour that goes well with your text colour. 
+
+Three steps to get a colorized image:
+- lower the contrast of the image
+- desaturate the image to remove colours
+- add a colour fill and use multiply mix mode 
+
+Scaling up images is usually not a good idea as it will not look good. That's also true for vector icons, which won't lose quality when scaling them up. It's better to use icons at their intended size and add a circle, square etc. with an appropriate background colour to the icon so as to fill the space in your layout.
+
+Scaling images down can also produce unwanted results. Favicons, for example, will probably look blurry and washy when scaled down. That's even the case with popular tools like [realfavicongenerator.net](https://realfavicongenerator.net/). It's better to create seperate icons for different sizes and to simplify them where necessary.
+
+> Don’t scale down screenshots.
+
+In order to prevent background bleed (image colours bleeding into your background colour), you *could* use a border. However, a more appealing solution is a discreet inset box shadow.
+
+## miscellaneous
+
+To make your page more interesting and appealing it's often a good idea to replace browser defaults, like bullet icons, radio buttons, checkboxes etc. with custom styles.
+
+Use accent borders in order to make elements stand out visually.
+
+> A great way to break up some of the monotony without drastically altering the design is to add some excitement to a few of your backgrounds.
+
+You can also use background patterns, which you can create yourself or get from pages like [heropatterns.com](https://heropatterns.com/), 
