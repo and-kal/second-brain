@@ -1,6 +1,7 @@
 ---
 title: "Virtual gaming networks with something other than Hamachi"
 date: "2023-01-10"
+draft: true
 ---
 
 Though I ain't much of a gamer anymore, I was interested to check what kind of strategies people use these days for creating virtual gaming networks and was surprised to see that LogMeIn's Hamachi, which I've used in the 00's already at private LAN parties or when playing games via ISDN connection, is still utilized a lot. Other options are commercial VPN providers, some of which have specialized in offering gaming networks. 

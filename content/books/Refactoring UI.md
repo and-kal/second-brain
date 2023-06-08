@@ -208,8 +208,16 @@ In order to prevent background bleed (image colours bleeding into your backgroun
 
 To make your page more interesting and appealing it's often a good idea to replace browser defaults, like bullet icons, radio buttons, checkboxes etc. with custom styles.
 
-Use accent borders in order to make elements stand out visually.
+Use accent borders in order to make elements stand out visually. 
+
+Make sure you're not only using borders to seperate content as it will make your UI look too busy soon. Drop shadows or inset shadows are more subtle and can serve the same purpose as borders. Also different background colours (not necessarily alternating background colours as in an Excel sheet) or more spacing will seperate items from another.
 
 > A great way to break up some of the monotony without drastically altering the design is to add some excitement to a few of your backgrounds.
 
-You can also use background patterns, which you can create yourself or get from pages like [heropatterns.com](https://heropatterns.com/), 
+You can also use background patterns, which you can create yourself or get from pages like [heropatterns.com](https://heropatterns.com/) or [magicpattern.design](https://www.magicpattern.design/tools/css-backgrounds). When using such, sticking to simple geometric shapes and low contrasts will normally produce the most appropriate results, ensure readability and don't distract too much from the content.
+
+> If you’re designing something that depends on user-generated content, the empty state should be a priority, not an afterthought. [...] Empty states are a user’s first interaction with a new product or feature. Use them as an opportunity to be interesting and exciting [...]
+
+> Look for decisions you wouldn’t have made.
+
+> Rebuild your favorite interfaces.

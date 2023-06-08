@@ -1,6 +1,7 @@
 ---
 title: "R.I.P. Kristof Schreuf (Kolossale Jugend / Brüllen)"
 date: "2022-11-15"
+draft: true
 ---
 
 Here's two releases to lament the recent death of German "Diskursrock" weirdo Kristof Schreuf. Apart from his albums with kolossale Jugend, Schreuf also released one album with the band Brüllen and a solo record.

@@ -109,6 +109,7 @@ If you want to have your own CMS and run a blog or something, you can get some a
 - [Dither Me This](https://hekate2.github.io/buttonmaker/) - create dithered versions of your images
 - [hekate2's button maker](https://hekate2.github.io/buttonmaker/) - get old school 88x31 buttons for your website
 - [htmx](https://htmx.org) let's you use features like AJAX, caching, WebSockets, animations etc. directly in HTML
+- [Quartz](https://quartz.jzhao.xyz/) (by Jacky Zhao) - sort of a boilerplate for a *digital garden* based on Hugo and Obsidian (optional)
 - [textcraft](https://textcraft.net/) - let's you generate flashy word art
 ----
 

@@ -1,6 +1,7 @@
 ---
 title: "5-star ratings"
 date: "2023-01-07"
+draft: true
 ---
 
 Vivino (the app) kind of sucks. So does Letterboxd. And Rate Your Music (even though that's the page [I](https://rateyourmusic.com/~staxl) still like the most of them all). I love keeping track of the cultural goods I consume, like what music I listen to and what movies I watch, but at some point I stopped rating things by numbers or stars or whatever they have at whatever service. (I sometimes still rate for private purposes - just so I know which movies I really hated, or which albums I will love forever and all time.) 

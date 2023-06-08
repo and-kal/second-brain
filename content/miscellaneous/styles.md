@@ -1,5 +1,5 @@
 ---
-title: "Corporate Memphis vs. Frutiger Aero"
+title: "Corporate Memphis, Frutiger Aero & Neobrutalism"
 date: "2023-01-30"
 draft: true
 ---

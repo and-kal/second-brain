@@ -2,6 +2,7 @@
 title: "Structure and Interpretation of Computer Programs (2nd ed.) by Harold Abelson & Gerald Jay Sussman"
 tags: 
 - coding
+draft: true
 ---
 
 (MIT Electrical Engineering and Computer Science, 1996)

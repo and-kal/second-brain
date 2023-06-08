@@ -1,6 +1,7 @@
 ---
 title: "Cpt. Kirk &.: Reformhölle (1992, What's So Funny About)"
 date: "2022-12-03"
+draft: true
 ---
 
 <iframe allowfullscreen="" class="YOUTUBE-iframe-video" data-thumbnail-src="https://i.ytimg.com/vi/fmDj9VDCl7Y/0.jpg" frameborder="0" height="266" src="https://www.youtube.com/embed/fmDj9VDCl7Y?feature=player_embedded" width="320"></iframe>

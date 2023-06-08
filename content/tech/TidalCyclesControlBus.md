@@ -1,7 +1,7 @@
 ---
 title: "TidalCycles: Control busses"
 date: "2023-05-16"
-draft: false
+draft: true
 ---
 
 Here's a list of all parameters in TidalCycles that have a [control bus](https://tidalcycles.org/docs/reference/control_busses/) implementation:
