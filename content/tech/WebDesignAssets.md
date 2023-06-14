@@ -12,7 +12,7 @@ Inspired by [this talk at Erfa Essen](https://media.ccc.de/v/petitfoo-webseiten-
   * [Colours, shapes, etc.](#colours-shapes-etc)
   * [Website builders](#website-builders)
   * [Static Site Generators](#static-site-generators)
-  * [Hosting services](#hosting-and-testing)
+  * [Hosting services](#hosting-and-domains)
   * [Content Management Systems](#content-management-systems)
   * [other useful assets](#other-useful-assets)
   * [Awesome Lists](#some-awesome-lists)
@@ -84,10 +84,12 @@ If you really don't want to do any coding at all, you can try one of these no-co
 
 ## Hosting and Domains
 
+* [sdfeu.org](https://sdfeu.org/w/tutorials:building_a_website) - you can host a website on the SDF Public Access Unix System, if you are a validated user (it will cost 5 Euros as a token of trust and it's really for a good cause)  
+* [tildepages.org](https://tildepages.org/) - you can host static pages on their [Pubnix](https://projectsegfau.lt/pubnix/faq) systems   
 * [glitch.me](https://glitch.com/features/) - simple and powerful platform for hosting, sharing, remixing and developing websites and web apps
 * [repl.it](https://replit.com/) - online REPL / IDE
-* [Surge, Firebase, Vercel, Github Pages, Netlify](https://dev.to/afozbek/5-ways-to-host-your-applications-4d77/) - 5 other popular options
 * [afraid.org's FreeDNS](https://freedns.afraid.org/) - offers six subdomains for free from their vast portfolio of random and strange domains
+* [Surge, Firebase, Vercel, Github Pages, Netlify](https://dev.to/afozbek/5-ways-to-host-your-applications-4d77/) are other popular options
 
 ## Content management systems
 
