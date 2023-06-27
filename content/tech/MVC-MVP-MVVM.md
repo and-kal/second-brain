@@ -8,6 +8,18 @@ They are software architectural patterns, aimed to achieve *separation of concer
 
 In MVVM we seperate business model, UI, and business logic.
 
+## Classic MVC
+
+[According to Tyrgve Reenskaug](https://folk.universitetetioslo.no/trygver/1979/mvc-2/1979-12-MVC.pdf), in a classic Model-View-Controller architecture the three elements will divide
+
+**Model**: Organizes the application data and informs the view about updates in data.
+
+**View**: Is the visual representation of the model and communicate with the model directly (receive updates from them and sends to the database). The view *does not* handle click and keyboard events!
+
+**Controller**: Functions as the interface for the user; it receives the user input (mouse clicks, keyboard typing) and hands it over to the view, which will update the data accordingly.
+
+There's a [couple of variations](https://collindonnell.com/mvc-isnt-mvc) to this original MVC pattern. 
+
 ## View 
 
 - The *view* provides the GUI of an application, visualizes data etc.

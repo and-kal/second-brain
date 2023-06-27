@@ -44,19 +44,6 @@ Further common types:
 - Floating point number with double precision (`Double`)
 - `Fractional`
 
-For functions type declaration is done like so:
-```haskell
-someFunction :: Int -> Int -> Int -> Int
-someFunction a b c = a + b + c
-```
-Here, the return type is the last item in the declaration and the parameters are all the items before the last one.
-
-»Functions that have type variables are called polymorphic functions.« When running `:t` on such functions their type declaration (*type signature*) will contain type variables, which are written in lowercase letters, while types are written in uppercase.
-
-Haskell's compiler (GHC) checks types *statically*. That means that all your expressions will be type checked before they are executed; there's no implicit type conversion as in dynamically typed languages. Haskell urges one towards *type-oriented programming*.
-
-There's also *dependent typing*, which is an even stronger form of type checking.
-
 ### Lists 
 
 Are arguably the most important data type in Haskell.
@@ -78,6 +65,25 @@ Equality is checked with the `==` operator and inequality with `/=`.
 
 Are similar to interfaces in OOP in that the determine the tipes of operations they permit their members.
 [...]
+
+### Type signatures
+
+For functions type declaration is done with the `::` operator:
+```haskell
+someFunction :: Int -> Int -> Int -> Int
+someFunction a b c = a + b + c
+```
+Here, the return type is the last item in the declaration and the parameters are all the items before the last one.
+
+If no types are specified, Haskell's interpreter will infer the type. **Type inference** is defined as »the automatic determination of the type of each expression based on the functions and syntax construct being used« (Serrano Mena, 2022).
+
+Haskell's compiler (GHC) checks types *statically*. That means that all your expressions will be type checked before they are executed; there's **no implicit type conversion** as in dynamically typed languages. Haskell urges one towards *type-oriented programming*.
+
+There's also *dependent typing*, which is an even stronger form of type checking.
+
+#### Type variables
+
+»Functions that have type variables are called polymorphic functions.« When running `:t` on such functions their type declaration (*type signature*) will contain type variables, which are written in lowercase letters, while types are written in uppercase.
 
 ### Parametricity
 
@@ -103,7 +109,17 @@ Are denoted with the `=>` symbol.
 
 This says that the two `a` values must be of the `Eq` class
 
-## Built-in functions
+## Syntax 
+
+### Parantheses
+
+[...]
+
+## Functions
+
+Functions in Haskell always start with a lowercase letters, same as parameters. Parameters are seperated only by spaces and are not enclosed in parantheses.
+
+### Built-in functions
 
 [...]
 
@@ -165,11 +181,16 @@ There's also libraries for parallel and concurrent execution of expressions, bec
 
 »Monads apply a function that returns a wrapped value to a wrapped value. Monads have a function `liftM` or `>>=` (pronounced ›bind‹) to do this.«
 
+
+## The Interpreter
+
+Loading files into the interpreter is done with the `:l` command followed by the path to the file.
+
 ## Haskell ecosystem
 
-The online repository for Haskell libraries are called *Hackage* and *Stackage*. 
-
 Building and packaging tools for Haskell are *cabal* and *stack*.
+
+The online repository for Haskell libraries are called *Hackage* (for *cabal*) and *Stackage* (for *stack*). 
 
 The main installer for Haskell is *GHCUp*.
 
