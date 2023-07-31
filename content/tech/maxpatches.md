@@ -46,7 +46,7 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - [Opal](https://opal.fors.fm/) ($)
 - [PolyMind](https://maxforlive.com/library/device/2192/polymind)
 - [prosody](https://github.com/andr-ew/prosody) collection (by [andr-ew](https://github.com/andr-ew/)) 
-- [RE:MIX](https://github.com/el-quinto/mix)
+- [-re:mix-](https://github.com/el-quinto/mix) (realtime sampling, slicing and re-sequencing)
 - [Stepic](https://devicemeister.com/stepic-for-live/) ($)
 - [swirlytape](https://maxforlive.com/library/device/3014/swirlytape)
 - [VIZZable-2](https://github.com/zealtv/VIZZable-2)

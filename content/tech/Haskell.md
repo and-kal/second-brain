@@ -35,6 +35,38 @@ In Haskell, values cannot be reassigned.
 
 Recursive function depend on one or more _edge conditions_, which makes them terminate.
 
+Let's take this example from »Learn You a Haskell for Great Good!«:
+
+```haskell
+take' :: (Num i, Ord i) => i -> [a] -> [a]
+take' n _
+    | n <= 0 = []
+    take' _ [] = []
+    take' n (x:xs) = x : take' (n-1) xs
+```
+
+In the last line, we're destructuring the second parameter, which is a list, by means of pattern matching. Then we take the first element from the list, `x`, and with `:` we create a new list with `take' (n-1) xs` appended. That means `take'` is called again, but with the first parameter `n` that we gave reduced by one. So if we had called `take' 3 [3, 6, 9, 12, 15]`, the last line would come down to 
+```
+take' 3 (3:[3, 6, 9, 12, 15]) = 3 : take' 2 [6, 9, 12, 15]
+```
+
+then to 
+```
+take' 2 (6:[9, 12, 15]) = 3:6:take' 1 [9, 12, 15]
+```
+
+then to 
+```
+take' 1 (9:[12, 15]) = 3:6:9:take' 0 [12, 15]
+```
+
+and eventually to 
+```
+take' 0 (12:[15]) = 3:6:9:[]
+```
+
+which means we now have the first three elements of our initial list as a new list. 
+
 There are no iteration statements (like `for` loops) in Haskell, so recursion is important. Computations in Haskell are done »by declaring what something is instead of declaring how you get it.« What does that mean? [...]
 
 Instead of iterating through a data structure, in Haskell you will use `map`. So in order to square a list of numbers, you could write:
@@ -66,6 +98,16 @@ The two kinds of binding constructs in Haskell are:
 - `let ... in`
 - `where`
 
+`where` bindings are available in the whole function. `let` bindings are more local, e.g. if you're using guards the `let` bindings will not be accessible from ›behind‹ the guard. Several `let` can be seperated with a `;` or by aligning tem via indentation:
+
+```haskell
+(let a = "Hey!"; let b = "How are you?" in a ++ " " ++ b)
+
+let a = "Hey!"
+    b = "How are you?" 
+in  a ++ " " ++ b
+```
+
 ## Data types and typeclasses
 
 Types can be determined by invoking `:t` followed by the expression in question. This will return the expression followed by `::` (which reads as ›has type of‹) followed by the type.
@@ -84,11 +126,12 @@ Standard data types in Haskell are:
 
 Further common types:
 
-- Integers (`Int` (bounded) or `Integer` (no upper or lower boundary))
+- Integers (`Int` (bounded) or `Integer` (no upper or lower boundary) or `Integral` (whole numbers))
 - exact rational numbers (`Ratio`)
 - Floating point number with single precision (`Float`)
 - Floating point number with double precision (`Double`)
 - `Fractional`
+- Ordering (`Ord`; N.B. Ordering is different `Number`)
 
 
 When defining types, constructors, type classes or kinds yourself they must start with an uppercase letter - or if you give them an operator name, that one should start with a `:`.
@@ -98,6 +141,18 @@ When defining types, constructors, type classes or kinds yourself they must star
 Are arguably the most important data type in Haskell.
 
 They are homogenous, meaning they cannot hold elements of different types.
+
+#### List comprehension
+
+Consider this example from »Learn You a Haskell for Great Good!«:
+
+```haskell
+let xs = [(1,3), (4,3), (2,4), (5,3), (5,6), (3,1)]
+[a+b | (a,b) <- xs]
+[4,7,6,8,11,4]
+```
+
+The `(a,b) <- xs` is a so-called generator, which takes every tuple from xs (you can read it as ›is drawn from‹) and pipes it to left-side of the `|` guard (read: ›such that‹).
 
 ### Tuples
 
@@ -119,6 +174,16 @@ if b then t else f
 In contrast to other languages like Javascript, there always has to be an else case.
 
 Equality is checked with the `==` operator and inequality with `/=`.
+
+`case` statements in Haskell are constructed like that:
+
+```haskell
+case expression of  patternOne -> resultOne
+                    patternTwo -> resultTwo
+                    patternThree -> resultThree
+```
+
+By the way, »pattern matching in function definitions is syntactic sugar for case expressions.«
 
 ### Type classes
 
@@ -168,13 +233,19 @@ Are denoted with the `=>` symbol.
 (==) :: (Eq a) => a -> a -> Bool
 ```
 
-This says that the two `a` values must be of the `Eq` class
+This says that the two `a` values must be of the `Eq` class.
 
 ## Syntax
 
 ### Parantheses
 
 [...]
+
+### Guards
+
+»[G]uards are a way of testing whether some property of a value (or several of them) are true or false« by boolean conditions and they are similar to if else trees.
+
+The `|` guard is similar [to the `|` in set theory](https://stackoverflow.com/a/21285008/20232056) and you can read as ›such that‹.
 
 ### Layout
 
@@ -191,7 +262,18 @@ There's also libraries for parallel and concurrent execution of expressions, bec
 
 [...]
 
-## Algebraic Data Types (ADT)
+## Data Types
+
+Data types are constructed via the `data` keyword and different constructors are seperated by a guard `|`.
+
+A data type without constructors and with empty alternatives is similar to an enum in other languages:
+
+```haskell
+data NameOfDataType = OneAlternative | TheOtherAlternative | AThirdAlternative
+```
+
+
+### Algebraic Data Types (ADT)
 
 Instead of OOP-tyle classes, in Haskell you will use data types. One common data type are ADTs. ADTs are defined by two sorts of data:
 
@@ -206,6 +288,28 @@ data NameOfDataType = NameOfConstructorOne String
 ```
 
 `deriving Show` is optional. It's used so that you can print the values without having to write a custom function for that (*automatic deriving*). The names of constructors must be unique inside a module.
+
+## Pattern matching
+
+Pattern matching allows you to check if some data matches a certain pattern and then destructure the data according to that pattern. 
+
+»[P]atterns are checked in the same order they appear in the code.«
+
+A come pattern is `x:xs` which binds the head of a list to `x` and the rest of the list to `xs`. In a function, you have to put `x:xs` in parantheses, because you are binding mutiple values:
+```haskell
+someFunction :: [a] -> a 
+someFunction (x:xs) = x
+```
+### As patterns
+
+›as patterns‹ allow you to destructure data according to the pattern, but still keep a reference to the original data:
+```haskell
+thirdLetter :: (Char a) => [a] -> a
+thirdLetter [] = "That string is too short"
+thirdLetter (_:xs) = "That string is too short"
+thirdLetter (_:_:xs) = "That string is too short"
+thirdLetter string@(_:_:x:xs) = "The third letter in " ++ string ++ " is: " ++ [x]
+```
 
 ## Monads, Monoids, applicative functors, functors
 

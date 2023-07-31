@@ -8,84 +8,162 @@ draft: true
 
 ...because I can't memorize all of them easily.
 
-`cat` -> 
+`cat`
+\
+-> 
 
-`cp` / `copy` -> copy a file (copy-paste)
+`cp` / `copy`
+\
+-> copy a file (copy-paste)
 
-`ls` -> list files and folders
+`ls`
+\
+-> list files and folders
 
-`cd` -> change directory
+`cd`
+\
+-> change directory
 
-`export` -> 
+`export`
+\
+-> 
 
-`df` -> show free disk memory
+`df`
+\
+-> show free disk memory
 
-`dirs` -> 
+`dirs`
+\
+-> 
 
-`du` -> disk usage
+`du`
+\
+-> disk usage
 
-`echo` -> print strings or variables (just like `printf` or `stdout` in C)
+`echo`
+\
+-> print strings or variables (just like `printf` or `stdout` in C)
 
-`env` -> print all current environment variables
+`env`
+\
+-> print all current environment variables
 
-`kill` -> 
+`kill`
+\
+-> 
 
-`ln` -> create a link ("softlink"/"symlink")
+`ln`
+\
+-> create a link ("softlink"/"symlink")
 
-`mkdir` -> create directory
+`mkdir`
+\
+-> create directory
 
-`mv` -> move a file (cut-paste)
+`mv`
+\
+-> move a file (cut-paste)
 
-`alias` -> show all aliases (stored in `~/.bashrc`); new aliases can be defined like so: `alias name='action'`
+`alias`
+\
+-> show all aliases (stored in `~/.bashrc`); new aliases can be defined like so: `alias name='action'`
 
-`popd` -> 
+`popd`
+\
+-> 
 
-`pushd` -> 
+`pushd`
+\
+-> 
 
-`pwd` -> prints path of the current working directory
+`pwd`
+\
+-> prints path of the current working directory
 
-`rm` -> remove a file
+`rm`
+\
+-> remove a file
 
-`rmdir` -> remove a folder
+`rmdir`
+\
+-> remove a folder
 
-`time` -> 
+`time`
+\
+-> 
 
-`umask` -> show access rights in current folder (in umask octal format); use -S to see a verbal non-octal description in the form of `u=rwx,g=rwx,o=rwx` where `u` is the current user, `g` the group and `o` all others and `rwx` would be `read, write, execute`; note that umask octals are not the same as the octals of `chmod`  
+`umask`
+\
+-> show access rights in current folder (in umask octal format); use -S to see a verbal non-octal description in the form of `u=rwx,g=rwx,o=rwx` where `u` is the current user, `g` the group and `o` all others and `rwx` would be `read, write, execute`; note that umask octals are not the same as the octals of `chmod`  
 
 
-`agrep` -> 
+`agrep`
+\
+-> 
 
-`diff` -> 
+`diff`
+\
+-> 
 
-`egrep` -> 
+`egrep`
+\
+-> 
 
-`fgrep` -> 
+`fgrep`
+\
+-> 
 
-`glimpse` -> 
+`glimpse`
+\
+-> 
 
-`grep` -> 
+`grep`
+\
+-> 
 
-`info` -> 
+`info`
+\
+-> 
 
-`jobs` -> 
+`jobs`
+\
+-> 
 
-`locate` -> 
+`locate`
+\
+-> 
 
-`man` -> 
+`man`
+\
+-> 
 
-`occur` -> 
+`occur`
+\
+-> 
 
-`su` -> 
+`su`
+\
+-> 
 
-`sudo` -> 
+`sudo`
+\
+-> 
 
-`whoami` ->
+`whoami`
+\
+->
 
 ### Some useful combinations
 
-`ps -ef | grep processname` -> pipe ps into grep, i.e. list the currently running processes, send the list to `grep` which searches for lines containing the pattern `processname` (as regular expression)
+`ps -ef | grep processname`
+\
+-> pipe ps into grep, i.e. list the currently running processes, send the list to `grep` which searches for lines containing the pattern `processname` (as regular expression)
 
 ## Powershell
 
-...because I can't memorize those even less easily.
+...because I'm even worse in memorizing those.
+
+`certutil -hashfile <a_file> MD5` 
+\
+-> get the MD5 checksum of a_file
 
