@@ -10,11 +10,32 @@ All internal actions of the interpreter (functions that are not functions on any
 
 Functions in Haskell always start with a lowercase letters, same as parameters. Parameters are seperated only by spaces and are not enclosed in parantheses.
 
-### First-class functions
+### First-class and higher order functions
 
-Functions in Haskell are _first-class citizens_. You can use them just the way you use data: passing them as arguments, returning them from other functions, assigning them to variables, and testing them for equality.
+Functions in Haskell are _first-class citizens_. You can use them just the way you use data: passing them as arguments, returning them from other functions, assigning them to variables, and testing them for equality. If a function does any of these things, it's said to be a *high order function*.
 
 There's also _second-class objects_ – objects that don't fulfill the four criteria above.
+
+### Currying, lambda calculus, etc.
+
+»Every function in Haskell officially only takes one parameter. [...] That's why the return type and the parameters of
+functions are all simply separated with arrows.« (Lipovaca, 2011)
+
+The Lambda Calculus as invented by Alonzo Church has three elements: *functions*, *variables*, and *applications*. Evaluation or ›a computational step‹ is done via ›β-reduction‹, where we replace the variables of a function body with the provided argument.
+```haskell
+identity x = x
+identity 666 -- reduces to: 666 = 666
+```
+
+Lambda Calculus only supports functions with one parameter/argument. In order to have multiple parameters, you would use a technique called **currying** which allows partial application:
+
+```haskell
+multThree x y z = x * y * z 
+multThree 2 3 4 -- is the same as...
+((multThree 2) 3) 4
+```
+
+Behind the scenes, every function in Haskell, too, only takes one parameter and either returns a value, or returns a partially applied function, which either returns a value or again returns a partially applied function - depending on the number of arguments.
 
 ### Side effects
 
@@ -147,12 +168,20 @@ They are homogenous, meaning they cannot hold elements of different types.
 Consider this example from »Learn You a Haskell for Great Good!«:
 
 ```haskell
-let xs = [(1,3), (4,3), (2,4), (5,3), (5,6), (3,1)]
 [a+b | (a,b) <- xs]
-[4,7,6,8,11,4]
+where xs = [(1,3), (4,3), (2,4), (5,3), (5,6), (3,1)]
 ```
 
 The `(a,b) <- xs` is a so-called generator, which takes every tuple from xs (you can read it as ›is drawn from‹) and pipes it to left-side of the `|` guard (read: ›such that‹).
+
+List comprehensions can include predicates. Let's say we only want the sum of even numbers, we could write:
+```haskell
+let xs = [(1,3), (4,3), (2,4), (5,3), (5,6), (3,1)]
+in
+    [a+b | (a,b) <- xs, even a, even b]
+```
+and would get `[6]` as a result.
+
 
 ### Tuples
 
@@ -197,6 +226,7 @@ For functions type declaration is done with the `::` operator:
 ```haskell
 someFunction :: Int -> Int -> Int -> Int
 someFunction a b c = a + b + c
+-- That whole first line there is called the *type signature*.
 ```
 
 Here, the return type is the last item in the declaration and the parameters are all the items before the last one.
@@ -300,7 +330,7 @@ A come pattern is `x:xs` which binds the head of a list to `x` and the rest of t
 someFunction :: [a] -> a 
 someFunction (x:xs) = x
 ```
-### As patterns
+### as patterns
 
 ›as patterns‹ allow you to destructure data according to the pattern, but still keep a reference to the original data:
 ```haskell
@@ -345,8 +375,9 @@ The online repository for Haskell libraries are called _Hackage_ (for _cabal_) a
 
 The main installer for Haskell is _GHCUp_.
 
-sources:
+## Sources
 
 - [Functional Programming by Example](https://caiorss.github.io/Functional-Programming/index.html) by Caio Rodrigues (2018)
 - Learn You a Haskell for Great Good! A Beginner's Guide by Miran Lipovaca (2011, No Starch Press)
 - Practical Haskell. A Real-World Guide to Functional Programming by Alejandro Serrano Mena (2022, Apress)
+- [Learn X in Y minutes. Where X=Lambda Calculus](https://learnxinyminutes.com/docs/lambda-calculus/) by Max Sun et al. (2023)
