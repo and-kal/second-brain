@@ -37,6 +37,16 @@ multThree 2 3 4 -- is the same as...
 
 Behind the scenes, every function in Haskell, too, only takes one parameter and either returns a value, or returns a partially applied function, which either returns a value or again returns a partially applied function - depending on the number of arguments.
 
+### Anonymous functions
+
+Anonymous function in Haskell are written like so:
+
+```haskell
+let someFunction = \x y -> ((subtract x) (y ** 2))
+```
+
+(You can also use anonymous function *on-the-fly* without the `let` keyword.)
+
 ### Side effects
 
 Haskell is a _pure_ programming language, which means it _seperates code with side effects from the actual business logic_.
