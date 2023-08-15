@@ -1,5 +1,5 @@
 ---
-title: "Notes on te Lua programming language"
+title: "Notes on the Lua programming language"
 date: "2023-05-30"
 draft: true
 ---
