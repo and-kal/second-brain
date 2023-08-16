@@ -4,9 +4,9 @@ date: "2023-04-04"
 draft: true
 ---
 
-## Unix shell
+# Unix shell commands
 
-...because I can't memorize all of them easily.
+Writing some down, because I'm bad at memorizing them all.
 
 `cat`
 \
@@ -47,6 +47,10 @@ draft: true
 `env`
 \
 -> print all current environment variables
+
+`fuser`
+\
+-> 
 
 `kill`
 \
@@ -147,23 +151,40 @@ draft: true
 
 `sudo`
 \
--> 
+-> ›superuser do‹
 
 `whoami`
 \
 ->
 
-### Some useful combinations
+### Useful tools and combinations
+
+#### Mounting and unmounting
+
+`lstblk`
+\
+-> This will list all block devices and their partitions (you can also use `blkid` alternatively). After you have identified, for example, the HDD you just connected, you can mount it to a specific target with:  
+
+`mount /dev/sda1 /media/myExternalHarddrive`
+
+Unmounting it is done via `umount /dev/sda1`
+
+<!-- 
+`rsync`
+
+`awk` 
+-->
+
+#### Finding a running process
 
 `ps -ef | grep processname`
 \
 -> pipe ps into grep, i.e. list the currently running processes, send the list to `grep` which searches for lines containing the pattern `processname` (as regular expression)
 
-## Powershell
+#### Check size of folders 
 
-...because I'm even worse in memorizing those.
+To check the size of the folders in the current folder (and excluding subfolders), run: 
 
-`certutil -hashfile <a_file> MD5` 
+`du -sh --max-depth=1 ./*/`
 \
--> get the MD5 checksum of a_file
-
+(`-s` stands for summarize and `-h` for human-readable)

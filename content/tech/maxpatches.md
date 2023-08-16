@@ -38,6 +38,7 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 
 - [Benjamin Van Esser's M4L devices](https://www.benjaminvanesser.be/software/maxforlive.html)
 - [CHAOS // ORDER - Firefly synchronizer](https://tensenpark.gumroad.com/l/firefly_synchronizer)
+- [Dirge](https://github.com/andr-ew/dirge)
 - [DJBB Loopmaker](https://djbajablast.gumroad.com/l/loopmaker)
 - [granolatech-M4L](https://github.com/akokai/granolatech-M4L)
 - [K-Devices Max For Live](https://k-devices.com/product-category/m4l/) ($)

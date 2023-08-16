@@ -16,6 +16,12 @@ Functions in Haskell are _first-class citizens_. You can use them just the way y
 
 There's also _second-class objects_ – objects that don't fulfill the four criteria above.
 
+#### *map*, *filter*, etc.
+
+[...]
+
+`takeWhile` takes a predicate and a list, goes through the list and returns the list's elements as long as the predicate is true.
+
 ### Currying, lambda calculus, etc.
 
 »Every function in Haskell officially only takes one parameter. [...] That's why the return type and the parameters of
@@ -122,6 +128,12 @@ You can give your functions operators as a name. For example, `+++` is a valid n
 
 Infix operators like `+` also represent functions. For example, `:` prepends something to a list: `1 : 2 : []` returns `[1, 2]`. (There's no direct way to append elements to the end of a list though.)
 
+Another infix operator is `!!`, which takes a list and an index and returns the element at that index from the list:
+```
+([1,10,100,1000] !! 3)
+```
+This will return 1000
+
 ### Bindings
 
 The two kinds of binding constructs in Haskell are:
@@ -190,8 +202,9 @@ let xs = [(1,3), (4,3), (2,4), (5,3), (5,6), (3,1)]
 in
     [a+b | (a,b) <- xs, even a, even b]
 ```
-and would get `[6]` as a result.
+and would get `[6]` as a result. (The `, even a, even b` part are the ›predicates‹.)
 
+Using list comprehensions is similar to using `map` and mostly they're interchangeable.
 
 ### Tuples
 
