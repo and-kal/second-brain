@@ -19,6 +19,8 @@ And here's some patches I found elsewhere:
 - [6 voice karplus strong](/Axoloti_patches/karplus-1.zip) by [dreamer](https://patchstorage.com/author/dreamer/)
 - [AxolotiPatches](https://github.com/vormplus/AxolotiPatches) by [vormplus](https://github.com/vormplus)
 
-And of course, the objects from the [Axoloti Community Library](http://www.privatepublic.de/public/community-objectlist.html) are great in themselves.
+And of course, the objects from the [Axoloti Community Library](http://www.privatepublic.de/public/community-objectlist.html) are great in themselves. They're in the respective [axoloti Github repo](https://github.com/axoloti/axoloti-contrib).
+
+There's [some initiative in the llllllll forum](https://llllllll.co/t/axoloti-core-derivatives/3591/162) to back up the Axoloti forum.
 
 The Axoloti really is a great platform and probably the most affordable soundboard for creating your own instruments and devices. The patcher is quite intuitive and easy to learn. With little effort you could build practical devices, intricate instruments etc. Much like you can do with the [monome norns](https://norns.community/) or the [Zynthian](https://norns.community/), but at a fraction of the price (though the Axoloti allows for not as complex patches as does the norns for example).

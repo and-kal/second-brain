@@ -18,3 +18,5 @@ When you treat transgender conditions as a medical condition, you are in danger 
 ...
 
 Medical categorizations have ethical and practical consequences, which can't be handled when the categorizations are funded on biology alone.
+
+»My point is, treating womanhood entirely as an internal identity is psychologically fucked up and places trans people in a shitty position where they are forced to associate only with social realities that validate their identity, silence anyone who disagrees, or else risk being wiped out entirely. This seems like an unsustainable approach to womanhood.« ([Aella](https://aella.substack.com/p/what-a-woman-is))

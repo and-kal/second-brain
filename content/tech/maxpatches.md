@@ -51,6 +51,7 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - [Monolasem4l](https://llllllll.co/t/monolasem4l/24916)
 - [Opal](https://opal.fors.fm/) ($)
 - [PolyMind](https://maxforlive.com/library/device/2192/polymind)
+- [proc—c](https://proccpri.bandcamp.com/album/prini-proc-c-patch)
 - [prosody](https://github.com/andr-ew/prosody) collection (by [andr-ew](https://github.com/andr-ew/))
 - [-re:mix-](https://github.com/el-quinto/mix) (realtime sampling, slicing and re-sequencing)
 - [Stepic](https://devicemeister.com/stepic-for-live/) ($)
