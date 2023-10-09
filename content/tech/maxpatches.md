@@ -15,6 +15,7 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - [flin](https://github.com/monome-community/flin)
 - [grainstretch~](http://www.timorozendal.nl/?p=456)
 - [Granular Mirror Maze](https://www.amazingnoises.com/free-devices/granular-mirror-maze/)
+- [guttersynthesis](https://github.com/tommmmudd/guttersynthesis)
 - [Husserl2](https://yofiel.com/audio/husserl2.php) by Ernest Leonardo Meyer (website currently unavailable, so here's [a backup](/Max_patches/Husserl20.zip))
 - [Jacob Sachs-Mishalanie's patches](https://jsmishalanie.com/music/max)
 - [karma~](https://rodrigoconstanzo.com/2015/05/karma/) (by [Rodrigo Constanzo](https://rodrigoconstanzo.com))

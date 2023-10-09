@@ -27,3 +27,10 @@ instead:
 
 ## Neo Brutalism
 
+## Windows 1.0 / 2.0
+
+The Windows 1.0 / 2.0 layout and colour schema look really pleasant. Check [the picture in this article](https://www.abortretry.fail/p/the-history-of-windows-20). 
+
+## Flexography
+
+https://stephango.com/flexoki
