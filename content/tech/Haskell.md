@@ -254,7 +254,7 @@ someFunction a b c = a + b + c
 
 Here, the return type is the last item in the declaration and the parameters are all the items before the last one.
 
-If no types are specified, Haskell's interpreter will infer the type. **Type inference** is defined as »the automatic determination of the type of each expression based on the functions and syntax construct being used« (Serrano Mena, 2022).
+If no types are specified, Haskell's interpreter will infer the type. **Type inference** is defined as »the automatic determination of the type of each expression based on the functions and syntax construct being used« (Serrano Mena).
 
 Haskell's compiler (GHC) checks types _statically_. That means that all your expressions will be type checked before they are executed; there's **no implicit type conversion** as in dynamically typed languages. Haskell urges one towards _type-oriented programming_.
 
@@ -353,6 +353,11 @@ A come pattern is `x:xs` which binds the head of a list to `x` and the rest of t
 someFunction :: [a] -> a 
 someFunction (x:xs) = x
 ```
+
+»[I]t’s customary in haskell to write pattern matching on lists using a letter or a small word followed by the same identifier in plural, like x:xs.« (Serrano Mena, p. 48)
+
+In order to use two elements in pattern matching, you can write `(x:y:zs)`.
+
 ### as patterns
 
 ›as patterns‹ allow you to destructure data according to the pattern, but still keep a reference to the original data:
@@ -363,6 +368,10 @@ thirdLetter (_:xs) = "That string is too short"
 thirdLetter (_:_:xs) = "That string is too short"
 thirdLetter string@(_:_:x:xs) = "The third letter in " ++ string ++ " is: " ++ [x]
 ```
+
+Here, `string` is the variable name given to the whole pattern you are matching on.
+
+*As pattern* »allows you to bind some value in the match while at the same time allowing you to match on inner components of that value.« (Serrano Mena, p. 48)
 
 ## Monads, Monoids, applicative functors, functors
 

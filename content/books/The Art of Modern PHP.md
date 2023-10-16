@@ -93,6 +93,8 @@ function sum(int ...$nums): int
 }
 ```
 
+(The opposite of variadic functions are *fixed-arity functions*.)
+
 ---
 
 **static**

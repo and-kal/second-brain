@@ -1,7 +1,7 @@
 ---
 title: "Things I'm likely to forget about C#"
 date: "2023-03-28"
-draft: false
+draft: true
 ---
 
 Constructors in C# are defined by implementing a method whose name is the same as the name of its type. An access modifier for the constructor is optional. It doesn't have a return type.
@@ -52,3 +52,27 @@ Exception-handling statements are not the same as jump statements
 - `try-catch` statement
 - `try-finally` statement
 - `try-catch-finally` statement
+
+## Type-level and value-level code
+
+*Type-level code* is the part of the code that consists of types (`...` etc.) and type operators (`...` etc.), while *value-level code* is basically the rest of the code.
+
+For example this is value-level code:
+
+```csharp
+...
+```
+
+While its *call signature* is type-level code:
+
+```csharp
+...
+```
+
+## Overloading
+
+Overloading functions is quite common in C#. *Overloading* means having several call signatures for the same function, thus having different ways of calling a function dependent on the arguments just when calling the function.
+
+## Generic type parameters
+
+[...]
