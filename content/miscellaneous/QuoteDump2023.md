@@ -1,8 +1,11 @@
 ---
-title: "Maggie Nelson quote dump"
+title: "Quote dump 2023"
 date: "2023-03-04"
 draft: false
 ---
+
+
+## Maggie Nelson
 
 I'm constantly amazed by the lucidity of Maggie Nelson's writing and here's multi-faceted analyses. Damn, even the [@MaggieNelsonBot on Twitter](https://twitter.com/MaggieNelsonBot) that generates mostly nonsensical aphorisms from parts of sentences out of Maggie Nelson's books is a great read. (Their actually not nonsensical to me, just oftentimes syntactically incorrent—just like poetry.) Since her essays are often so dense that a lot of ideas slip through my fingers when I don't contemplate them again, I collect a bunch of quotes here.
 
@@ -23,3 +26,10 @@ I'm constantly amazed by the lucidity of Maggie Nelson's writing and here's mult
 
 > Perhaps the confusion lies in the ›personal is political‹ formulation itself, which offers but a simple copula where there actually exists a multitude of possible relations. As Jacqueline Rose has put it in The Haunting of Sylvia Plath, it isn’t just that ›the personal is political—for a long time feminism has insisted that what goes on in private is a political matter that concerns us all,‹ but rather that ›psychic life in itself will not be relegated to the private, it will not stay in its proper place. It shows up on the side of the historical reality to which it is often opposed.‹ It’s this inappropriate ›showing up‹ that interests me—a kind of crashing of the party that cannot be stopped, only contended with, when it occurs.
 (*The Art of Cruelty*)
+
+> [Lars] von Trier’s cruelty does not lie in any capacity to strip away cant or delusion, but rather in an ability to construct malignant, ultimately conventional fictions that masquerade as parables of profundity, or as protests against the cruelties of the man’s world in which we must inevitably live and suffer. Or, worse—and more likely—von Trier means to present these fictions with tongue so firmly in cheek that if we take them as parables of profundity, the joke may be on us. Von Trier imbues René Girard’s notion of sacrificial violence with an ironic, perhaps even a campy sensibility. But unlike the campiness of, say, Paul McCarthy or John Waters, von Trier keeps his cards close to his chest, as if to preserve his right—and the culture’s—to an entrenched, inevitable chauvinist malevolence. [...] Misogyny, when expressed or explored by men, remains a timeless classic. I suppose, in the end, I remain grateful to ›Breaking the Waves‹ for one thing: it spoke to a question I’ve had for some time—namely, what purpose could a female Christ serve in the (male) imagination? As writer Eileen Myles has put it, ›What would be the point in seeing [a woman] half nude and nailed up? Where’s the contradiction? [...]‹ The cruelty of Breaking the Waves is its revelation, intentional or not, that there could be no sustaining contradiction—that the redundancy of female victimization inflates into a sickening, fundamentally unbelievable martyrdom.
+
+## Gregory Bateson
+
+> [I]n no system which shows mental characteristics can any part have unilateral control over the whole. In other words, the mental characteristics of the system are immanent, not in some part, but in the system as a whole.
+(*The Cybernetics of ›Self‹. A Theory of Alcoholism*)

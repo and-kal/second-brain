@@ -1,10 +1,10 @@
 ---
-title: "I watched Justin Folk's »What Is A Woman?« ( >︹<)"
+title: "I watched Justin Folk's »What Is A Woman?«"
 date: "2023-05-16"
 draft: true
 ---
 
-And it wasn't a great watch. 
+And it wasn't a great watch. ( >︹<)
 
 [...]
 
