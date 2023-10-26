@@ -43,7 +43,7 @@ multThree 2 3 4 -- is the same as...
 
 Behind the scenes, every function in Haskell, too, only takes one parameter and either returns a value, or returns a partially applied function, which either returns a value or again returns a partially applied function - depending on the number of arguments.
 
-### Anonymous functions
+### Anonymous functions / Lambdas
 
 Anonymous function in Haskell are written like so:
 
@@ -51,7 +51,16 @@ Anonymous function in Haskell are written like so:
 let someFunction = \x y -> ((subtract x) (y ** 2))
 ```
 
-(You can also use anonymous function *on-the-fly* without the `let` keyword.)
+You can also use anonymous function *on-the-fly* without the `let` keyword, as you can see in this example (from the Lipovaca book): 
+
+```haskell
+numLongChains :: Int
+numLongChains = length (filter (\xs -> length xs > 15) (map chain [1..100]))
+```
+
+With `\xs` we declare `xs` as the parameter of our lambda expression. If we had more than one paramtere, we would just seperate them by spaces, like `\xs ys zs -> ...`.
+
+As for pattern matching, you can also do that in lambda functions, but you can only define one pattern. If you wanted to use several pattern definitions, you should maybe write an abstraction, instead of using an anonymous lambda functions.
 
 ### Side effects
 
@@ -118,7 +127,18 @@ Or:
 map (**2) [2.65, 5.53, 9.32]
 ```
 
-Other recursive functions in Haskell are `filter`, high-order `fold` functions (`foldr`, `foldl`), `scanl` and `scanr`.
+Other recursive functions in Haskell are `filter`, high-order `fold` functions, `scanl` and `scanr`.
+
+### Folds
+
+›Folds‹ in Haskell are functions that reduce a list to a singular value. Folds take a function, a starting value (just like the accumulator in `reduce`) and the list we want to apply the function on.
+
+To get the product of all items from a list, we can use a left fold:
+
+```haskell
+product :: (Num a) => [a] -> a
+product xs = foldl (\acc x -> acc * x) 1 xs
+```
 
 ### Operators
 
@@ -208,7 +228,7 @@ Using list comprehensions is similar to using `map` and mostly they're interchan
 
 ### Tuples
 
-»A tuple is [...] a type with a fixed number of components, each of them holding a value, not necessarily of the same type.«
+»A tuple is [...] a type with a fixed number of components, each of them holding a value, not necessarily of the same type.« (Serrano Mena)
 
 #### Destructor functions
 
@@ -315,18 +335,18 @@ In pattern-matching guards are used to extend your pattern and check for Boolean
 It is common in Haskell to write `| otherwise` for that part of your pattern matching that takes care of all the remaining cases:
 
 ```haskell
-addOnlySmallNumber x y | x < 5 = x + y
-addOnlySmallNumber x y | y < 5 = x + y
-addOnlySmallNumber x y | otherwise = "One of your numbers is too big ＞︿＜."
+addOnlySmallNumber x _ | x < 5 = show (x + y) ++ " is the sum."
+addOnlySmallNumber _ y | y < 5 = show (x + y) ++ " is the sum."
+addOnlySmallNumber x y | otherwise = "Your numbers are too big :(."
 ```
 
 Which can be written more concisely as:
 
 ```haskell
 addOnlySmallNumber x y 
-    | x < 5 = x + y
-    | y < 5 = x + y
-    | otherwise = "One of your numbers is too big ＞︿＜."
+    | x < 5 = show (x + y) ++ " is the sum."
+    | y < 5 = show (x + y) ++ " is the sum."
+    | otherwise = "Your numbers are too big :(."
 ```
 
 
@@ -337,6 +357,11 @@ We use a prime – written as `'` – in a pattern match, wehen we have two high
 ### Layout
 
 Haskell uses a layout-based syntax. That means, »how a line is indented isn't as important as the fact that all elements in the same block start in the same column. [E.g.] in an `if` block, the lines for `then` and `else` must be indented the same way.«
+
+### Other conventions
+
+- When we do pattern-matching and we do not care what a specific element is, we usually name that element `_`.
+- [...]
 
 ## Lazy evalution
 
