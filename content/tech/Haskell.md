@@ -300,6 +300,40 @@ This says that the two `a` values must be of the `Eq` class.
 
 The `|` guard is similar [to the `|` in set theory](https://stackoverflow.com/a/21285008/20232056) and you can read as ›such that‹.
 
+In pattern-matching guards are used to extend your pattern and check for Boolean conditions. It's an alternative to checking for certain conditions later in the code. So instead of writing:
+
+```haskell
+...
+```
+
+– you could write: 
+
+```haskell
+...
+```
+
+It is common in Haskell to write `| otherwise` for that part of your pattern matching that takes care of all the remaining cases:
+
+```haskell
+addOnlySmallNumber x y | x < 5 = x + y
+addOnlySmallNumber x y | y < 5 = x + y
+addOnlySmallNumber x y | otherwise = "One of your numbers is too big ＞︿＜."
+```
+
+Which can be written more concisely as:
+
+```haskell
+addOnlySmallNumber x y 
+    | x < 5 = x + y
+    | y < 5 = x + y
+    | otherwise = "One of your numbers is too big ＞︿＜."
+```
+
+
+### Primes
+
+We use a prime – written as `'` – in a pattern match, wehen we have two highly related variables/bindings, but we need a different name for one of them. We would use, e.g., `n` and `n'`, so the compiler will not complain about reusing the name of an already established definition.
+
 ### Layout
 
 Haskell uses a layout-based syntax. That means, »how a line is indented isn't as important as the fact that all elements in the same block start in the same column. [E.g.] in an `if` block, the lines for `then` and `else` must be indented the same way.«

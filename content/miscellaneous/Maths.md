@@ -27,3 +27,7 @@ A practical example: The entropy of a password is calculated via this formula:
 E = log2(R^L)
 ```
 Read: the logarithm of (R^L) with base 2 is the entropy, where R is the number of possible characters within the password and L stands for the number of characters in the password. That means the total number of possible guesses is `2 by the power of E`.
+
+## Binomial coefficient 
+
+The binomial coefficient of `n` and `k` is the number of ways in which you can get `k` items from a set of `n` without repetition.
