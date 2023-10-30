@@ -50,7 +50,7 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - [MIDI UTILITIES by Mono Tale](https://www.monotale.com.ar/) ($)
 - [Modulation Lerp](https://github.com/zsteinkamp/m4l-Modulation-Lerp)
 - [Monolasem4l](https://llllllll.co/t/monolasem4l/24916)
-- [Opal](https://opal.fors.fm/) ($)
+- fors.fm: [Opal](https://opal.fors.fm/) ($) & [Pluck](https://fors.fm/pluck)
 - [PolyMind](https://maxforlive.com/library/device/2192/polymind)
 - [proc—c](https://proccpri.bandcamp.com/album/prini-proc-c-patch)
 - [prosody](https://github.com/andr-ew/prosody) collection (by [andr-ew](https://github.com/andr-ew/))
