@@ -62,9 +62,10 @@ Developing your own design and style system for a website can take a very long t
 
 If you really don't want to do any coding at all, you can try one of these no-code website builders. They all offer free tiers with certain limitations; usually, you can only host one page and only on their servers/domains.
 
-- [Tilda](https://tilda.cc/)
-- [sQUARESPACE](https://squarespace.com)
 - [Readymag](https://readymag.com/)
+- [Squarespace](https://squarespace.com)
+- [straw.page](https://straw.page) - I really like this one; more brutalist than the others and extremely simple
+- [Tilda](https://tilda.cc/)
 - [webflow](https://webflow.com/)
 
 ## Static Site Generators
