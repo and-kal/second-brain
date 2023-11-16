@@ -12,22 +12,24 @@ Functions in Haskell always start with a lowercase letters, same as parameters. 
 
 ### First-class and higher order functions
 
-Functions in Haskell are _first-class citizens_. You can use them just the way you use data: passing them as arguments, returning them from other functions, assigning them to variables, and testing them for equality. If a function does any of these things, it's said to be a *high order function*.
+Functions in Haskell are _first-class citizens_. You can use them just the way you use data: passing them as arguments, returning them from other functions, assigning them to variables, and testing them for equality. If a function does any of these things, it's said to be a _high order function_.
 
 There's also _second-class objects_ – objects that don't fulfill the four criteria above.
 
-#### *map*, *filter*, etc.
+#### _map_, _filter_, _reduce_
 
+<!-- TODO:
 [...]
+-->
 
 `takeWhile` takes a predicate and a list, goes through the list and returns the list's elements as long as the predicate is true.
 
 ### Currying, lambda calculus, etc.
 
-»Every function in Haskell officially only takes one parameter. [...] That's why the return type and the parameters of
-functions are all simply separated with arrows.« (Lipovaca, 2011)
+»Every function in Haskell officially only takes one parameter. [...] That's why the return type and the parameters of functions are all simply separated with arrows.« (Lipovaca, 2011)
 
-The Lambda Calculus as invented by Alonzo Church has three elements: *functions*, *variables*, and *applications*. Evaluation or ›a computational step‹ is done via ›β-reduction‹, where we replace the variables of a function body with the provided argument.
+The Lambda Calculus as invented by Alonzo Church has three elements: _functions_, _variables_, and _applications_. Evaluation or ›a computational step‹ is done via ›β-reduction‹, where we replace the variables of a function body with the provided argument.
+
 ```haskell
 identity x = x
 identity 666 -- reduces to: 666 = 666
@@ -36,14 +38,17 @@ identity 666 -- reduces to: 666 = 666
 Lambda Calculus only supports functions with one parameter/argument. In order to have multiple parameters, you would use a technique called **currying** which allows partial application:
 
 ```haskell
-multThree x y z = x * y * z 
-multThree 2 3 4 -- is the same as...
+multThree x y z = x * y * z
+multThree 2 3 4
+-- is the same as...
 ((multThree 2) 3) 4
 ```
 
 Behind the scenes, every function in Haskell, too, only takes one parameter and either returns a value, or returns a partially applied function, which either returns a value or again returns a partially applied function - depending on the number of arguments.
 
-### Anonymous functions / Lambdas
+»Generally, if you have a function like `foo a = bar b` a, you can rewrite it as `foo = bar b`, because of currying.« (Lipovaca, p. 54)
+
+### Lambdas / anonymous functions
 
 Anonymous function in Haskell are written like so:
 
@@ -51,7 +56,7 @@ Anonymous function in Haskell are written like so:
 let someFunction = \x y -> ((subtract x) (y ** 2))
 ```
 
-You can also use anonymous function *on-the-fly* without the `let` keyword, as you can see in this example (from the Lipovaca book): 
+You can also use anonymous function _on-the-fly_ without the `let` keyword, as you can see in this example (from the Lipovaca book):
 
 ```haskell
 numLongChains :: Int
@@ -62,6 +67,8 @@ With `\xs` we declare `xs` as the parameter of our lambda expression. If we had 
 
 As for pattern matching, you can also do that in lambda functions, but you can only define one pattern. If you wanted to use several pattern definitions, you should maybe write an abstraction, instead of using an anonymous lambda functions.
 
+<!-- TODO: is there a way to write ecursive lamdas? -->
+
 ### Side effects
 
 Haskell is a _pure_ programming language, which means it _seperates code with side effects from the actual business logic_.
@@ -70,9 +77,11 @@ Side effects are _elements outside of the program control_, for example I/O, net
 
 In Haskell, values cannot be reassigned.
 
+<!-- TODO:
 ### Built-in functions
 
 [...]
+-->
 
 ### Recursion and iteration
 
@@ -91,27 +100,31 @@ take' n _
     take' n (x:xs) = x : take' (n-1) xs
 ```
 
-In the last line, we're destructuring the second parameter, which is a list, by means of pattern matching. Then we take the first element from the list, `x`, and with `:` we create a new list with `take' (n-1) xs` appended. That means `take'` is called again, but with the first parameter `n` that we gave reduced by one. So if we had called `take' 3 [3, 6, 9, 12, 15]`, the last line would come down to 
+In the last line, we're destructuring the second parameter, which is a list, by means of pattern matching. Then we take the first element from the list, `x`, and with `:` we create a new list with `take' (n-1) xs` appended. That means `take'` is called again, but with the first parameter `n` that we gave reduced by one. So if we had called `take' 3 [3, 6, 9, 12, 15]`, the last line would come down to
+
 ```
 take' 3 (3:[3, 6, 9, 12, 15]) = 3 : take' 2 [6, 9, 12, 15]
 ```
 
-then to 
+then to
+
 ```
 take' 2 (6:[9, 12, 15]) = 3:6:take' 1 [9, 12, 15]
 ```
 
-then to 
+then to
+
 ```
 take' 1 (9:[12, 15]) = 3:6:9:take' 0 [12, 15]
 ```
 
-and eventually to 
+and eventually to
+
 ```
 take' 0 (12:[15]) = 3:6:9:[]
 ```
 
-which means we now have the first three elements of our initial list as a new list. 
+which means we now have the first three elements of our initial list as a new list.
 
 There are no iteration statements (like `for` loops) in Haskell, so recursion is important. Computations in Haskell are done »by declaring what something is instead of declaring how you get it.« What does that mean? [...]
 
@@ -137,8 +150,19 @@ To get the product of all items from a list, we can use a left fold:
 
 ```haskell
 product :: (Num a) => [a] -> a
-product xs = foldl (\acc x -> acc * x) 1 xs
+product xs = foldl (\acc curr -> acc * curr) 1 xs
 ```
+
+Or a right fold:
+
+```haskell
+product :: (Num a) => [a] -> a
+product xs = foldr (\curr acc -> curr acc) 1 xs
+```
+
+(Note that the accumulator and the current value switch places here.)
+
+»[W]e usually use right folds when we're building up new lists from a list.« (Lipovaca, p.55)
 
 ### Operators
 
@@ -146,13 +170,15 @@ You can give your functions operators as a name. For example, `+++` is a valid n
 
 ### Infix operators
 
-Infix operators like `+` also represent functions. For example, `:` prepends something to a list: `1 : 2 : []` returns `[1, 2]`. (There's no direct way to append elements to the end of a list though.)
+Infix operators like `+` also represent functions. For example, `:` prepends something to a list: `1 : 2 : []` returns `[1, 2]`. Appending to a list can't be done directly, but by by concatenation: `[555, 666] ++ [777]`. (This procedure is computationally more expensive than prepending though.)
 
 Another infix operator is `!!`, which takes a list and an index and returns the element at that index from the list:
+
 ```
 ([1,10,100,1000] !! 3)
 ```
-This will return 1000
+
+This will return 1000, because lists are 0-indexed.
 
 ### Bindings
 
@@ -167,7 +193,7 @@ The two kinds of binding constructs in Haskell are:
 (let a = "Hey!"; let b = "How are you?" in a ++ " " ++ b)
 
 let a = "Hey!"
-    b = "How are you?" 
+    b = "How are you?"
 in  a ++ " " ++ b
 ```
 
@@ -196,7 +222,6 @@ Further common types:
 - `Fractional`
 - Ordering (`Ord`; N.B. Ordering is different `Number`)
 
-
 When defining types, constructors, type classes or kinds yourself they must start with an uppercase letter - or if you give them an operator name, that one should start with a `:`.
 
 ### Lists
@@ -217,11 +242,13 @@ where xs = [(1,3), (4,3), (2,4), (5,3), (5,6), (3,1)]
 The `(a,b) <- xs` is a so-called generator, which takes every tuple from xs (you can read it as ›is drawn from‹) and pipes it to left-side of the `|` guard (read: ›such that‹).
 
 List comprehensions can include predicates. Let's say we only want the sum of even numbers, we could write:
+
 ```haskell
 let xs = [(1,3), (4,3), (2,4), (5,3), (5,6), (3,1)]
 in
     [a+b | (a,b) <- xs, even a, even b]
 ```
+
 and would get `[6]` as a result. (The `, even a, even b` part are the ›predicates‹.)
 
 Using list comprehensions is similar to using `map` and mostly they're interchangeable.
@@ -260,7 +287,10 @@ By the way, »pattern matching in function definitions is syntactic sugar for ca
 ### Type classes
 
 Are similar to interfaces in OOP in that the determine the tipes of operations they permit their members.
+
+<!-- TODO:
 [...]
+-->
 
 ### Type signatures
 
@@ -288,15 +318,20 @@ There's also _dependent typing_, which is an even stronger form of type checking
 
 Parametricity refers to _parametric polymorphism_
 
+<!--
+TODO:
 [...]
+-->
 
 ### Type annotations
 
 In order to xplicitely say, which type an expression is supposed to have, we can use the `::` operator at the end of an expression followed by the desired type:
 
+<!-- TODO:
 ```haskell
 [...]
 ```
+-->
 
 ### Class constraints
 
@@ -310,9 +345,11 @@ This says that the two `a` values must be of the `Eq` class.
 
 ## Syntax
 
+<!-- TODO:
 ### Parantheses
 
 [...]
+ -->
 
 ### Guards
 
@@ -326,7 +363,7 @@ In pattern-matching guards are used to extend your pattern and check for Boolean
 ...
 ```
 
-– you could write: 
+– you could write:
 
 ```haskell
 ...
@@ -343,12 +380,11 @@ addOnlySmallNumber x y | otherwise = "Your numbers are too big :(."
 Which can be written more concisely as:
 
 ```haskell
-addOnlySmallNumber x y 
+addOnlySmallNumber x y
     | x < 5 = show (x + y) ++ " is the sum."
     | y < 5 = show (x + y) ++ " is the sum."
     | otherwise = "Your numbers are too big :(."
 ```
-
 
 ### Primes
 
@@ -361,18 +397,23 @@ Haskell uses a layout-based syntax. That means, »how a line is indented isn't a
 ### Other conventions
 
 - When we do pattern-matching and we do not care what a specific element is, we usually name that element `_`.
+<!-- TODO:
 - [...]
+  -->
 
 ## Lazy evalution
 
 Haskell's default evaluation model or execution strategy is built on _laziness_.
 
+<!-- TODO:
+[...]
+-->
+
 There's also libraries for parallel and concurrent execution of expressions, because the order of execution in Haskell doesn't strictly matter.
-[...]
 
-## Context wrapping
-
+<!-- TODO:
 [...]
+-->
 
 ## Data Types
 
@@ -383,7 +424,6 @@ A data type without constructors and with empty alternatives is similar to an en
 ```haskell
 data NameOfDataType = OneAlternative | TheOtherAlternative | AThirdAlternative
 ```
-
 
 ### Algebraic Data Types (ADT)
 
@@ -399,17 +439,18 @@ data NameOfDataType = NameOfConstructorOne String
                     deriving Show
 ```
 
-`deriving Show` is optional. It's used so that you can print the values without having to write a custom function for that (*automatic deriving*). The names of constructors must be unique inside a module.
+`deriving Show` is optional. It's used so that you can print the values without having to write a custom function for that (_automatic deriving_). The names of constructors must be unique inside a module.
 
 ## Pattern matching
 
-Pattern matching allows you to check if some data matches a certain pattern and then destructure the data according to that pattern. 
+Pattern matching allows you to check if some data matches a certain pattern and then destructure the data according to that pattern.
 
 »[P]atterns are checked in the same order they appear in the code.«
 
 A come pattern is `x:xs` which binds the head of a list to `x` and the rest of the list to `xs`. In a function, you have to put `x:xs` in parantheses, because you are binding mutiple values:
+
 ```haskell
-someFunction :: [a] -> a 
+someFunction :: [a] -> a
 someFunction (x:xs) = x
 ```
 
@@ -420,6 +461,7 @@ In order to use two elements in pattern matching, you can write `(x:y:zs)`.
 ### as patterns
 
 ›as patterns‹ allow you to destructure data according to the pattern, but still keep a reference to the original data:
+
 ```haskell
 thirdLetter :: (Char a) => [a] -> a
 thirdLetter [] = "That string is too short"
@@ -430,13 +472,19 @@ thirdLetter string@(_:_:x:xs) = "The third letter in " ++ string ++ " is: " ++ [
 
 Here, `string` is the variable name given to the whole pattern you are matching on.
 
-*As pattern* »allows you to bind some value in the match while at the same time allowing you to match on inner components of that value.« (Serrano Mena, p. 48)
+_As pattern_ »allows you to bind some value in the match while at the same time allowing you to match on inner components of that value.« (Serrano Mena, p. 48)
 
 ## Monads, Monoids, applicative functors, functors
 
+<!-- TODO:
 ### Context
 
 [...]
+
+#### Context wrapping
+
+[...]
+-->
 
 ### Functors
 

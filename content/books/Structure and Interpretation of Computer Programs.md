@@ -87,7 +87,40 @@ Iterative processes have states.
 
 ### parameters
 
-In order for a procedure to run, if usually needs paramterers. There's two types of parameters: *formal parameters* are those that are used in the definition of a procedure, *actual parameters* are the *arguments* passed to a procedure when invoking it.
+In order for a procedure to run, if usually needs paramterers. There's two types of parameters: _formal parameters_ are those that are used in the definition of a procedure, _actual parameters_ are the _arguments_ passed to a procedure when invoking it.
+
+### Lambda functions
+
+Lambda functions are easy to visualize by using the _substitution model of procedure application_.
+
+```lisp
+(define (square x) (* x x))
+
+(define (square-of-square a)
+  (* (square a) (square a))
+)
+```
+
+Now, when call `(square-of-square 5)`, we can reduce this function to subprocedures:
+
+- `(* (square 5) (square 5))`
+- `(* (* 5 5) (* 5 5))`
+- `(* 25 25)`
+- `625`
+
+(Note that this is not how the LISP interpreter works. It is just helping us to visualize the evaluation. (cf. p. 15))z
+
+We can use _lambdas_ to create procedures on-the-fly. These procedures are _anonymous_, i.e. they are not named.
+
+```lisp
+[...]
+```
+
+cf. [Exercise 2.4](/LISP_exercises/exercise2.4.lisp)
+
+### Closure property
+
+An operation is said to have the _closure property_ if it lets you combine data in such a way that the result can again be combined by the same operation.z
 
 ## LISP specificialities
 
