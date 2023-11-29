@@ -15,6 +15,7 @@ For other domain-specific languages, which will compile to Lua
 ## Data types
 
 There's eight data types in Lua:
+
 - `nil`
 - `boolean`
 - `number`
@@ -32,17 +33,39 @@ By default, variables are global by default. In order to scope them, you will us
 
 ```lua
 function someFunction() {
-    local someVariable = {1,2,3,4} 
+    local someVariable = {1,2,3,4}
     -- someVariable is now local to the function scope
     ...
 }
 ```
 
+## Maths
+
+For math operations in Lua there's the `math` library.
+
+If for whatever reason you wanted to find out square root of π, you could write:
+
+```lua
+io.write("The square root of π is: ", math.sqrt(math.pi));
+```
+
+## String formatting
+
+`string.format` is a tool for formatting string according to a certain directive. These directives are derived from the [format specifiers C standard library](https://www.freecodecamp.org/news/format-specifiers-in-c/).
+
+## Pattern-matching
+
+`string.gsub` is a function that lets you replace a pattern with a replacement string. ›gsub‹ stands for ›global substitution‹. It's parameters are:
+
+- 1st: input string
+- 2nd: regular expression
+- 3rd: replacement string
+- 4th: number of replacements (optional)
+
 ## Uses
 
 - Building a web application with Lua using [Lapis](https://leafo.net/lapis/) and [OpenResty](https://openresty.org/en/getting-started.html)
 - Build a 2D game in Lua with [LÖVE](http://love2d.org/)
-
 
 ## sources
 
