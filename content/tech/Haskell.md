@@ -22,7 +22,7 @@ There's also _second-class objects_ – objects that don't fulfill the four crit
 [...]
 -->
 
-`takeWhile` takes a predicate and a list, goes through the list and returns the list's elements as long as the predicate is true.
+`takeWhile` takes a predicate and a list, goes through the list and returns the list's elements as long as the predicate is true. That means that `takeWhile` works on infinite lists, which `filter` doesn't.
 
 ### Currying, lambda calculus, etc.
 
@@ -142,7 +142,7 @@ map (**2) [2.65, 5.53, 9.32]
 
 Other recursive functions in Haskell are `filter`, high-order `fold` functions, `scanl` and `scanr`.
 
-### Folds
+### Folds and scans
 
 ›Folds‹ in Haskell are functions that reduce a list to a singular value. Folds take a function, a starting value (just like the accumulator in `reduce`) and the list we want to apply the function on.
 
@@ -162,7 +162,19 @@ product xs = foldr (\curr acc -> curr acc) 1 xs
 
 (Note that the accumulator and the current value switch places here.)
 
-»[W]e usually use right folds when we're building up new lists from a list.« (Lipovaca, p.55)
+You can also use `foldl1` and `foldr1`, which let you omit the starting value:
+
+```haskell
+let
+    sum :: (Num a) => [a] -> a
+    sum xs = foldl1 (\acc curr -> acc + curr) xs
+in
+sum [1,2,3,4,5,6] -- returns 21
+```
+
+»[W]e usually use right folds when we're building up new lists from a list.« (Lipovaca, p.55) Furthermore, right folds can be used on infinite lists, while left folds can't.
+
+`scanl` and `scanr` work almost the same as `foldl` and `foldr` only they will return the starting values, all intermediate accumulator values and the final accumulator value as a list. So `scanl (+) 0 [2,4,8,16]` will return `[0,2,6,14,30]`.
 
 ### Operators
 

@@ -43,7 +43,7 @@ function someFunction() {
 
 For math operations in Lua there's the `math` library.
 
-If for whatever reason you wanted to find out square root of π, you could write:
+If you wanted to find out square root of π, you could write:
 
 ```lua
 io.write("The square root of π is: ", math.sqrt(math.pi));

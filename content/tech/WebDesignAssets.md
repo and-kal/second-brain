@@ -80,6 +80,7 @@ If you really don't want to do any coding at all, you can try one of these no-co
 ### Blogging
 
 - [ʕ•ᴥ•ʔ Bear](https://bearblog.dev/) - a nice and simple blogging platform
+- [Blot](https://blot.im/) - let's turn a folder into a website easily
 - [Hugo](https://github.com/gohugoio/hugo/) - very powerful and fast once you have got a grip on it, but not exactly easy to learn for beginners
 - [Hexo](https://hexo.io/) - »A fast, simple & powerful blog framework«
 
