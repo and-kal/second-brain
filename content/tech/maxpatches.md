@@ -38,6 +38,7 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 
 ## Max4Live
 
+- [Audiobulb's M4L-BULBS](https://www.audiobulb.com/m4l-bulbs.html)
 - [Benjamin Van Esser's M4L devices](https://www.benjaminvanesser.be/software/maxforlive.html)
 - [CHAOS // ORDER - Firefly synchronizer](https://tensenpark.gumroad.com/l/firefly_synchronizer)
 - [Dirge](https://github.com/andr-ew/dirge)
