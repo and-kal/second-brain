@@ -22,7 +22,7 @@ There's also _second-class objects_ – objects that don't fulfill the four crit
 [...]
 -->
 
-`takeWhile` takes a predicate and a list, goes through the list and returns the list's elements as long as the predicate is true. That means that `takeWhile` works on infinite lists, which `filter` doesn't.
+`takeWhile` takes a predicate and a list, goes through the list and returns the list's elements as long as the predicate is true. That means that `takeWhile` works on infinite lists, which `filter` doesn't. The inverted version of `takeWhile` is called `dropWhile` by the way. `span` and `break` return two list: one list with the values taken and one with the values dropped.
 
 ### Currying, lambda calculus, etc.
 
@@ -48,8 +48,6 @@ Behind the scenes, every function in Haskell, too, only takes one parameter and 
 
 »Generally, if you have a function like `foo a = bar b` a, you can rewrite it as `foo = bar b`, because of currying.« (Lipovaca, p. 54)
 
-### Lambdas / anonymous functions
-
 Anonymous function in Haskell are written like so:
 
 ```haskell
@@ -69,6 +67,13 @@ As for pattern matching, you can also do that in lambda functions, but you can o
 
 <!-- TODO: is there a way to write ecursive lamdas? -->
 
+### Function application
+
+Function application in Haskell can be done simply by putting a space between two things. If you want to apply the result of one function to another function, you would put the former in parantheses:
+`sum (map (* 7) [5,6,7,8])`. However, there's also the `$` operator, which does almost the same, but has the lowest precedence of all operators and so it will be executed last, which means that you don't need parantheses, but could write `sum $ map (* 7) [5,6,7,8]`. Function application is a function just like any other, so you can also apply it to other functions: `map ($ 2) [sqrt, sqrt . sqrt]`. Note that we use the function composition operator `.` here. Both, `.` and `$`, are right-associative. Thus,:{} `f (g (z x))` is the same as `f $ g $ z x`, which is the same as `(f . g . z) x`.
+
+Function composition also allows for so-called ›point free style‹ when writing functions, where the funtions' arguments are omitted: `sum = foldr (+) 0`.
+
 ### Side effects
 
 Haskell is a _pure_ programming language, which means it _seperates code with side effects from the actual business logic_.
@@ -77,11 +82,21 @@ Side effects are _elements outside of the program control_, for example I/O, net
 
 In Haskell, values cannot be reassigned.
 
-<!-- TODO:
-### Built-in functions
+### Some useful functions and modules
 
-[...]
--->
+Data.List is module with many useful list manipulation and analysis functions. For example `nub` (meaning »essence«) removes duplicate elements from a list:
+
+```
+import Data.List (nub)
+
+length $ nub [0,1,2,0,1,2,0,1,2,3]
+```
+
+<!-- `intersperse`, `intercalcate`, `concat` -->
+
+`id` is the identity funtion in Haskell: »In functional languages, functions are first class values that you can pass as a parameter. So one of the most common uses of `id` comes up when you pass a function as a parameter to another function to tell it what to do. One of the choices of what to do is likely to be "just leave it alone" - in that case, you pass id as the parameter.« ([source](https://stackoverflow.com/a/3136407/20232056))
+
+[tbc.]
 
 ### Recursion and iteration
 
@@ -525,6 +540,8 @@ Building and packaging tools for Haskell are _cabal_ and _stack_.
 The online repository for Haskell libraries are called _Hackage_ (for _cabal_) and _Stackage_ (for _stack_).
 
 The main installer for Haskell is _GHCUp_.
+
+Haskell funtions, types and typeclasses can be grouped into modules and a Haskell function can be thought of as a collection of modules. `Prelude` is the standard Haskell module that is always imported by default.
 
 ## Sources
 
