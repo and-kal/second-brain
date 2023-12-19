@@ -1,7 +1,7 @@
 ---
 title: "Personal shell commands cheat sheet"
 date: "2023-04-04"
-draft: true
+draft: false
 ---
 
 # Unix shell commands
@@ -28,18 +28,20 @@ A lot of those are standard Linux commands or so-called ›shell builtin‹.
 `cd`
 \
 -> change directory
+\
+when no arguments are supplied, it will take you to your home directory (so `cd`, `cd ~` and `cd $HOME` usually do the same thing)
 
 `export`
 \
-->
+-> ...displays all exported variables, when no arguments given
+\
+exports a variable, which can then be verified with `printenv`
+\
+with the `-f` it lets you export functions
 
 `df`
 \
 -> show free disk memory
-
-`dirs`
-\
-->
 
 `du`
 \
@@ -55,7 +57,7 @@ A lot of those are standard Linux commands or so-called ›shell builtin‹.
 
 `fuser`
 \
-->
+-> used for monitoring ports and directories currently used by a user
 
 `head` and `tail`
 \
@@ -63,7 +65,7 @@ A lot of those are standard Linux commands or so-called ›shell builtin‹.
 
 `kill`
 \
-->
+-> ...kills a process
 
 `ln`
 \
@@ -79,15 +81,13 @@ A lot of those are standard Linux commands or so-called ›shell builtin‹.
 
 `alias`
 \
--> show all aliases (stored in `~/.bashrc`); new aliases can be defined like so: `alias name='action'`
-
-`popd`
+-> show all aliases (stored in `~/.bashrc`)
 \
-->
+new aliases can be defined like so: `alias name='action'`
 
-`pushd`
+`nl`
 \
-->
+-> ...will number the lines (it's sometimes useful in pipes)
 
 `pwd`
 \
@@ -96,6 +96,8 @@ A lot of those are standard Linux commands or so-called ›shell builtin‹.
 `rm`
 \
 -> remove a file
+\
+`-i` flag for timid deletion (you will be promoped to confirm each deletion)
 
 `rmdir`
 \
@@ -103,7 +105,11 @@ A lot of those are standard Linux commands or so-called ›shell builtin‹.
 
 `sort`
 \
--> ...sorts lines of text into ascending order (`-r` flag for descending order, `-n` for numeric instead of alphabetical order)
+-> ...sorts lines of text into ascending order
+\
+`-r` flag for descending order
+\
+`-n` for numeric instead of alphabetical order
 
 `source`
 \
@@ -111,7 +117,7 @@ A lot of those are standard Linux commands or so-called ›shell builtin‹.
 
 `time`
 \
-->
+-> ...followed by a command prints the time it took to run the command
 
 `uniq`
 \
@@ -121,49 +127,37 @@ A lot of those are standard Linux commands or so-called ›shell builtin‹.
 \
 -> show access rights in current folder (in umask octal format); use -S to see a verbal non-octal description in the form of `u=rwx,g=rwx,o=rwx` where `u` is the current user, `g` the group and `o` all others and `rwx` would be `read, write, execute`; note that umask octals are not the same as the octals of `chmod`
 
-`agrep`
-\
-->
-
 `diff`
 \
-->
+-> compare two files line by line
 
 `egrep`
 \
-->
-
-`fgrep`
-\
-->
+-> is the same as `grep -E` (`grep` with ›extended regular expression‹)
 
 `glimpse`
 \
-->
+-> ›global implicit search‹ for UNIX; searches the entire file system
 
 `history`
 \
--> ...shows your previously executed commands (`history | tail -n1` will print itself and its index)
+-> ...shows your previously executed commands
+\
+`-c` flag deletes the history
+\
+`history | tail -n1` will print itself and its index
 
 `info`
 \
-->
+-> ...prints documentation in info format
 
 `jobs`
 \
-->
-
-`locate`
-\
-->
+-> prints the currently running jobs/processes
 
 `man`
 \
-->
-
-`occur`
-\
-->
+-> print the manual for a program
 
 `su`
 \
@@ -179,11 +173,13 @@ A lot of those are standard Linux commands or so-called ›shell builtin‹.
 
 `wc`
 \
--> presumably stands for ›word count‹ and prints the number of lines, words, and characters in a file (options `-l`, `-w`, and `-c` limit the output)
+-> presumably stands for ›word count‹ and prints the number of lines, words, and characters in a file
+\
+`-l`, `-w`, and `-c` flags limit the output
 
 `whoami`
 \
-->
+-> ›Print the user name associated with the current effective user ID.‹
 
 ## cut
 
@@ -221,6 +217,10 @@ For debugging purposes it's sometimes useful to show all characters in a file, e
 
 You can also use `od` which displays the contents of an input file, too, but lets you specify the character format. So `od -c` prints the file content in character format (additionally it prints the byte offset at the beginning of each line that it outputs).
 
+## History expansion
+
+History expansion is done via excalamation marks (called ›bangs‹). `!!` executes the previous command again. In order to execute the third most recent command again, you would type `!-3`. `!cd` would execute the most recent command starting with `cd`, while `!?cd?` would execute the most recent command that had `cd` somewhere in it. With `!123` you can execute a command again based on its index in the history (as you can retrieve via `history` or by accessing `~/.bash_history`). If you only want to print the command from history, but not execute, add `:p` to the history expansion command: `!-5:p`. Though `echo "!-5"` would work as well. `!$` will retrieve the final word from your previous command, and `!*` will retrieve all arguments from your last command (unlike `!!`, which retrieve the program and its arguments). With `^` you can easily replace a string in your last command and execute it again. Let's say you mistyped a command: `mount /dev/s1 /media/hdd`. You can then correct it and execute it, by just typing `^s1^sda1`. Alternatively, you could write: `!!:s/s1/sda1/`
+
 ## Mounting and unmounting
 
 `lstblk`
@@ -231,15 +231,17 @@ You can also use `od` which displays the contents of an input file, too, but let
 
 Unmounting it is done via `umount /dev/sda1`
 
-<!--
 ## Syncing two folders
 
-Bringing to folder in sync can be done with the `rsync` tool. I would usually run something like this:
+Bringing to folder in sync can be done with the `rsync` (remote sync) tool. I would usually run something like this:
 
 ```bash
-rsync
+rsync -aPv ~/media/Music someone@1.2.3.4:~/media/
 ```
--->
+
+## `ed` and `sed`
+
+[...]
 
 ## Awk
 
@@ -255,7 +257,7 @@ awk options 'selection _criteria { action }' input-file > output-file
 
 `ps -ef | grep processname`
 \
--> pipe ps into grep, i.e. list the currently running processes, send the list to `grep` which searches for lines containing the pattern `processname` (as regular expression)
+-> pipe `ps` into `grep`, i.e. list the currently running processes, send the list to `grep` which searches for lines containing the pattern `processname` (as regular expression)
 
 ## Check size of folders
 
@@ -264,6 +266,14 @@ To check the size of the folders in the current folder (and excluding subfolders
 `du -sh --max-depth=1 ./*/`
 \
 (`-s` stands for summarize and `-h` for human-readable)
+
+## Directory stack
+
+You can push directories to a stack and remove directories from them with `pushd` and `popd`, respectively, followed by the directory name, and you can view your directory stack with `dirs`. When you type `pushd` with no directory name it will swap the two top-most directories from your stack and take you to the new top directory. If you want to swap the top-most and the third directory and move to the latter, you can type `pushd +2`.
+
+## random snippets
+
+- in all of the current folder's subfolders and files, print the paths of those files and folders that contain the string ›ktl‹: `ls -d ./**/*  | grep -i 'ktl'`
 
 ## Books
 
