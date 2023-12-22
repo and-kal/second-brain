@@ -275,6 +275,8 @@ You can push directories to a stack and remove directories from them with `pushd
 
 - in all of the current folder's subfolders and files, print the paths of those files and folders that contain the string ›ktl‹: `ls -d ./**/*  | grep -i 'ktl'`
 
+- find folders with the name ›needle‹ (case-insensitive) in all of the current folder's subfolders: `find ./ -type d -iname "*needle*" -print`
+
 ## Books
 
 - Daniel J. Barrett: Efficient Linux at the Command Line (O'Reilly Media, 2022)

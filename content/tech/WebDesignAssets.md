@@ -31,32 +31,32 @@ If you really just want to use a template and fill it with your content, or if y
 
 Developing your own design and style system for a website can take a very long time and you might end up with a whole lot of custom CSS rules, media queries etc. for the single components of your page. From my experience, using a CSS frameworks will enhance this process quite a bit as those often come with a lot of defaults that just work visually and allow you to focus on certain aspects of your designs. Frameworks like Tailwind will also limit your choices with regards to sizes, spacing etc., which I find helpful in coming up with a consistent design. However, for most of these frameworks you will need to dedicate some time learning the syntax.
 
+- [awesome-css-frameworks list](https://github.com/troxler/awesome-css-frameworks) - find a whole lot more here
+- [Bulma](https://bulma.io/) - »a free, open source framework that provides ready-to-use front-end components that you can easily combine to build responsive web interfaces«
+- [Fomantic-UI](https://github.com/fomantic/Fomantic-UI/) - an active fork of the seemingly deprecated Semantic-UI
 - [Sakura](https://oxal.org/projects/sakura/) - »a minimal classless css framework / theme«
 - [Tailwind](https://tailwindcss.com/) - I find this one quite accessible
-- [Fomantic-UI](https://github.com/fomantic/Fomantic-UI/) - an active fork of the seemingly deprecated Semantic-UI
-- [Bulma](https://bulma.io/) - »a free, open source framework that provides ready-to-use front-end components that you can easily combine to build responsive web interfaces«
-- [awesome-css-frameworks list](https://github.com/troxler/awesome-css-frameworks) - find a whole lot more here
 
 ### fun stuff
 
-- [win95.css](https://github.com/AlexBSoft/win95.css/) - Windows 95-style CSS template based on Bootstrap 4
-- [PSone.css](https://github.com/98mprice/PSone.css/) - PlayStation 1 (Tekken, Final Fantasy VII) style CSS framework
-- [NES.css](https://github.com/nostalgic-css/NES.css/) - NES/Famicom style CSS framework
 - [aesthetic-css](https://github.com/torch2424/aesthetic-css/) - Windows98 & XP style CSS framework
+- [NES.css](https://github.com/nostalgic-css/NES.css/) - NES/Famicom style CSS framework
 - [Presentation at Erfa Essen: ›Retro-Websites bauen‹](https://media.ccc.de/v/petitfoo-4241-retro-websites-bauen) - in German
+- [PSone.css](https://github.com/98mprice/PSone.css/) - PlayStation 1 (Tekken, Final Fantasy VII) style CSS framework
+- [win95.css](https://github.com/AlexBSoft/win95.css/) - Windows 95-style CSS template based on Bootstrap 4
 
 ## Colours, shapes, etc.
 
 - [Adobe Color Wheel](https://color.adobe.com/create/color-wheel/) - really helpful in creating custom colour pallets
-- [Paletton](http://paletton.com/) - a similar tool
-- [Solarized](https://ethanschoonover.com/solarized/)
 - [Colorhunt](https://colorhunt.co/)
-- [Gradient Generator by Josh W Comeau](https://www.joshwcomeau.com/gradient-generator/)
-- [uiGradients](https://uigradients.com/)
-- [Fancy Border Radius](https://9elements.github.io/fancy-border-radius/) - easily create intricate shapes for your buttons, boxes etc.
-- [CSS Separator Generator](https://wweb.dev/resources/css-separator-generator/)
 - [CSS Hover Effects](https://ianlunn.github.io/Hover/) - collection of CSS hover effects
+- [CSS Separator Generator](https://wweb.dev/resources/css-separator-generator/)
+- [Fancy Border Radius](https://9elements.github.io/fancy-border-radius/) - easily create intricate shapes for your buttons, boxes etc.
+- [Gradient Generator by Josh W Comeau](https://www.joshwcomeau.com/gradient-generator/)
+- [Paletton](http://paletton.com/) - a similar tool to Adobe Color Wheel
 - [randoma11y](https://randoma11y.com/) - generates a set of duotone colours with focus on readability/accessibility
+- [Solarized](https://ethanschoonover.com/solarized/)
+- [uiGradients](https://uigradients.com/)
 
 ## Website builders
 
@@ -71,28 +71,28 @@ If you really don't want to do any coding at all, you can try one of these no-co
 ## Static Site Generators
 
 - [11ty/eleventy](https://www.11ty.dev/)
+- [JAMStack themes](https://jamstackthemes.dev/) - a collection of collections of themes for several SSGs
 - [Jekyll](https://jekyllrb.com/)
 - [Pelican](https://docs.getpelican.com/)
 - [Presentation at rC3 2021: › Make it static!‹](https://media.ccc.de/v/rc3-2021-cwtv-343-make-it-static)
-- [JAMStack themes](https://jamstackthemes.dev/) - a collection of collections of themes for several SSGs
 - [many, many more SSGs](https://jamstack.org/generators/)
 
 ### Blogging
 
 - [ʕ•ᴥ•ʔ Bear](https://bearblog.dev/) - a nice and simple blogging platform
 - [Blot](https://blot.im/) - let's turn a folder into a website easily
-- [Hugo](https://github.com/gohugoio/hugo/) - very powerful and fast once you have got a grip on it, but not exactly easy to learn for beginners
 - [Hexo](https://hexo.io/) - »A fast, simple & powerful blog framework«
+- [Hugo](https://github.com/gohugoio/hugo/) - very powerful and fast once you have got a grip on it, but not exactly easy to learn for beginners
 
 ## Hosting and Domains
 
+- [afraid.org's FreeDNS](https://freedns.afraid.org/) - offers six subdomains for free from their vast portfolio of random and strange domains
 - [glitch.me](https://glitch.com/features/) - simple and powerful platform for hosting, sharing, remixing and developing websites and web apps
 - [neocities](https://neocities.org)
 - [repl.it](https://replit.com/) - online REPL / IDE
 - [sdfeu.org](https://sdfeu.org/w/tutorials:building_a_website) - you can host a website on the SDF Public Access Unix System, if you are a validated user (it will cost 5 Euros as a token of trust and it's really for a good cause)
-- [tildepages.org](https://tildepages.org/) - you can host static pages on their [Pubnix](https://projectsegfau.lt/pubnix/faq) systems
-- [afraid.org's FreeDNS](https://freedns.afraid.org/) - offers six subdomains for free from their vast portfolio of random and strange domains
 - [Surge, Firebase, Vercel, Github Pages, Netlify](https://dev.to/afozbek/5-ways-to-host-your-applications-4d77/) are other popular options
+- [tildepages.org](https://tildepages.org/) - you can host static pages on their [Pubnix](https://projectsegfau.lt/pubnix/faq) systems
 
 ## Content management systems
 
@@ -102,12 +102,12 @@ If you want to have your own CMS and run a blog or something, you can get some a
 
 ## other useful assets
 
-- [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts/) - helps you to host Google fonts locally instead of relying on Google APIs
-- [Component Gallery](https://component.gallery/) - Ressource of components to be used in Vanilla JS or JS frameworks
-- [Icon Buddy](https://iconbuddy.app) - customizable, open source SVG icons
-- [Favic-o-Matic](https://favicomatic.com/)
-- [CSS background design patterns](https://www.magicpattern.design/tools/css-backgrounds/)
 - [Animate.css](https://animate.style/)
+- [Component Gallery](https://component.gallery/) - Ressource of components to be used in Vanilla JS or JS frameworks
+- [CSS background design patterns](https://www.magicpattern.design/tools/css-backgrounds/)
+- [Favic-o-Matic](https://favicomatic.com/)
+- [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts/) - helps you to host Google fonts locally instead of relying on Google APIs
+- [Icon Buddy](https://iconbuddy.app) - customizable, open source SVG icons
 
 ## random stuff
 
@@ -121,16 +121,17 @@ If you want to have your own CMS and run a blog or something, you can get some a
 
 ## awesome lists
 
-- [sotayamashita/awesome-css](https://github.com/sotayamashita/awesome-css)
-- [brabadu/awesome-fonts](https://github.com/brabadu/awesome-fonts)
-- [Famolus/awesome-sass](https://github.com/Famolus/awesome-sass)
-- [myles/awesome-static-generators](https://github.com/myles/awesome-static-generators)
+- [anderspitman/awesome-tunneling](https://github.com/anderspitman/awesome-tunneling)
 - [b-long/awesome-static-hosting-and-cms](https://github.com/b-long/awesome-static-hosting-and-cms)
-- [obetomuniz/awesome-webcomponents](https://github.com/obetomuniz/awesome-webcomponents)
-- [willianjusten/awesome-svg](https://github.com/willianjusten/awesome-svg)
-- [davidsonfellipe/awesome-wpo](https://github.com/davidsonfellipe/awesome-wpo)
-- [instanceofpro/awesome-backbone](https://github.com/sadcitizen/awesome-backbone)
-- [emijrp/awesome-awesome](https://github.com/emijrp/awesome-awesome)
 - [bayandin/awesome-awesomeness](https://github.com/bayandin/awesome-awesomeness)
-- [sindresorhus/awesome](https://github.com/sindresorhus/awesome)
+- [brabadu/awesome-fonts](https://github.com/brabadu/awesome-fonts)
+- [davidsonfellipe/awesome-wpo](https://github.com/davidsonfellipe/awesome-wpo)
+- [emijrp/awesome-awesome](https://github.com/emijrp/awesome-awesome)
+- [Famolus/awesome-sass](https://github.com/Famolus/awesome-sass)
+- [instanceofpro/awesome-backbone](https://github.com/sadcitizen/awesome-backbone)
 - [jnv/list](https://github.com/jnv/lists)
+- [myles/awesome-static-generators](https://github.com/myles/awesome-static-generators)
+- [obetomuniz/awesome-webcomponents](https://github.com/obetomuniz/awesome-webcomponents)
+- [sindresorhus/awesome](https://github.com/sindresorhus/awesome)
+- [sotayamashita/awesome-css](https://github.com/sotayamashita/awesome-css)
+- [willianjusten/awesome-svg](https://github.com/willianjusten/awesome-svg)

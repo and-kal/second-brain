@@ -38,11 +38,13 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 
 ## Max4Live
 
+- [-re:mix-](https://github.com/el-quinto/mix) (realtime sampling, slicing and re-sequencing)
 - [Audiobulb's M4L-BULBS](https://www.audiobulb.com/m4l-bulbs.html)
 - [Benjamin Van Esser's M4L devices](https://www.benjaminvanesser.be/software/maxforlive.html)
 - [CHAOS // ORDER - Firefly synchronizer](https://tensenpark.gumroad.com/l/firefly_synchronizer)
 - [Dirge](https://github.com/andr-ew/dirge)
 - [DJBB Loopmaker](https://djbajablast.gumroad.com/l/loopmaker)
+- fors.fm: [Opal](https://opal.fors.fm/) ($) & [Pluck](https://fors.fm/pluck)
 - [granolatech-M4L](https://github.com/akokai/granolatech-M4L)
 - [K-Devices Max For Live](https://k-devices.com/product-category/m4l/) ($)
 - [k-teck devices](https://k-teck.co.uk/max-for-live) ($)
@@ -51,11 +53,9 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - [MIDI UTILITIES by Mono Tale](https://www.monotale.com.ar/) ($)
 - [Modulation Lerp](https://github.com/zsteinkamp/m4l-Modulation-Lerp)
 - [Monolasem4l](https://llllllll.co/t/monolasem4l/24916)
-- fors.fm: [Opal](https://opal.fors.fm/) ($) & [Pluck](https://fors.fm/pluck)
 - [PolyMind](https://maxforlive.com/library/device/2192/polymind)
 - [proc—c](https://proccpri.bandcamp.com/album/prini-proc-c-patch)
 - [prosody](https://github.com/andr-ew/prosody) collection (by [andr-ew](https://github.com/andr-ew/))
-- [-re:mix-](https://github.com/el-quinto/mix) (realtime sampling, slicing and re-sequencing)
 - [Stepic](https://devicemeister.com/stepic-for-live/) ($)
 - [swirlytape](https://maxforlive.com/library/device/3014/swirlytape)
 - [VIZZable-2](https://github.com/zealtv/VIZZable-2)
