@@ -4,32 +4,40 @@ date: "2023-03-04"
 draft: false
 ---
 
-
 ## Maggie Nelson
 
 I'm constantly amazed by the lucidity of Maggie Nelson's writing and here's multi-faceted analyses. Damn, even the [@MaggieNelsonBot on Twitter](https://twitter.com/MaggieNelsonBot) that generates mostly nonsensical aphorisms from parts of sentences out of Maggie Nelson's books is a great read. (Their actually not nonsensical to me, just oftentimes syntactically incorrent—just like poetry.) Since her essays are often so dense that a lot of ideas slip through my fingers when I don't contemplate them again, I collect a bunch of quotes here.
 
-> The image of the Marlboro man riding his horse and smoking his cigarette has struck with me for many years…all it means is that the image seduced me…it didn’t widen my sensibilities, compassion or intuition. Whereas an art that affects you in the moment, but which you then find hard to remember, is straining to bring you to another level. It offers images and ideas from that other level, that other way of being, which is why you find them hard to remember. But it has opened you to the possibility of growing into what you are not yet, which is exactly what art should do. 
-(Richard Foreman: *Unbalancing Acts. Foundations for a Theatre*)
+> The image of the Marlboro man riding his horse and smoking his cigarette has struck with me for many years…all it means is that the image seduced me…it didn’t widen my sensibilities, compassion or intuition. Whereas an art that affects you in the moment, but which you then find hard to remember, is straining to bring you to another level. It offers images and ideas from that other level, that other way of being, which is why you find them hard to remember. But it has opened you to the possibility of growing into what you are not yet, which is exactly what art should do.
+
+(Richard Foreman: _Unbalancing Acts. Foundations for a Theatre_)
 
 > We abide by cultural directives that urge us: clarify each thought, each experience, so you can cull from them their single, dominant meaning and, in the process, become a responsible adult who knows what he or she thinks,' Foreman has said. 'But what I try to show is the opposite: how at every moment, the world presents us with a composition in which a multitude of meanings and realities are available, and you are able to swim, lucid and self-contained, in that turbulent sea of multiplicity.
-(Richard Foreman: *Unbalancing Acts. Foundations for a Theatre*)
 
-> 'Trans' may work well enough as shorthand, but the quickly developing mainstream narrative it evokes ('born in the wrong body,' necessitating an orthopedic pilgrimage between two fixed destinations) is useless for some—but partially, or even profoundly, useful for others? That for some, 'transitioning' may mean leaving one gender entirely behind, while for others—like Harry [Dodge], who is happy to identify as a butch on T—it doesn’t? I’m not on my way anywhere, Harry sometimes tells inquirers. How to explain, in a culture frantic for resolution, that sometimes the shit stays messy? I do not want the female gender that has been assigned to me at birth. Neither do I want the male gender that transsexual medicine can furnish and that the state will award me if I behave in the right way. I don’t want any of it. How to explain that for some, or for some at some times, this irresolution is OK—desirable, even (e.g., 'gender hackers')—whereas for others, or for others at some times, it stays a source of conflict or grief? How does one get across the fact that the best way to find out how people feel about their gender or their sexuality—or anything else, really—is to listen to what they tell you, and to try to treat them accordingly, without shellacking over their version of reality with yours?' 
-(*The Argonauts*)
+(Richard Foreman: _Unbalancing Acts. Foundations for a Theatre_)
 
-> I, too, have often wondered whether there exists a greater pleasure than the feeling—however brief or illusory—that by writing, one is in fact incinerating layers of crap rather than tossing more of it onto the landfill. This can be a difficult feeling to achieve when the medium is language. One cannot simply offer up a white page and a stopwatch and produce the illuminating, cleansing effect of ›silence‹ [...] 
-(*The Art of Cruelty*)
+> 'Trans' may work well enough as shorthand, but the quickly developing mainstream narrative it evokes ('born in the wrong body,' necessitating an orthopedic pilgrimage between two fixed destinations) is useless for some—but partially, or even profoundly, useful for others? That for some, 'transitioning' may mean leaving one gender entirely behind, while for others—like Harry [Dodge], who is happy to identify as a butch on T—it doesn’t? I’m not on my way anywhere, Harry sometimes tells inquirers. How to explain, in a culture frantic for resolution, that sometimes the shit stays messy? I do not want the female gender that has been assigned to me at birth. Neither do I want the male gender that transsexual medicine can furnish and that the state will award me if I behave in the right way. I don’t want any of it. How to explain that for some, or for some at some times, this irresolution is OK—desirable, even (e.g., 'gender hackers')—whereas for others, or for others at some times, it stays a source of conflict or grief? How does one get across the fact that the best way to find out how people feel about their gender or their sexuality—or anything else, really—is to listen to what they tell you, and to try to treat them accordingly, without shellacking over their version of reality with yours?'
+> (_The Argonauts_)
 
-> Who would want [...] a world in which everything nice were partitioned off from everything horrible, thereby draining the world of its wild, nearly unnavigable paradoxes? And who would want a feminism—or any form of social justice—that lessened our apprehension of such difficult coexistences, or diminished our access to this electrical current? 
-(*The Art of Cruelty*)
+> I, too, have often wondered whether there exists a greater pleasure than the feeling—however brief or illusory—that by writing, one is in fact incinerating layers of crap rather than tossing more of it onto the landfill. This can be a difficult feeling to achieve when the medium is language. One cannot simply offer up a white page and a stopwatch and produce the illuminating, cleansing effect of ›silence‹ [...]
+> (_The Art of Cruelty_)
+
+> Who would want [...] a world in which everything nice were partitioned off from everything horrible, thereby draining the world of its wild, nearly unnavigable paradoxes? And who would want a feminism—or any form of social justice—that lessened our apprehension of such difficult coexistences, or diminished our access to this electrical current?
+> (_The Art of Cruelty_)
 
 > Perhaps the confusion lies in the ›personal is political‹ formulation itself, which offers but a simple copula where there actually exists a multitude of possible relations. As Jacqueline Rose has put it in The Haunting of Sylvia Plath, it isn’t just that ›the personal is political—for a long time feminism has insisted that what goes on in private is a political matter that concerns us all,‹ but rather that ›psychic life in itself will not be relegated to the private, it will not stay in its proper place. It shows up on the side of the historical reality to which it is often opposed.‹ It’s this inappropriate ›showing up‹ that interests me—a kind of crashing of the party that cannot be stopped, only contended with, when it occurs.
-(*The Art of Cruelty*)
+> (_The Art of Cruelty_)
 
 > [Lars] von Trier’s cruelty does not lie in any capacity to strip away cant or delusion, but rather in an ability to construct malignant, ultimately conventional fictions that masquerade as parables of profundity, or as protests against the cruelties of the man’s world in which we must inevitably live and suffer. Or, worse—and more likely—von Trier means to present these fictions with tongue so firmly in cheek that if we take them as parables of profundity, the joke may be on us. Von Trier imbues René Girard’s notion of sacrificial violence with an ironic, perhaps even a campy sensibility. But unlike the campiness of, say, Paul McCarthy or John Waters, von Trier keeps his cards close to his chest, as if to preserve his right—and the culture’s—to an entrenched, inevitable chauvinist malevolence. [...] Misogyny, when expressed or explored by men, remains a timeless classic. I suppose, in the end, I remain grateful to ›Breaking the Waves‹ for one thing: it spoke to a question I’ve had for some time—namely, what purpose could a female Christ serve in the (male) imagination? As writer Eileen Myles has put it, ›What would be the point in seeing [a woman] half nude and nailed up? Where’s the contradiction? [...]‹ The cruelty of Breaking the Waves is its revelation, intentional or not, that there could be no sustaining contradiction—that the redundancy of female victimization inflates into a sickening, fundamentally unbelievable martyrdom.
 
 ## Gregory Bateson
 
 > [I]n no system which shows mental characteristics can any part have unilateral control over the whole. In other words, the mental characteristics of the system are immanent, not in some part, but in the system as a whole.
-(*The Cybernetics of ›Self‹. A Theory of Alcoholism*)
+
+(_The Cybernetics of ›Self‹. A Theory of Alcoholism_)
+
+## unknown
+
+> Eszter Bálint is sitting in a room in Florida different from the one you are in now. She is recording the sound of her speaking voice and she is going to play it back into the room again and again until the resonant frequencies of the room reinforce themselves so that any semblance of her speech, with perhaps the exception of rhythm, is destroyed. She regards this activity not so much as a demonstration of a physical fact, but more as a way to smooth out any irregularities her speech might have.
+
+(found in [Elisa's last.fm shoutbox](https://www.last.fm/user/herzschoenheit))
