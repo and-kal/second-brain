@@ -84,19 +84,48 @@ In Haskell, values cannot be reassigned.
 
 ### Some useful functions and modules
 
-Data.List is module with many useful list manipulation and analysis functions. For example `nub` (meaning »essence«) removes duplicate elements from a list:
+#### `Data.List`
 
-```
+`Data.List` is module with many useful list manipulation and analysis functions. For example `nub` (meaning »essence«) removes duplicate elements from a list:
+
+```haskell
 import Data.List (nub)
 
 length $ nub [0,1,2,0,1,2,0,1,2,3]
+-- returns 4
 ```
 
-<!-- `intersperse`, `intercalcate`, `concat` -->
+`find` takes a condition and a list and returns the first element that fulfills the condition (as an [ADT](#algebraic-data-types-adt)).
+
+```haskell
+import Data.List
+
+-- find :: (a -> Bool) -> [a] -> Maybe a
+find (\val -> val `mod` 3 == 0) [2,45,99]
+
+-- returns Just 45
+```
+
+Note that, if you want to supply your own equality function (as we just did with `find`), but for `nub`, `delete`, `union`, `intersect` and `group`, you would have their respective `nubBy`, `deleteBy`, `unionBy`, `intersectBy` or `groupBy` counterparts.
+
+There's many more useful list-related functions in `Data.List`, e.g.: `intersperse`, `intercalcate`, `concat`, `isPrefixOf`, `isSuffixOf`, `isInfixOf`, `elemIndex`, `findIndex`, `lines`, `words`, `\\` (list difference function), `!!`, `insert` etc..
+
+<!--
+#### `Data.Function`
+
+`on`
+-->
+<!--
+#### `Data.Char`
+
+This module provides a set of function for mapping over lists of characters (aka. strings).
+-->
+
+#### `id`
 
 `id` is the identity funtion in Haskell: »In functional languages, functions are first class values that you can pass as a parameter. So one of the most common uses of `id` comes up when you pass a function as a parameter to another function to tell it what to do. One of the choices of what to do is likely to be "just leave it alone" - in that case, you pass id as the parameter.« ([source](https://stackoverflow.com/a/3136407/20232056))
 
-[tbc.]
+<!-- [tbc.] -->
 
 ### Recursion and iteration
 
@@ -467,6 +496,8 @@ data NameOfDataType = NameOfConstructorOne String
 ```
 
 `deriving Show` is optional. It's used so that you can print the values without having to write a custom function for that (_automatic deriving_). The names of constructors must be unique inside a module.
+
+<!-- `Maybe`, `Just`, `Nothing` -->
 
 ## Pattern matching
 

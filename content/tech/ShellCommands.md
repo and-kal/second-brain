@@ -277,6 +277,8 @@ You can push directories to a stack and remove directories from them with `pushd
 
 - find folders with the name ›needle‹ (case-insensitive) in all of the current folder's subfolders: `find ./ -type d -iname "*needle*" -print`
 
+<!-- - deflate a binary file: `printf "\x78\x9c" | cat - data.bin | zpipe -d | strings -el` ([source](https://lock.cmpxchg8b.com/hiew.html)) -->
+
 ## Books
 
 - Daniel J. Barrett: Efficient Linux at the Command Line (O'Reilly Media, 2022)
