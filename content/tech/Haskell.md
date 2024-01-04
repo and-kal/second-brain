@@ -550,9 +550,9 @@ Alternatively, we could have used ›record syntax‹ for writing a data type, w
 
 ```haskell
 data Person = { firstName :: String
-                      , lastName :: String
-                      , age :: Int
-                      } deriving (Show)
+              , lastName :: String
+              , age :: Int
+              } deriving (Show)
 ```
 
 ### Type constructors
