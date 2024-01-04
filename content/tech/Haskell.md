@@ -82,7 +82,9 @@ Side effects are _elements outside of the program control_, for example I/O, net
 
 In Haskell, values cannot be reassigned.
 
-### Some useful functions and modules
+### Useful functions and modules
+
+Functions and types that have a similar purpose can be bundled into module. You can create your own modules with the `module` keyword followed by a name and the functions (and types) it exports and a `where` statement. See for example the [TidalCycles core module](https://hackage.haskell.org/package/tidal-1.9.4/docs/src/Sound.Tidal.Core.html). There will also be cases where you don't want to export all functions you defined, because are only helper functions. In that case, put the functions to be exported in parantheses before the `where` as in the [Paths_tidal module](https://hackage.haskell.org/package/tidal-1.9.4/docs/src/Paths_tidal.html#version).
 
 #### `Data.List`
 
@@ -115,11 +117,33 @@ There's many more useful list-related functions in `Data.List`, e.g.: `intersper
 
 `on`
 -->
-<!--
+
 #### `Data.Char`
 
 This module provides a set of function for mapping over lists of characters (aka. strings).
--->
+
+It also exports functions like `ord` and `chr`, which let you convert characters to their numeric Unicode values and vice versa.
+
+The documentation for `Data.Char` can be found [here](https://hackage.haskell.org/package/base-4.19.0.0/docs/Data-Char.html).
+
+#### `Data.Map`
+
+Some functions in `Data.Map` have the same name as functions from `Prelude` and `Data.List`. In order to avoid conflicts, you need to use a qualified import:
+
+```haskell
+import qualified Data.Map as Map
+```
+
+You can now use the functions from this module, by writing `Map.` followed by the name of the function.
+
+The documentation for `Data.Map` can be found [here](https://hackage.haskell.org/package/containers-0.4.0.0/docs/Data-Map.html).
+
+#### `Data.Set`
+
+Sets are similar to lists and maps, but they are implemented so that they will contain no duplicate elements and that their elements are ordered.
+
+Some of `Data.Set`s functions are
+`fromList`, `toList` `intersection`, `difference`, `union`, `null`, `size`, `member`, `empty`, `singleton`, `insert`, `delete`, `isSubsetOf` and of course their own `filter` and `map`.
 
 #### `id`
 
@@ -255,30 +279,45 @@ in  a ++ " " ++ b
 
 ## Data types and typeclasses
 
-Types can be determined by invoking `:t` followed by the expression in question. This will return the expression followed by `::` (which reads as ›has type of‹) followed by the type.
+Types can be determined by invoking `:t` followed by the expression in question. This will return the expression followed by `::` (which reads as ›has type of‹ and is also known as ›Paamayim Nekudotayim‹) followed by the type.
 
-Standard data types in Haskell are:
+Some standard data types in Haskell are:
 
 - Lists (`[]`)
 - Booleans (`Bool`)
 - Characters (`Char`)
 - Strings (`String` or `[Char]`)
+- Integers (`Int` (bounded) or `Integer` (no upper or lower boundary) or `Integral` (whole numbers))
 - Tuples (`()`)
 - Unit (`()`)
 - Function Types
 - IO and IOError Types
-- `Maybe`, `Either`, `Ordering`
+- `Maybe`, `Either`
 
 Further common types:
 
-- Integers (`Int` (bounded) or `Integer` (no upper or lower boundary) or `Integral` (whole numbers))
 - exact rational numbers (`Ratio`)
 - Floating point number with single precision (`Float`)
 - Floating point number with double precision (`Double`)
+- `Number`
 - `Fractional`
-- Ordering (`Ord`; N.B. Ordering is different `Number`)
 
-When defining types, constructors, type classes or kinds yourself they must start with an uppercase letter - or if you give them an operator name, that one should start with a `:`.
+For storing key-value pairs you would use association lists (or: dictionaries), which are just list of pairs:
+
+```haskell
+[("Alpha","one")
+,("Beta","two")
+,("Gamma","three")
+]
+```
+
+Usually, you would use the [`Data.Map`](#datamap) module here, which exports a `Map` type and corresponding functions useful for key-value pairs. Maps are unordered though.
+
+_Type classes_ are like interfaces in other programming languages in that they non-exhaustively define certain behaviour of a type.
+
+Some common type classes are `Eq`, `Ord`, `Enum`, `Bounded`, `Show` (converts to string), `Read` (converts from string) and `Ord` (can have three values: `LT`, `EQ` and `GT`).
+
+Good to know: When defining types, constructors, type classes or kinds yourself they must start with an uppercase letter - or if you give them an operator name, that one should start with a `:`.
 
 ### Lists
 
@@ -381,7 +420,7 @@ TODO:
 
 ### Type annotations
 
-In order to xplicitely say, which type an expression is supposed to have, we can use the `::` operator at the end of an expression followed by the desired type:
+In order to explicitely say, which type an expression is supposed to have, we can use the `::` operator at the end of an expression followed by the desired type:
 
 <!-- TODO:
 ```haskell
@@ -481,9 +520,17 @@ A data type without constructors and with empty alternatives is similar to an en
 data NameOfDataType = OneAlternative | TheOtherAlternative | AThirdAlternative
 ```
 
+Notice that there is also a `type` keyword, which is not used for defining types though, but only for _type synonyms_:
+
+```haskell
+type String = [Char]
+```
+
+Type synonyms are useful for making code more readable and keeping it well documented.
+
 ### Algebraic Data Types (ADT)
 
-Instead of OOP-tyle classes, in Haskell you will use data types. One common data type are ADTs. ADTs are defined by two sorts of data:
+Instead of OOP-tyle classes, in Haskell you will use data types. One common data type are Algebraic Data Types. ADTs are defined by two sorts of data:
 
 - »A name for the type that will be used to represent its values.«
 - »A set of constructors that will be used to create new values. These constructors may have arguments that hold values of the specified types.«
@@ -491,13 +538,40 @@ Instead of OOP-tyle classes, in Haskell you will use data types. One common data
 ```haskell
 data NameOfDataType = NameOfConstructorOne String
                     | NameOfConstructorTwo String Integer
-                    | NameOfConstructorTree String String Bool
-                    deriving Show
+                    | NameOfConstructorThree String String Bool
+                    deriving (Show)
 ```
 
-`deriving Show` is optional. It's used so that you can print the values without having to write a custom function for that (_automatic deriving_). The names of constructors must be unique inside a module.
+`deriving (Show)` is optional. It's used so that you can print the values without having to write a custom function for that (_automatic deriving_). What happens is that our data type becomes a member of the `Show` typeclass.
 
-<!-- `Maybe`, `Just`, `Nothing` -->
+Also notice that inside of our ADT, we defined three more types `NameOfConstructorOne`, `NameOfConstructorTwo` and `NameOfConstructorThree`. The names of these constructors must be unique inside a module. However, constructors can have the same name as the data type that they belong to: `data Point = Point Float Float deriving (Show)`
+
+Alternatively, we could have used ›record syntax‹ for writing a data type, which would look like this:
+
+```haskell
+data Person = { firstName :: String
+                      , lastName :: String
+                      , age :: Int
+                      } deriving (Show)
+```
+
+### Type constructors
+
+The previously defined data types are _value constructors_, because they takes some values as parameters and give out a new value. In a similar manner we also have _type constructor_, which produce new types, for example:
+
+```haskell
+data Maybe a = Nothing | Just a
+```
+
+`Maybe` is not a type in itself. Only if we provide some value for `a` (i.e. parametrizing it) does it become a type (a so-called _concrete type_):
+
+```haskell
+:t Just "Hello" -- Just "Hello" :: Maybe [Char]
+
+:t Just [1,2,3,4] -- Just "1234" :: Num a => Maybe [a]
+
+:t Nothing -- Nothing :: Maybe a
+```
 
 ## Pattern matching
 
@@ -518,7 +592,7 @@ In order to use two elements in pattern matching, you can write `(x:y:zs)`.
 
 ### as patterns
 
-›as patterns‹ allow you to destructure data according to the pattern, but still keep a reference to the original data:
+_as patterns_ allow you to destructure data according to the pattern, but still keep a reference to the original data:
 
 ```haskell
 thirdLetter :: (Char a) => [a] -> a
@@ -573,6 +647,8 @@ The online repository for Haskell libraries are called _Hackage_ (for _cabal_) a
 The main installer for Haskell is _GHCUp_.
 
 Haskell funtions, types and typeclasses can be grouped into modules and a Haskell function can be thought of as a collection of modules. `Prelude` is the standard Haskell module that is always imported by default.
+
+In order to search Haskell libraries by function names, or type signatures there is an API called [Hoogle](https://hoogle.haskell.org/).
 
 ## Sources
 
