@@ -33,3 +33,15 @@ Mount-DiskImage -ImagePath "C:\whatever.iso"
 ```
 
 (For more information check the [Windows Powershell docs](https://github.com/MicrosoftDocs/windows-powershell-docs/blob/main/docset/winserver2022-ps/storage/Mount-DiskImage.md).)
+
+## Creating an empty file
+
+```powershell
+echo $null >> config.ini
+```
+
+## Setting a environment variable
+
+```powershell
+$Env:AWS_DEFAULT_REGION="eu-central-1"
+```

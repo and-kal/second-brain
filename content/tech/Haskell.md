@@ -526,7 +526,7 @@ Notice that there is also a `type` keyword, which is not used for defining types
 type String = [Char]
 ```
 
-Type synonyms are useful for making code more readable and keeping it well documented.
+Type synonyms are useful for making code more readable and keeping it well documented. Types and type synonyms can only be used in the type part of your Haskell code, i.e. not inside of function definitions or anything (unless you use a `::` somewhere inside your function body).
 
 ### Algebraic Data Types (ADT)
 
