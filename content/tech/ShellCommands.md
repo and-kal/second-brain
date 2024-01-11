@@ -189,9 +189,15 @@ new aliases can be defined like so: `alias name='action'`
 
 `grep` is used for searching and filtering strings based on an input string or regular expression. It actually stands for `global search for a regular expression and print out matched lines`. For inverse searching (filtering out the elements not containing some string, use the `-v` flag.)
 
+<!--
+## epoll
+
+[epoll](https://darkcoding.net/software/epoll-the-api-that-powers-the-modern-internet/)
+
 # Pattern-matching and variables
 
 [...]
+-->
 
 ## Wildcards and globbing
 
@@ -219,7 +225,7 @@ You can also use `od` which displays the contents of an input file, too, but let
 
 ## History expansion
 
-History expansion is done via excalamation marks (called ›bangs‹). `!!` executes the previous command again. In order to execute the third most recent command again, you would type `!-3`. `!cd` would execute the most recent command starting with `cd`, while `!?cd?` would execute the most recent command that had `cd` somewhere in it. With `!123` you can execute a command again based on its index in the history (as you can retrieve via `history` or by accessing `~/.bash_history`). If you only want to print the command from history, but not execute, add `:p` to the history expansion command: `!-5:p`. Though `echo "!-5"` would work as well. `!$` will retrieve the final word from your previous command, and `!*` will retrieve all arguments from your last command (unlike `!!`, which retrieve the program and its arguments). With `^` you can easily replace a string in your last command and execute it again. Let's say you mistyped a command: `mount /dev/s1 /media/hdd`. You can then correct it and execute it, by just typing `^s1^sda1`. Alternatively, you could write: `!!:s/s1/sda1/`
+History expansion is done via excalamation marks (called ›bangs‹). `!!` executes the previous command again. In order to execute the third most recent command again, you would type `!-3`. `!cd` would execute the most recent command starting with `cd`, while `!?cd?` would execute the most recent command that had `cd` somewhere in it. With `!123` you can execute a command again based on its index in the history (as you can retrieve via `history` or by accessing `~/.bash_history`). If you only want to print the command from history, but not execute, add `:p` to the history expansion command: `!-5:p`. Though `echo "!-5"` would work as well. `!$` will retrieve the final word from your previous command, and `!*` will retrieve all arguments from your last command (unlike `!!`, which retrieves the program and its arguments). With `^` you can easily replace a string in your last command and execute it again. Let's say you mistyped a command: `mount /dev/s1 /media/hdd`. You can then correct it and execute it, by just typing `^s1^sda1`. Alternatively, you could write: `!!:s/s1/sda1/`
 
 ## Mounting and unmounting
 
@@ -276,6 +282,8 @@ You can push directories to a stack and remove directories from them with `pushd
 - in all of the current folder's subfolders and files, print the paths of those files and folders that contain the string ›ktl‹: `ls -d ./**/*  | grep -i 'ktl'`
 
 - find folders with the name ›needle‹ (case-insensitive) in all of the current folder's subfolders: `find ./ -type d -iname "*needle*" -print`
+
+- find the most common words in all .txt files that are at least two letters long and show their counts: `find ./ -name "*.txt" | xargs cat | egrep -o "(\w){2,}" | sort | uniq -c | sort -k1nr | head`
 
 <!-- - deflate a binary file: `printf "\x78\x9c" | cat - data.bin | zpipe -d | strings -el` ([source](https://lock.cmpxchg8b.com/hiew.html)) -->
 
