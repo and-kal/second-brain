@@ -83,6 +83,7 @@ If you really don't want to do any coding at all, you can try one of these no-co
 - [Blot](https://blot.im/) - let's turn a folder into a website easily
 - [Hexo](https://hexo.io/) - »A fast, simple & powerful blog framework«
 - [Hugo](https://github.com/gohugoio/hugo/) - very powerful and fast once you have got a grip on it, but not exactly easy to learn for beginners
+- [Paper.wf](https://paper.wf/)
 
 ## Hosting and Domains
 

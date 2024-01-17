@@ -250,11 +250,11 @@ You can give your functions operators as a name. For example, `+++` is a valid n
 
 ### Infix operators
 
-Infix operators like `+` also represent functions. For example, `:` prepends something to a list: `1 : 2 : []` returns `[1, 2]`. Appending to a list can't be done directly, but by by concatenation: `[555, 666] ++ [777]`. (This procedure is computationally more expensive than prepending though.)
+Infix operators like `+` also represent functions. For example, `:` (called ›cons‹) prepends something to a list: `1 : 2 : []` returns `[1, 2]`. Appending to a list can't be done directly, but by by concatenation: `[555, 666] ++ [777]`. (This procedure is computationally more expensive than prepending though.)
 
 Another infix operator is `!!`, which takes a list and an index and returns the element at that index from the list:
 
-```
+```haskell
 ([1,10,100,1000] !! 3)
 ```
 
@@ -323,7 +323,8 @@ Good to know: When defining types, constructors, type classes or kinds yourself 
 
 Are arguably the most important data type in Haskell.
 
-They are homogenous, meaning they cannot hold elements of different types.
+They are homogenous, meaning they cannot hold elements of different types. So you can have a list like `listOfNumbers = [1,2,3,4,5]` or `listOfLetters = ['A','B','C','D','E']`. An easier way to write those though is by using _enumeration_: `listOfNumbers = [1..5]`
+`listOfLetters = ['A'..'E']`. Not that _enumerations only go forward_, so that `listOfNumbers = [5..1]` would just be an empty list. (However, for negative integers `listOfNumbers = [-5.. -1]` would work.) If you want to go backwards with ranges, you will have to specify a step: `listOfNumbers = [5,4..1]`.
 
 #### List comprehension
 
@@ -379,11 +380,10 @@ case expression of  patternOne -> resultOne
 
 By the way, »pattern matching in function definitions is syntactic sugar for case expressions.«
 
+<!-- TODO:
 ### Type classes
 
-Are similar to interfaces in OOP in that the determine the tipes of operations they permit their members.
-
-<!-- TODO:
+Are similar to interfaces in OOP in that they determine the types of operations they permit their members. Also you can create instances of classes: `class`, `instance`
 [...]
 -->
 
@@ -650,9 +650,12 @@ Haskell funtions, types and typeclasses can be grouped into modules and a Haskel
 
 In order to search Haskell libraries by function names, or type signatures there is an API called [Hoogle](https://hoogle.haskell.org/).
 
+_Haddock_ is a markup language in Hakskell that is used to annotate your code so that you have a proper documentation for your functions usually done by writing `-- |` before your function definition or `-- ^` after (or next to) it. (Check these [Haddock tips](https://kowainik.github.io/posts/haddock-tips) for some more background.)
+
 ## Sources
 
 - [Functional Programming by Example](https://caiorss.github.io/Functional-Programming/index.html) by Caio Rodrigues (2018)
 - Learn You a Haskell for Great Good! A Beginner's Guide by Miran Lipovaca (2011, No Starch Press)
 - Practical Haskell. A Real-World Guide to Functional Programming by Alejandro Serrano Mena (2022, Apress)
 - [Learn X in Y minutes. Where X=Lambda Calculus](https://learnxinyminutes.com/docs/lambda-calculus/) by Max Sun et al. (2023)
+- [Haskell Cheat Sheet](https://hackage.haskell.org/package/CheatSheet-1.10/src/CheatSheet.pdf) by Justin Bailey (2009)

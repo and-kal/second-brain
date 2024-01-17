@@ -46,7 +46,7 @@ ID
 5
 ```
 
-...which is a problem, because you are effectively breaking your foreign key relations from the `YourItemsDetails`' `RefID` column to the `YourItems`' `ID` column. The same problem would arise, if `YourItems` was not empty when you ran your `INSERT` command, because `YourItems`' `ID`s will auto-increment starting at the current index. The references from `RefID`s will again be broken.
+...which is not good, because you are effectively breaking your foreign key relations from the `YourItemsDetails`' `RefID` column to the `YourItems`' `ID` column. The same problem would arise, if `YourItems` was not empty when you ran your `INSERT` command, because `YourItems`' `ID`s will auto-increment starting at the current index. The references from `RefID`s will again be broken.
 
 What we need is a command that takes into account the current index of your `YourItems` table and set the `RefID` in `YourItems` accordingly. That's not quite straightforward
 
@@ -79,3 +79,5 @@ SELECT [ID], [Detail] FROM #TemporaryTable;
 ```
 
 [...]
+
+<!-- TODO -->
