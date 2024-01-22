@@ -1,7 +1,7 @@
 ---
 title: "Useful Powershell commands"
 date: "2023-08-16"
-draft: true
+draft: false
 ---
 
 ## MD5 checksum
@@ -45,3 +45,13 @@ echo $null >> config.ini
 ```powershell
 $Env:AWS_DEFAULT_REGION="eu-central-1"
 ```
+
+## Using `.nvmrc` files
+
+If you have `nvm` installed, in shells such as `zsh` or `bash` you can just run `nvm use` in order to switch to the node version specified in your `.nvmrc` file. With `nvm-windows` it's a little trickier. You will have to run the following command everytime before starting up your project in order to use the correct node version:
+
+```powershell
+nvm use $(Get-Content .nvmrc)
+```
+
+But chances are that you will forget it sometime and use a wrong node version and wonder why your application doesn't work. Here is [a smart gist](https://gist.github.com/tcrammond/e52dfad4c2b36258f83f7a964af10097) with an alias for a script that works like `nvm use`. For more information, here is [the relevant Github issue](https://github.com/coreybutler/nvm-windows/issues/128), which contains some more strategies to use `nvm use` on Windows and also an explanation why it will not be implemented as a native feature in `nvm-windows`.
