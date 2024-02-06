@@ -128,6 +128,8 @@ The documentation for `Data.Char` can be found [here](https://hackage.haskell.or
 
 #### `Data.Map`
 
+This module deals with ordered maps where values are associated with keys (like dictionaries in other programming languages).
+
 Some functions in `Data.Map` have the same name as functions from `Prelude` and `Data.List`. In order to avoid conflicts, you need to use a qualified import:
 
 ```haskell
@@ -275,6 +277,24 @@ The two kinds of binding constructs in Haskell are:
 let a = "Hey!"
     b = "How are you?"
 in  a ++ " " ++ b
+```
+
+### Error Handling
+
+Error Handling in Haskell can be done with the `Maybe` and `Either` types. `Maybe` is used for data than can be either present or not present (defined or undefined). It will always need a type for the potential data, like `Maybe Int`. Here's an example from [a blog](https://blog.thomasheartman.com/posts/haskells-maybe-and-either-types):
+
+```haskell
+safeDiv :: Integral a => a -> a -> Maybe a
+safeDiv _ 0 = Nothing
+safeDiv x y = Just $ x `div` y
+```
+
+In order to do some more verbose error handling and validation that will not just throw `Nothing`, but some default value for example, you would use the `Either` type. It is roughly defined as `data Either a b = Left a | Right b`. It is a convention to use the `Left` value whenever something fails and the `Right` value for when everything goes right. So the [previous example](https://blog.thomasheartman.com/posts/) could be rewritten as:
+
+```haskell
+safeDiv :: Integral a => a -> a -> Either String a
+safeDiv _ 0 = Left "You cannot divide by zero."
+safeDiv x y = Right $ x `div` y
 ```
 
 ## Data types and typeclasses

@@ -55,3 +55,5 @@ nvm use $(Get-Content .nvmrc)
 ```
 
 But chances are that you will forget it sometime and use a wrong node version and wonder why your application doesn't work. Here is [a smart gist](https://gist.github.com/tcrammond/e52dfad4c2b36258f83f7a964af10097) with an alias for a script that works like `nvm use`. For more information, here is [the relevant Github issue](https://github.com/coreybutler/nvm-windows/issues/128), which contains some more strategies to use `nvm use` on Windows and also an explanation why it will not be implemented as a native feature in `nvm-windows`.
+
+Note that, if you want to use `nvm-windows`, it is advisable to uninstall your current node.js installation and reinstall this one with `nvm` as well. Otherwise, Powershell might still use the version of `node` your environment variable points to instead of the one targeted with `nvm use`.
