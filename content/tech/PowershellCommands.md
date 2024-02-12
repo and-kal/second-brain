@@ -60,9 +60,13 @@ Note that, if you want to use `nvm-windows`, it is advisable to uninstall your c
 
 ## Escaping whitespaces in SCP
 
+In order to copy folders with whitespaces in their names from my seedbox (Ubuntu) to my Laptop (Windows), I use this command:
+
 ```powershell
-scp -r "me@myseedbox:'/home/me/downloads/qbittorrent/Eli, Eli, Lema Sabachthani'" C:\Users\Me\Videos\
+scp -r "me@myseedbox:'/home/me/downloads/qbittorrent/Eli, Eli, Lema Sabachthani (2005)'" C:\Users\Me\Videos\
 ```
+
+There's several ways to escape whitespaces in Powershell and Linux shell of course, but this one is the only that worked for me when trying to copy from a Linux server to a Windows computer.
 
 ## `sudo` on Windows
 

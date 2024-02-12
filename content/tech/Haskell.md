@@ -297,6 +297,10 @@ safeDiv _ 0 = Left "You cannot divide by zero."
 safeDiv x y = Right $ x `div` y
 ```
 
+### Fixity declarations
+
+In order to create your own infix operators, you will use so-called ›fixity declarations‹ like `infix`, `infixl` or `infixr` (cf. [here](https://wiki.haskell.org/Keywords#infix.2C_infixl.2C_infixr)). »A fixity states how tightly the operator binds and whether it's left-associative or right-associative« (Lipovaca, 2011).
+
 ## Data types and typeclasses
 
 Types can be determined by invoking `:t` followed by the expression in question. This will return the expression followed by `::` (which reads as ›has type of‹ and is also known as ›Paamayim Nekudotayim‹) followed by the type.
@@ -552,8 +556,8 @@ Type synonyms are useful for making code more readable and keeping it well docum
 
 Instead of OOP-tyle classes, in Haskell you will use data types. One common data type are Algebraic Data Types. ADTs are defined by two sorts of data:
 
-- »A name for the type that will be used to represent its values.«
-- »A set of constructors that will be used to create new values. These constructors may have arguments that hold values of the specified types.«
+- a »name for the type that will be used to represent its values«, and
+- one or more data constructors, which »will be used to create new values. These constructors may have arguments that hold values of the specified types.«
 
 ```haskell
 data NameOfDataType = NameOfConstructorOne String
@@ -609,6 +613,8 @@ someFunction (x:xs) = x
 »[I]t’s customary in haskell to write pattern matching on lists using a letter or a small word followed by the same identifier in plural, like x:xs.« (Serrano Mena, p. 48)
 
 In order to use two elements in pattern matching, you can write `(x:y:zs)`.
+
+**Note that »pattern matching works [only] on constructors«**. (Lipovaca, p. 103)
 
 ### as patterns
 
