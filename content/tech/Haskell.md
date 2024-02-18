@@ -86,6 +86,10 @@ In Haskell, values cannot be reassigned.
 
 Functions and types that have a similar purpose can be bundled into module. You can create your own modules with the `module` keyword followed by a name and the functions (and types) it exports and a `where` statement. See for example the [TidalCycles core module](https://hackage.haskell.org/package/tidal-1.9.4/docs/src/Sound.Tidal.Core.html). There will also be cases where you don't want to export all functions you defined, because are only helper functions. In that case, put the functions to be exported in parantheses before the `where` as in the [Paths_tidal module](https://hackage.haskell.org/package/tidal-1.9.4/docs/src/Paths_tidal.html#version).
 
+#### `Debug.Trace`
+
+The standard library for [debugging in Haskell](https://en.wikibooks.org/wiki/Haskell/Debugging) is `Debug.Trace` and it's loaded by default. Check [this article by Rebecca Skinner](https://medium.com/pragmatic-programmers/pure-print-style-debugging-in-haskell-c4c5d4f39afa) for some more in-depth information on logging and debugging in Haskell.
+
 #### `Data.List`
 
 `Data.List` is module with many useful list manipulation and analysis functions. For example `nub` (meaning »essence«) removes duplicate elements from a list:
