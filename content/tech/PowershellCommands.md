@@ -71,3 +71,7 @@ There's several ways to escape whitespaces in Powershell and Linux shell of cour
 ## `sudo` on Windows
 
 Running commands as admin in the same terminal window on Windows is not as straight-forward as in the Linux/Unix OS family. There's [a tool called `gsudo`](https://community.chocolatey.org/packages/gsudo) which can be installed via chocolatey. In 2024 ›sudo for Windows‹ [was introduced](https://devblogs.microsoft.com/commandline/introducing-sudo-for-windows/).
+
+## Display Wi-Fi passwords
+
+In order to display the Wi-Fi passwords you have saved on your computer, you first have to list all the saved connections with `netsh wlan show profiles` and look for the name of the connection you want the password of. Then type `netsh wlan show profile name="{NETWORK_NAME}" key=clear` and it will display the password under `Key Content`.

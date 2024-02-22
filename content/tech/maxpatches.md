@@ -30,6 +30,7 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - [ppooll](https://ppooll.klingt.org/?title=Main_Page)✨✨✨
 - [samplebrain (by Richard D. James and Dave Griffiths) for Max](/Max_patches/samplebrain_max.maxpat)
 - [Soundhack Max/MSP Externals](https://www.soundhack.com/freeware/)
+- [spleeter for max (native version)](https://github.com/diracdeltas/spleeter4max/blob/feature/native-spleeter/README.md#spleeter-for-max-native-version)
 - [synthcore](/Max_patches/synthcore24.zip) (gen~ DSP Library) (by Ernest Leonardo Meyer)
 - [The Party Van](https://rodrigoconstanzo.com/the-party-van/) (!!!) (by [Rodrigo Constanzo](https://rodrigoconstanzo.com))
 - [Tom Cosm - External Resampler 1.0](https://tomcosm.gumroad.com/l/gjVM)
