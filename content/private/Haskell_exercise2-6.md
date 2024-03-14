@@ -15,3 +15,9 @@ ackermann m n
 ```
 
 [See here](https://discourse.haskell.org/t/ackermann-function/1410) for a solution with dynamic programming.
+
+## an unzip function
+
+```haskell
+unzip' [x, y] = ([fst x, fst y], (snd x, snd y))
+```

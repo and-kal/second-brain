@@ -386,7 +386,7 @@ Using list comprehensions is similar to using `map` and mostly they're interchan
 - `fst` gives the first component of a tuple
 - `snd` gives the second component of a tuple
 
-### Conditions
+### Conditions & Control structures
 
 In Haskell if-then-else statements look like this:
 
@@ -398,7 +398,7 @@ In contrast to other languages like Javascript, there always has to be an else c
 
 Equality is checked with the `==` operator and inequality with `/=`.
 
-`case` statements in Haskell are constructed like that:
+`case` statements in Haskell are like switch statements in other languages and are constructed like that:
 
 ```haskell
 case expression of  patternOne -> resultOne
@@ -406,7 +406,16 @@ case expression of  patternOne -> resultOne
                     patternThree -> resultThree
 ```
 
-By the way, »pattern matching in function definitions is syntactic sugar for case expressions.«
+Case statements,like pattern atching, go from top to bottom, so you can't have your catch-all pattern at the top, but should always but it at the bottom:
+
+```haskell
+f x = case x of 0 -> 18
+                1 -> 15
+                2 -> 12
+                _ -> 0
+```
+
+✨ By the way, »pattern matching in function definitions is syntactic sugar for case expressions.«
 
 <!-- TODO:
 ### Type classes
@@ -439,7 +448,7 @@ There's also _dependent typing_, which is an even stronger form of type checking
 
 ### Parametricity
 
-Parametricity refers to _parametric polymorphism_
+Parametricity or _parametric polymorphism_ refers to the ability of a function to work on any possible type or to a data type that can store values of any type. It's comparable to [Generics in TypeScript](https://www.typescriptlang.org/docs/handbook/2/generics.html).
 
 <!--
 TODO:
@@ -468,11 +477,9 @@ This says that the two `a` values must be of the `Eq` class.
 
 ## Syntax
 
-<!-- TODO:
-### Parantheses
+### Parantheses and spaces
 
-[...]
- -->
+From the [Haskell Cheat Sheet](https://hackage.haskell.org/package/CheatSheet-1.10/src/CheatSheet.pdf): »Haskell can be written using braces and semicolons [...]. However, no one does. Instead, the ›layout‹ rule is used, where spaces represent scope. The general rule is: always indent.«
 
 ### Guards
 
@@ -509,13 +516,23 @@ addOnlySmallNumber x y
     | otherwise = "Your numbers are too big :(."
 ```
 
+<!--
+### Records
+
+similar to *named arguments* in other prgramming languages
+-->
+
 ### Primes
 
-We use a prime – written as `'` – in a pattern match, wehen we have two highly related variables/bindings, but we need a different name for one of them. We would use, e.g., `n` and `n'`, so the compiler will not complain about reusing the name of an already established definition.
+We use a prime – written as `'` – in a pattern match, when we have two highly related variables/bindings, but we need a different name for one of them. We would use, e.g., `n` and `n'`, so the compiler will not complain about reusing the name of an already established definition.
 
 ### Layout
 
 Haskell uses a layout-based syntax. That means, »how a line is indented isn't as important as the fact that all elements in the same block start in the same column. [E.g.] in an `if` block, the lines for `then` and `else` must be indented the same way.«
+
+### Pragmas
+
+A pragma is a special comment, which gets interpreted by the compiler and lets you enable or disable certain functionalities (sort of like extensions to the language). Pragma in Haskell look like this `{-# LANGUAGE ViewPatterns #-}` and need to be placed at the top of your source file. The equivalent in the interpreter is `:set -XViewPatterns`.
 
 ### Other conventions
 
@@ -614,7 +631,7 @@ someFunction :: [a] -> a
 someFunction (x:xs) = x
 ```
 
-»[I]t’s customary in haskell to write pattern matching on lists using a letter or a small word followed by the same identifier in plural, like x:xs.« (Serrano Mena, p. 48)
+»[I]t’s customary in haskell to write pattern matching on lists using a letter or a small word followed by the same identifier in plural, like `x:xs`.« (Serrano Mena, p. 48)
 
 In order to use two elements in pattern matching, you can write `(x:y:zs)`.
 
