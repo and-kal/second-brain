@@ -8,7 +8,7 @@ draft: true
 
 All internal actions of the interpreter (functions that are not functions on any library) start with a `:`.
 
-Functions in Haskell always start with a lowercase letters, same as parameters. Parameters are seperated only by spaces and are not enclosed in parantheses.
+**Functions** in Haskell always **start with a lowercase letters, same as parameters and bindings**. Parameters are seperated only by spaces and are not enclosed in parantheses.
 
 ### First-class and higher order functions
 
@@ -450,10 +450,7 @@ There's also _dependent typing_, which is an even stronger form of type checking
 
 Parametricity or _parametric polymorphism_ refers to the ability of a function to work on any possible type or to a data type that can store values of any type. It's comparable to [Generics in TypeScript](https://www.typescriptlang.org/docs/handbook/2/generics.html).
 
-<!--
-TODO:
-[...]
--->
+> [P]olymorphic function must work for all types, not just for some. Haskell also allows functions to be applicable for just a subset of all types. That is referred to as ad hoc polymorphism [...] (Serrano Mena, p. 65)
 
 ### Type annotations
 
@@ -563,6 +560,12 @@ A data type without constructors and with empty alternatives is similar to an en
 
 ```haskell
 data NameOfDataType = OneAlternative | TheOtherAlternative | AThirdAlternative
+```
+
+Type names and constructors often share the same name:
+
+```haskell
+...
 ```
 
 Notice that there is also a `type` keyword, which is not used for defining types though, but only for _type synonyms_:
