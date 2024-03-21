@@ -75,3 +75,16 @@ Running commands as admin in the same terminal window on Windows is not as strai
 ## Display Wi-Fi passwords
 
 In order to display the Wi-Fi passwords you have saved on your computer, you first have to list all the saved connections with `netsh wlan show profiles` and look for the name of the connection you want the password of. Then type `netsh wlan show profile name="{NETWORK_NAME}" key=clear` and it will display the password under `Key Content`.
+
+## Checking your DNS records
+
+When setting DNS records, you can check whether they have propagated by using `nslookup`. For example, for a TXT record, you'd write `nslookup -q=TXT _acme-challenge.example.de 8.8.8.8`, which should yield a result like:
+
+```powershell
+Server:  dns.google
+Address:  8.8.8.8
+
+Non-authoritative answer:
+_acme-challenge.example.de
+text = "12345_78-abcdefghijklmnopqr__stuvwxyZXYWVUT"
+```

@@ -72,7 +72,7 @@ As for pattern matching, you can also do that in lambda functions, but you can o
 Function application in Haskell can be done simply by putting a space between two things. If you want to apply the result of one function to another function, you would put the former in parantheses:
 `sum (map (* 7) [5,6,7,8])`. However, there's also the `$` operator, which does almost the same, but has the lowest precedence of all operators and so it will be executed last, which means that you don't need parantheses, but could write `sum $ map (* 7) [5,6,7,8]`. Function application is a function just like any other, so you can also apply it to other functions: `map ($ 2) [sqrt, sqrt . sqrt]`. Note that we use the function composition operator `.` here. Both, `.` and `$`, are right-associative. Thus,:{} `f (g (z x))` is the same as `f $ g $ z x`, which is the same as `(f . g . z) x`.
 
-Function composition also allows for so-called ›point free style‹ when writing functions, where the funtions' arguments are omitted: `sum = foldr (+) 0`.
+Function composition also allows for so-called ›point-free style‹ when writing functions, where the funtions' arguments are omitted. A classic example is `sum = foldr (+) 0`. (This is also called [tacit programming](https://en.wikipedia.org/wiki/Tacit_programming).)
 
 ### Side effects
 
