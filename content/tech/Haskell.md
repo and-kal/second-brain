@@ -48,10 +48,11 @@ Behind the scenes, every function in Haskell, too, only takes one parameter and 
 
 »Generally, if you have a function like `foo a = bar b` a, you can rewrite it as `foo = bar b`, because of currying.« (Lipovaca, p. 54)
 
-Anonymous function in Haskell are written like so:
+Anonymous functions (or _lambda abstractions_) in Haskell are written like so:
 
 ```haskell
-let someFunction = \x y -> ((subtract x) (y ** 2))
+let someFunction = \(x, y) -> (subtract (y ** 2) x)
+in map someFunction [(1,5),(2,5),(3,5)]
 ```
 
 You can also use anonymous function _on-the-fly_ without the `let` keyword, as you can see in this example (from the Lipovaca book):
@@ -65,7 +66,7 @@ With `\xs` we declare `xs` as the parameter of our lambda expression. If we had 
 
 As for pattern matching, you can also do that in lambda functions, but you can only define one pattern. If you wanted to use several pattern definitions, you should maybe write an abstraction, instead of using an anonymous lambda functions.
 
-<!-- TODO: is there a way to write ecursive lamdas? -->
+Is there a way to write recursive lamda abstractions? Since these functions are nameless and anonymous, there's no way for them to refer to themselves, so that recursion is not possible.
 
 ### Function application
 

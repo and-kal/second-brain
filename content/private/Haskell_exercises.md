@@ -51,3 +51,13 @@ index (x:xs) =  let indexed@((n,_):_) = index xs
 maybeA :: [a] -> Char
 maybeA [] = 'a'
 ```
+
+# Exercise 3-2. Working With Filters
+
+```haskell
+filterOnes x = filter (x == 1)
+
+filterANumber x y = filter (x == 1)
+
+filterNot x = filter (not . x)
+```

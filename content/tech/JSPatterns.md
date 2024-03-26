@@ -96,6 +96,23 @@ const userHandler = {
 const userProxy = new Proxy(user, userHandler)
 ```
 
+# Factory pattern
+
+This pattern uses functions that create a new object everytime they are invoked. It's not really a pattern in JavaScript as it would be in other, OO programming languages.
+
+```javascript
+export const createBook = (title, author, isbn) => {
+  return {
+    title,
+    author,
+    isbn,
+  }
+}
+
+const book1 = createBook("The Great Gatsby", "F. Scott Fitzgerald", "CD456")
+const book2 = createBook("Moby-Dick", "Herman Melville", "EF789")
+```
+
 # sources
 
 - [javascriptpatterns.vercel.app](https://javascriptpatterns.vercel.app/patterns/design-patterns/proxy-pattern)
