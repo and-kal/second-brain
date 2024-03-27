@@ -73,7 +73,7 @@ Is there a way to write recursive lamda abstractions? Since these functions are 
 Function application in Haskell can be done simply by putting a space between two things. If you want to apply the result of one function to another function, you would put the former in parantheses:
 `sum (map (* 7) [5,6,7,8])`. However, there's also the `$` operator, which does almost the same, but has the lowest precedence of all operators and so it will be executed last, which means that you don't need parantheses, but could write `sum $ map (* 7) [5,6,7,8]`. Function application is a function just like any other, so you can also apply it to other functions: `map ($ 2) [sqrt, sqrt . sqrt]`. Note that we use the function composition operator `.` here. Both, `.` and `$`, are right-associative. Thus,:{} `f (g (z x))` is the same as `f $ g $ z x`, which is the same as `(f . g . z) x`.
 
-Function composition also allows for so-called ›point-free style‹ when writing functions, where the funtions' arguments are omitted. A classic example is `sum = foldr (+) 0`. (This is also called [tacit programming](https://en.wikipedia.org/wiki/Tacit_programming).)
+Function composition also allows for so-called ›point-free style‹ when writing functions, where the funtions' arguments/parameters are omitted. A classic example is `sum = foldr (+) 0`. (This is also called [tacit programming](https://en.wikipedia.org/wiki/Tacit_programming). The term _point_ here refers to the function parameters, which are called _points_ in mathematics.)
 
 ### Side effects
 
@@ -86,6 +86,8 @@ In Haskell, values cannot be reassigned.
 ### Useful functions and modules
 
 Functions and types that have a similar purpose can be bundled into module. You can create your own modules with the `module` keyword followed by a name and the functions (and types) it exports and a `where` statement. See for example the [TidalCycles core module](https://hackage.haskell.org/package/tidal-1.9.4/docs/src/Sound.Tidal.Core.html). There will also be cases where you don't want to export all functions you defined, because are only helper functions. In that case, put the functions to be exported in parantheses before the `where` as in the [Paths_tidal module](https://hackage.haskell.org/package/tidal-1.9.4/docs/src/Paths_tidal.html#version).
+
+If you only want to import specific function definitions from a module put those in parantheses like `import Data.List (permutations)`; and if you want to import all definitions except certain ones use `hiding`: `import Data.List hiding (head, tail)`
 
 #### `Debug.Trace`
 
@@ -107,7 +109,7 @@ length $ nub [0,1,2,0,1,2,0,1,2,3]
 ```haskell
 import Data.List
 
--- find :: (a -> Bool) -> [a] -> Maybe a
+find :: (a -> Bool) -> [a] -> Maybe a
 find (\val -> val `mod` 3 == 0) [2,45,99]
 
 -- returns Just 45
@@ -115,7 +117,7 @@ find (\val -> val `mod` 3 == 0) [2,45,99]
 
 Note that, if you want to supply your own equality function (as we just did with `find`), but for `nub`, `delete`, `union`, `intersect` and `group`, you would have their respective `nubBy`, `deleteBy`, `unionBy`, `intersectBy` or `groupBy` counterparts.
 
-There's many more useful list-related functions in `Data.List`, e.g.: `intersperse`, `intercalcate`, `concat`, `isPrefixOf`, `isSuffixOf`, `isInfixOf`, `elemIndex`, `findIndex`, `lines`, `words`, `\\` (list difference function), `!!`, `insert` etc..
+There's many more useful list-related functions in `Data.List`, e.g.: `intersperse`, `intercalcate`, `concat`, `isPrefixOf`, `isSuffixOf`, `isInfixOf`, `elemIndex`, `findIndex`, `lines`, `words`, `\\` (list difference function), `!!`, `insert` and the several `permutations` functions.
 
 <!--
 #### `Data.Function`
@@ -621,6 +623,12 @@ data Maybe a = Nothing | Just a
 
 :t Nothing -- Nothing :: Maybe a
 ```
+
+<!--
+### Smart Constructors and Views
+
+Serrano Mena, p.79pp.
+-->
 
 ## Pattern matching
 

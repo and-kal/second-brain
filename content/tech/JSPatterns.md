@@ -113,6 +113,24 @@ const book1 = createBook("The Great Gatsby", "F. Scott Fitzgerald", "CD456")
 const book2 = createBook("Moby-Dick", "Herman Melville", "EF789")
 ```
 
+<!--
+# Continuation passing style
+
+```javascript
+function main() {
+  getQuote((error, quote) => {
+    if (error) {
+      console.error(error);
+    } else {
+      console.log(quote);
+    }
+  });
+}
+```
+
+[source](https://stackoverflow.com/questions/40884153/try-catch-blocks-with-async-await)
+-->
+
 # sources
 
 - [javascriptpatterns.vercel.app](https://javascriptpatterns.vercel.app/patterns/design-patterns/proxy-pattern)
