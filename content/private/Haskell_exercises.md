@@ -61,3 +61,37 @@ filterANumber x y = filter (x == 1)
 
 filterNot x = filter (not . x)
 ```
+
+# Exercise 3-3. Your First Folds
+
+```haskell
+-- pattern matching
+product' :: [Int] -> Int
+product' [] = 0
+product' (x:xs) = x * product' xs
+
+product' [1,2,3,4,5,6,7,8]
+
+-- using folds
+product' :: [Int] -> Int
+product' list = foldr (*) 1 list
+
+-- using folds and point-free style
+product' = foldr (*) 1
+
+product' [1,2,3,4,5,6,7,8]
+```
+
+```haskell
+-- pattern matching
+all' :: [Bool] -> Bool
+all' [] = True
+all' (x:xs) = x && all' xs
+
+-- using folds
+all' :: [Bool] -> Bool
+all' list = foldr (&&) True list
+
+-- using folds and point-free style
+all' = foldr (&&) True
+```
