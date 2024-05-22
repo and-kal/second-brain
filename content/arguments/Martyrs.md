@@ -1,5 +1,5 @@
 ---
-title: "My beef with Deli Girls, or: Think twice about using the word 'martyr'"
+title: "Think twice about using the word 'martyr' these days"
 date: "2024-05-15"
 draft: false
 ---

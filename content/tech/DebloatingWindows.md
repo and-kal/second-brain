@@ -1,5 +1,5 @@
 ---
-title: "Useful Windows debloating tools"
+title: "Useful Windows tools for debloating and stuff"
 date: "2023-10-12"
 draft: false
 ---
@@ -9,17 +9,17 @@ draft: false
 - [Win-Debloat-Tools](https://github.com/LeDragoX/Win-Debloat-Tools)
 - [Windows10Debloater](https://github.com/Sycnex/Windows10Debloater)
 
-## Activation Scripts
+## Removing Widgets
+
+If you don't care about seeing the weather and temperature in your taskbar, you can hide Widgets under ›Taskbar settings‹. And in case you completely want to remove Widgets, run `Get-AppxPackage *WebExperience* | Remove-AppxPackage`.
+
+## Activation script
 
 😈
 
 ```powershell
 irm https://massgrave.dev/get | iex
 ```
-
-## Removing Widgets
-
-If you don't care about seeing the weather and temperature in your taskbar, you can hide Widgets under ›Taskbar settings‹. And in case you completely want to remove Widgets, run `Get-AppxPackage *WebExperience* | Remove-AppxPackage`.
 
 ## Utilities
 

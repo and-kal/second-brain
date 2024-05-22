@@ -96,7 +96,7 @@ new aliases can be defined like so: `alias name='action'`
 `rm`
 \
 -> remove a file
-\
+
 `-i` flag for timid deletion (you will be promoped to confirm each deletion)
 
 `rmdir`
@@ -113,7 +113,7 @@ new aliases can be defined like so: `alias name='action'`
 
 `source`
 \
--> ...a Bash shell built-in command that executes the content of the file passed as an argument in the current shell. It has a synonym in `.` (period). ([cf. here](https://superuser.com/a/46146))
+-> ...a Bash shell built-in command that executes the content of the file passed as an argument in the current shell. It has a synonym in `.` (period). (cf. [here](https://superuser.com/a/46146))
 
 `time`
 \
@@ -159,9 +159,9 @@ new aliases can be defined like so: `alias name='action'`
 \
 -> print the manual for a program
 
-`su`
+<!-- `su`
 \
-->
+-> -->
 
 `sudo`
 \
@@ -245,9 +245,9 @@ Bringing to folder in sync can be done with the `rsync` (remote sync) tool. I wo
 rsync -aPv ~/media/Music someone@1.2.3.4:~/media/
 ```
 
-## `ed` and `sed`
+<!-- ## `ed` and `sed`
 
-[...]
+[...] -->
 
 ## Awk
 
