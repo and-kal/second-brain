@@ -1,6 +1,6 @@
 ---
-title: "Quote dump 2023"
-date: "2023-03-04"
+title: "Quote dump"
+date: "2024-02-22"
 draft: false
 ---
 
@@ -41,3 +41,19 @@ I'm constantly amazed by the lucidity of Maggie Nelson's writing and here's mult
 > Eszter Bálint is sitting in a room in Florida different from the one you are in now. She is recording the sound of her speaking voice and she is going to play it back into the room again and again until the resonant frequencies of the room reinforce themselves so that any semblance of her speech, with perhaps the exception of rhythm, is destroyed. She regards this activity not so much as a demonstration of a physical fact, but more as a way to smooth out any irregularities her speech might have.
 
 (found in [Elisa's last.fm shoutbox](https://www.last.fm/user/herzschoenheit))
+
+## Friedrich Kittler
+
+> When your voice comes like breathing, everything is as it is: incomprehensible, beautiful and ephemeral. (“Forgetting”, 1981)
+
+> [I]f discourse analysis archivizes archives, it is not to reconstruct the unity and continuity of a history, but quite the contrary: to dissolve the phantasm of world history into many individual storage devices which themselves were forgotten and/or retained. (“Forgetting”, 1981)
+
+## Astral Codex Ten
+
+> If you want good advice about how to walk, ask someone with cerebral palsy. They experience walking as a constant battle to overcome their natural constitution, and so accumulate tips and tricks throughout their lives. Or ask a physical therapist who works with these people and studies them. Just don’t ask someone you see walking especially briskly down the street. ([source](https://www.astralcodexten.com/p/you-dont-hate-polyamory-you-hate))
+
+> You live in a world choked with ideas, where anything that rises to your consideration has necessarily won a Darwinian battle among hyper-specialized memetic replicators competing for your attention. By definition most of what you come across through semi-formal channels will be preachy, pushy, and associated with the kind of people who are obsessed with talking about themselves. If you learn about some lifestyles through informal channels (eg your family and friends), and others through semiformal channels (eg media and books), the latter will look obviously inferior. ([source](https://www.astralcodexten.com/p/you-dont-hate-polyamory-you-hate))
+
+## John Cheever
+
+> It was one of those midsummer Sundays when everyone sits around saying, “I drank too much last night.” You might have heard it whispered by the parishioners leaving church, heard it from the lips of the priest himself, struggling with his cassock in the vestiarium, heard it on the golf links and the tennis courts, heard it in the wildlife preserve, where the leader of the Audubon group was suffering from a terrible hangover. (from “[The Swimmer](https://archive.is/JSj0R)”)
