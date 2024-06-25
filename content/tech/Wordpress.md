@@ -1,12 +1,12 @@
 ---
-title: "Wordpress snippets I might need again at some point."
+title: "WordPress snippets I might need again at some point."
 date: "2024-06-25"
 draft: false
 ---
 
 # Polylang language in REST API
 
-Polylang is a popular multilinguality plugin for Wordpress. The pro version of it also provides some additional REST API endpoints. So in the regular version a request like the following will return all posts and just ignore the `lang` parameter:
+Polylang is a popular multilinguality plugin for WordPress. The pro version of it also provides some additional REST API endpoints. So in the regular version a request like the following will return all posts and just ignore the `lang` parameter:
 
 ```sh
 GET /wp/v2/posts?lang=en
@@ -54,7 +54,7 @@ _This code was originally written by [them-es](https://gist.github.com/them-es/3
 
 # ACF fields in REST API
 
-ACF is another popular Wordpress plugin for adding custom fields to WP posts and pages (you can add a short summary, social links etc. etc. for example). These fields are also not included in the standard WP REST API, even if in the ACF settings you activate `Show In REST API` in the respective field group (even though [according to the ACF documentation](https://www.advancedcustomfields.com/resources/wp-rest-api-integration/) it should).
+ACF is another popular WordPress plugin for adding custom fields to WP posts and pages (you can add a short summary, social links etc. etc. for example). These fields are also not included in the standard WP REST API, even if in the ACF settings you activate `Show In REST API` in the respective field group (even though [according to the ACF documentation](https://www.advancedcustomfields.com/resources/wp-rest-api-integration/) it should).
 
 Again, you can add a simple snippet to the `functions.php` file in order to retrieve the acf fields, too:
 
@@ -71,3 +71,24 @@ add_filter('rest_prepare_post', 'acf_to_rest_api', 10, 3);
 (_This code was taken from [here](https://stackoverflow.com/a/57501896/20232056)._)
 
 Try `GET /wp/v2/posts` and every post should now have your custom fields from AC included.
+
+# Redirect frontend to elsewhere
+
+When using a headless WordPress setup, I ran into a situation where I wanted to have the WordPress admin section be served on `www.example.com/wp-admin`, but visitors should not be allowed to go see any WordPress frontend under `www.example.com`. Instead they should be redirected to the new frontend I host under `www.elpmaxe.com`. In order to do that I built a super minimal theme which only redirects frontend traffic and does nothing else (for which I used [this solution](https://WordPress.stackexchange.com/a/17973)):
+
+- under `themes/`create a folder called `redirect`
+- add a `style.css` and an `index.php` to it
+- `style.css` should look like this:
+  ```php
+  /*
+     Theme Name: Redirect
+     Description: Redirects the front end to domain.com
+  */
+  ```
+- `style.css` should look like this:
+  ```php
+  <?php
+       header( "Location: https://www.elpmaxe.com" );
+  ?>
+  ```
+- activate the theme in the admin UI.
