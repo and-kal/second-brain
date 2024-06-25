@@ -242,7 +242,7 @@ Unmounting it is done via `umount /dev/sda1`
 Bringing to folder in sync can be done with the `rsync` (remote sync) tool. I would usually run something like this:
 
 ```bash
-rsync -aPv ~/media/Music someone@1.2.3.4:~/media/
+rsync --stats --progress -aPv ~/media/Music someone@1.2.3.4:~/media/
 ```
 
 <!-- ## `ed` and `sed`
