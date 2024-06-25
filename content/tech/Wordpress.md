@@ -92,3 +92,18 @@ When using a headless WordPress setup, I ran into a situation where I wanted to 
   ?>
   ```
 - activate the theme in the admin UI.
+
+# Add CORS header to MyCalender plugin
+
+MyCalendar is a WordPress plugin for creating calendars. Under 'Advanced Settings' you can activate exposing its API, which will let you fetch events from the calendar like that: `GET https://example.com?to=2024-06-25&from=2024-05-26&mc-api=json`. However, when working in a local development environment you might run into CORS issues, so you should
+
+But you can add to following lines to the top of some file in your theme or plugins in order to allow fetching from everywhere:
+
+```php
+function add_cors_http_header(){
+    header("Access-Control-Allow-Origin: *");
+}
+add_action('init','add_cors_http_header');
+```
+
+I added it to `/httpdocs/wp-content/plugins/my-calendar/my-calender.php` hoping that the CORS header will be scoped only to the MyCalendar routes, but I don't think that's the case.
