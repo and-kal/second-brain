@@ -106,4 +106,4 @@ function add_cors_http_header(){
 add_action('init','add_cors_http_header');
 ```
 
-I added it to `/httpdocs/wp-content/plugins/my-calendar/my-calender.php` hoping that the CORS header will be scoped only to the MyCalendar routes, but I don't think that's the case.
+I added it to `/httpdocs/wp-content/plugins/my-calendar/my-calender.php` hoping that the CORS header will be scoped only to the MyCalendar routes, but I don't think that's the case. It's also not the best idea to add custom code in `plugins` files instead of `themes` files, because the code might get overwritten when updating the respective plugin.
