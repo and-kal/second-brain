@@ -1,6 +1,7 @@
 .code-title {
   color: var(--primary);
   font-family: var(--font-mono);
+  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   overflow-x: auto;
@@ -17,5 +18,7 @@
   border-top-right-radius: 0.3em;
   font-size: 0.9em;
   background-color: var(--lightgray);
-  filter: hue-rotate(-30deg) contrast(1) opacity(0.8);
-}/*# sourceMappingURL=code-title.css.map */
+  -webkit-filter: hue-rotate(-30deg) contrast(1) opacity(0.8);
+          filter: hue-rotate(-30deg) contrast(1) opacity(0.8);
+}
+/*# sourceMappingURL=code-title.css.map */

@@ -48,6 +48,8 @@ I'm constantly amazed by the lucidity of Maggie Nelson's writing and here's mult
 
 > [I]f discourse analysis archivizes archives, it is not to reconstruct the unity and continuity of a history, but quite the contrary: to dissolve the phantasm of world history into many individual storage devices which themselves were forgotten and/or retained. (“Forgetting”, 1981)
 
+> Symbolic elements, however, have their position and their existence in networks. [...] Every link in the chain derives its function from its delimitation. (“Forgetting”, 1981)
+
 ## Astral Codex Ten
 
 > If you want good advice about how to walk, ask someone with cerebral palsy. They experience walking as a constant battle to overcome their natural constitution, and so accumulate tips and tricks throughout their lives. Or ask a physical therapist who works with these people and studies them. Just don’t ask someone you see walking especially briskly down the street. ([source](https://www.astralcodexten.com/p/you-dont-hate-polyamory-you-hate))
