@@ -21,6 +21,8 @@ tags:
 
 - [Ripple](https://web.archive.org/web/20111007041602/http://www.morganpackard.com/Ripple/Ripple.zip) - a free musical environment by Morgan Packard (currently Mac OS only)
 
+- well commented [patches from Daniel Mayer's SuperCollider course](/cmaktuell.zip) at TU Berlin I think
+
 ## A bunch of useful SuperCollider links
 
 - [asStream](http://subnaught.org/supercollider/)
