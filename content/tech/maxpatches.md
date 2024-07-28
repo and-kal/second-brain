@@ -27,6 +27,7 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - [Mutable Instruments Max port](https://github.com/v7b1/vb.mi-dev) (by vboehm)
 - [Nobuyasu Sakonda's patches](http://formantbros.jp/sako/download.html)
 - [oual_qroccss](https://www.ondomusic.com/mesa.elech.tele/oual_qroccss.zip)
+- [Phonogene 1.2](https://github.com/rdwiv/Phonogene) by TristanShepherd
 - [ppooll](https://ppooll.klingt.org/?title=Main_Page)✨✨✨
 - [samplebrain (by Richard D. James and Dave Griffiths) for Max](/Max_patches/samplebrain_max.maxpat)
 - [Soundhack Max/MSP Externals](https://www.soundhack.com/freeware/)
