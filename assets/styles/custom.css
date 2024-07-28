@@ -12,7 +12,7 @@
   --highlighted: #f5dfaf88;
 }
 
-[saved-theme=dark] {
+[saved-theme="dark"] {
   --light: #1d0348 !important;
   --dark: #fefffd !important;
   --secondary: #7dff7d !important;
@@ -23,4 +23,5 @@
   --lightgray: #292633 !important;
   --outlinegray: #dadada!important;
   --highlighted: #574010;
-}/*# sourceMappingURL=custom.css.map */
+}
+/*# sourceMappingURL=custom.css.map */

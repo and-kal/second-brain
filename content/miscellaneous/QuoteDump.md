@@ -48,6 +48,8 @@ I'm constantly amazed by the lucidity of Maggie Nelson's writing and here's mult
 
 > [I]f discourse analysis archivizes archives, it is not to reconstruct the unity and continuity of a history, but quite the contrary: to dissolve the phantasm of world history into many individual storage devices which themselves were forgotten and/or retained. (“Forgetting”, 1981)
 
+> Symbolic elements, however, have their position and their existence in networks. [...] Every link in the chain derives its function from its delimitation. (“Forgetting”, 1981)
+
 ## Astral Codex Ten
 
 > If you want good advice about how to walk, ask someone with cerebral palsy. They experience walking as a constant battle to overcome their natural constitution, and so accumulate tips and tricks throughout their lives. Or ask a physical therapist who works with these people and studies them. Just don’t ask someone you see walking especially briskly down the street. ([source](https://www.astralcodexten.com/p/you-dont-hate-polyamory-you-hate))
@@ -57,3 +59,21 @@ I'm constantly amazed by the lucidity of Maggie Nelson's writing and here's mult
 ## John Cheever
 
 > It was one of those midsummer Sundays when everyone sits around saying, “I drank too much last night.” You might have heard it whispered by the parishioners leaving church, heard it from the lips of the priest himself, struggling with his cassock in the vestiarium, heard it on the golf links and the tennis courts, heard it in the wildlife preserve, where the leader of the Audubon group was suffering from a terrible hangover. (from “[The Swimmer](https://archive.is/JSj0R)”)
+
+## Erich Kästner
+
+Admittedly, I didn't particularly like. Not just because this kind of tame and objective literature that aims to be instructive reminded me of German classes in school too much. Most of all, I guess I just don't like Kästner's language. I concede that it's an interesting snapshot of German history and a pertinent warning against Nazi totalitarianism. It might also be the 93-year gap to this book's publication, but the humor in »Fabian« doesn't spark for me at all and the characters are ultimately too indifferent, too normal and the book's episodes come off as too deliberate, which makes the book lack an appropriate political punch. I have [Walter Benjamin](http://www.glanzundelend.de/Artikel/abc/b/benjamin_melancholie.htm) on my side in my disfavor who also thought that Kästner's leftism was more entertainment than intervention. Nevertheless, I did find a few strong sentences in it:
+
+> Was sollen wir anfangen? Wenn wir einen Mann liebhaben, liefern wir uns ihm aus. Wir trennen uns von allem, was vorher war, und kommen zu ihm. "Da bin ich", sagen wir freundlich lächelnd. "Ja", sagt er, "da bist du", und kratzt sich hinterm Ohr. Allmächtiger, denkt er, nun habe ich sie auf dem Hals. Leichten Herzens schenken wir ihm, was wir haben. Und er flucht. Die Geschenke sind ihm lästig. Erst flucht er leise, dann flucht er laut. Und wir sind allein wie nie zuvor. Ich bin fünfundzwanzig Jahre alt, und von zwei Männern wurde ich stehengelassen. Stehengelassen wie ein Schirm, den man absichtlich irgendwo vergisst.
+
+> "Ich kann doch nichts."
+> <br /><br />"Du kannst vieles."
+> <br /><br />"Das ist dasselbe", meinte Fabian. "Ich kann vieles und will nichts. Wozu soll ich vorwärtskommen? Wofür und wogegen? Nehmen wir einmal an, ich sei der Träger einer Funktion. Wo ist das System, in dem ich funktionieren kann? Es ist nicht da, und nichts hat Sinn."
+
+> Ich kann, wenn ich meinen augenblicklichen Zustand betrachte, sagen: Die ganze Richtung paßt mir nicht! Aus den Bezirken, in die ich gehöre, wies man mich aus. Dort, wo man mich aufnehmen will, will ich nicht hin. Sei mir nicht böse, mein Guter, ich haue ab. Europa wird auch ohne mich weiterleben oder zugrunde gehen, es hat mich nicht nötig.
+
+> "Der biß zu und kämpfte und schlug mit dem Federhalter um sich, als sei der Gänsekiel ein Schleppsäbel. Der war zum Kämpfen da, du nicht. Der lebte gar nicht seinetwegen, den gab es gar nicht privat, der wollte gar nichts für sich. Und als er sich doch auf sich besann, als er vom Schicksal Frau und Kind verlangte, da brach alles über ihm zusammen und begrub ihn. Und das war in Ordnung. Wer für die anderen dasein will, der muß sich selber fremd bleiben. Er muß wie ein Arzt sein, dessen Wartezimmer Tag und Nacht voller Menschen ist, und einer muß mitten darunter sitzen, der nie an die Reihe kommt und nie darüber klagt: das ist er selber. Hättest du so zu leben vermocht?"
+
+> "Früher verschenkte man sich und wurde wie ein Geschenk bewahrt. Heute wird man bezahlt und eines Tages, wie jede bezahlte und benutzte Ware, weggetan. Bezahlung ist billiger, denkt der Mann."
+> <br /><br />"Früher war das Geschenk etwas ganz anderes als die Ware. Heute ist das Geschenk eine Ware, die null Mark kostet. Diese Billigkeit macht den Käufer mißtrauisch. Sicher ein faules Geschäft, denkt er. Und meist hat er recht. Denn später präsentiert ihm die Frau die Rechnung. Plötzlich soll er den moralischen Preis des Geschenks rückvergüten. In seelischer Valuta. Als Lebensrente zu zahlen."
+> <br /><br />"Genauso ist es", sagte sie. "Genauso denken die Männer. Aber warum nennen Sie dann dieses Atelier einen Saustall? Hier sind doch die Frauen so ähnlich, wie ihr sie haben wollt! Oder etwa nicht? Ich weiß, was euch zu eurem Glück noch fehlt. Wir sollen zwar kommen und gehen, wann ihr es wollt. Aber wir sollen weinen, wenn ihr uns fortschickt. Und wir sollen selig sein, wenn ihr uns winkt. Ihr wollt den Warencharakter der Liebe, aber die Ware soll verliebt sein. Ihr zu allem berechtigt und zu nichts verpflichtet, wir zu allem verpflichtet und zu nichts berechtigt, so sieht euer Paradies aus. Doch das geht zu weit!" Fräulein Battenberg putzte sich die Nase. Dann fuhr sie fort: "Wenn wir euch nicht behalten dürfen, wollen wir euch auch nicht lieben. Wenn ihr uns kaufen wollt, dann sollt ihr teuer dafür bezahlen." Sie schwieg.

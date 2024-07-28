@@ -4,15 +4,19 @@
   min-width: 30px;
   position: relative;
 }
+
 @media all and (max-width: 450px) {
   .darkmode {
     padding: 1em;
   }
 }
+
 .darkmode > .toggle {
   display: none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .darkmode svg {
   opacity: 0;
   position: absolute;
@@ -21,12 +25,14 @@
   top: calc(50% - 10px);
   margin: 0 7px;
   fill: var(--gray);
+  -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
 }
 
 .toggle:checked ~ label > #dayIcon {
   opacity: 0;
 }
+
 .toggle:checked ~ label > #nightIcon {
   opacity: 1;
 }
@@ -34,6 +40,8 @@
 .toggle:not(:checked) ~ label > #dayIcon {
   opacity: 1;
 }
+
 .toggle:not(:checked) ~ label > #nightIcon {
   opacity: 0;
-}/*# sourceMappingURL=darkmode.css.map */
+}
+/*# sourceMappingURL=darkmode.css.map */
