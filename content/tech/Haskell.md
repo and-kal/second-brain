@@ -581,7 +581,7 @@ Type synonyms are useful for making code more readable and keeping it well docum
 
 ### Algebraic Data Types (ADT)
 
-Instead of OOP-tyle classes, in Haskell you will use data types. One common data type are Algebraic Data Types. ADTs are defined by two sorts of data:
+Instead of OOP-tyle classes, in Haskell you will use data types. One common type of data are Algebraic Data Types. (Learn about the origin of that term [here](https://blog.poisson.chat/posts/2024-07-26-adt-history.html).) ADTs are defined by two sorts of data:
 
 - a »name for the type that will be used to represent its values«, and
 - one or more data constructors, which »will be used to create new values. These constructors may have arguments that hold values of the specified types.«
