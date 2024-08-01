@@ -68,6 +68,12 @@ scp -r "me@myseedbox:'/home/me/downloads/qbittorrent/Eli, Eli, Lema Sabachthani 
 
 There's several ways to escape whitespaces in Powershell and Linux shell of course, but this one is the only that worked for me when trying to copy from a Linux server to a Windows computer.
 
+## Copying files with SCP using a specific SSH key
+
+```powershell
+scp -i "C:/Users/Me/.ssh/LightsailDefaultKey-eu-central-1.pem" -r "C:/xampp/htdocs/sensape/wp-content/themes/*" "user@12.345.678.999:/home/user/stack/wordpress/wp-content/themes"
+```
+
 ## `sudo` on Windows
 
 Running commands as admin in the same terminal window on Windows is not as straight-forward as in the Linux/Unix OS family. There's [a tool called `gsudo`](https://community.chocolatey.org/packages/gsudo) which can be installed via chocolatey. In 2024 ›sudo for Windows‹ [was introduced](https://devblogs.microsoft.com/commandline/introducing-sudo-for-windows/).
