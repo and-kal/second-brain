@@ -57,6 +57,7 @@ Developing your own design and style system for a website can take a very long t
 - [randoma11y](https://randoma11y.com/) - generates a set of duotone colours with focus on readability/accessibility
 - [Solarized](https://ethanschoonover.com/solarized/)
 - [uiGradients](https://uigradients.com/)
+- [Transparent Textures](https://www.transparenttextures.com/) - nice for website backgrounds and stuff
 
 ## Website builders
 

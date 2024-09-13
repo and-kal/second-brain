@@ -51,6 +51,7 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - [K-Devices Max For Live](https://k-devices.com/product-category/m4l/) ($)
 - [k-teck devices](https://k-teck.co.uk/max-for-live) ($)
 - [kentaro.tools](https://www.kentaro.tools/) ($)
+- [Lo](https://lndf.fr/Downloads/NOI-LO.amxd) and [Sent](https://lndf.fr/Downloads/Sent.amxd) by L N F D
 - [MCLFO](https://irisdevices.gumroad.com/l/MCLFO)
 - [MIDI UTILITIES by Mono Tale](https://www.monotale.com.ar/) ($)
 - [Modulation Lerp](https://github.com/zsteinkamp/m4l-Modulation-Lerp)
