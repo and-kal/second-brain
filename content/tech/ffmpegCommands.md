@@ -41,3 +41,11 @@ ffmpeg -i input.mp4 -vcodec libwebp -filter:v fps=fps=20 -lossless 0  -compressi
 ```
 
 ([source](https://www.junian.net/tech/ffmpeg-vertical-video-blur/))
+
+## Frame blending
+
+This command reduces the framerate of your video by 50% and smoothly blends between the frames.
+
+```sh
+ffmpeg -i input.mp4 -vf "tblend=average,setpts=0.5*PTS" -r 25 -crf 2 -an output.mp4
+```
