@@ -55,3 +55,11 @@ With this command you can reduce the speed of your video to a tenth and smoothly
 ```sh
 ffmpeg -i input.mp4 -vf "minterpolate=mi_mode=2,setpts=PTS*10" output.mp4
 ```
+
+## GIF optimization
+
+A quick way to make your HG GIFs smaller is:
+
+```sh
+ffmpeg -i input.gif -filter_complex "[0:v] fps=12,scale=-1:480,mpdecimate,split [a][b];[a] palettegen=max_colors=32 [p];[b][p] paletteuse=dither=bayer:bayer_scale=5" output.gif
+```
