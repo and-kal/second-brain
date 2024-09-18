@@ -74,7 +74,7 @@ Try `GET /wp/v2/posts` and every post should now have your custom fields from AC
 
 # Redirect frontend to elsewhere
 
-When using a headless WordPress setup, I ran into a situation where I wanted to have the WordPress admin section be served on `www.example.com/wp-admin`, but visitors should not be allowed to go see any WordPress frontend under `www.example.com`. Instead they should be redirected to the new frontend I host under `www.elpmaxe.com`. In order to do that I built a super minimal theme which only redirects frontend traffic and does nothing else (for which I used [this solution](https://WordPress.stackexchange.com/a/17973)):
+When using a headless WordPress setup, I ran into a situation where I wanted to have the WordPress admin section be served on `www.example.com/wp-admin`, but visitors should not be allowed to go see any WordPress frontend under `www.example.com`. Instead they should be redirected to the new frontend I host under `www.elpmaxe.com`. In order to do that I built a super minimal theme which only redirects frontend traffic and does nothing else (for which I used [this solution](https://wordpress.stackexchange.com/a/17973)):
 
 - under `themes/`create a folder called `redirect`
 - add a `style.css` and an `index.php` to it
@@ -82,7 +82,7 @@ When using a headless WordPress setup, I ran into a situation where I wanted to 
   ```php
   /*
      Theme Name: Redirect
-     Description: Redirects the front end to domain.com
+     Description: Redirects the front end to elpmaxe.com
   */
   ```
 - `style.css` should look like this:

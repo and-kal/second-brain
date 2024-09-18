@@ -41,3 +41,25 @@ ffmpeg -i input.mp4 -vcodec libwebp -filter:v fps=fps=20 -lossless 0  -compressi
 ```
 
 ([source](https://www.junian.net/tech/ffmpeg-vertical-video-blur/))
+
+## Frame blending
+
+This command reduces the framerate of your video by 50% and smoothly blends between the frames (untested).
+
+```sh
+ffmpeg -i input.mp4 -vf "tblend=average,setpts=0.5*PTS" -r 25 -crf 2 -an output.mp4
+```
+
+With this command you can reduce the speed of your video to a tenth and smoothly fade between the frames looks pretty good):
+
+```sh
+ffmpeg -i input.mp4 -vf "minterpolate=mi_mode=2,setpts=PTS*10" output.mp4
+```
+
+## GIF optimization
+
+A quick way to make your HG GIFs smaller is:
+
+```sh
+ffmpeg -i input.gif -filter_complex "[0:v] fps=12,scale=-1:480,mpdecimate,split [a][b];[a] palettegen=max_colors=32 [p];[b][p] paletteuse=dither=bayer:bayer_scale=5" output.gif
+```
