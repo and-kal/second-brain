@@ -79,7 +79,7 @@ scp -i "C:/Users/Me/.ssh/LightsailDefaultKey-eu-central-1.pem" -r "C:/xampp/htdo
 If you have a Bitname VM with a basic Wordpress installation, you will notice to for security reasons, you cannot access phpMyAdmin via `http://12.345.678.999/phpMyAdmin`, because this URL is only accessible using localhost (`127.0.0.1`) as the hostname. That means, you need to create an SSH tunnel, which will send requests to your server via localhost using our SSH key. In order to do so, run the following command:
 
 ```powershell
-ssh -N -L 8888:127.0.0.1:80 "user@12.345.678.999" -i "C:/Users/Me/.ssh/LightsailDefaultKey-eu-central-1.pem"
+ssh -N -L 8888:127.0.0.1:80 "user@12.345.678.999" -i "C:/Users/Me/.ssh/LightsailDefaultKey-eu-central-  1.pem"
 ```
 
 You can begin the command with `ssh -f` to keep the tunnel running in the background, so even when you are closing your terminal it will still be active. In order to close it then, you need to find the process ID by running `ps` and looking for a process namend `ssh` and using its PID run `taskkill -pid <PID>> /F`.

@@ -288,7 +288,7 @@ in  a ++ " " ++ b
 
 ### Error Handling
 
-Error Handling in Haskell can be done with the `Maybe` and `Either` types. `Maybe` is used for data than can be either present or not present (defined or undefined). It will always need a type for the potential data, like `Maybe Int`. Here's an example from [a blog](https://blog.thomasheartman.com/posts/haskells-maybe-and-either-types):
+It's interesting to note that Haskell has no nullable types. Error Handling in Haskell can be done with the `Maybe` and `Either` types. `Maybe` is used for data than can be either present or not present (defined or undefined). It will always need a type for the potential data, like `Maybe Int`. Here's [two](https://blog.thomasheartman.com/posts/haskells-maybe-and-either-types) [examples](https://www.gtf.io/musings/why-haskell):
 
 ```haskell
 safeDiv :: Integral a => a -> a -> Maybe a
@@ -296,7 +296,17 @@ safeDiv _ 0 = Nothing
 safeDiv x y = Just $ x `div` y
 ```
 
-In order to do some more verbose error handling and validation that will not just throw `Nothing`, but some default value for example, you would use the `Either` type. It is roughly defined as `data Either a b = Left a | Right b`. It is a convention to use the `Left` value whenever something fails and the `Right` value for when everything goes right. So the [previous example](https://blog.thomasheartman.com/posts/) could be rewritten as:
+```haskell
+safeHead :: [a] -> Maybe a
+safeHead [] = Nothing
+safeHead (x : _) = Just x
+printTheFirstThing :: [String] -> IO ()
+printTheFirstThing myList = case safeHead myList of
+  Just something -> putStrLn something
+  Nothing -> putStrLn "You're list is empty."
+```
+
+In order to do some more verbose error handling and validation that will not just throw `Nothing`, but some default value for example, you would use the `Either` type. It is roughly defined as `data Either e x = Left e | Right x`. It is a convention to use the `Left` value whenever something fails (hence I called its variable `e` for error) and the `Right` value for when everything goes right. So the [previous example](https://blog.thomasheartman.com/posts/) could be rewritten as:
 
 ```haskell
 safeDiv :: Integral a => a -> a -> Either String a
@@ -467,7 +477,7 @@ In order to explicitely say, which type an expression is supposed to have, we ca
 
 ### Class constraints
 
-Are denoted with the `=>` symbol.
+Class constraints are denoted with the `=>` symbol.
 
 ```haskell
 (==) :: (Eq a) => a -> a -> Bool
@@ -475,7 +485,22 @@ Are denoted with the `=>` symbol.
 
 This says that the two `a` values must be of the `Eq` class.
 
+### Class definitios
+
+<!-- TODO -->
+
+```haskell
+class  Eq a  where
+   (==), (/=) :: a -> a -> Bool
+```
+
+»The definition states that if a type `a` is to be made an instance of the class `Eq` it must support the functions `(==)` and `(/=)` - the class methods - both of them having type `a -> a -> Bool`.« ([source](https://en.wikibooks.org/wiki/Haskell/Classes_and_types#Classes_and_instances))
+
 ## Syntax
+
+### Arrows
+
+As you've just seen above, there's two types of arrows in Haskell: single arrows `->` are used to describe the function types (what a function takes and what it returns). The double arrow `=>` (which always comes first) describes class constraints on the type variables, i.e. what class a variable is supposed to belong to.
 
 ### Parantheses and spaces
 
@@ -579,6 +604,8 @@ type String = [Char]
 
 Type synonyms are useful for making code more readable and keeping it well documented. Types and type synonyms can only be used in the type part of your Haskell code, i.e. not inside of function definitions or anything (unless you use a `::` somewhere inside your function body).
 
+Alternatively, you can also use the `newtype` decleration instead of `data`. Its very similar to `data` with the exception that the value constructor of `newtype` is strict and the one of `data` is lazy, and `newtype` can only be used, if the type has one single constructor with precisely one field.
+
 ### Algebraic Data Types (ADT)
 
 Instead of OOP-tyle classes, in Haskell you will use data types. One common type of data are Algebraic Data Types. (Learn about the origin of that term [here](https://blog.poisson.chat/posts/2024-07-26-adt-history.html).) ADTs are defined by two sorts of data:
@@ -603,6 +630,7 @@ Alternatively, we could have used ›record syntax‹ for writing a data type, w
 data Person = { firstName :: String
               , lastName :: String
               , age :: Int
+              , profession :: Maybe String
               } deriving (Show)
 ```
 
@@ -668,6 +696,9 @@ _As pattern_ »allows you to bind some value in the match while at the same time
 ## Monads, Monoids, applicative functors, functors
 
 <!-- TODO:
+
+Monadic contexts...
+
 ### Context
 
 [...]
@@ -675,11 +706,12 @@ _As pattern_ »allows you to bind some value in the match while at the same time
 #### Context wrapping
 
 [...]
+
 -->
 
 ### Functors
 
-`fmap` or `<$>` (which is the infix variant of the former)
+`fmap`, or `<$>` (which is the infix variant of `fmap`)
 
 **Functors let you apply functions to a value wrapped in a context.**
 
@@ -687,7 +719,7 @@ _As pattern_ »allows you to bind some value in the match while at the same time
 
 **Applicatives let you apply functions wrapped in a context to a value wrapped in a context.**
 
-`liftA` or `<*>`
+`liftA`, or `<*>`
 
 ### Monads
 
@@ -718,3 +750,4 @@ _Haddock_ is a markup language in Hakskell that is used to annotate your code so
 - Practical Haskell. A Real-World Guide to Functional Programming by Alejandro Serrano Mena (2022, Apress)
 - [Learn X in Y minutes. Where X=Lambda Calculus](https://learnxinyminutes.com/docs/lambda-calculus/) by Max Sun et al. (2023)
 - [Haskell Cheat Sheet](https://hackage.haskell.org/package/CheatSheet-1.10/src/CheatSheet.pdf) by Justin Bailey (2009)
+- [Why Haskell?](https://www.gtf.io/musings/why-haskell)
