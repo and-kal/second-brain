@@ -84,6 +84,16 @@ ssh -N -L 8888:127.0.0.1:80 "user@12.345.678.999" -i "C:/Users/Me/.ssh/Lightsail
 
 You can begin the command with `ssh -f` to keep the tunnel running in the background, so even when you are closing your terminal it will still be active. In order to close it then, you need to find the process ID by running `ps` and looking for a process namend `ssh` and using its PID run `taskkill -pid <PID>> /F`.
 
+As an alternative to SSH tunnels, you can also use a SSH jumphost:
+
+```powershell
+ssh -J user@REMOTEMACHINE:22 -p 22 user@12.34.56.7
+```
+
+`REMOTEMACHINE` acts as a proxy here that forwards your request to `12.34.56.7`, which is another remote resource.
+
+SSH tunneling and jump hosts are explained visually in [this article](https://ittavern.com/visual-guide-to-ssh-tunneling-and-port-forwarding/).
+
 ## `sudo` on Windows
 
 Running commands as admin in the same terminal window on Windows is not as straight-forward as in the Linux/Unix OS family. There's [a tool called `gsudo`](https://community.chocolatey.org/packages/gsudo) which can be installed via chocolatey. In 2024 ›sudo for Windows‹ [was introduced](https://devblogs.microsoft.com/commandline/introducing-sudo-for-windows/).
