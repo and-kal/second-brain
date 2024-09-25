@@ -70,8 +70,9 @@ Is there a way to write recursive lamda abstractions? Since these functions are 
 
 ### Function application
 
-Function application in Haskell can be done simply by putting a space between two things. If you want to apply the result of one function to another function, you would put the former in parantheses:
-`sum (map (* 7) [5,6,7,8])`. However, there's also the `$` operator, which does almost the same, but has the lowest precedence of all operators and so it will be executed last, which means that you don't need parantheses, but could write `sum $ map (* 7) [5,6,7,8]`. Function application is a function just like any other, so you can also apply it to other functions: `map ($ 2) [sqrt, sqrt . sqrt]`. Note that we use the function composition operator `.` here. Both, `.` and `$`, are right-associative. Thus,:{} `f (g (z x))` is the same as `f $ g $ z x`, which is the same as `(f . g . z) x`.
+Function application in Haskell can be done simply by putting a space between two things. If you want to apply the result of one function to another function, you would put the former in parantheses: `sum (map (* 7) [5,6,7,8])`. However, there's also the `$` operator, which does almost the same, but has the lowest precedence of all operators and so it will be executed last, which means that you don't need parantheses, but could write `sum $ map (* 7) [5,6,7,8]`. Function application is a function just like any other, so you can also apply it to other functions: `map ($ 2) [sqrt, sqrt . sqrt]`.
+
+Note that we use the function composition operator `.` here. Both, `.` and `$`, are right-associative. Thus, `f (g (z x))` is the same as `f $ g $ z x`, which is the same as `(f . g . z) x`. The `.` operator is useful for chaining functions; for example when you want perform several `map`s, instead of writing `map (* 2) $ map (/ 3) [3,6,9]` you can write `map ((* 2) . (/ 3)) [3,4,5]`.
 
 Function composition also allows for so-called ›point-free style‹ when writing functions, where the funtions' arguments/parameters are omitted. A classic example is `sum = foldr (+) 0`. (This is also called [tacit programming](https://en.wikipedia.org/wiki/Tacit_programming). The term _point_ here refers to the function parameters, which are called _points_ in mathematics.)
 
@@ -101,7 +102,7 @@ The standard library for [debugging in Haskell](https://en.wikibooks.org/wiki/Ha
 import Data.List (nub)
 
 length $ nub [0,1,2,0,1,2,0,1,2,3]
--- returns 4
+-- returns 3
 ```
 
 `find` takes a condition and a list and returns the first element that fulfills the condition (as an [ADT](#algebraic-data-types-adt)).
@@ -382,7 +383,7 @@ Consider this example from »Learn You a Haskell for Great Good!«:
 where xs = [(1,3), (4,3), (2,4), (5,3), (5,6), (3,1)]
 ```
 
-The `(a,b) <- xs` is a so-called generator, which takes every tuple from xs (you can read it as ›is drawn from‹) and pipes it to left-side of the `|` guard (read: ›such that‹).
+The `(a,b) <- xs` is a so-called ›generator‹, which takes every tuple from xs (you can read it as ›is drawn from‹) and pipes it to left-side of the `|` guard (read: ›such that‹).
 
 List comprehensions can include predicates. Let's say we only want the sum of even numbers, we could write:
 
@@ -392,13 +393,13 @@ in
     [a+b | (a,b) <- xs, even a, even b]
 ```
 
-and would get `[6]` as a result. (The `, even a, even b` part are the ›predicates‹.)
+and would get `[6]` as a result; the `, even a, even b` part are the ›predicates‹. Together, the generator and the predicates arecalled a ›qualifier‹.
 
 Using list comprehensions is similar to using `map` and mostly they're interchangeable.
 
 ### Tuples
 
-»A tuple is [...] a type with a fixed number of components, each of them holding a value, not necessarily of the same type.« (Serrano Mena)
+»A tuple is [...] a type with a fixed number of components, each of them holding a value, not necessarily of the same type.« (Serrano Mena) A structure that is often used is an association list, which is a list of tuples, such `[(1,"Dance Party USA"), (2,"Quiet City"), (3,"Cold Weather")]`, which are like key-value pairs. The `lookup` function lets you access the value associated to a provided key.
 
 #### Destructor functions
 
@@ -489,14 +490,14 @@ Class constraints are denoted with the `=>` symbol.
 (==) :: (Eq a) => a -> a -> Bool
 ```
 
-This says that the two `a` values must be of the `Eq` class.
+This says that the two `a` values must be of the `Eq` class (denoting basically any type where equality tests make sense.)
 
 ### Class definitios
 
 <!-- TODO -->
 
 ```haskell
-class  Eq a  where
+class Eq a  where
    (==), (/=) :: a -> a -> Bool
 ```
 
@@ -739,7 +740,7 @@ Loading files into the interpreter is done with the `:l` command followed by the
 
 Building and packaging tools for Haskell are _cabal_ and _stack_.
 
-The online repository for Haskell libraries are called _Hackage_ (for _cabal_) and _Stackage_ (for _stack_).
+The online repository for Haskell libraries/packages are called _Hackage_ (for _cabal_) and _Stackage_ (for _stack_). »Stackage provides snapshots of Hackage (called resolvers) in which all packages are known to work well together. This provides a huge gain for reproducibility at the expense of not always containing the bleeding-edge version of the packages.« (Serrano Mena)
 
 The main installer for Haskell is _GHCUp_.
 
