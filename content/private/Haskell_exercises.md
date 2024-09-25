@@ -95,3 +95,14 @@ all' list = foldr (&&) True list
 -- using folds and point-free style
 all' = foldr (&&) True
 ```
+
+# custom `elem`
+
+`elem` using `find` and pattern matching:
+
+```haskell
+elem' :: a -> [a] -> Bool
+elem' needle haystack = case find (== needle) haystack of
+    Just _ -> True
+    False -> False
+```

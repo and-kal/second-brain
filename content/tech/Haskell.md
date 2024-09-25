@@ -117,7 +117,7 @@ find (\val -> val `mod` 3 == 0) [2,45,99]
 
 Note that, if you want to supply your own equality function (as we just did with `find`), but for `nub`, `delete`, `union`, `intersect` and `group`, you would have their respective `nubBy`, `deleteBy`, `unionBy`, `intersectBy` or `groupBy` counterparts.
 
-There's many more useful list-related functions in `Data.List`, e.g.: `intersperse`, `intercalcate`, `concat`, `isPrefixOf`, `isSuffixOf`, `isInfixOf`, `elemIndex`, `findIndex`, `lines`, `words`, `\\` (list difference function), `!!`, `insert` and the several `permutations` functions.
+There's many more useful list-related functions in `Data.List`, e.g.: `intersperse`, `intercalcate`, `concat`, `isPrefixOf`, `isSuffixOf`, `isInfixOf`, `elemIndex`, `findIndex`, `lines`, `words`, `\\` (list difference function), `!!` (list index subscript operator), `insert` and the several `permutations` functions.
 
 <!--
 #### `Data.Function`
@@ -264,10 +264,16 @@ Infix operators like `+` also represent functions. For example, `:` (called ›c
 Another infix operator is `!!`, which takes a list and an index and returns the element at that index from the list:
 
 ```haskell
-([1,10,100,1000] !! 3)
+[1,10,100,1000] !! 3
 ```
 
-This will return 1000, because lists are 0-indexed.
+This will return `1000`, because lists are 0-indexed.
+
+You can also use the infix notation for a function that takes two arguments, by placing it inside two `\``s:
+
+```haskell
+[1,10,100,1000] `union` [100,1000,10000]
+```
 
 ### Bindings
 
