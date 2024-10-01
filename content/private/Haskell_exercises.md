@@ -106,3 +106,57 @@ elem' needle haystack = case find (== needle) haystack of
     Just _ -> True
     False -> False
 ```
+
+# Exercise 4-2. Altering Your Maps
+
+```haskell
+import qualified Data.Map as M
+
+{-# LANGUAGE LambdaCase #-}
+
+insert' k v m = M.alter (\case
+                        Nothing -> Just v
+                        Just _ -> Just v
+                        ) k m
+
+delete' k m = M.alter (\case
+                        Nothing -> Nothing
+                        Just _ -> Nothing
+                        ) k m
+
+adjust' f k m = M.alter (fmap f) k m
+```
+
+# Exercise 4-3. Classifying Clients
+
+```haskell
+data Client i = GovOrg { clientId :: i, clientName :: String }
+            | Company { clientId :: i, clientName :: String, person :: Person, duty :: String }
+            | Individual { clientId :: i, person :: Person }
+deriving (Show, Eq, Ord)
+
+data ClientKind = GovOrgKind | CompanyKind | IndividualKind
+
+clientKind :: Client i -> ClientKind
+clientKind (GovOrg _ _)      = GovOrgKind
+clientKind (Company _ _ _)   = CompanyKind
+clientKind (Individual _ _)  = IndividualKind
+
+classifyClients1 = foldr insertClient Map.empty
+  where
+    insertClient client acc =
+      Map.insertWith Set.union (clientKind client) (Set.singleton client) acc
+
+classifyClients_2 clients =
+  let (govOrgs, companies, individuals) = foldr splitClient ([], [], []) clients
+  in Map.fromList [ (GovOrgKind, Set.fromList govOrgs)
+                  , (CompanyKind, Set.fromList companies)
+                  , (IndividualKind, Set.fromList individuals)
+                  ]
+  where
+    splitClient client (gos, cos, indvs) =
+      case clientKind client of
+        GovOrgKind     -> (client : gos, cos, indvs)
+        CompanyKind    -> (gos, client : cos, indvs)
+        IndividualKind -> (gos, cos, client : indvs)
+```

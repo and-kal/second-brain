@@ -96,6 +96,14 @@ The standard library for [debugging in Haskell](https://en.wikibooks.org/wiki/Ha
 
 #### `Data.List`
 
+List are constructed using the `:`, which functions as a constructor. So these two declarations are equivalent:
+
+```haskell
+someList = [1,6,25,7]
+
+someList = 1:6:25:7:[]
+```
+
 `Data.List` is module with many useful list manipulation and analysis functions. For example `nub` (meaning »essence«) removes duplicate elements from a list:
 
 ```haskell
@@ -180,25 +188,25 @@ take' n _
 
 In the last line, we're destructuring the second parameter, which is a list, by means of pattern matching. Then we take the first element from the list, `x`, and with `:` we create a new list with `take' (n-1) xs` appended. That means `take'` is called again, but with the first parameter `n` that we gave reduced by one. So if we had called `take' 3 [3, 6, 9, 12, 15]`, the last line would come down to
 
-```
+```haskell
 take' 3 (3:[3, 6, 9, 12, 15]) = 3 : take' 2 [6, 9, 12, 15]
 ```
 
 then to
 
-```
+```haskell
 take' 2 (6:[9, 12, 15]) = 3:6:take' 1 [9, 12, 15]
 ```
 
 then to
 
-```
+```haskell
 take' 1 (9:[12, 15]) = 3:6:9:take' 0 [12, 15]
 ```
 
 and eventually to
 
-```
+```haskell
 take' 0 (12:[15]) = 3:6:9:[]
 ```
 
@@ -361,11 +369,36 @@ For storing key-value pairs you would use association lists (or: dictionaries), 
 
 Usually, you would use the [`Data.Map`](#datamap) module here, which exports a `Map` type and corresponding functions useful for key-value pairs. Maps are unordered though.
 
-_Type classes_ are like interfaces in other programming languages in that they non-exhaustively define certain behaviour of a type.
+_Typeclasses_ are like interfaces in other programming languages in that they (non-exhaustively) define certain behaviour of a type. (But they have nothing to do really with what is called ›classes‹ in object-oriented programming languages.)
 
-Some common type classes are `Eq`, `Ord`, `Enum`, `Bounded`, `Show` (converts to string), `Read` (converts from string) and `Ord` (can have three values: `LT`, `EQ` and `GT`).
+Some common typeclasses are `Eq`, `Ord`, `Enum`, `Bounded`, `Show` (converts to string), `Read` (converts from string) and `Ord` (can have three values: `LT`, `EQ` and `GT`).
 
-Good to know: When defining types, constructors, type classes or kinds yourself they must start with an uppercase letter - or if you give them an operator name, that one should start with a `:`.
+Good to know: When defining types, constructors, typeclasses or kinds yourself they must start with an uppercase letter - or if you give them an operator name, that one should start with a `:`.
+
+Defining custom typeclasses can be done with this syntax:
+
+```haskell
+class CustomEq equatable where
+    (==) :: equatable -> equatable -> Bool
+    (/=) :: equatable -> equatable -> Bool
+```
+
+Here, `CustomEq` is the typeclass and `equatable` is a type variable, Then we also provide two type declarations for functions that members of `CustomEq` need to fulfil. From these two functions we can derive the minimal complete definition of the typeclass. That means that any instance of our `Custom` typeclass has to overwrite these two functions:
+
+<!-- TODO: is this correct? -->
+
+```haskell
+data MovieLog = Watched | NotWatched | Aborted
+
+instance CustomEq MovieLog where
+    Watched == Watched = True
+    NotWatched == NotWatched = True
+    Aborted == Aborted = True
+    Watched /= Watched = False
+    NotWatched /= NotWatched = False
+    Aborted /= Aborted = False
+    _ /= _ = False
+```
 
 ### Lists
 
@@ -406,6 +439,25 @@ Using list comprehensions is similar to using `map` and mostly they're interchan
 - `fst` gives the first component of a tuple
 - `snd` gives the second component of a tuple
 
+### Containers
+
+Containers are data types that contain any number of elements of a homogeneous type, e.g. graphs, sets, maps, and trees. In order to work with these data types, you need to include `containers` package, because they are not provided by `Prelude`.
+
+Maps are lists of key-value tuples. Sets are list with only unique items. <!-- Graphs are... -->
+
+Trees are a data structure that consist of an element called a node, which points to an element on the left and an element on the
+right. In a balanced tree, elements on the left are always smaller than the right elements. These elements can again be trees (so-called sub-trees) and point again to two elements / nodes, or to only one element (a so-called singleton), or to none.
+
+```haskell
+data Tree a = EmptyTree | Node a (Tree a) (Tree a) deriving (Show, Read, Eq)
+```
+
+Or using record syntax:
+
+```haskell
+data Tree a = EmptyTree | Node {leftBranch :: Tree a, rightBranch :: Tree a} deriving (Show, Read, Eq)
+```
+
 ### Conditions & Control structures
 
 In Haskell if-then-else statements look like this:
@@ -438,7 +490,7 @@ f x = case x of 0 -> 18
 ✨ By the way, »pattern matching in function definitions is syntactic sugar for case expressions.«
 
 <!-- TODO:
-### Type classes
+### Typeclasses
 
 Are similar to interfaces in OOP in that they determine the types of operations they permit their members. Also you can create instances of classes: `class`, `instance`
 [...]
@@ -665,6 +717,14 @@ data Maybe a = Nothing | Just a
 Serrano Mena, p.79pp.
 -->
 
+<!--
+### Recursive data structures
+
+fixity
+
+Lipovaca, p.101pp.
+-->
+
 ## Pattern matching
 
 Pattern matching allows you to check if some data matches a certain pattern and then destructure the data according to that pattern.
@@ -748,7 +808,9 @@ Haskell funtions, types and typeclasses can be grouped into modules and a Haskel
 
 In order to search Haskell libraries by function names, or type signatures there is an API called [Hoogle](https://hoogle.haskell.org/).
 
-_Haddock_ is a markup language in Hakskell that is used to annotate your code so that you have a proper documentation for your functions usually done by writing `-- |` before your function definition or `-- ^` after (or next to) it. (Check these [Haddock tips](https://kowainik.github.io/posts/haddock-tips) for some more background.)
+_Haddock_ is a markup language in Haskell that is used to annotate your code so that you have a proper documentation for your functions usually done by writing `-- |` before your function definition or `-- ^` after (or next to) it. (Check these [Haddock tips](https://kowainik.github.io/posts/haddock-tips) for some more background.)
+
+Virtual/isolated environments in Haskell can be created with so called ›resolvers‹, which describe »a set of packages with a specific version and a specific compiler environment in which they work« (Serrano Mena) and which are described in a `.cabal` or `stack.yaml` file respectively.
 
 ## Sources
 
