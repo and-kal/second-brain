@@ -17,3 +17,7 @@ Similarly, instead of using regular division `/`, you can right shift a value `n
 1030 >> 4
 //64
 ```
+
+```python
+max_int32 = (1 << 31) - 1
+```
