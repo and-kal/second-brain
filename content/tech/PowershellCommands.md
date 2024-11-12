@@ -18,7 +18,7 @@ draft: false
 
 `remove-appxpackage Microsoft.MicrosoftEdge.Stable_115.0.1901.203_neutral__8wekyb3d8bbwe`
 
-On Windows updates Edge will usually be reinstalled, so you gotta do this regularly. (►\_\_◄) Or you can use some [tools to debloat Windows](./DebloatingWindows).
+On Windows updates Edge will usually be reinstalled, so you gotta do this regularly. (►\_\_◄) Or you can use some [tools to debloat Windows](./debloatingwindows).
 
 ## Get detailed network configurations
 

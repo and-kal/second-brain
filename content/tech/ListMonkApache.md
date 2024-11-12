@@ -1,5 +1,5 @@
 ---
-title: "Cool Axoloti patches"
+title: "listmonk newsletter manager on an Apache server"
 date: "2024-11-05"
 draft: false
 ---
@@ -38,7 +38,10 @@ So, enable HTTPS for your subdomain with `sudo certbot --apache`. Certbot will d
 
 listmonk should now be available under `https://newsletter.myparty.de`.
 
-<!--
+---
+
+For reference, here's what your `config.toml` should basically look like:
+
 ```conf
 [app]
 address = "localhost:9000"
@@ -57,4 +60,3 @@ max_idle = 25
 max_lifetime = "300s"
 params = ""
 ```
--->

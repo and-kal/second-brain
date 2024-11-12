@@ -1,5 +1,5 @@
 ---
-title: "Useful Windows tools for debloating and stuff"
+title: "Tools for debloating Windows and stuff"
 date: "2023-10-12"
 draft: false
 ---

@@ -76,6 +76,8 @@ Note that we use the function composition operator `.` here. Both, `.` and `$`, 
 
 Function composition also allows for so-called ›point-free style‹ when writing functions, where the funtions' arguments/parameters are omitted. A classic example is `sum = foldr (+) 0`. (This is also called [tacit programming](https://en.wikipedia.org/wiki/Tacit_programming). The term _point_ here refers to the function parameters, which are called _points_ in mathematics.)
 
+Reverse function application is done with the `#` operator: `x # f = f x`.
+
 ### Side effects
 
 Haskell is a _pure_ programming language, which means it _seperates code with side effects from the actual business logic_.
@@ -358,20 +360,32 @@ Further common types:
 - `Number`
 - `Fractional`
 
-For storing key-value pairs you would use association lists (or: dictionaries), which are just list of pairs:
+For storing key-value pairs you could use association lists (or _dictionaries_), which are just list of pairs:
 
 ```haskell
 [("Alpha","one")
 ,("Beta","two")
-,("Gamma","three")
-]
+,("Gamma","three")]
 ```
 
 Usually, you would use the [`Data.Map`](#datamap) module here, which exports a `Map` type and corresponding functions useful for key-value pairs. Maps are unordered though.
 
+### Typeclasses
+
 _Typeclasses_ are like interfaces in other programming languages in that they (non-exhaustively) define certain behaviour of a type. (But they have nothing to do really with what is called ›classes‹ in object-oriented programming languages.)
 
-Some common typeclasses are `Eq`, `Ord`, `Enum`, `Bounded`, `Show` (converts to string), `Read` (converts from string) and `Ord` (can have three values: `LT`, `EQ` and `GT`).
+Some common typeclasses are `Eq`, `Ord` and `Enum`. Furthermore, there are:
+
+- `Bounded`
+- `Show`, which converts to string,
+- `Read`, which converts from string,
+- `Ord`, which can have three values: `LT`, `EQ` and `GT`,
+- `Traversable`,
+- `Applicative` (`<*>`),
+- `Alternative` (`(<|>)`),
+- `Monad` (`>>=`),
+- `Monoid`,
+- etc.
 
 Good to know: When defining types, constructors, typeclasses or kinds yourself they must start with an uppercase letter - or if you give them an operator name, that one should start with a `:`.
 
@@ -399,6 +413,92 @@ instance CustomEq MovieLog where
     Aborted /= Aborted = False
     _ /= _ = False
 ```
+
+### Data Types
+
+Data types are constructed via the `data` keyword and different constructors are seperated by a guard `|`.
+
+A data type without constructors and with empty alternatives is similar to an enum in other languages:
+
+```haskell
+data NameOfDataType = OneAlternative | TheOtherAlternative | AThirdAlternative
+```
+
+Type names and constructors often share the same name:
+
+```haskell
+...
+```
+
+Notice that there is also a `type` keyword, which is not used for defining types though, but only for _type synonyms_:
+
+```haskell
+type String = [Char]
+```
+
+Type synonyms are useful for making code more readable and keeping it well documented. Types and type synonyms can only be used in the type part of your Haskell code, i.e. not inside of function definitions or anything (unless you use a `::` somewhere inside your function body).
+
+Alternatively, you can also use the `newtype` decleration instead of `data`. Its very similar to `data` with the exception that the value constructor of `newtype` is strict and the one of `data` is lazy, and `newtype` can only be used, if the type has one single constructor with precisely one field.
+
+### Algebraic Data Types (ADT)
+
+Instead of OOP-tyle classes, in Haskell you will use data types. One common type of data are Algebraic Data Types. (Learn about the origin of that term [here](https://blog.poisson.chat/posts/2024-07-26-adt-history.html).) ADTs are defined by two sorts of data:
+
+- a »name for the type that will be used to represent its values«, and
+- one or more data constructors, which »will be used to create new values. These constructors may have arguments that hold values of the specified types.«
+
+```haskell
+data NameOfDataType = NameOfConstructorOne String
+                    | NameOfConstructorTwo String Integer
+                    | NameOfConstructorThree String String Bool
+                    deriving (Show)
+```
+
+`deriving (Show)` is optional. It's used so that you can print the values without having to write a custom function for that (_automatic deriving_). What happens is that our data type becomes a member of the `Show` typeclass.
+
+Also notice that inside of our ADT, we defined three more types `NameOfConstructorOne`, `NameOfConstructorTwo` and `NameOfConstructorThree`. The names of these constructors must be unique inside a module. However, constructors can have the same name as the data type that they belong to: `data Point = Point Float Float deriving (Show)`
+
+Alternatively, we could have used ›record syntax‹ for writing a data type, which would look like this:
+
+```haskell
+data Person = { firstName :: String
+              , lastName :: String
+              , age :: Int
+              , profession :: Maybe String
+              } deriving (Show)
+```
+
+### Type constructors
+
+The previously defined data types are _value constructors_, because they takes some values as parameters and give out a new value. In a similar manner we also have _type constructor_, which produce new types, for example:
+
+```haskell
+data Maybe a = Nothing | Just a
+```
+
+`Maybe` is not a type in itself. Only if we provide some value for `a` (i.e. parametrizing it) does it become a type (a so-called _concrete type_):
+
+```haskell
+:t Just "Hello" -- Just "Hello" :: Maybe [Char]
+
+:t Just [1,2,3,4] -- Just "1234" :: Num a => Maybe [a]
+
+:t Nothing -- Nothing :: Maybe a
+```
+
+<!--
+### Smart Constructors and Views
+
+Serrano Mena, p.79pp.
+-->
+
+<!--
+### Recursive data structures
+
+fixity
+
+Lipovaca, p.101pp.
+-->
 
 ### Lists
 
@@ -639,92 +739,6 @@ There's also libraries for parallel and concurrent execution of expressions, bec
 [...]
 -->
 
-## Data Types
-
-Data types are constructed via the `data` keyword and different constructors are seperated by a guard `|`.
-
-A data type without constructors and with empty alternatives is similar to an enum in other languages:
-
-```haskell
-data NameOfDataType = OneAlternative | TheOtherAlternative | AThirdAlternative
-```
-
-Type names and constructors often share the same name:
-
-```haskell
-...
-```
-
-Notice that there is also a `type` keyword, which is not used for defining types though, but only for _type synonyms_:
-
-```haskell
-type String = [Char]
-```
-
-Type synonyms are useful for making code more readable and keeping it well documented. Types and type synonyms can only be used in the type part of your Haskell code, i.e. not inside of function definitions or anything (unless you use a `::` somewhere inside your function body).
-
-Alternatively, you can also use the `newtype` decleration instead of `data`. Its very similar to `data` with the exception that the value constructor of `newtype` is strict and the one of `data` is lazy, and `newtype` can only be used, if the type has one single constructor with precisely one field.
-
-### Algebraic Data Types (ADT)
-
-Instead of OOP-tyle classes, in Haskell you will use data types. One common type of data are Algebraic Data Types. (Learn about the origin of that term [here](https://blog.poisson.chat/posts/2024-07-26-adt-history.html).) ADTs are defined by two sorts of data:
-
-- a »name for the type that will be used to represent its values«, and
-- one or more data constructors, which »will be used to create new values. These constructors may have arguments that hold values of the specified types.«
-
-```haskell
-data NameOfDataType = NameOfConstructorOne String
-                    | NameOfConstructorTwo String Integer
-                    | NameOfConstructorThree String String Bool
-                    deriving (Show)
-```
-
-`deriving (Show)` is optional. It's used so that you can print the values without having to write a custom function for that (_automatic deriving_). What happens is that our data type becomes a member of the `Show` typeclass.
-
-Also notice that inside of our ADT, we defined three more types `NameOfConstructorOne`, `NameOfConstructorTwo` and `NameOfConstructorThree`. The names of these constructors must be unique inside a module. However, constructors can have the same name as the data type that they belong to: `data Point = Point Float Float deriving (Show)`
-
-Alternatively, we could have used ›record syntax‹ for writing a data type, which would look like this:
-
-```haskell
-data Person = { firstName :: String
-              , lastName :: String
-              , age :: Int
-              , profession :: Maybe String
-              } deriving (Show)
-```
-
-### Type constructors
-
-The previously defined data types are _value constructors_, because they takes some values as parameters and give out a new value. In a similar manner we also have _type constructor_, which produce new types, for example:
-
-```haskell
-data Maybe a = Nothing | Just a
-```
-
-`Maybe` is not a type in itself. Only if we provide some value for `a` (i.e. parametrizing it) does it become a type (a so-called _concrete type_):
-
-```haskell
-:t Just "Hello" -- Just "Hello" :: Maybe [Char]
-
-:t Just [1,2,3,4] -- Just "1234" :: Num a => Maybe [a]
-
-:t Nothing -- Nothing :: Maybe a
-```
-
-<!--
-### Smart Constructors and Views
-
-Serrano Mena, p.79pp.
--->
-
-<!--
-### Recursive data structures
-
-fixity
-
-Lipovaca, p.101pp.
--->
-
 ## Pattern matching
 
 Pattern matching allows you to check if some data matches a certain pattern and then destructure the data according to that pattern.
@@ -778,7 +792,9 @@ Monadic contexts...
 
 ### Functors
 
-`fmap`, or `<$>` (which is the infix variant of `fmap`)
+`fmap`, or `<$>` (which is the infix variant of `fmap`) »is a way to map a function that _preserves the shape_ and _changes the result_.« (Le, 2024)
+
+A `Functor` in Haskell is a typeclass and it is generally something that you can apply a mapping function to, which is following some laws and preserves a certain aspect of what it is applied to. »[A] _Functor_ gives you a way to ›map over‹ values in a way that _preserves shape_. And what is ›shape‹? A shape is _the thing that fmap preserves_«, or the _conserved quantity_ (Le, 2024). For example, when applying `fmap` to a list, the length and ordering of the list is preserved.
 
 **Functors let you apply functions to a value wrapped in a context.**
 
@@ -786,15 +802,23 @@ Monadic contexts...
 
 **Applicatives let you apply functions wrapped in a context to a value wrapped in a context.**
 
-`liftA`, or `<*>`
+<!-- `liftA`, or `<*>` -->
 
 ### Monads
 
 »Monads apply a function that returns a wrapped value to a wrapped value. Monads have a function `liftM` or `>>=` (pronounced ›bind‹) to do this.«
 
-## The Interpreter
+»In a way, Monad simply ›is‹ the way to combine _Functor_ shapes together where the final shape is allowed to depend on the results.« (Le, 2024)
+
+### Monoids
+
+»It is legitimate to think of monoids as types which support appending in some sense«. (source: [wikibboks](https://en.wikibooks.org/wiki/Haskell/Monoids))
+
+## The interpreter
 
 Loading files into the interpreter is done with the `:l` command followed by the path to the file.
+
+A useful library for writing command-line tools in Haskell is [optparse-applicative](https://hackage.haskell.org/package/optparse-applicative).
 
 ## Haskell ecosystem
 
@@ -815,8 +839,9 @@ Virtual/isolated environments in Haskell can be created with so called ›resolv
 ## Sources
 
 - [Functional Programming by Example](https://caiorss.github.io/Functional-Programming/index.html) by Caio Rodrigues (2018)
+- [Functors to Monads: A Story of Shapes](https://blog.jle.im/entry/functors-to-monads-a-story-of-shapes.html) by Justin Le (2024)
+- [Haskell Cheat Sheet](https://hackage.haskell.org/package/CheatSheet-1.10/src/CheatSheet.pdf) by Justin Bailey (2009)
+- [Learn X in Y minutes. Where X=Lambda Calculus](https://learnxinyminutes.com/docs/lambda-calculus/) by Max Sun et al. (2023)
 - Learn You a Haskell for Great Good! A Beginner's Guide by Miran Lipovaca (2011, No Starch Press)
 - Practical Haskell. A Real-World Guide to Functional Programming by Alejandro Serrano Mena (2022, Apress)
-- [Learn X in Y minutes. Where X=Lambda Calculus](https://learnxinyminutes.com/docs/lambda-calculus/) by Max Sun et al. (2023)
-- [Haskell Cheat Sheet](https://hackage.haskell.org/package/CheatSheet-1.10/src/CheatSheet.pdf) by Justin Bailey (2009)
 - [Why Haskell?](https://www.gtf.io/musings/why-haskell)
