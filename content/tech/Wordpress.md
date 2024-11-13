@@ -107,3 +107,22 @@ add_action('init','add_cors_http_header');
 ```
 
 I added it to `/httpdocs/wp-content/plugins/my-calendar/my-calender.php` hoping that the CORS header will be scoped only to the MyCalendar routes, but I don't think that's the case. It's also not the best idea to add custom code in `plugins` files instead of `themes` files, because the code might get overwritten when updating the respective plugin.
+
+# Moving wordpress from one server to another without plugins
+
+[Step 0](https://developer.wordpress.org/advanced-administration/security/backup/)
+
+[Step 1](https://developer.wordpress.org/advanced-administration/security/backup/files/)
+
+- zip the public folder (e.g. `/var/www/wordpress) and download
+
+[Step 2](https://developer.wordpress.org/advanced-administration/security/backup/database/)
+
+- export the database via _phpmyadmin_
+
+[Step 3](https://developer.wordpress.org/advanced-administration/upgrade/migrating/)
+
+- create a database on your new server and import the backup
+- change the database credentials in `wp-config.php`
+
+- use `wp-cli` in order to seacrch-and-replace all links in your database with `wp search-replace '://olddomain.com' '://new domain.com' --all-tables`

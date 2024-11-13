@@ -372,7 +372,7 @@ Usually, you would use the [`Data.Map`](#datamap) module here, which exports a `
 
 ### Typeclasses
 
-_Typeclasses_ are like interfaces in other programming languages in that they (non-exhaustively) define certain behaviour of a type. (But they have nothing to do really with what is called ›classes‹ in object-oriented programming languages.)
+_Typeclasses_ are like interfaces in other programming languages in that they (non-exhaustively) define certain behaviour of a type. (But they have nothing to do really with what is called ›classes‹ in object-oriented programming languages.) So _types are instances of typeclasses_, which means that these types will be able to use the functions defined in the typeclass (if present).
 
 Some common typeclasses are `Eq`, `Ord` and `Enum`. Furthermore, there are:
 
@@ -395,6 +395,8 @@ Defining custom typeclasses can be done with this syntax:
 class CustomEq equatable where
     (==) :: equatable -> equatable -> Bool
     (/=) :: equatable -> equatable -> Bool
+    x == y = not (x /= y) -- optional
+    x /= y = not (x == y) -- optional
 ```
 
 Here, `CustomEq` is the typeclass and `equatable` is a type variable, Then we also provide two type declarations for functions that members of `CustomEq` need to fulfil. From these two functions we can derive the minimal complete definition of the typeclass. That means that any instance of our `Custom` typeclass has to overwrite these two functions:
