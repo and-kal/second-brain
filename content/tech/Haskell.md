@@ -167,9 +167,7 @@ Some of `Data.Set`s functions are
 
 #### `id`
 
-`id` is the identity funtion in Haskell: »In functional languages, functions are first class values that you can pass as a parameter. So one of the most common uses of `id` comes up when you pass a function as a parameter to another function to tell it what to do. One of the choices of what to do is likely to be "just leave it alone" - in that case, you pass id as the parameter.« ([source](https://stackoverflow.com/a/3136407/20232056))
-
-<!-- [tbc.] -->
+`id` is the identity function in Haskell: »In functional languages, functions are first class values that you can pass as a parameter. So one of the most common uses of `id` comes up when you pass a function as a parameter to another function to tell it what to do. One of the choices of what to do is likely to be "just leave it alone" - in that case, you pass id as the parameter.« ([source](https://stackoverflow.com/a/3136407/20232056)) Basically, `id` returns the same thing that you pass to it.
 
 ### Recursion and iteration
 
@@ -478,7 +476,7 @@ The previously defined data types are _value constructors_, because they takes s
 data Maybe a = Nothing | Just a
 ```
 
-`Maybe` is not a type in itself. Only if we provide some value for `a` (i.e. parametrizing it) does it become a type (a so-called _concrete type_):
+`Maybe` is not a type in itself, but a type constructor. Only if we provide some value for `a` (i.e. parametrizing it) does it become a type (a so-called _concrete type_):
 
 ```haskell
 :t Just "Hello" -- Just "Hello" :: Maybe [Char]
