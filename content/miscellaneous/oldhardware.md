@@ -1,5 +1,5 @@
 ---
-title: "Been selling a Geforce graphics card from 2004"
+title: "Selling a Geforce graphics card from 2004"
 date: "2023-02-07"
 draft: false
 ---
