@@ -58,8 +58,12 @@ ffmpeg -i input.mp4 -vf "minterpolate=mi_mode=2,setpts=PTS*10" output.mp4
 
 ## GIF optimization
 
-A quick way to make your HG GIFs smaller is:
+A quick way to make your GIFs smaller is:
 
 ```sh
 ffmpeg -i input.gif -filter_complex "[0:v] fps=12,scale=-1:480,mpdecimate,split [a][b];[a] palettegen=max_colors=32 [p];[b][p] paletteuse=dither=bayer:bayer_scale=5" output.gif
 ```
+
+## Extracting subtitles
+
+If your movie has softcoded subtitles, you can easily extract them with ffmpeg as long as they are text-based: `ffmpeg -i movie.mkv -map 0:s:0 subs.srt`. This will select the 1st subtitle stream, if you want the second subtitles option, change `0:s:0` to `0:s:1`. In case you want to extract subtitles that are bitmap-based (like HDMV PGS of DVD subtitles), use the following command: `ffmpeg -i movie.mkv -map 0:s:0 -scodec copy subs.sup` (though VLC player might not be able to handle the `.sup`).

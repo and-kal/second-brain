@@ -29,5 +29,5 @@ Accoring to the `nmap` manual, `-A` enables OS detection, version detection, scr
 
 ## Nmap Scripting Engine (NSE)
 
-The Nmap Scripting Engine (NSE) allows you to write scripts in [Lua](./Lua) and automate things, do bulk stuff etc.
+The Nmap Scripting Engine (NSE) allows you to write scripts in [Lua](./lua) and automate things, do bulk stuff etc.
 https://hackertarget.com/7-nmap-nse-scripts-recon/

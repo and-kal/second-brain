@@ -249,16 +249,6 @@ rsync --stats --progress -aPv ~/media/Music someone@1.2.3.4:~/media/
 
 [...] -->
 
-## Awk
-
-`Awk` is a scripting mostly used for data manipulation. It's syntax is such:
-
-```bash
-awk options 'selection _criteria { action }' input-file > output-file
-```
-
-`Awk` reads its input file line by line and each line is treated as a ›record‹.
-
 ## Finding a running process
 
 `ps -ef | grep processname`
@@ -277,11 +267,39 @@ To check the size of the folders in the current folder (and excluding subfolders
 
 You can push directories to a stack and remove directories from them with `pushd` and `popd`, respectively, followed by the directory name, and you can view your directory stack with `dirs`. When you type `pushd` with no directory name it will swap the two top-most directories from your stack and take you to the new top directory. If you want to swap the top-most and the third directory and move to the latter, you can type `pushd +2`.
 
+## What processes are running on what ports
+
+You can easily find out what processes are running on what ports, by using `netstat`, `lsof` or `ss`:
+
+```sh
+netstat -nlp
+
+lsof -i
+
+ss -nlp
+```
+
+## useful tools
+
+- `pv` (pipe viewer) lets you monitor the progress of data in a pipeline ([cf.](https://catonmat.net/unix-utilities-pipe-viewer))
+
+- `nc` (netcat) is useful for analyzing network connections
+
+### Awk
+
+`Awk` is a scripting mostly used for data manipulation. It's syntax is such:
+
+```bash
+awk options 'selection_criteria { action }' input-file > output-file
+```
+
+`Awk` reads its input file line by line and each line is treated as a ›record‹.
+
 ## random snippets
 
 - in all of the current folder's subfolders and files, print the paths of those files and folders that contain the string ›ktl‹: `ls -d ./**/*  | grep -i 'ktl'`
 
-- find folders with the name ›needle‹ (case-insensitive) in all of the current folder's subfolders: `find ./ -type d -iname "*needle*" -print`
+- find folders with the string ›needle‹ (case-insensitive) in it in all of the current folder's subfolders: `find ./ -type d -iname "*needle*" -print`
 
 - find the most common words in all .txt files that are at least two letters long and show their counts: `find ./ -name "*.txt" | xargs cat | egrep -o "(\w){2,}" | sort | uniq -c | sort -k1nr | head`
 

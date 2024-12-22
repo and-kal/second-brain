@@ -70,10 +70,13 @@ Is there a way to write recursive lamda abstractions? Since these functions are 
 
 ### Function application
 
-Function application in Haskell can be done simply by putting a space between two things. If you want to apply the result of one function to another function, you would put the former in parantheses:
-`sum (map (* 7) [5,6,7,8])`. However, there's also the `$` operator, which does almost the same, but has the lowest precedence of all operators and so it will be executed last, which means that you don't need parantheses, but could write `sum $ map (* 7) [5,6,7,8]`. Function application is a function just like any other, so you can also apply it to other functions: `map ($ 2) [sqrt, sqrt . sqrt]`. Note that we use the function composition operator `.` here. Both, `.` and `$`, are right-associative. Thus,:{} `f (g (z x))` is the same as `f $ g $ z x`, which is the same as `(f . g . z) x`.
+Function application in Haskell can be done simply by putting a space between two things. If you want to apply the result of one function to another function, you would put the former in parantheses: `sum (map (* 7) [5,6,7,8])`. However, there's also the `$` operator, which does almost the same, but has the lowest precedence of all operators and so it will be executed last, which means that you don't need parantheses, but could write `sum $ map (* 7) [5,6,7,8]`. Function application is a function just like any other, so you can also apply it to other functions: `map ($ 2) [sqrt, sqrt . sqrt]`.
+
+Note that we use the function composition operator `.` here. Both, `.` and `$`, are right-associative. Thus, `f (g (z x))` is the same as `f $ g $ z x`, which is the same as `(f . g . z) x`. The `.` operator is useful for chaining functions; for example when you want perform several `map`s, instead of writing `map (* 2) $ map (/ 3) [3,6,9]` you can write `map ((* 2) . (/ 3)) [3,4,5]`.
 
 Function composition also allows for so-called ›point-free style‹ when writing functions, where the funtions' arguments/parameters are omitted. A classic example is `sum = foldr (+) 0`. (This is also called [tacit programming](https://en.wikipedia.org/wiki/Tacit_programming). The term _point_ here refers to the function parameters, which are called _points_ in mathematics.)
+
+Reverse function application is done with the `#` operator: `x # f = f x`.
 
 ### Side effects
 
@@ -95,13 +98,21 @@ The standard library for [debugging in Haskell](https://en.wikibooks.org/wiki/Ha
 
 #### `Data.List`
 
+List are constructed using the `:`, which functions as a constructor. So these two declarations are equivalent:
+
+```haskell
+someList = [1,6,25,7]
+
+someList = 1:6:25:7:[]
+```
+
 `Data.List` is module with many useful list manipulation and analysis functions. For example `nub` (meaning »essence«) removes duplicate elements from a list:
 
 ```haskell
 import Data.List (nub)
 
 length $ nub [0,1,2,0,1,2,0,1,2,3]
--- returns 4
+-- returns 3
 ```
 
 `find` takes a condition and a list and returns the first element that fulfills the condition (as an [ADT](#algebraic-data-types-adt)).
@@ -117,7 +128,7 @@ find (\val -> val `mod` 3 == 0) [2,45,99]
 
 Note that, if you want to supply your own equality function (as we just did with `find`), but for `nub`, `delete`, `union`, `intersect` and `group`, you would have their respective `nubBy`, `deleteBy`, `unionBy`, `intersectBy` or `groupBy` counterparts.
 
-There's many more useful list-related functions in `Data.List`, e.g.: `intersperse`, `intercalcate`, `concat`, `isPrefixOf`, `isSuffixOf`, `isInfixOf`, `elemIndex`, `findIndex`, `lines`, `words`, `\\` (list difference function), `!!`, `insert` and the several `permutations` functions.
+There's many more useful list-related functions in `Data.List`, e.g.: `intersperse`, `intercalcate`, `concat`, `isPrefixOf`, `isSuffixOf`, `isInfixOf`, `elemIndex`, `findIndex`, `lines`, `words`, `\\` (list difference function), `!!` (list index subscript operator), `insert` and the several `permutations` functions.
 
 <!--
 #### `Data.Function`
@@ -156,9 +167,7 @@ Some of `Data.Set`s functions are
 
 #### `id`
 
-`id` is the identity funtion in Haskell: »In functional languages, functions are first class values that you can pass as a parameter. So one of the most common uses of `id` comes up when you pass a function as a parameter to another function to tell it what to do. One of the choices of what to do is likely to be "just leave it alone" - in that case, you pass id as the parameter.« ([source](https://stackoverflow.com/a/3136407/20232056))
-
-<!-- [tbc.] -->
+`id` is the identity function in Haskell: »In functional languages, functions are first class values that you can pass as a parameter. So one of the most common uses of `id` comes up when you pass a function as a parameter to another function to tell it what to do. One of the choices of what to do is likely to be "just leave it alone" - in that case, you pass id as the parameter.« ([source](https://stackoverflow.com/a/3136407/20232056)) Basically, `id` returns the same thing that you pass to it.
 
 ### Recursion and iteration
 
@@ -179,25 +188,25 @@ take' n _
 
 In the last line, we're destructuring the second parameter, which is a list, by means of pattern matching. Then we take the first element from the list, `x`, and with `:` we create a new list with `take' (n-1) xs` appended. That means `take'` is called again, but with the first parameter `n` that we gave reduced by one. So if we had called `take' 3 [3, 6, 9, 12, 15]`, the last line would come down to
 
-```
+```haskell
 take' 3 (3:[3, 6, 9, 12, 15]) = 3 : take' 2 [6, 9, 12, 15]
 ```
 
 then to
 
-```
+```haskell
 take' 2 (6:[9, 12, 15]) = 3:6:take' 1 [9, 12, 15]
 ```
 
 then to
 
-```
+```haskell
 take' 1 (9:[12, 15]) = 3:6:9:take' 0 [12, 15]
 ```
 
 and eventually to
 
-```
+```haskell
 take' 0 (12:[15]) = 3:6:9:[]
 ```
 
@@ -264,10 +273,16 @@ Infix operators like `+` also represent functions. For example, `:` (called ›c
 Another infix operator is `!!`, which takes a list and an index and returns the element at that index from the list:
 
 ```haskell
-([1,10,100,1000] !! 3)
+[1,10,100,1000] !! 3
 ```
 
-This will return 1000, because lists are 0-indexed.
+This will return `1000`, because lists are 0-indexed.
+
+You can also use the infix notation for a function that takes two arguments, by placing it inside two `\``s:
+
+```haskell
+[1,10,100,1000] `union` [100,1000,10000]
+```
 
 ### Bindings
 
@@ -288,7 +303,7 @@ in  a ++ " " ++ b
 
 ### Error Handling
 
-Error Handling in Haskell can be done with the `Maybe` and `Either` types. `Maybe` is used for data than can be either present or not present (defined or undefined). It will always need a type for the potential data, like `Maybe Int`. Here's an example from [a blog](https://blog.thomasheartman.com/posts/haskells-maybe-and-either-types):
+It's interesting to note that Haskell has no nullable types. Error Handling in Haskell can be done with the `Maybe` and `Either` types. `Maybe` is used for data than can be either present or not present (defined or undefined). It will always need a type for the potential data, like `Maybe Int`. Here's [two](https://blog.thomasheartman.com/posts/haskells-maybe-and-either-types) [examples](https://www.gtf.io/musings/why-haskell):
 
 ```haskell
 safeDiv :: Integral a => a -> a -> Maybe a
@@ -296,7 +311,17 @@ safeDiv _ 0 = Nothing
 safeDiv x y = Just $ x `div` y
 ```
 
-In order to do some more verbose error handling and validation that will not just throw `Nothing`, but some default value for example, you would use the `Either` type. It is roughly defined as `data Either a b = Left a | Right b`. It is a convention to use the `Left` value whenever something fails and the `Right` value for when everything goes right. So the [previous example](https://blog.thomasheartman.com/posts/) could be rewritten as:
+```haskell
+safeHead :: [a] -> Maybe a
+safeHead [] = Nothing
+safeHead (x : _) = Just x
+printTheFirstThing :: [String] -> IO ()
+printTheFirstThing myList = case safeHead myList of
+  Just something -> putStrLn something
+  Nothing -> putStrLn "You're list is empty."
+```
+
+In order to do some more verbose error handling and validation that will not just throw `Nothing`, but some default value for example, you would use the `Either` type. It is roughly defined as `data Either e x = Left e | Right x`. It is a convention to use the `Left` value whenever something fails (hence I called its variable `e` for error) and the `Right` value for when everything goes right. So the [previous example](https://blog.thomasheartman.com/posts/) could be rewritten as:
 
 ```haskell
 safeDiv :: Integral a => a -> a -> Either String a
@@ -333,22 +358,147 @@ Further common types:
 - `Number`
 - `Fractional`
 
-For storing key-value pairs you would use association lists (or: dictionaries), which are just list of pairs:
+For storing key-value pairs you could use association lists (or _dictionaries_), which are just list of pairs:
 
 ```haskell
 [("Alpha","one")
 ,("Beta","two")
-,("Gamma","three")
-]
+,("Gamma","three")]
 ```
 
 Usually, you would use the [`Data.Map`](#datamap) module here, which exports a `Map` type and corresponding functions useful for key-value pairs. Maps are unordered though.
 
-_Type classes_ are like interfaces in other programming languages in that they non-exhaustively define certain behaviour of a type.
+### Typeclasses
 
-Some common type classes are `Eq`, `Ord`, `Enum`, `Bounded`, `Show` (converts to string), `Read` (converts from string) and `Ord` (can have three values: `LT`, `EQ` and `GT`).
+_Typeclasses_ are like interfaces in other programming languages in that they (non-exhaustively) define certain behaviour of a type. (But they have nothing to do really with what is called ›classes‹ in object-oriented programming languages.) So _types are instances of typeclasses_, which means that these types will be able to use the functions defined in the typeclass (if present).
 
-Good to know: When defining types, constructors, type classes or kinds yourself they must start with an uppercase letter - or if you give them an operator name, that one should start with a `:`.
+Some common typeclasses are `Eq`, `Ord` and `Enum`. Furthermore, there are:
+
+- `Bounded`
+- `Show`, which converts to string,
+- `Read`, which converts from string,
+- `Ord`, which can have three values: `LT`, `EQ` and `GT`,
+- `Traversable`,
+- `Applicative` (`<*>`),
+- `Alternative` (`(<|>)`),
+- `Monad` (`>>=`),
+- `Monoid`,
+- etc.
+
+Good to know: When defining types, constructors, typeclasses or kinds yourself they must start with an uppercase letter - or if you give them an operator name, that one should start with a `:`.
+
+Defining custom typeclasses can be done with this syntax:
+
+```haskell
+class CustomEq equatable where
+    (==) :: equatable -> equatable -> Bool
+    (/=) :: equatable -> equatable -> Bool
+    x == y = not (x /= y) -- optional
+    x /= y = not (x == y) -- optional
+```
+
+Here, `CustomEq` is the typeclass and `equatable` is a type variable, Then we also provide two type declarations for functions that members of `CustomEq` need to fulfil. From these two functions we can derive the minimal complete definition of the typeclass. That means that any instance of our `Custom` typeclass has to overwrite these two functions:
+
+<!-- TODO: is this correct? -->
+
+```haskell
+data MovieLog = Watched | NotWatched | Aborted
+
+instance CustomEq MovieLog where
+    Watched == Watched = True
+    NotWatched == NotWatched = True
+    Aborted == Aborted = True
+    Watched /= Watched = False
+    NotWatched /= NotWatched = False
+    Aborted /= Aborted = False
+    _ /= _ = False
+```
+
+### Data Types
+
+Data types are constructed via the `data` keyword and different constructors are seperated by a guard `|`.
+
+A data type without constructors and with empty alternatives is similar to an enum in other languages:
+
+```haskell
+data NameOfDataType = OneAlternative | TheOtherAlternative | AThirdAlternative
+```
+
+Type names and constructors often share the same name:
+
+```haskell
+...
+```
+
+Notice that there is also a `type` keyword, which is not used for defining types though, but only for _type synonyms_:
+
+```haskell
+type String = [Char]
+```
+
+Type synonyms are useful for making code more readable and keeping it well documented. Types and type synonyms can only be used in the type part of your Haskell code, i.e. not inside of function definitions or anything (unless you use a `::` somewhere inside your function body).
+
+Alternatively, you can also use the `newtype` decleration instead of `data`. Its very similar to `data` with the exception that the value constructor of `newtype` is strict and the one of `data` is lazy, and `newtype` can only be used, if the type has one single constructor with precisely one field.
+
+### Algebraic Data Types (ADT)
+
+Instead of OOP-tyle classes, in Haskell you will use data types. One common type of data are Algebraic Data Types. (Learn about the origin of that term [here](https://blog.poisson.chat/posts/2024-07-26-adt-history.html).) ADTs are defined by two sorts of data:
+
+- a »name for the type that will be used to represent its values«, and
+- one or more data constructors, which »will be used to create new values. These constructors may have arguments that hold values of the specified types.«
+
+```haskell
+data NameOfDataType = NameOfConstructorOne String
+                    | NameOfConstructorTwo String Integer
+                    | NameOfConstructorThree String String Bool
+                    deriving (Show)
+```
+
+`deriving (Show)` is optional. It's used so that you can print the values without having to write a custom function for that (_automatic deriving_). What happens is that our data type becomes a member of the `Show` typeclass.
+
+Also notice that inside of our ADT, we defined three more types `NameOfConstructorOne`, `NameOfConstructorTwo` and `NameOfConstructorThree`. The names of these constructors must be unique inside a module. However, constructors can have the same name as the data type that they belong to: `data Point = Point Float Float deriving (Show)`
+
+Alternatively, we could have used ›record syntax‹ for writing a data type, which would look like this:
+
+```haskell
+data Person = { firstName :: String
+              , lastName :: String
+              , age :: Int
+              , profession :: Maybe String
+              } deriving (Show)
+```
+
+### Type constructors
+
+The previously defined data types are _value constructors_, because they takes some values as parameters and give out a new value. In a similar manner we also have _type constructor_, which produce new types, for example:
+
+```haskell
+data Maybe a = Nothing | Just a
+```
+
+`Maybe` is not a type in itself, but a type constructor. Only if we provide some value for `a` (i.e. parametrizing it) does it become a type (a so-called _concrete type_):
+
+```haskell
+:t Just "Hello" -- Just "Hello" :: Maybe [Char]
+
+:t Just [1,2,3,4] -- Just "1234" :: Num a => Maybe [a]
+
+:t Nothing -- Nothing :: Maybe a
+```
+
+<!--
+### Smart Constructors and Views
+
+Serrano Mena, p.79pp.
+-->
+
+<!--
+### Recursive data structures
+
+fixity
+
+Lipovaca, p.101pp.
+-->
 
 ### Lists
 
@@ -366,7 +516,7 @@ Consider this example from »Learn You a Haskell for Great Good!«:
 where xs = [(1,3), (4,3), (2,4), (5,3), (5,6), (3,1)]
 ```
 
-The `(a,b) <- xs` is a so-called generator, which takes every tuple from xs (you can read it as ›is drawn from‹) and pipes it to left-side of the `|` guard (read: ›such that‹).
+The `(a,b) <- xs` is a so-called ›generator‹, which takes every tuple from xs (you can read it as ›is drawn from‹) and pipes it to left-side of the `|` guard (read: ›such that‹).
 
 List comprehensions can include predicates. Let's say we only want the sum of even numbers, we could write:
 
@@ -376,18 +526,37 @@ in
     [a+b | (a,b) <- xs, even a, even b]
 ```
 
-and would get `[6]` as a result. (The `, even a, even b` part are the ›predicates‹.)
+and would get `[6]` as a result; the `, even a, even b` part are the ›predicates‹. Together, the generator and the predicates arecalled a ›qualifier‹.
 
 Using list comprehensions is similar to using `map` and mostly they're interchangeable.
 
 ### Tuples
 
-»A tuple is [...] a type with a fixed number of components, each of them holding a value, not necessarily of the same type.« (Serrano Mena)
+»A tuple is [...] a type with a fixed number of components, each of them holding a value, not necessarily of the same type.« (Serrano Mena) A structure that is often used is an association list, which is a list of tuples, such `[(1,"Dance Party USA"), (2,"Quiet City"), (3,"Cold Weather")]`, which are like key-value pairs. The `lookup` function lets you access the value associated to a provided key.
 
 #### Destructor functions
 
 - `fst` gives the first component of a tuple
 - `snd` gives the second component of a tuple
+
+### Containers
+
+Containers are data types that contain any number of elements of a homogeneous type, e.g. graphs, sets, maps, and trees. In order to work with these data types, you need to include `containers` package, because they are not provided by `Prelude`.
+
+Maps are lists of key-value tuples. Sets are list with only unique items. <!-- Graphs are... -->
+
+Trees are a data structure that consist of an element called a node, which points to an element on the left and an element on the
+right. In a balanced tree, elements on the left are always smaller than the right elements. These elements can again be trees (so-called sub-trees) and point again to two elements / nodes, or to only one element (a so-called singleton), or to none.
+
+```haskell
+data Tree a = EmptyTree | Node a (Tree a) (Tree a) deriving (Show, Read, Eq)
+```
+
+Or using record syntax:
+
+```haskell
+data Tree a = EmptyTree | Node {leftBranch :: Tree a, rightBranch :: Tree a} deriving (Show, Read, Eq)
+```
 
 ### Conditions & Control structures
 
@@ -421,7 +590,7 @@ f x = case x of 0 -> 18
 ✨ By the way, »pattern matching in function definitions is syntactic sugar for case expressions.«
 
 <!-- TODO:
-### Type classes
+### Typeclasses
 
 Are similar to interfaces in OOP in that they determine the types of operations they permit their members. Also you can create instances of classes: `class`, `instance`
 [...]
@@ -467,15 +636,30 @@ In order to explicitely say, which type an expression is supposed to have, we ca
 
 ### Class constraints
 
-Are denoted with the `=>` symbol.
+Class constraints are denoted with the `=>` symbol.
 
 ```haskell
 (==) :: (Eq a) => a -> a -> Bool
 ```
 
-This says that the two `a` values must be of the `Eq` class.
+This says that the two `a` values must be of the `Eq` class (denoting basically any type where equality tests make sense.)
+
+### Class definitios
+
+<!-- TODO -->
+
+```haskell
+class Eq a  where
+   (==), (/=) :: a -> a -> Bool
+```
+
+»The definition states that if a type `a` is to be made an instance of the class `Eq` it must support the functions `(==)` and `(/=)` - the class methods - both of them having type `a -> a -> Bool`.« ([source](https://en.wikibooks.org/wiki/Haskell/Classes_and_types#Classes_and_instances))
 
 ## Syntax
+
+### Arrows
+
+As you've just seen above, there's two types of arrows in Haskell: single arrows `->` are used to describe the function types (what a function takes and what it returns). The double arrow `=>` (which always comes first) describes class constraints on the type variables, i.e. what class a variable is supposed to belong to.
 
 ### Parantheses and spaces
 
@@ -555,81 +739,6 @@ There's also libraries for parallel and concurrent execution of expressions, bec
 [...]
 -->
 
-## Data Types
-
-Data types are constructed via the `data` keyword and different constructors are seperated by a guard `|`.
-
-A data type without constructors and with empty alternatives is similar to an enum in other languages:
-
-```haskell
-data NameOfDataType = OneAlternative | TheOtherAlternative | AThirdAlternative
-```
-
-Type names and constructors often share the same name:
-
-```haskell
-...
-```
-
-Notice that there is also a `type` keyword, which is not used for defining types though, but only for _type synonyms_:
-
-```haskell
-type String = [Char]
-```
-
-Type synonyms are useful for making code more readable and keeping it well documented. Types and type synonyms can only be used in the type part of your Haskell code, i.e. not inside of function definitions or anything (unless you use a `::` somewhere inside your function body).
-
-### Algebraic Data Types (ADT)
-
-Instead of OOP-tyle classes, in Haskell you will use data types. One common type of data are Algebraic Data Types. (Learn about the origin of that term [here](https://blog.poisson.chat/posts/2024-07-26-adt-history.html).) ADTs are defined by two sorts of data:
-
-- a »name for the type that will be used to represent its values«, and
-- one or more data constructors, which »will be used to create new values. These constructors may have arguments that hold values of the specified types.«
-
-```haskell
-data NameOfDataType = NameOfConstructorOne String
-                    | NameOfConstructorTwo String Integer
-                    | NameOfConstructorThree String String Bool
-                    deriving (Show)
-```
-
-`deriving (Show)` is optional. It's used so that you can print the values without having to write a custom function for that (_automatic deriving_). What happens is that our data type becomes a member of the `Show` typeclass.
-
-Also notice that inside of our ADT, we defined three more types `NameOfConstructorOne`, `NameOfConstructorTwo` and `NameOfConstructorThree`. The names of these constructors must be unique inside a module. However, constructors can have the same name as the data type that they belong to: `data Point = Point Float Float deriving (Show)`
-
-Alternatively, we could have used ›record syntax‹ for writing a data type, which would look like this:
-
-```haskell
-data Person = { firstName :: String
-              , lastName :: String
-              , age :: Int
-              } deriving (Show)
-```
-
-### Type constructors
-
-The previously defined data types are _value constructors_, because they takes some values as parameters and give out a new value. In a similar manner we also have _type constructor_, which produce new types, for example:
-
-```haskell
-data Maybe a = Nothing | Just a
-```
-
-`Maybe` is not a type in itself. Only if we provide some value for `a` (i.e. parametrizing it) does it become a type (a so-called _concrete type_):
-
-```haskell
-:t Just "Hello" -- Just "Hello" :: Maybe [Char]
-
-:t Just [1,2,3,4] -- Just "1234" :: Num a => Maybe [a]
-
-:t Nothing -- Nothing :: Maybe a
-```
-
-<!--
-### Smart Constructors and Views
-
-Serrano Mena, p.79pp.
--->
-
 ## Pattern matching
 
 Pattern matching allows you to check if some data matches a certain pattern and then destructure the data according to that pattern.
@@ -668,6 +777,9 @@ _As pattern_ »allows you to bind some value in the match while at the same time
 ## Monads, Monoids, applicative functors, functors
 
 <!-- TODO:
+
+Monadic contexts...
+
 ### Context
 
 [...]
@@ -675,11 +787,14 @@ _As pattern_ »allows you to bind some value in the match while at the same time
 #### Context wrapping
 
 [...]
+
 -->
 
 ### Functors
 
-`fmap` or `<$>` (which is the infix variant of the former)
+`fmap`, or `<$>` (which is the infix variant of `fmap`) »is a way to map a function that _preserves the shape_ and _changes the result_.« (Le, 2024)
+
+A `Functor` in Haskell is a typeclass and it is generally something that you can apply a mapping function to, which is following some laws and preserves a certain aspect of what it is applied to. »[A] _Functor_ gives you a way to ›map over‹ values in a way that _preserves shape_. And what is ›shape‹? A shape is _the thing that fmap preserves_«, or the _conserved quantity_ (Le, 2024). For example, when applying `fmap` to a list, the length and ordering of the list is preserved.
 
 **Functors let you apply functions to a value wrapped in a context.**
 
@@ -687,21 +802,29 @@ _As pattern_ »allows you to bind some value in the match while at the same time
 
 **Applicatives let you apply functions wrapped in a context to a value wrapped in a context.**
 
-`liftA` or `<*>`
+<!-- `liftA`, or `<*>` -->
 
 ### Monads
 
 »Monads apply a function that returns a wrapped value to a wrapped value. Monads have a function `liftM` or `>>=` (pronounced ›bind‹) to do this.«
 
-## The Interpreter
+»In a way, Monad simply ›is‹ the way to combine _Functor_ shapes together where the final shape is allowed to depend on the results.« (Le, 2024)
+
+### Monoids
+
+»It is legitimate to think of monoids as types which support appending in some sense«. (source: [wikibboks](https://en.wikibooks.org/wiki/Haskell/Monoids))
+
+## The interpreter
 
 Loading files into the interpreter is done with the `:l` command followed by the path to the file.
+
+A useful library for writing command-line tools in Haskell is [optparse-applicative](https://hackage.haskell.org/package/optparse-applicative).
 
 ## Haskell ecosystem
 
 Building and packaging tools for Haskell are _cabal_ and _stack_.
 
-The online repository for Haskell libraries are called _Hackage_ (for _cabal_) and _Stackage_ (for _stack_).
+The online repository for Haskell libraries/packages are called _Hackage_ (for _cabal_) and _Stackage_ (for _stack_). »Stackage provides snapshots of Hackage (called resolvers) in which all packages are known to work well together. This provides a huge gain for reproducibility at the expense of not always containing the bleeding-edge version of the packages.« (Serrano Mena)
 
 The main installer for Haskell is _GHCUp_.
 
@@ -709,12 +832,16 @@ Haskell funtions, types and typeclasses can be grouped into modules and a Haskel
 
 In order to search Haskell libraries by function names, or type signatures there is an API called [Hoogle](https://hoogle.haskell.org/).
 
-_Haddock_ is a markup language in Hakskell that is used to annotate your code so that you have a proper documentation for your functions usually done by writing `-- |` before your function definition or `-- ^` after (or next to) it. (Check these [Haddock tips](https://kowainik.github.io/posts/haddock-tips) for some more background.)
+_Haddock_ is a markup language in Haskell that is used to annotate your code so that you have a proper documentation for your functions usually done by writing `-- |` before your function definition or `-- ^` after (or next to) it. (Check these [Haddock tips](https://kowainik.github.io/posts/haddock-tips) for some more background.)
+
+Virtual/isolated environments in Haskell can be created with so called ›resolvers‹, which describe »a set of packages with a specific version and a specific compiler environment in which they work« (Serrano Mena) and which are described in a `.cabal` or `stack.yaml` file respectively.
 
 ## Sources
 
 - [Functional Programming by Example](https://caiorss.github.io/Functional-Programming/index.html) by Caio Rodrigues (2018)
+- [Functors to Monads: A Story of Shapes](https://blog.jle.im/entry/functors-to-monads-a-story-of-shapes.html) by Justin Le (2024)
+- [Haskell Cheat Sheet](https://hackage.haskell.org/package/CheatSheet-1.10/src/CheatSheet.pdf) by Justin Bailey (2009)
+- [Learn X in Y minutes. Where X=Lambda Calculus](https://learnxinyminutes.com/docs/lambda-calculus/) by Max Sun et al. (2023)
 - Learn You a Haskell for Great Good! A Beginner's Guide by Miran Lipovaca (2011, No Starch Press)
 - Practical Haskell. A Real-World Guide to Functional Programming by Alejandro Serrano Mena (2022, Apress)
-- [Learn X in Y minutes. Where X=Lambda Calculus](https://learnxinyminutes.com/docs/lambda-calculus/) by Max Sun et al. (2023)
-- [Haskell Cheat Sheet](https://hackage.haskell.org/package/CheatSheet-1.10/src/CheatSheet.pdf) by Justin Bailey (2009)
+- [Why Haskell?](https://www.gtf.io/musings/why-haskell)
