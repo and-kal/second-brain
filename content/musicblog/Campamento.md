@@ -2,6 +2,8 @@
 title: "Campamento Ñec Ñec: Presenta Alimaña (2006)"
 date: "2024-03-18"
 draft: true
+tags:
+  - mathrock
 ---
 
 Febrific math rock from Spain.

@@ -305,6 +305,8 @@ awk options 'selection_criteria { action }' input-file > output-file
 
 <!-- - deflate a binary file: `printf "\x78\x9c" | cat - data.bin | zpipe -d | strings -el` ([source](https://lock.cmpxchg8b.com/hiew.html)) -->
 
+- deletes all file ending with ".xyz.jpg" in a folder and all subfolders: `find /path/to/folder -type f -name '*.xyz.jpg' -delete`
+
 ## Books
 
 - Daniel J. Barrett: Efficient Linux at the Command Line (O'Reilly Media, 2022)

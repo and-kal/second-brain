@@ -2,6 +2,8 @@
 title: "Concert review: Jules Reidy @ Zimmt | Dec 14, 2024"
 date: "2024-12-22"
 draft: true
+tags:
+  - concert review
 ---
 
 Opening act X.LEE from the US East Coast made me curious, when he got introduced as an experimental turntable artist, because I could be in for something like Joke Lanz, dieb13 or Strotter Inst., all of whose live performances I loved.
