@@ -1,5 +1,5 @@
 ---
-title: "After Woke by Jens Balzer (1967)"
+title: "After Woke by Jens Balzer (2024)"
 date: "2024-11-25"
 draft: true
 ---
