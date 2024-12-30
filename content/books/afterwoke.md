@@ -1,7 +1,9 @@
 ---
-title: "After Woke by Jens Balzer (2024)"
+title: "After Woke von Jens Balzer (2024)"
 date: "2024-11-25"
 draft: true
+tags:
+  - reading notes
 ---
 
 Ein Punkt, an dem ich Balzer widerspreche, ist, dass es sich bei der _woken Linken_ primär um ökonomisch gutgestellte Student\*innen handelt. Auch wenn postkoloniale und queerfeministische Diskurse etwa, dem akademischen Feld entspringen, nehme ich dennoch an, dass ein Teil der auf diesen Demos vertreten jungen Menschen tatsächlich von multipler Diskriminierung, einschließlich ökonomisch-klassistischer betroffen ist. [...]

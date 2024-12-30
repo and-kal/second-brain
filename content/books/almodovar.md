@@ -2,6 +2,8 @@
 title: "Der letzte Traum von Pedro Almodóvar (2023)"
 date: "2024-12-30"
 draft: false
+tags:
+  - book review
 ---
 
 »Der letzte Traum« enthält ein Dutzend, größtenteils eher flüchtige und kurzweilige Erzählungen von Pedro Almodóvar. Wie Almodóvar selbst im letzten Text des Buches – »Ein schlechter Roman« – schreibt, hält er sich selbst für keinen großartigen Schriftsteller und so lesen sich vor allem die fiktiven Texte in dem Buch, eher wie unausgearbeitete Ideen zu möglichen Drehbüchern oder Kurzfilmen, in welchen es Almodóvar selten schafft, seine Faszination für die Figuren, die er erschafft – flamboyante Persönlichkeiten mit sexuellem Grenzgängertum und borderline-mäßigen Charakterzügen – im Medium der Prosa-Erzählung zu vermitteln. Man kann sich oft genug vorstellen, wie die Szenen, die er zeichnet, in Form eines Almodóvar-Filmes funktionieren würden, der literarische Wert fehlt ihnen aber meistens.
