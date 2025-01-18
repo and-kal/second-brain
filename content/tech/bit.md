@@ -13,9 +13,9 @@ Similarly, instead of using regular division `/`, you can right shift a value `n
 
 ```javascript
 1030 / 16
-//64.375
+// 64.375
 1030 >> 4
-//64
+// 64
 ```
 
 ```python
