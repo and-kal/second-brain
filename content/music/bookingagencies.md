@@ -1,0 +1,31 @@
+---
+title: "My gripes with booking agencies"
+date: "2023-01-19"
+draft: true
+---
+
+Setting up DIY shows for a couple of years now already, my mail address has been passed along quite a lot and I get mails from bands and musicians of friends' friends of some band I booked some years ago. Which is nice. I like the whole independent network thing, and being in touch personally, and seeing what people in other parts of the world do and even if I'm not always excited by the music, I try to put these artists in touch with venues and promoters so they can get their Germany tour together.
+...
+
+My mail address also ended up in some booking agencies' mailing list and I occassionally get requests and offers from these agencies when they're trying to book a Europe tour for some artist or try to get some shows for them in Germany. It's nice to discover new music through these proposals and often times there's a lot of interesting artists and these agencies' rosters. So working a deal out for a certain show with a booking agency is sometimes tempting. But in the end I've booked shows through booking agencies only a handful of times and, honestly, I seldomly enjoyed the experience.
+
+Trying to pin down what my reservation towards these agencies are, I always come back to certain aspects I don't like or find problematic even:
+
+1. Even if the booking agents themselves might be enthusiastic about the artists they book, the vibe I get from their proposals most of the time feels more like being sold a product. 
+
+Coming from a punk and DIY scene I'm used to being in touch with bands and artists directly. 
+...
+My main motivations for setting up shows were 
+- that I really loved a band and wanted to see the show and so had to set it up myself, 
+- or that I liked them (musically or on a personal level) and wanted to help them out, because I know we're in a scene that's based on cooperation, 
+- or that it's fun to set up the show, especially when you're doing it together with friends
+- or that I just like the fact that there's stuff happening in my city; so I set up a show and add some value to living here.
+...
+
+2. I don't get a sense of community and working with booking agencies feels more like a business transaction. Especially, when there's contracts involved. I really don't like that whole bureaucratic process, even though I see why it's necessary. I was mostly happy to see that the artists are usually friendly, relaxed, compromising and grateful and that it's just the whole process of negotiating and the language of these contracts that make the whole thing seem so business-like and hard-nosed. It just takes the fun out of the whole booking process. Even when it's not always fun answering all these booking requests, adjusting your schedule so you can set up a show etc. There's a lot of unpaid labour involved in doing DIY shows for sure. But I don't consider it unpaid labour so much, because I think of it as happening in this kind of alternative / independent space, which of course isn't independent from capitalist structures at all, but in the way we move in these DIY spaces, we're employing other models of cooperation than the capitalist models (probably only illusionarily so, but nonetheless). Now, I think that with booking agencies, these implicit strategies of mutuality and practices of altruisticly helping each other are undercut. Like I said, I know that artists need to pay their rent just as everyone else and I totally understand the need for a booking agent at a certain point in your career. My gripe is just that most of these agents don't have seperate models for when they do bookings in commercial venues and when they're working with DIY promotoers or spaces. The whole booking procedure is usually the same, no matter what is your position. 
+
+3. Hospitality riders can be preposterous, even for lesser known artists. Granted that from my experience the requests in those riders are often times negotiable, I still don't like the fact that usually as a small venue or a person who sets up shows in their freetime - like me - you'll get the same rider as a commercial venue or a funded festival—with requests for providing a bottle of whisky and local wine in the backstage and things like that. I don't want to argue with these amenities in general. Sure, touring is intense and certain things might make the whole touring experience much more pleasant for the individual artist. But there's only so much you can offer when you're doing these things DIY. Same holds for tech riders. It's not likely to be manageable for a single person to provide the same technical equipment as a professional venue might; still I get requests from booking agencies, where they ask the promoter to provide a full backline for a band or a certain light set up. Proper equipment is surely essential for certain kinds of shows, but as a DIY person I'm usually not in a position where I'm able to rent the exact equipment requested from a company or wherever from—which should be clear to booking agents.
+
+4. The issue of travelling is another thing. As a touring band you would usually book a tour so that you don't have to travel too large distances and have an efficient routing. Most booking agencies will do the same, I guess, but I had some experiences where the agencies asked me to pay for a flight from London to Germany and back as it would be a one-off show, which is a ridiculous idea. Sure, that's more a topic in the whole DJing scene, where fly-in gigs are much more common and problematic (as the [https://aktionsnetzwerk-nachhaltigkeit.de/studien/exploring-the-carbon-footprint-of-touring-djs/](Clean Scene) initiative pointed out). Also, I appreciate it when there's festival like Unsound that have the capacities to book artists from more subaltern areas and fly them to Poland for the festival and I wouldn't want to miss this kind of cultural exchange. But in general I'm for greener alternatives to touring than air travel and I had the impression that train rides for example are often times not encouraged by booking agents.
+
+Feel free to prove me wrong or share your experiences with me via andre @ grrlz . net

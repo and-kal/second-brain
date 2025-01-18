@@ -1,0 +1,16 @@
+---
+title: "Spiking and other unprecedented actions"
+date: "2023-01-17"
+draft: true
+---
+
+The day Andrew Callaghan (Channel 5, All Gas No Brakes) issued [his video](https://www.reddit.com/r/videos/comments/10d1al0/andrew_callaghan_channel5_response_video/) where he responds to the [allegiations of sexual misconduct](https://www.reddit.com/r/Channel5ive/comments/1083u9v/all_andrew_callaghan_allegations_summarized/) coincided with me learning about a friend of mine being accused of having regularly been spiking other people's drinks with psychoactive drugs at parties. 
+
+I'm somewhat disappointed about the Callaghan case, because I always had the idea that people who are analyzing and criticizing other people's belief systems and behaviour - as Callaghan did in his videos -, are also able to reflect upon their own behavioral patterns. It seemed pretty obvious that Callaghan has a mindset and certain ideals that would contradict actions like the ones he is confronted with now. 
+
+But I could care less about Callaghan. What troubles me more is having people in the subcultural scene I'm in that do abominable actions. The aforementioned person spiking other people's drinks, is someone I know from punk shows in my city, he also ran something like an independent bookstore, played in a garage rock band, does artworks etc. So, he's in for all the things people in our small bubble do and even though scenes and subcultures don't necessarily need to have an explicit constitution, from the things people concern themselves with, how they treat each other and so on, I assumed that there's some sort of shared system of ideals and moral. And I think there is. In this scene we're in, there's a certain egalitarian, libertarian/left-wing, anti-discrimination consensus I'd say and it's a scene based on voluntary work, helping each other out, cooperating etc., which is why things like the spiking case leave me puzzled. 
+
+The feeling I'm left has some similarities to when I read Jenn Pelly's article "[Unraveling the Sexism of Emo’s Third Wave](https://pitchfork.com/thepitch/unraveling-the-sexism-of-emos-third-wave/)" or re-read the lyrics of [some of my](https://genius.com/The-fall-of-troy-macaulay-mcculkin-lyrics) [favourite bands](https://genius.com/Glassjaw-convectuoso-lyrics) [from teenage years](https://genius.com/20287125) again. It's not like I saw some sort of political consensus in this wave of music, but still, these bands offered me some kind of projection screen and for that work, they to some extent had to be on my side - politically and morally - and I expected them to be of integrity. Also, because this music still was somewhat related to punk I assumed that anti-discrimination (which includes anti-sexism of course) was commonplace. But apparently things are not that straight forward.
+(Or when I read about the singer of influential German punk band Vorkriegsjugend being [involved in human trafficking](https://www.ox-fanzine.de/vorkriegsjugend-saenger-in-thailand-verhaftet) in Thailand.)
+
+I just have a hard time believing people can thrive in these subcultural or countercultural scenes and turn out to be assholes who don't seem to understand a thing at the same thing.

@@ -1,0 +1,19 @@
+---
+title: "Concert review: Jules Reidy @ Zimmt | Dec 14, 2024"
+date: "2024-12-22"
+draft: true
+tags:
+  - concert review
+---
+
+Opening act X.LEE from the US East Coast made me curious, when he got introduced as an experimental turntable artist, because I could be in for something like Joke Lanz, dieb13 or Strotter Inst., all of whose live performances I loved.
+
+However, the live performance had a few shortcomings. X.LEE had an impressive sound design at the start, but it didn't really reach me. I don't know if it was the analog character of the Serato sound palettes he was working with or something else, but his sounds sounded a bit muffled and not as pristine and earpiercing as I think they should have. As is often the case at zimmt, the artists were invited to create a piece for the 36, or however many, speakers in the venue. X.LEE developed a setup for this in which he could apparently place sounds spatially with his records, which unfortunately only resulted in a long whirlpool of low-pass filtered sounds that whirred around you in a circle, which I found cognitively very exhausting after a while and led me to reflect on this 3D sound structure: Is it possible to evoke not only aesthetic but also emotional experiences with such a surround sound setup? Or is the 3D sound primarily a technical gimmick? Is there an artistic expression or something that someone evokes in me emotionally that is only possible in this 3D setup? Or is the surplus 3D experience only ever on a superficial, sensual level?
+
+A few weeks earlier, I had also seen a performance by Natasha Barrett at Zimmt, which impressed me very much, as I realized afterwards, especially on a technical level and because her 3D sound compositions were so well executed. The concert left my companions completely cold that evening, which was also clear to me because it was primarily a technical experience rather than an emotional one. Although there were some melodic elements in their pieces, I was primarily impressed by the high definition sound of their sound sculptures and the virtuoso and creative spatialization of these sound designs and it was one of the best concerts of the year. But I was not moved.
+
+And at the X.LEE concert I realized that it is probably rather rare to be not only impressed by this 3D effect, but touched by it. Nevertheless, I was very excited to see how [Jules Reidy](http://julesreidy.com) would use the 3D set-up, as I have been a big fan of theirs for a long time and have been waiting a long time for the concert (in fact, I have already tried twice to invite them to Leipzig myself, but due to illness or scheduling difficulties, this always had to be postponed indefinitely).
+
+Reidy played the tracks from her forthcoming album “Ghost/Spirit”, which, as hinted at on her previous solo albums, moves further in a pop-oriented direction and I could almost see the music moving into emo-revival territory because of the combination of autotune vocals and melodic guitar; although it was still an experimental music concert, it was so captivating and dramaturgically well-structured, so intimate, that it was actually more pop than anything else. I found the dissonances introduced by Reidy's refretted just-intonation guitar, repeatedly into the otherwise harmonically beautiful and fragile motifs, touching. The guitar was prepared in such a way that individual strings could be placed on different channels of the surround sound system. From time to time, Reidy also switched to the 12-string acoustic guitar, which then only ran mono via an amplifier on stage, which always created an interesting contrast, as did the contrast between the microtonality of her electric guitar and the hypertonality of the autotune on her voice.
+
+It's very likely that I'll also check their show with claire rousay in Berlin in Spring. I also hope there will be some shows of their more shoegaze-leaning project [Sun Kit](https://sunkit.bandcamp.com).
