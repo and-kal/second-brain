@@ -16,11 +16,11 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - [grainstretch~](http://www.timorozendal.nl/?p=456)
 - [Granular Mirror Maze](https://www.amazingnoises.com/free-devices/granular-mirror-maze/)
 - [guttersynthesis](https://github.com/tommmmudd/guttersynthesis)
-- [Husserl2](https://yofiel.com/audio/husserl2.php) by Ernest Leonardo Meyer (website currently unavailable, so here's [a backup](/Max_patches/Husserl20.zip))
+- [Husserl2](https://yofiel.com/audio/husserl2.php) by Ernest Leonardo Meyer (website currently unavailable, so here's [a backup](../static/Max_patches/Husserl20.zip))
 - [Jacob Sachs-Mishalanie's patches](https://jsmishalanie.com/music/max)
 - [karma~](https://rodrigoconstanzo.com/2015/05/karma/) (by [Rodrigo Constanzo](https://rodrigoconstanzo.com))
 - [Katsuhiro Chiba's patches](https://audiooo.com/max-patches)
-- [Live Stream Frag Granulator](/Max_patches/Live Stream Frag Granulator.zip)
+- [Live Stream Frag Granulator](../static/Max_patches/Live Stream Frag Granulator.zip)
 - [lode](https://github.com/fors-fm/lode) (by [fors.fm](https://fors.fm))
 - [mlooch](http://sites.music.columbia.edu/brad/mlooch/mlooch.html)
 - [monohad](https://code.google.com/archive/p/monohad/)
@@ -29,10 +29,10 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - [oual_qroccss](https://www.ondomusic.com/mesa.elech.tele/oual_qroccss.zip)
 - [Phonogene 1.2](https://github.com/rdwiv/Phonogene) by TristanShepherd
 - [ppooll](https://ppooll.klingt.org/?title=Main_Page)✨✨✨
-- [samplebrain (by Richard D. James and Dave Griffiths) for Max](/Max_patches/samplebrain_max.maxpat)
+- [samplebrain (by Richard D. James and Dave Griffiths) for Max](../static/Max_patches/samplebrain_max.maxpat)
 - [Soundhack Max/MSP Externals](https://www.soundhack.com/freeware/)
 - [spleeter for max (native version)](https://github.com/diracdeltas/spleeter4max/blob/feature/native-spleeter/README.md#spleeter-for-max-native-version)
-- [synthcore](/Max_patches/synthcore24.zip) (gen~ DSP Library) (by Ernest Leonardo Meyer)
+- [synthcore](../static/Max_patches/synthcore24.zip) (gen~ DSP Library) (by Ernest Leonardo Meyer)
 - [The Party Van](https://rodrigoconstanzo.com/the-party-van/) (!!!) (by [Rodrigo Constanzo](https://rodrigoconstanzo.com))
 - [Tom Cosm - External Resampler 1.0](https://tomcosm.gumroad.com/l/gjVM)
 - [Tom Hall's patches](https://www.tomhall.xyz/maxmsp/patches/)
@@ -68,4 +68,4 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - [.dsp/archive](https://dsparchive.neocities.org/) by elinsound
 - "To find related tech like [CataRT](https://ircam-ismm.github.io/max-msp/catart.html), [bbcut2](https://composerprogrammer.com/bbcut2.html), [eargram](https://sites.google.com/site/eargram/) and [sCrAmBlEd?HaCkZ!](https://www.youtube.com/watch?v=eRlhKaxcKpA) search up [granular synthesis](http://granularsynthesis.com/guide.php), [concatenative synthesis](https://hal.archives-ouvertes.fr/hal-01161337), [neural audio synthesis](https://github.com/acids-ircam/RAVE), [sinewave speech](http://www.lifesci.sussex.ac.uk/home/Chris_Darwin/SWS/), automated breakbeat cutting, audio mosaicing and plunderphonics/plundermatics." (quote: [aeiouaeiouaeiouaeiouaeiouaeiou](https://github.com/aeiouaeiouaeiouaeiouaeiouaeiou/samplebrain))
 - [Studio Selections: Rian Treanor](https://djmag.com/longreads/studio-selections-rian-treanor)
-- [OvalDNA Player for Windows](/Max_patches/OvalDNA-player-Iteration-WIN.zip) by Markus Popp, Frieda Luczak and Barry Threw (- actually not Max/MSP-related, but still want to stash it here, as it's kind of heard to get your hands on it)
+- [OvalDNA Player for Windows](../static/Max_patches/OvalDNA-player-Iteration-WIN.zip) by Markus Popp, Frieda Luczak and Barry Threw (- actually not Max/MSP-related, but still want to stash it here, as it's kind of heard to get your hands on it)

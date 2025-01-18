@@ -1,5 +1,5 @@
 ---
-title: "Synths and apps built with SuperCollider"
+title: "SuperCollider links and resources collection"
 date: "2023-03-28"
 draft: true
 tags:
@@ -21,7 +21,7 @@ tags:
 
 - [Ripple](https://web.archive.org/web/20111007041602/http://www.morganpackard.com/Ripple/Ripple.zip) - a free musical environment by Morgan Packard (currently Mac OS only)
 
-- well commented [patches from Daniel Mayer's SuperCollider course](/cmaktuell.zip) at TU Berlin I think
+- well commented [patches from Daniel Mayer's SuperCollider course](../static/cmaktuell.zip) at TU Berlin I think
 
 ## A bunch of useful SuperCollider links
 

@@ -1,10 +1,10 @@
 ---
 title: "WordPress troubles"
 date: "2023-10-03"
-draft: true
+draft: false
 ---
 
-Posting a couple of quirks in WordPress, that I'm likely to forget.
+Posting a couple of quirks in WordPress, that I'm likely to forget how to deal with them.
 
 ## wp-block-post-template-inline-css
 
