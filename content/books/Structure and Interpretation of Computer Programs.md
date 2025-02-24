@@ -116,7 +116,7 @@ We can use _lambdas_ to create procedures on-the-fly. These procedures are _anon
 [...]
 ```
 
-cf. [Exercise 2.4](/LISP_exercises/exercise2.4.lisp)
+cf. [Exercise 2.4](../static/LISP_exercises/exercise2.4.lisp)
 
 ### Closure property
 

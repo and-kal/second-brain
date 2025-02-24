@@ -1,10 +1,12 @@
 ---
 title: "The Art of Modern PHP 8 (2021) by Joseph Edmonds"
 date: "2023-03-08"
-draft: true
+draft: false
 ---
 
-## OOP lessons
+# Personal reading notes
+
+## Things to remember about OOP
 
 **Public properties** are not very common and not considered good practice. It's better to implement getters and setters. (Except for when we're dealing with _class constants_ as they are read-only by default and therefore safe to be declared as public.)
 
@@ -28,9 +30,9 @@ class SimplePropertyAssignment {
 
 When a property accesses a variable or constants of its class, this variable or constant is called the **backing field** of that property.
 
----
+### Interfaces
 
-**Interfaces** help to make sure that a class has certain methods for sure and that these methods will return certain types. (Specifying the return types is optional though.)
+Interfaces help to make sure that a class has certain methods for sure and that these methods will return certain types. (Specifying the return types is optional though.)
 Example from W3 Schools:
 
 ```php
@@ -47,9 +49,9 @@ class Cat implements Animal {
 
 Interfaces contain functions with no bodies. Child classes _implement_ interfaces. A class can implement multiple interfaces, but can only be derived from one abstract class.
 
----
+### Encapsulation
 
-**Encapsulation**: Encapsulation enables an object to hide data and functionalities from other pieces of code, for example by making them private. "[T]he general wisdom is that you should keep as much as possible hidden away and only expose the minimum amount of functionality and data in order to maximize your freedom to refactor." (That means it's easier to make changes to your code later, when you keep your objects independent from one another. It also prevents internal state of an object from being corrupted.)
+Encapsulation enables an object to hide data and functionalities from other pieces of code, for example by making them private. "[T]he general wisdom is that you should keep as much as possible hidden away and only expose the minimum amount of functionality and data in order to maximize your freedom to refactor." (That means it's easier to make changes to your code later, when you keep your objects independent from one another. It also prevents internal state of an object from being corrupted.)
 
 There's three levels of **visibility** in PHP: _private_, _protected_, _public_. By default, methods and properties of a class will be _public_. Most of the time this is not desired and one should always set their methods and properties to _private_ or _protected_.
 A _protected field_ is only accessible within the class in which it is declared and any class that is derived from it (i.e. _child classes_).
@@ -60,15 +62,9 @@ OO PHP is based on **single inheritance** - multiple inheritance is not supporte
 
 Classes that are marked as _final_ cannot be inherited from.
 
----
-
-**Methods**
+### Abstract Classes and Methods
 
 Method is another name for a function of a class (or an instantiated object). The name of a method and its parameters are called **signature of a method**. However, _PHP doesn't support traditional method overloading_, which means a class cannot have multiple methods with the same name, even when their paramteres (and thus their signatures) differ. Thus signatures in PHP don't play a great role.
-
----
-
-**Abstract Classes and Methods**
 
 Abstract classes can only be parent/base classes for other derived/child classes. They can have fields, methods and properties, but no object can be instantiated directly from an abstract class. Abstract functions/methods can only exist in abstract classes, have no body and _must_ be implemented in the child class.
 
@@ -80,9 +76,7 @@ abstract class MyClass
 }
 ```
 
----
-
-**Variadic function**
+### Variadic functions
 
 PHP supports variadic functions, i.e. functions that accept a non-determined number of arguments
 
@@ -93,9 +87,9 @@ function sum(int ...$nums): int
 }
 ```
 
-(The opposite of variadic functions are *fixed-arity functions*.)
+The opposite of variadic functions are _fixed-arity functions_.
 
----
+<!--
 
 **static**
 
@@ -116,13 +110,14 @@ refers to a program's ability to use the correct method for an object based on i
 
 In PHP, all public and protected functions are _virtual_ by default, that means child classes can override their parent's functions. In order to prevent that prepend the **final** keyword:
 
-```php
+````php
 [...]
 ```
+-->
 
----
+### Enumeration
 
-**Enumeration**: _enum_ is a data type. "An Enum defines a [...] type, which has a fixed, limited number of possible legal values." (php.net) They're useful for typechecking.
+_enum_ is a data type. "An Enum defines a [...] type, which has a fixed, limited number of possible legal values." (php.net) They're useful for typechecking.
 
 ```php
 enum Directions
