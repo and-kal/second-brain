@@ -94,6 +94,10 @@ Finally, to toggle a bit, we would use bitwise XOR. Say, we want to flip bit 5 a
 01111101 ^ 01000000 = 00111101
 ```
 
+## Working with powers of 2
+
+Multiplying by 2^6 is equivalent to shifting a binary number 6 bits to the left: `x*64 = x << 6`. Similarly, you can use left-shifting for division: `x/32 = x >> 5`.
+
 # sources
 
 - [learncpp.com](https://www.learncpp.com/cpp-tutorial/bit-manipulation-with-bitwise-operators-and-bit-masks/)
