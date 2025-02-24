@@ -76,4 +76,4 @@ You can layer a PNG on top of a video and use the non-transparent parts of the i
 ffmpeg -i input.mp4 -i overlay.png -filter_complex "[1:v]format=rgba,split[alpha][color]; [alpha]alphaextract[invert]; [color]negate[neg]; [neg][invert]alphamerge[final]; [0:v][final]overlay=format=auto" -c:v libx264 -pix_fmt yuv420p output.mp4
 ```
 
-Note that the image shoudl have the same dimensions as the video.
+Note that the image should have the same dimensions as the video.
