@@ -67,3 +67,13 @@ ffmpeg -i input.gif -filter_complex "[0:v] fps=12,scale=-1:480,mpdecimate,split 
 ## Extracting subtitles
 
 If your movie has softcoded subtitles, you can easily extract them with ffmpeg as long as they are text-based: `ffmpeg -i movie.mkv -map 0:s:0 subs.srt`. This will select the 1st subtitle stream, if you want the second subtitles option, change `0:s:0` to `0:s:1`. In case you want to extract subtitles that are bitmap-based (like HDMV PGS of DVD subtitles), use the following command: `ffmpeg -i movie.mkv -map 0:s:0 -scodec copy subs.sup` (though VLC player might not be able to handle the `.sup`).
+
+## Negative image mask
+
+You can layer a PNG on top of a video and use the non-transparent parts of the image as a negative mask for the videos (for example if it's a PNG with some text, the video will be negative, where there's text) with this command:
+
+```sh
+ffmpeg -i input.mp4 -i overlay.png -filter_complex "[1:v]format=rgba,split[alpha][color]; [alpha]alphaextract[invert]; [color]negate[neg]; [neg][invert]alphamerge[final]; [0:v][final]overlay=format=auto" -c:v libx264 -pix_fmt yuv420p output.mp4
+```
+
+Note that the image shoudl have the same dimensions as the video.
