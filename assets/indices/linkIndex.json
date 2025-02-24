@@ -1,0 +1,274 @@
+{
+  "index": {
+    "links": {
+      "/": [
+        {
+          "source": "/",
+          "target": "/books",
+          "text": "/books"
+        },
+        {
+          "source": "/",
+          "target": "/musicblog",
+          "text": "/musicblog"
+        },
+        {
+          "source": "/",
+          "target": "/tech",
+          "text": "/tech"
+        },
+        {
+          "source": "/",
+          "target": "/arguments",
+          "text": "/arguments"
+        },
+        {
+          "source": "/",
+          "target": "/miscellaneous",
+          "text": "/miscellaneous"
+        }
+      ],
+      "/tech/axolotipatches": [
+        {
+          "source": "/tech/axolotipatches",
+          "target": "/Axoloti_patches/ORGAN_1",
+          "text": "ORGAN_1"
+        }
+      ],
+      "/tech/powershellcommands": [
+        {
+          "source": "/tech/powershellcommands",
+          "target": "/./debloatingwindows",
+          "text": "tools to debloat Windows"
+        }
+      ],
+      "/tech/webdesignassets": [
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "CSS templates"
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "CSS frameworks"
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "Colours, shapes, etc."
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "Website builders"
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "Static Site Generators"
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "Hosting services"
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "Content Management Systems"
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "other useful assets"
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "Awesome Lists"
+        }
+      ]
+    },
+    "backlinks": {
+      "/": [
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "CSS templates"
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "CSS frameworks"
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "Colours, shapes, etc."
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "Website builders"
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "Static Site Generators"
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "Hosting services"
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "Content Management Systems"
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "other useful assets"
+        },
+        {
+          "source": "/tech/webdesignassets",
+          "target": "/",
+          "text": "Awesome Lists"
+        }
+      ],
+      "/./debloatingwindows": [
+        {
+          "source": "/tech/powershellcommands",
+          "target": "/./debloatingwindows",
+          "text": "tools to debloat Windows"
+        }
+      ],
+      "/Axoloti_patches/ORGAN_1": [
+        {
+          "source": "/tech/axolotipatches",
+          "target": "/Axoloti_patches/ORGAN_1",
+          "text": "ORGAN_1"
+        }
+      ],
+      "/arguments": [
+        {
+          "source": "/",
+          "target": "/arguments",
+          "text": "/arguments"
+        }
+      ],
+      "/books": [
+        {
+          "source": "/",
+          "target": "/books",
+          "text": "/books"
+        }
+      ],
+      "/miscellaneous": [
+        {
+          "source": "/",
+          "target": "/miscellaneous",
+          "text": "/miscellaneous"
+        }
+      ],
+      "/musicblog": [
+        {
+          "source": "/",
+          "target": "/musicblog",
+          "text": "/musicblog"
+        }
+      ],
+      "/tech": [
+        {
+          "source": "/",
+          "target": "/tech",
+          "text": "/tech"
+        }
+      ]
+    }
+  },
+  "links": [
+    {
+      "source": "/",
+      "target": "/books",
+      "text": "/books"
+    },
+    {
+      "source": "/",
+      "target": "/musicblog",
+      "text": "/musicblog"
+    },
+    {
+      "source": "/",
+      "target": "/tech",
+      "text": "/tech"
+    },
+    {
+      "source": "/",
+      "target": "/arguments",
+      "text": "/arguments"
+    },
+    {
+      "source": "/",
+      "target": "/miscellaneous",
+      "text": "/miscellaneous"
+    },
+    {
+      "source": "/tech/axolotipatches",
+      "target": "/Axoloti_patches/ORGAN_1",
+      "text": "ORGAN_1"
+    },
+    {
+      "source": "/tech/powershellcommands",
+      "target": "/./debloatingwindows",
+      "text": "tools to debloat Windows"
+    },
+    {
+      "source": "/tech/webdesignassets",
+      "target": "/",
+      "text": "CSS templates"
+    },
+    {
+      "source": "/tech/webdesignassets",
+      "target": "/",
+      "text": "CSS frameworks"
+    },
+    {
+      "source": "/tech/webdesignassets",
+      "target": "/",
+      "text": "Colours, shapes, etc."
+    },
+    {
+      "source": "/tech/webdesignassets",
+      "target": "/",
+      "text": "Website builders"
+    },
+    {
+      "source": "/tech/webdesignassets",
+      "target": "/",
+      "text": "Static Site Generators"
+    },
+    {
+      "source": "/tech/webdesignassets",
+      "target": "/",
+      "text": "Hosting services"
+    },
+    {
+      "source": "/tech/webdesignassets",
+      "target": "/",
+      "text": "Content Management Systems"
+    },
+    {
+      "source": "/tech/webdesignassets",
+      "target": "/",
+      "text": "other useful assets"
+    },
+    {
+      "source": "/tech/webdesignassets",
+      "target": "/",
+      "text": "Awesome Lists"
+    }
+  ]
+}
