@@ -7,4 +7,4 @@ tags:
   - quotes
 ---
 
-...
+You'd be surprised how exisential and transcendental going shopping can be.
