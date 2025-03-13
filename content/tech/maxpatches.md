@@ -46,7 +46,7 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - [CHAOS // ORDER - Firefly synchronizer](https://tensenpark.gumroad.com/l/firefly_synchronizer)
 - [Dirge](https://github.com/andr-ew/dirge)
 - [DJBB Loopmaker](https://djbajablast.gumroad.com/l/loopmaker)
-- fors.fm: [Opal](https://opal.fors.fm/) ($) & [Pluck](https://fors.fm/pluck)
+- fors.fm: [Opal](https://opal.fors.fm/) ($), [Pluck](https://fors.fm/pluck) et al.
 - [granolatech-M4L](https://github.com/akokai/granolatech-M4L)
 - [K-Devices Max For Live](https://k-devices.com/product-category/m4l/) ($)
 - [k-teck devices](https://k-teck.co.uk/max-for-live) ($)
@@ -59,6 +59,7 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - [PolyMind](https://maxforlive.com/library/device/2192/polymind)
 - [proc—c](https://proccpri.bandcamp.com/album/prini-proc-c-patch)
 - [prosody](https://github.com/andr-ew/prosody) collection (by [andr-ew](https://github.com/andr-ew/))
+- [Remo De Vico](https://www.remodevicocomposer.eu/maxforlive/)'s several devices
 - [Stepic](https://devicemeister.com/stepic-for-live/) ($)
 - [swirlytape](https://maxforlive.com/library/device/3014/swirlytape)
 - [VIZZable-2](https://github.com/zealtv/VIZZable-2)

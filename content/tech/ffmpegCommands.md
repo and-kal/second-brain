@@ -77,3 +77,11 @@ ffmpeg -i input.mp4 -i overlay.png -filter_complex "[1:v]format=rgba,split[alpha
 ```
 
 Note that the image should have the same dimensions as the video.
+
+## Extract frames every 10 seconds and create motion interpolated video
+
+```
+ffmpeg -i input.mp4 -vf "fps=1/10" extracted_frames/frame_%04d.png
+ffmpeg -framerate 10 -i extracted_frames/frame_%04d.png -c:v libx264 -pix_fmt yuv420p output_raw.mp4
+ffmpeg -i output_raw.mp4 -vf "minterpolate=fps=30:mi_mode=mci, setpts=4*PTS" -c:v libx264 -crf 18 -preset slow final_output.mp4
+```
