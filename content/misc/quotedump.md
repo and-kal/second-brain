@@ -84,8 +84,12 @@ Admittedly, I didn't particularly like. Not just because this kind of tame and o
 
 ## Rachel Cusk
 
-»Tonie feels a kind of nostalgia for her, as she might for a particular song that fits like a key into the lock of time and lets the past come rushing out.« (The Bradshaw Variations)
+> Tonie feels a kind of nostalgia for her, as she might for a particular song that fits like a key into the lock of time and lets the past come rushing out.(The Bradshaw Variations)
 
-»Yes, it is bewildering, unfathomable, to find that love and loss and despair and hope are cellular, partitive; that in the fragment of each the structure of the whole is present, like the specimens scientists examine under microscopes; the whole structure and character of her life present in these moments of terror and elation.« (The Bradshaw Variations)
+> Yes, it is bewildering, unfathomable, to find that love and loss and despair and hope are cellular, partitive; that in the fragment of each the structure of the whole is present, like the specimens scientists examine under microscopes; the whole structure and character of her life present in these moments of terror and elation.(The Bradshaw Variations)
 
-»It strikes her now that life is not linear, a journey, a passage, but a static process of irreversible accretion. It is perspective that moves, passing over it all like the sun, now illuminating, now casting into shadow. The angle changes, the relation of one thing to another, the proportion of dark to light; but experience itself is block-like, is cumulative and fixed.« (The Bradshaw Variations)
+> It strikes her now that life is not linear, a journey, a passage, but a static process of irreversible accretion. It is perspective that moves, passing over it all like the sun, now illuminating, now casting into shadow. The angle changes, the relation of one thing to another, the proportion of dark to light; but experience itself is block-like, is cumulative and fixed.(The Bradshaw Variations)
+
+## Cory Doctorow
+
+> As a working artist in his third decade of professional life, I've concluded that the point of art is to take a big, numinous, irreducible feeling that fills the artist's mind, and attempt to infuse that feeling into some artistic vessel – a book, a painting, a song, a dance, a sculpture, etc – in the hopes that this work will cause a loose facsimile of that numinous, irreducible feeling to manifest in someone else's mind. [...] One of my novels may be good and it may be bad, but one thing it definitely is is rich in communicative intent. ([source](https://pluralistic.net/2025/03/25/communicative-intent/))
