@@ -81,3 +81,11 @@ Admittedly, I didn't particularly like. Not just because this kind of tame and o
 ## Justin Smith-Ruiu
 
 > Most of my fellow philologists are willing to concede, at least in whisper, that what we managed to capture from the Earth’s satellites just before the solar flare hit is rather slim pickins indeed: a few “Cuck Fantasy” gifs now constituting the Tumblr Codex; a handful of Crazy Frog videos [...] making up the Archivium Amphibianum; the YouTube Cache, which includes one video of some sort of celebratory numerological rite in worship of the series of natural numbers, another of an unidentified paramilitary faction boasting of its mighty war-engines, and, as we all know from day one of Intro to Codicology, a clip of the “Brooklyn science comedian” Molly Gottstauk getting robustly booed when she tries out her new one at open-mic night: “So the guy at Chopt said ‘Now pick your protein!’ And I was like, ‘Uh, guanine?’” (from [An Introduction to Philology](https://www.the-hinternet.com/p/an-introduction-to-philology)
+
+## Rachel Cusk
+
+»Tonie feels a kind of nostalgia for her, as she might for a particular song that fits like a key into the lock of time and lets the past come rushing out.« (The Bradshaw Variations)
+
+»Yes, it is bewildering, unfathomable, to find that love and loss and despair and hope are cellular, partitive; that in the fragment of each the structure of the whole is present, like the specimens scientists examine under microscopes; the whole structure and character of her life present in these moments of terror and elation.« (The Bradshaw Variations)
+
+»It strikes her now that life is not linear, a journey, a passage, but a static process of irreversible accretion. It is perspective that moves, passing over it all like the sun, now illuminating, now casting into shadow. The angle changes, the relation of one thing to another, the proportion of dark to light; but experience itself is block-like, is cumulative and fixed.« (The Bradshaw Variations)
