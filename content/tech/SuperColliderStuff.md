@@ -1,7 +1,7 @@
 ---
 title: "SuperCollider links and resources collection"
-date: "2023-03-28"
-draft: true
+date: "2025-03-28"
+draft: false
 tags:
   - coding
   - SuperCollider
@@ -9,19 +9,19 @@ tags:
 
 ## Some great SC projects
 
-- all the [monome norns](https://norns.community/) scripts are usually written in SuperCollider (and [Lua](http://www.lua.org/))
+- Bhob Rainey's Xynthi, where I'm working on an update on right now, because it doesn't run in SuperCollider 3. You can [help me and send me a pull request](https://github.com/and-kal/XynthiSC3/).
 
-- https://github.com/schollz/airsynth
+- All the [monome norns](https://norns.community/) scripts are written in SuperCollider (and [Lua](http://www.lua.org/))
 
-- Xynthi
+- [Airsynth](https://github.com/schollz/airsynth)
 
 - https://patchstorage.com/mm-granulator-synth-with-full-gui/
 
-- https://github.com/marcinpiet/nuPG_1.0
+- [nuPG 1.0](https://github.com/marcinpiet/nuPG_1.0)
 
 - [Ripple](https://web.archive.org/web/20111007041602/http://www.morganpackard.com/Ripple/Ripple.zip) - a free musical environment by Morgan Packard (currently Mac OS only)
 
-- well commented [patches from Daniel Mayer's SuperCollider course](../static/cmaktuell.zip) at TU Berlin I think
+- well commented [patches from Daniel Mayer's SuperCollider course](../static/cmaktuell.zip) at TU Berlin
 
 ## A bunch of useful SuperCollider links
 
@@ -53,7 +53,7 @@ tags:
 
 ## bugfixes
 
-### SuperCollider server bootup error on Win
+### SuperCollider server bootup error on Windows 
 
 Sometimes Windows is blocking SuperCollider from accessing its ports, because of Hyper-V/WSL accessing these ports, too, or something like that, which will result in the following error messages: `ERROR: Primitive '_GetLangPort' failed` or `ERROR: Primitive '_NetAddr_SendMsg' failed`. You can usually fix this by restarting the Windows NAT Driver service. Start an elevated Powershell and run:
 

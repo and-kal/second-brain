@@ -27,6 +27,10 @@ Accoring to the `nmap` manual, `-A` enables OS detection, version detection, scr
 
 `-v` sets the verbosity level to 1. For higher verbosity (i.e. more information about the scan being printed), you can type `-vv`, `-vvv`, or `-v3`.
 
+### List all devices on your network
+
+`nmap -sn 192.168.1.0/24` scans all IP addresses in the range 192.168.1.0 to 192.168.1.255.
+
 ## Nmap Scripting Engine (NSE)
 
 The Nmap Scripting Engine (NSE) allows you to write scripts in [Lua](./lua) and automate things, do bulk stuff etc.
