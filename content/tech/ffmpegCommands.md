@@ -80,8 +80,16 @@ Note that the image should have the same dimensions as the video.
 
 ## Extract frames every 10 seconds and create motion interpolated video
 
-```
+```powershell
 ffmpeg -i input.mp4 -vf "fps=1/10" extracted_frames/frame_%04d.png
 ffmpeg -framerate 10 -i extracted_frames/frame_%04d.png -c:v libx264 -pix_fmt yuv420p output_raw.mp4
 ffmpeg -i output_raw.mp4 -vf "minterpolate=fps=30:mi_mode=mci, setpts=4*PTS" -c:v libx264 -crf 18 -preset slow final_output.mp4
+```
+
+## Split long MP3 into 1-hour chunks
+
+Here's a command that splits a long MP3 file into 1-hour chunks, including a final shorter part, if needed. I'm using this sometimes, wen Ableton won't let me import very long MP3 files (> 4 hours).
+
+```powershell
+ffmpeg -i input.mp3 -f segment -segment_time 3600 -c copy -map 0 output_%03d.mp3
 ```
