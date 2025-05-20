@@ -11,7 +11,7 @@ Then go `C:\Program Files\JACK2\jack-router` or wherever you installed it to and
 
 ![step 1](../static/MultitrackAudioToAbletonWin10/01.jpeg)
 
-In there, you should change the 2nd line to the desired number of channels that you want. (I got it working with 8, but when going above 8 I got errors in SuperCollider sometimes.)
+In there, you should change the 2nd and 3rd line to the desired number of channels that you want. (I got it working with 8, but when going above 8 I got errors in SuperCollider sometimes.)
 
 Next, launch `C:\Program Files\JACK2\qjackctl\qjackctl.exe` -> `Settings` - under `Driver` choose `portaudio` and under `Advanced` use settings similar to these:
 
