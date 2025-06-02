@@ -2,6 +2,8 @@
 title: "listmonk newsletter manager on an Apache server"
 date: "2024-11-05"
 draft: false
+tags:
+  - selfhosting
 ---
 
 Since we're living in times of [enshittification](https://pluralistic.net/2023/01/21/potemkin-ai/#hey-guys) and you can't trust newsletter services like Mailjet or Mailchimp anymore to be usable in a few years or months unless you are a company who can afford their services, it's good to look for other viable options - like selfhosting a newsletter manager. I'm using [listmonk](https://listmonk.app) for this as I found it is intuitive to use, fairly easy set up and the admin interface looks pleasingly non-bloated. You can simply install it with Docker. However, I was following [this guide](https://mumaritc.hashnode.dev/how-to-install-listmonk-using-binary-on-ubuntu-2204) for installing it with the binaries. You should be able to have it up and running pretty fast with this guide, but it doesn't say how to configure your Apache server for your listmonk installation.

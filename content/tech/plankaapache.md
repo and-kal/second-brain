@@ -2,6 +2,8 @@
 title: "Planka on an Apache server"
 date: "2025-06-02"
 draft: false
+tags:
+  - selfhosting
 ---
 
 Since Atlassian has been restricting their free plan for Trello a while ago, I was checking for some self-hosted alternatives and stumbled upon [Planka](https://planka.app/), which was ticking a lot of my boxes (especially, the Trello import feature seemed useful). However, [their docs for making it run with Apache2 as a reverse proxy](https://docs.planka.cloud/docs/configuration/reverse-proxy/apache2) are a bit scanty still. 

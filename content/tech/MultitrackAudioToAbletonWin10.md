@@ -2,6 +2,8 @@
 title: "Multitrack-recording from SuperCollider to Ableton (on Windows 10)"
 date: "2022-05-02"
 draft: false
+tags:
+    - Windows
 ---
 
 Last weekend I managed to get a multitrack routing from TidalCycles/SuperCollider to Ableton in Windows 7 using JACK. For anyone still interested in this, here's a quick tutorial:

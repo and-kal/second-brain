@@ -2,6 +2,8 @@
 title: "Tools for debloating Windows and stuff"
 date: "2023-10-12"
 draft: false
+tags:
+    - Windows
 ---
 
 ## Debloaters

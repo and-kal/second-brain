@@ -2,6 +2,8 @@
 title: "PHP: Implementing a ›Remember me‹ function"
 date: "2023-05-02"
 draft: false
+tags:
+    - PHP
 ---
 
 There's surprisingly little articles out there, which explain how to securely keep a user logged in by using cookies in PHP. (Or if there is one, it's only [in the web archive](https://web.archive.org/web/20110219130748/http://jaspan.com/improved_persistent_login_cookie_best_practice).) Even some articles claiming to show the [best approach](https://www.geeksforgeeks.org/best-approach-for-keep-me-logged-in-using-php/) to do so, [will advise you](http://www.phpnerds.com/article/using-cookies-in-php/2) to e.g. store the MD5-hashed username and password in a client-side cookie (via the `setcookie()` function), which is actually [not a good practice](https://stackoverflow.com/a/17266448). If you can avoid it (and in most cases you really can) you shouldn't let user information like their password leave the server. All you need to have in a cookie is:

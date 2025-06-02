@@ -2,6 +2,8 @@
 title: "Python notes"
 date: "2024-02-21"
 draft: true
+tags:
+    - Python
 ---
 
 # Using different versions of Python on Windows
