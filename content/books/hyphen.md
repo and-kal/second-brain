@@ -39,3 +39,5 @@ später Marx / Bloch / Anatoli Lunatscharski + Volksbildung
 »ein erweiterter Begriff von Solidarität ... der Aufbau von Gewebe, da, wo es gerissen ist.«
 
 »Eine Materialisierung der Potenziale einer symbiotischen Lebensform oder des Kommunismus.«
+
+Utopian »post-scarcity« scenario à la Cory Doctorow's »Walkaway« or as in Iain M. Banks's »Culture« series

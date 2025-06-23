@@ -27,3 +27,6 @@ NOS = not otherwise specified
 
 <!-- https://www.lesswrong.com/posts/895quRDaK6gR2rM82/diseased-thinking-dissolving-questions-about-disease -->
 <!-- https://www.lesswrong.com/posts/WBw8dDkAWohFjWQSk/the-cluster-structure-of-thingspace -->
+
+> And these LLMs feature no symbolic reasoning whatsoever within their computational substrate. What they do feature is a simple recursive model: Given the input so far, what is the next token? And they are thus enabled after training on huge amounts of input material. No inherent reasoning capabilities, no primordial ability to apply logic, or even infer basic axioms of logic, reasoning, thought. And therefore unrecognizable to Chomsky's definition. ([papaver-somnamb on HackerNews](https://news.ycombinator.com/item?id=44093563))
+<!-- https://chomsky.info/20230503-2/ -->

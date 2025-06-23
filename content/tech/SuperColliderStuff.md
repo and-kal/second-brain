@@ -51,7 +51,7 @@ tags:
 - [TidalCycles Quick Reference compiled and partially rewritten documentation from various sources](https://gist.github.com/mxactvtd/bf3fb357a419c7f063b98dfd9a66cf78)
 - [User:Crantila/FSC/Synthesizers/SuperCollider/Basic Programming - Fedora Project Wiki](https://fedoraproject.org/wiki/User:Crantila/FSC/Synthesizers/SuperCollider/Basic_Programming#.22Do_This_While.22)
 
-## bugfixes
+## Troubleshooting 
 
 ### SuperCollider server bootup error on Windows 
 

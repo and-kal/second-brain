@@ -2,6 +2,8 @@
 title: "An ongoing list of interesting Max/MSP patches and M4L devices"
 date: "2023-01-18"
 draft: false
+tags:
+    - oshw
 ---
 
 Here's an expanding list of Max/MSP and Max4Live patches that I have discovered, used, or just thought seemed worth checking out. Lots of interesting DSP, algorithmic composition and sample manipulation stuff.

@@ -2,6 +2,8 @@
 title: "Useful Powershell commands"
 date: "2023-08-16"
 draft: false
+tags:
+    - Windows
 ---
 
 ## MD5 checksum

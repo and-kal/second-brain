@@ -2,6 +2,8 @@
 title: "Cool Axoloti patches"
 date: "2023-05-02"
 draft: false
+tags:
+    - oshw
 ---
 
 This is a list and collection of interesting patches for the [Axoloti](http://www.axoloti.com/) instrument, which seems to be slowly dying as a project, unfortunately. At the moment of writing this, [the community forum](http://community.axoloti.com/) is giving me a `Bad Gateway` error and the project seems to be [kind of abandoned](https://github.com/axoloti/axoloti) by its creator. Though there was a handful of people still active in the forum. Maybe the forum, which was also a place for sharing patches, will be back soon. But just in case, here's some great patches I salvaged from there:
