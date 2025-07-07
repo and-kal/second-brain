@@ -1,0 +1,67 @@
+---
+title: "Luise Meier: Hyphen (2024) & Cory Doctorow: Walkaway (2017)"
+date: "2025-03-11"
+draft: true
+---
+
+In 2024, there was a lot of media panic about the possibility of widespread power cuts, which were unbacked and unsustainable, but nevertheless played on the concerns of the local population. Because even if the idea of a day or more without electricity has something romantic about it, only a few trailer park hippies would really want to do without electricity permanently.
+
+In “Hyphen”, Luise Meier takes the scenario of a complete and permanent, perhaps even eternal, power cut in Germany as a sci-fi-like thought experiment and starting point for the invention of a communist/commonist/socialist utopia. And it is indeed a utopia that Luise Meier draws. Not a homo-homini-lupus-like end-time scenario à la Gibson's “The Peripheral”, in which the fragility of human civilization and its forms of social organization are highlighted, but a world full of possibilities and new beginnings.
+
+So the book begins as a very captivating sci-fi novel, in which a picture of a functioning commonist society is presented based on some of the inhabitants of this new Germany without electricity. There is a lot of fun to be had with the mind games that Luise Meier opens up: Society here is organized in local networks and mostly village structures that are linked in an information and goods exchange system. One of the main characters in the book has also set herself the task of expanding the constantly growing encyclopaedia of knowledge, which is distributed decentrally and to which all local network nodes have access, with experience reports and skill sharing instructions from other nodes.
+
+...
+
+Was so spannend anfängt, verliert sich allerdingsin der zweiten Hälfte des Buches in teils etwas zähen Erfahrungsberichten aus und Beschreibungen von dieser neuen Gesellschaftsform, die bei mir eine aber doch interessante kognitive Dissonanz ausglöst haben: So fand ich Meiers Ausführungen hier doch auf nervige Weise viel zu optimistisch; etwa wenn sie beschreibt wie man auch frühere Nazis zu Teilen dieser neuen Gesellschaft machen konnte, indem man sie in rollenspiel-mäßigen Jäger-/Sammler-Gemeisnchaften im Wald leben lässt oder ihnen einen psychedelischen Pilz-Trip verschafft, aus dem sie zwar vielleicht mit einer Psychose wieder kommen, aber es ist diese immerhin doch noch ein besserer Zustand als ein schlechtgelaunter Nazi zu sein.
+
+What starts off so excitingly, however, gets lost in the second half of the book in sometimes somewhat tedious reports of experiences and descriptions of this new form of society, which triggered an interesting cognitive dissonance for me: I found Meier's explanations here far too optimistic in an annoying way; for example, when she describes how even former Nazis could be made part of this new society by letting them live in role-playing hunter/gatherer communities in the forest or giving them a psychedelic mushroom trip, from which they may come back with a psychosis, but it is still a better state than being a bad-tempered Nazi.
+
+...
+
+experimentelles Gendern
+Hippie / Pilze
+Deleuze (exegesis) / mycorrhiza
+Gedichte / Zeitungstexte
+später Marx / Bloch / Anatoli Lunatscharski + Volksbildung
+
+---
+
+»In diesen Körper sich zu verheddern, von ihm sich anfassen, sich verbiegen, verzetteln, verwursten zu lassen, erschien ihm plötzlich wie ein Flur voller noch ungeöffneter Türen - hinter jeder einzelnen Tür, jeder Begegnung das potenzialeiner neuen Welt, einer neuen Berührung, einer neuen Verbindung, eines neuen Universums. Denn auch die Menschen kamen ihm plötzlich wie eine Ansammlung von Knöpfen vor, von Schnittstellen, die, seit das Stromnetz brachlag, darauf warteten, neu verknüpft, ausprobiert und an andere Wechselwirkungskreisläufe angeschlossen zu werden...«
+
+»Das ist ja auch Zwangskollektivierung jetzt, aber die Notwendigkeit wird nicht mehr mit Gewaöt erzeugt, und der Druck ist raus, oder das Ventil woanders.«
+
+»Dass man immer auf die Fresse fliegen konnte, wenn man den Versuch unternahm, aufzustehen und sich zu bewegen, fortzuhinken, ins Offene rein, das nicht offen wäre, wenn es nicht auch enttäuschen könnte.«
+
+»Du konntest ja nicht an einem Menschen all das wiedergutmachen, was die Gesellschaft in Jahrzehnten mit Millionen Mikroaktionen kaputtgeprügelt hat.«
+
+»Wenn du jedes Potenzial von Veränderung abschneidest, auch in deinem Denken, dann kannst du dir eben vormachen, dass du Bescheid weißt.«
+
+»ein erweiterter Begriff von Solidarität ... der Aufbau von Gewebe, da, wo es gerissen ist.«
+
+»Eine Materialisierung der Potenziale einer symbiotischen Lebensform oder des Kommunismus.«
+
+Utopian »post-scarcity« scenario à la Cory Doctorow's »Walkaway« or as in Iain M. Banks's »Culture« series
+
+---
+
+> »The thing I've never understood,« Hubert [...] said, »is how someone can be delusional and still manage to own half the planet? I get how having some delusions would be useful when you're bossing people around and ripping everyone off, but doesn't that break down eventually? It's still capitalism out there. If your competitor brings in some person who isn't delusional, wouldn't that person end up bankrupting you?« Natalie said, »There's more than one way to be smart. People like my dad assume that because they're smart about being evil bastards, they're smart about everything --« »And because they're smart at everything,« Seth said, »that makes it okay for them to be evil bastards?« »Exactly,« she said. »So people like my dad are good at figuring out how to take your company with its 'smart people' and get it declared illegal, poach its best ideas, or just buy it and leverage it and financialize it until it doesn't make anything except for exotic derivatives and tax-credits. And the thing is, that's not good enough for him! He wants to be the one percent of the one percent of the one percent because of his inherent virtue, not because the system is rigged. His whole identity rests on the idea that the system is legit and that he earned his position into it fair and square and everyone else is a whiner.« »If they didn't want to be poor, they shoulda had the sense to be born rich,« Seth said [...]
+
+> »I don't think that the average person is 60 percent good and 40 percent prick. I think that the average person sometimes kids himself that he's the center of the universe and it's okay if he does something that he'd be pissed about if someone else did it to him, and tries not to think about it too hard. [...] And I think that the tragedy of human existence is our world is run by people who are really good at kidding themselves, like your father. Your dad manages to kid himself that he's rich and powerful because he's the cream and has risen to the top. But he's not stupid. He knows he's kidding himself. So underneath that top layer of bullshit is another, more aware belief system: the belief that everyone else would kid themselves the same way he does, if they had the chance.«
+
+> »That's why you never hear politicians talking about 'citizens,' it's all 'taxpayers,' as though the salient fact of your relationship to the state is how much you pay. Like the state was a business and citizenship was a loyalty program that rewarded you for your custom with roads and health care.«
+
+> »[...] we know that people can change based on what they know. You're not the same person you were when you got here ten days ago. If I asked you-minus-tenand you-now the same question, you wouldn't be surprised if you gave a different answer. If I asked a battery of questions, you'd be surprised if you didn't give different answers. The you that is you is actually the space of things that you might think in response to some stimulus.«
+
+> »The reason they're so good at making us desperate and selling us shit isn't that they're too smart to get conned. It's because they're extra-susceptible. They understand how to make us turn on one another in envy and terror because they're drowning in envy and terror of each other. My dad knows the guy in the next yacht is a bastard who'd slit his throat and steal his empire because my dad is a bastard who'd slit that guy's throat and steal his empire. This immortality shit? That's not about all of them living forever, it's about just one or two living forever, being deathless emperor of time.«
+
+> »They have a sciencey vocabulary conceived of solely to praise people like your father. Like job creator. As though we need jobs! I mean, if there's one thing I'm sure of, it's that I never want to have a job again. I do math because I can't stop. Because I've found people who need my math to do something amazing. If you need to pay me to do math, that's because a) you've figured out how to starve me unless I do a job, and b) you want me to do boring, stupid math with no intrinsic interest. A 'job creator' is someone who figures out how to threaten you with starvation unless you do something you don't want to do [...]«
+
+> »That kind of linear projection is the kind of thinking that gets people into trouble when they think about the future. It's like thinking, 'well, my kid is learning ten exciting new things every week, so by the time she's 60, she'll be smarter than any human in history.' There are lots of curves that start looking like they go up and to the right forever, but turn into bell-curves, or inverted Us, or S-curves, or the fabled hockey-stick that gets steeper and steeper until it goes straight vertical. Any assumption that we're going to end up like now, but moreso, is so insufficiently weird it's the only thing you can be sure won't happen in the future.«
+
+> »People walk away because the world doesn't want them. We're a liability. I've heard my father talk about it: the people who want to come to Canada, people who want to have children, people who dream of having their children learn all they need to get by in the world, dream of health care and old age without misery. As far as he's concerned, those people are redundant, except when they represent a chance to win a government contract to feed them as cheaply as possible, or house them in prison camps [...]«
+
+> »It's a fucking amazing non-coincidence that everyone with more money than they could spend spends every hour trying to get more. Walkaways, who have nothing, play like no one in default. They play like kids, before anyone knows about schedules, lie around like teenagers who fuck off from school and lie on a roof and bullshit for hours. They do things people always think, If only I was rich... The irony is, rich people don't get to do that stuff.«
+
+> »They weren't unpleasant to talk to -- many were witty conversationalists. But there was something...off about them [...]: they had no impostor syndrome. There wasn't a hint of doubt that every privilege they enjoyed was deserved. The world was correctly stacked. The important people were at the top. The unimportant were at the bottom.«
+
+> »We're not making a world without greed, Jacob. We're making a world where greed is a perversion. [...] You can be as greedy as you want, but no one will admire you for it.«
