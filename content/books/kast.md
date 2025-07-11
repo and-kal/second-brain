@@ -7,8 +7,6 @@ tags:
   - german
 ---
 
----
-
 # »Eine Gesellschaft ist danach zu beurteilen, welche Möglichkeiten sie dem letzten ihrer Bürger gibt.«
 
 Eine ältere Version des Buches beinhaltet nur die ersten drei der vier autofiktionalen Geschichten: »Der Schlamm«, »Der Hörsaal« und »Die Bühne«. Während der Text »Die Tribüne« als viertes Kapitel erst in späteren Ausgaben mitveröffentlicht wurde. Die Texte sind jeweils in etwa fünfjährigen Abständen zwischen 1959 und 1974 geschrieben worden. Das erste Kapitel »Der Schlamm« schrieb Braun also im Alter von 20 Jahren und wie es sich scheinbar gehört für einen männlichen Schriftsteller diesen Alters, enthält dieses Kapitel noch viele Selbstinszenierungen des Schriftstellers als leidender Mann, der sich nicht auf eine Frau festlegen will und entweder traurig ist, weil er nicht bei den Mädchen landet, und wenn doch, dann trauert er seiner Ex-Freundin hinther. Diese Liebesgeschichteneinsprengsel sind der schwächere und uninteressante Teil der ersten Hälfte des Werkes - literarisch sehr schwach und für mich die Frage aufwerfend, worum es Braun bei diesen Schilderungen geht, was das Interesse für die Leserinnenschaft hieran sein soll. Brauns Schreiben ist in diesen jungen Jahren noch sehr dürftig, wenn es um das Thema Beziehungen geht.
