@@ -2,29 +2,29 @@
 title: "Refactoring UI by Steve Schoger & Adam Wathan (2018)"
 date: "2023-03-17"
 draft: false
+tags:
+  - reading notes
 ---
 
-Here's some personal takeaways from the *Refactoring UI* (2018) book by Steve Schoger and Adam Wathan. I really recommended [buying the actual book](https://www.refactoringui.com/), not least for all the example images in there. While those examples are really not anything I would feel excited about rebuilding (it's mostly just typical corporate website designs really), they still are really helpful in order to develop some intuition and sensibility what looks pleasing and balanced.
+Here's some personal takeaways from the _Refactoring UI_ (2018) book by Steve Schoger and Adam Wathan. I really recommended [buying the actual book](https://www.refactoringui.com/), not least for all the example images in there. While those examples are really not anything I would feel excited about rebuilding (it's mostly just typical corporate website designs really), they still are really helpful in order to develop some intuition and sensibility what looks pleasing and balanced.
 
-----
+---
 
 ## Limit your choices
 
-Create a pool to choose from beforehand, e.g.
-    - a color pallette plus shades 
-    - a list of possible font-sizes
-    - a list of margins and paddings to choose from
+Create a pool to choose from beforehand, e.g. - a color pallette plus shades - a list of possible font-sizes - a list of margins and paddings to choose from
 
-When working with sizes, *don't use linear scaling*. I.e. your pool of font sizes should not be a certain number of font sizes that are each 4px apart, but rather work with a base font size and ratios like 0.25, 0.5, 1, 2, 3, 4, etc. 
+When working with sizes, _don't use linear scaling_. I.e. your pool of font sizes should not be a certain number of font sizes that are each 4px apart, but rather work with a base font size and ratios like 0.25, 0.5, 1, 2, 3, 4, etc.
 
 ## Emphasis by de-emphasizing
 
 **Try emphasizing by de-emphasizing.**
 
 Instead of having many element competing with each other for emphasis, try to de-emphasize some elements.
-- You can give inactive elements a lighter shade of the same color. 
-- However, using opacity for that can have some pitfalls, it's usually better to use the "L" value in HSL colours. 
-    - There's [a SASS function for that](https://sass-lang.com/documentation/modules#hsl).
+
+- You can give inactive elements a lighter shade of the same color.
+- However, using opacity for that can have some pitfalls, it's usually better to use the "L" value in HSL colours.
+  - There's [a SASS function for that](https://sass-lang.com/documentation/modules#hsl).
 
 "[R]educing contrast helps to de-emphasize heavy elements, increasing weight is a great way to add a bit of emphasis to low contrast elements."
 
@@ -42,13 +42,14 @@ Headlines from `<h1>` to `<h6>` don't necessarily need to decrease in font-size 
 
 For a11y reasons, one shouldn't mix order from `<h1>` to `<h6>`. However, when the headlines don't need to be displayed (because the content speaks for itself) they can be hidden, e.g. with `display: none`.
 
-## Hierarchy 
+## Hierarchy
 
-Hierarchy is oftentimes determined by how much surface area some element inhabits. So, font size, font weight etc. matter. 
+Hierarchy is oftentimes determined by how much surface area some element inhabits. So, font size, font weight etc. matter.
 
 However, contrast also matters and can create hierarchy. Instead of using weights, one can use color softness in order to achieve hierarchy.
 
-When designing buttons, think of the *hierarchy of actions*:
+When designing buttons, think of the _hierarchy of actions_:
+
 - "Primary actions should be obvious"
 - "Secondary actions should be clear but not prominent"
 - "Tertiary actions should be discoverable but unobtrusive"
@@ -59,18 +60,18 @@ Don't rely on contrasting colors so much in order to attain hierarchy as many di
 
 ## Spacing
 
-> Start with too much white space. 
+> Start with too much white space.
 
 Instead of adding margins and paddings, try to have too much padding/margin in the beginning and then start removing some (which is also easier and more obvious to do).
 
 > A spacing and sizing system will help you create better designs, with less
-effort, in less time
+> effort, in less time
 
 Define a set of values for spacings in advance.
 It's best to work with relative values here (percentages) instead of absolute ones (pixels).
 
 > If you want your system to make sizing decisions easy, make sure no two
-values in your scale are ever closer than about 25%.
+> values in your scale are ever closer than about 25%.
 
 > You don’t have to fill the whole screen
 
@@ -82,7 +83,7 @@ And not everything needs to be full-width. Give elements just the space they nee
 
 Even tough, grid systems like Bootstrap's 12 column grid, are useful and efficient, not all layout decisions should be based on grid systems. At least not on fixed grids (grids with equal distribution).
 
-Some elements might have *optimal sizes* and can be given fixed sizes. Like a header that should always be 100px high.
+Some elements might have _optimal sizes_ and can be given fixed sizes. Like a header that should always be 100px high.
 
 Relative proportions aren't necessarily the same on all screens. For example, if a heading's font size is twice the size of the content on desktop, this 1:2 kind of proportion will probably look to extreme on mobile screens. Same for inner proportions, like font-size and padding on button elements.
 
@@ -117,17 +118,17 @@ Hyperlink don't always need to stand out. It depends on the context, if you shou
 
 > [W]henever you justify text, you should also enable hyphenation
 
-You don't normally need to tweak letter-spacing. 
+You don't normally need to tweak letter-spacing.
 
 Only when you want to use a font that is used for normal text as a font for your headline, you should consider tightening the letter spacing a bit. Or when using uppercase letters only, adding a bit of letter spacing is a good idea w/r/t readability.
 
 ## Colors
 
-**Consider using HSL instead of RGB and HEX** (see above). 
+**Consider using HSL instead of RGB and HEX** (see above).
 
 (HSL = Hue Saturation Lightness) != (HSB = Hue Saturation Brightness)
 
-A good color palette consists of three categories: *grays, primary color(s) and accent color(s)*.
+A good color palette consists of three categories: _grays, primary color(s) and accent color(s)_.
 
 Shades are important. For each color hue you use, you'll need 5-10 shades of it.
 
@@ -137,24 +138,24 @@ However, it's always good to judge by how something looks, more than mathematica
 
 The primary color or the primary colors should your defining color(s). You will also need a handful of shades of that color.
 
-Accent colors are used to highlight and emphasize things and communicate certain states. (What is `success`,  `danger`, `warning`, `info` in Bootstrap.) These colors should be used far less than the primary colors.
+Accent colors are used to highlight and emphasize things and communicate certain states. (What is `success`, `danger`, `warning`, `info` in Bootstrap.) These colors should be used far less than the primary colors.
 
 When creating palettes of shades it's a good idea to start with the middle color and then find the lightest and the darkest shade and then interpolate for the shades in between.
 
-For lighter shades of a color it's advisable to add some saturation in order to not have them look too pale. You can also try *to rotate the hue*. So instead of increasing the L value in HSL, try to move the H value towards the nearest bright hue (i.e. 60°,
+For lighter shades of a color it's advisable to add some saturation in order to not have them look too pale. You can also try _to rotate the hue_. So instead of increasing the L value in HSL, try to move the H value towards the nearest bright hue (i.e. 60°,
 180°, or 300°). Coversely, to make it look darker, move the H value towards the nearest dark hue (0°, 120°, or 240°). Changing hue and changing lightness can also be combined in order to arrive at a well-balanced colour palette.
 
 > Don’t rotate the hue more than 20-30° or it will look like a totally different color instead of just lighter or darker.
 
-**Greys** by definition have a saturation of 0 (so chaging the hue won't change the grey). In order to get more interesting pseudo-grey colours, add some saturation to them. 
+**Greys** by definition have a saturation of 0 (so chaging the hue won't change the grey). In order to get more interesting pseudo-grey colours, add some saturation to them.
 
 > If you want your greys to feel cool, saturate them with a bit of blue [...] To give your greys a warmer feel, saturate them with a bit of yellow or orange.
 
 ## Accessibility ('a11y')
 
-Many guiding rules are defined by the *Web Content Accessibility Guidelines*.
+Many guiding rules are defined by the _Web Content Accessibility Guidelines_.
 
-Colur shouldn't be the only source of meaning or means of conveying information, because people with colour blindness might not be able to grasp the informartion. So also use additional icons or something. If that's not an option, create contrasts, so even colour blind people can discern the elements. 
+Colur shouldn't be the only source of meaning or means of conveying information, because people with colour blindness might not be able to grasp the informartion. So also use additional icons or something. If that's not an option, create contrasts, so even colour blind people can discern the elements.
 
 > Always use color to support something that your design is already saying; never use it as the only means of communication.
 
@@ -162,18 +163,17 @@ Colur shouldn't be the only source of meaning or means of conveying information,
 
 > [N]ormal text (under ~18px) has a contrast ratio of at least 4.5:1, and [...]] larger text has a contrast ratio of at least 3.
 
-### Contrasts 
+### Contrasts
 
-In order to achieve contrast between text and background, you don't always need to darken to background when using light text for example. 
+In order to achieve contrast between text and background, you don't always need to darken to background when using light text for example.
 
 > Instead of using light text on a dark colored background, use dark colored text on a light colored background.
 
 In case of dark coloured backgrounds, changing lightness and saturation in order to get a text color with a good contrast can result in a color that is almost white. Changing the hue towards cyan, yellow, or magenta will produce better results.
 
+## Depth
 
-## Depth 
-
-> Small shadows with a tight blur radius make an element feel only slightly raised off of the background, while larger shadows with a higher blur radius make an element feel much closer to the user. The closer something feels to the user, the more it will attract their focus. 
+> Small shadows with a tight blur radius make an element feel only slightly raised off of the background, while larger shadows with a higher blur radius make an element feel much closer to the user. The closer something feels to the user, the more it will attract their focus.
 
 Establish an elevation system, i.e. a hierarchy of elements and components in terms of how close they appear (for example modal to dropdown menu to button)
 
@@ -189,12 +189,13 @@ Another option to create depth is by overlapping elements and thus creating laye
 
 When trying to place text on top of a photo in order for the text to be readable still, you should a semi-transparent overlay to the image: a dark overlay for light text; for dark text add a light overlay or reduce contrast. Other than that you can also apply a glow or very blurry shadow to set the text apart from the background image.
 
-You can also colourize the image to a colour that goes well with your text colour. 
+You can also colourize the image to a colour that goes well with your text colour.
 
 Three steps to get a colorized image:
+
 - lower the contrast of the image
 - desaturate the image to remove colours
-- add a colour fill and use multiply mix mode 
+- add a colour fill and use multiply mix mode
 
 Scaling up images is usually not a good idea as it will not look good. That's also true for vector icons, which won't lose quality when scaling them up. It's better to use icons at their intended size and add a circle, square etc. with an appropriate background colour to the icon so as to fill the space in your layout.
 
@@ -202,13 +203,13 @@ Scaling images down can also produce unwanted results. Favicons, for example, wi
 
 > Don’t scale down screenshots.
 
-In order to prevent background bleed (image colours bleeding into your background colour), you *could* use a border. However, a more appealing solution is a discreet inset box shadow.
+In order to prevent background bleed (image colours bleeding into your background colour), you _could_ use a border. However, a more appealing solution is a discreet inset box shadow.
 
 ## miscellaneous
 
 To make your page more interesting and appealing it's often a good idea to replace browser defaults, like bullet icons, radio buttons, checkboxes etc. with custom styles.
 
-Use accent borders in order to make elements stand out visually. 
+Use accent borders in order to make elements stand out visually.
 
 Make sure you're not only using borders to seperate content as it will make your UI look too busy soon. Drop shadows or inset shadows are more subtle and can serve the same purpose as borders. Also different background colours (not necessarily alternating background colours as in an Excel sheet) or more spacing will seperate items from another.
 

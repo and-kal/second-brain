@@ -2,6 +2,8 @@
 title: "The Art of Modern PHP 8 (2021) by Joseph Edmonds"
 date: "2023-03-08"
 draft: false
+tags:
+  - reading notes
 ---
 
 # Personal reading notes

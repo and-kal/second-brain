@@ -35,6 +35,4 @@ Im vierten Kapitel dann sieht sich Kast selbst in der Rolle der Intendanz, die n
 
 > Statt um die Leute müsse ich mich um die Dinge kümmern; statt des Vielen, das sie wollen, interessiere mich nur das Eine: die Scheißproduktion. Die [...] Strukturen müßten so verändert werden, daß wir [...] wirklich gefordert würden und gebraucht für ein Leben aus mehr als blinder Mühe!
 
-Eine Auflösung dieser Zwangslage bietet Braun nicht und den Abschluss des vierten Kapitels stellen entsprechen auch nur einige Fragmente, sodass das Projekt Befreiung auch hier unvollständig bleibt.
-
-»[W]as wir wollen ist gut, und was wir nicht wollen, ist nicht schlecht; und wir müssen es immer neu entscheiden.«
+Eine Auflösung dieser Zwangslage bietet Braun nicht und den Abschluss des vierten Kapitels stellen entsprechen auch nur einige Fragmente, sodass die Arbeit am befreiten Individuum auch literarisch unvollständig bleibt.
