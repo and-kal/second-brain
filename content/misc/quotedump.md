@@ -4,6 +4,76 @@ date: "2024-02-22"
 draft: false
 ---
 
+## Scott Alexander (Astral Codex Ten)
+
+> If you want good advice about how to walk, ask someone with cerebral palsy. They experience walking as a constant battle to overcome their natural constitution, and so accumulate tips and tricks throughout their lives. Or ask a physical therapist who works with these people and studies them. Just don’t ask someone you see walking especially briskly down the street. ([source](https://www.astralcodexten.com/p/you-dont-hate-polyamory-you-hate))
+
+> You live in a world choked with ideas, where anything that rises to your consideration has necessarily won a Darwinian battle among hyper-specialized memetic replicators competing for your attention. By definition most of what you come across through semi-formal channels will be preachy, pushy, and associated with the kind of people who are obsessed with talking about themselves. If you learn about some lifestyles through informal channels (eg your family and friends), and others through semiformal channels (eg media and books), the latter will look obviously inferior. ([source](https://www.astralcodexten.com/p/you-dont-hate-polyamory-you-hate))
+
+## Gregory Bateson
+
+> [I]n no system which shows mental characteristics can any part have unilateral control over the whole. In other words, the mental characteristics of the system are immanent, not in some part, but in the system as a whole.
+
+(_The Cybernetics of ›Self‹. A Theory of Alcoholism_)
+
+## John Cheever
+
+> It was one of those midsummer Sundays when everyone sits around saying, “I drank too much last night.” You might have heard it whispered by the parishioners leaving church, heard it from the lips of the priest himself, struggling with his cassock in the vestiarium, heard it on the golf links and the tennis courts, heard it in the wildlife preserve, where the leader of the Audubon group was suffering from a terrible hangover. (from “[The Swimmer](https://archive.is/JSj0R)”)
+
+## Rachel Cusk
+
+> Tonie feels a kind of nostalgia for her, as she might for a particular song that fits like a key into the lock of time and lets the past come rushing out. (“The Bradshaw Variations”)
+
+> Yes, it is bewildering, unfathomable, to find that love and loss and despair and hope are cellular, partitive; that in the fragment of each the structure of the whole is present, like the specimens scientists examine under microscopes; the whole structure and character of her life present in these moments of terror and elation.(\*\*)
+
+> It strikes her now that life is not linear, a journey, a passage, but a static process of irreversible accretion. It is perspective that moves, passing over it all like the sun, now illuminating, now casting into shadow. The angle changes, the relation of one thing to another, the proportion of dark to light; but experience itself is block-like, is cumulative and fixed. (“The Bradshaw Variations”)
+
+## Cory Doctorow
+
+> As a working artist in his third decade of professional life, I've concluded that the point of art is to take a big, numinous, irreducible feeling that fills the artist's mind, and attempt to infuse that feeling into some artistic vessel – a book, a painting, a song, a dance, a sculpture, etc – in the hopes that this work will cause a loose facsimile of that numinous, irreducible feeling to manifest in someone else's mind. [...] One of my novels may be good and it may be bad, but one thing it definitely is is rich in communicative intent. ([source](https://pluralistic.net/2025/03/25/communicative-intent/))
+
+## Reinhard Jirgl
+
+> Doch allein durch das-Tun des Schreibens, ähnlich dem-Reden zum Verfertigen des Gedankens, !änderten sich rasch die-Worte mit denen er schrieb; langsam trat unter seiner Schreibhand aus Demstein der Allerwelt’s Sprache Seine=Sprache hervor, als wär er Bildhauer, der mit dem Meißel aus Demstein dessen innere=Skulptur, die Darin nur=er zu sehen vermag, herausschlagen kann. (“30. April 1945”)
+
+## Erich Kästner
+
+Admittedly, I didn't particularly like that book. Not just because this kind of tame and objective literature that aims to be instructive reminded me of German classes in school too much. Most of all, I guess I just don't like Kästner's language. I concede that it's an interesting snapshot of German history and a pertinent warning against Nazi totalitarianism. It might also be the 93-year gap to this book's publication, but the humor in »Fabian« doesn't spark at all, plus the characters are ultimately too indifferent, too normal and the book's episodes come off as too deliberate, which makes the book lack an appropriate political punch. I have [Walter Benjamin](http://www.glanzundelend.de/Artikel/abc/b/benjamin_melancholie.htm) on my side in my disfavor who also thought that Kästner's leftism was more entertainment than intervention. Nevertheless, I did find a few strong sentences in it:
+
+> Was sollen wir anfangen? Wenn wir einen Mann liebhaben, liefern wir uns ihm aus. Wir trennen uns von allem, was vorher war, und kommen zu ihm. "Da bin ich", sagen wir freundlich lächelnd. "Ja", sagt er, "da bist du", und kratzt sich hinterm Ohr. Allmächtiger, denkt er, nun habe ich sie auf dem Hals. Leichten Herzens schenken wir ihm, was wir haben. Und er flucht. Die Geschenke sind ihm lästig. Erst flucht er leise, dann flucht er laut. Und wir sind allein wie nie zuvor. Ich bin fünfundzwanzig Jahre alt, und von zwei Männern wurde ich stehengelassen. Stehengelassen wie ein Schirm, den man absichtlich irgendwo vergisst.
+
+> "Ich kann doch nichts."
+> <br /><br />"Du kannst vieles."
+> <br /><br />"Das ist dasselbe", meinte Fabian. "Ich kann vieles und will nichts. Wozu soll ich vorwärtskommen? Wofür und wogegen? Nehmen wir einmal an, ich sei der Träger einer Funktion. Wo ist das System, in dem ich funktionieren kann? Es ist nicht da, und nichts hat Sinn."
+
+> Ich kann, wenn ich meinen augenblicklichen Zustand betrachte, sagen: Die ganze Richtung paßt mir nicht! Aus den Bezirken, in die ich gehöre, wies man mich aus. Dort, wo man mich aufnehmen will, will ich nicht hin. Sei mir nicht böse, mein Guter, ich haue ab. Europa wird auch ohne mich weiterleben oder zugrunde gehen, es hat mich nicht nötig.
+
+> "Der biß zu und kämpfte und schlug mit dem Federhalter um sich, als sei der Gänsekiel ein Schleppsäbel. Der war zum Kämpfen da, du nicht. Der lebte gar nicht seinetwegen, den gab es gar nicht privat, der wollte gar nichts für sich. Und als er sich doch auf sich besann, als er vom Schicksal Frau und Kind verlangte, da brach alles über ihm zusammen und begrub ihn. Und das war in Ordnung. Wer für die anderen dasein will, der muß sich selber fremd bleiben. Er muß wie ein Arzt sein, dessen Wartezimmer Tag und Nacht voller Menschen ist, und einer muß mitten darunter sitzen, der nie an die Reihe kommt und nie darüber klagt: das ist er selber. Hättest du so zu leben vermocht?"
+
+> "Früher verschenkte man sich und wurde wie ein Geschenk bewahrt. Heute wird man bezahlt und eines Tages, wie jede bezahlte und benutzte Ware, weggetan. Bezahlung ist billiger, denkt der Mann."
+> <br /><br />"Früher war das Geschenk etwas ganz anderes als die Ware. Heute ist das Geschenk eine Ware, die null Mark kostet. Diese Billigkeit macht den Käufer mißtrauisch. Sicher ein faules Geschäft, denkt er. Und meist hat er recht. Denn später präsentiert ihm die Frau die Rechnung. Plötzlich soll er den moralischen Preis des Geschenks rückvergüten. In seelischer Valuta. Als Lebensrente zu zahlen."
+> <br /><br />"Genauso ist es", sagte sie. "Genauso denken die Männer. Aber warum nennen Sie dann dieses Atelier einen Saustall? Hier sind doch die Frauen so ähnlich, wie ihr sie haben wollt! Oder etwa nicht? Ich weiß, was euch zu eurem Glück noch fehlt. Wir sollen zwar kommen und gehen, wann ihr es wollt. Aber wir sollen weinen, wenn ihr uns fortschickt. Und wir sollen selig sein, wenn ihr uns winkt. Ihr wollt den Warencharakter der Liebe, aber die Ware soll verliebt sein. Ihr zu allem berechtigt und zu nichts verpflichtet, wir zu allem verpflichtet und zu nichts berechtigt, so sieht euer Paradies aus. Doch das geht zu weit!" Fräulein Battenberg putzte sich die Nase. Dann fuhr sie fort: "Wenn wir euch nicht behalten dürfen, wollen wir euch auch nicht lieben. Wenn ihr uns kaufen wollt, dann sollt ihr teuer dafür bezahlen." Sie schwieg.
+
+## Friedrich Kittler
+
+> When your voice comes like breathing, everything is as it is: incomprehensible, beautiful and ephemeral. (“Forgetting”, 1981)
+
+> [I]f discourse analysis archivizes archives, it is not to reconstruct the unity and continuity of a history, but quite the contrary: to dissolve the phantasm of world history into many individual storage devices which themselves were forgotten and/or retained. (“Forgetting”, 1981)
+
+> Symbolic elements, however, have their position and their existence in networks. [...] Every link in the chain derives its function from its delimitation. (“Forgetting”, 1981)
+
+## Alexander Kluge
+
+> Als er dann über Frau, Kinder und eine Anwaltspraxis verfügte, war sie sich immer noch unsicher, ob er dieses Leben nicht nur provisorisch führte. Ein Mensch der sich auf Wahrnehmung konzentriert, verfügt über eine dichte Erfahrung, er ist UNABHÄNGIG. Tatsächlich erschien mir Hellmut Becker nicht als bindungsunfähig, sondern als bindungsunwillig, als warte er auf die Ankunft einer noch anderen Realität, die ihm ein höheres Maß an Respekt abfordern würde. (“30. April 1945”)
+
+> Es sei eine falsche Deutung zu sagen, Schuld sei »so fest wie Stein«, bemerkt Ezra Pound. Man kann Schuld nicht mit dem Meißel behauen, sie ist keine Kuller, die man rollt. Für Kraftfahrzeuge, gleich welcher Art, bildet sie kein Hindernis. Auch fließe eine Schuld nicht (noch könne sie durch einen Aderlaß aus dem Schuldkörper abgezogen werden). Sie sei vielmehr in ihrer obsessiv verteidigten EWIGEN LEBENDIGKEIT – wie eine Greisin, die nicht sterben will – dem Atemzug vergleichbar, auch einem Sturm oder Wettersturz. (“30. April 1945”)
+
+> Nichts aber war so reich wie das Leben in den vielen Filmen, die sie bisher gesehen hatte. [...] Das bräunlich gefärbte Licht im Zuschauerraum produzierte eine Dämmerung, die keine Furcht einflößte. Bereits seit dem Vortag hatte sie auf diese Nachmittagsvorstellung gewartet. Das neutrale Dasein, noch ohne daß der Film überhaupt angefangen hatte! Der Schwebezustand zwischen den Zeiten machte sie »offen«, »glückselig«. Anders als die Aussicht auf ihr tatsächliches künftiges Leben mit Mann und Kindern, das auf sie wartete. Denn hier, in den Filmen, waren noch viele Seitenwege und Abenteuer möglich, Abgründe und Glücksfahrten (oft in Kutschen). [...] Ein Gong und das sehr langsame Erlöschen der Lichter kündigten den Beginn des Vorfilms an. (“30. April 1945”)
+
+> Es ist auch schwer, diese »überstürzte Empfindung«, das, was man eine »glückliche Überraschung« nennt, präzise nachzuerzählen. Es gewinnt erst Genauigkeit, wenn ich es in einer Geschichte, die von anderen Menschen handelt, schildere. Auch in der Form eines »Fotos mit Musik« ist die Aufwallung (eine Tür öffnet sich und ein Mensch, den ich nicht erwarte, umarmt mich) nicht dokumentierbar. (“30. April 1945”)
+
+> In dieser Hinsicht ist Kapitulation nicht die Unterwerfungshandlung des Besiegten, sondern die Generosität, mit welcher der Sieger den Gegner, der seine Wirklichkeit an sich bereits verloren hat, in die neue Realität, die seiner Seite, aufnimmt. Nicht aus der Abgabe der Waffen (welche die Revanche später nicht ausschließt), sondern aus diesem »gemeinsamen Vergessen« folgt der Frieden. Es geht um Realitätsauswechslung, um die Chance für ein zweites Leben – erworben, zu Recht oder zu Unrecht, durch das Verdienst des Feindes. (“30. April 1945”)
+
 ## Maggie Nelson
 
 I'm constantly amazed by the lucidity of Maggie Nelson's writing and here's multi-faceted analyses. Damn, even the [@MaggieNelsonBot on Twitter](https://twitter.com/MaggieNelsonBot) that generates mostly nonsensical aphorisms from parts of sentences out of Maggie Nelson's books is a great read. (Their actually not nonsensical to me, just oftentimes syntactically incorrent—just like poetry.) Since her essays are often so dense that a lot of ideas slip through my fingers when I don't contemplate them again, I collect a bunch of quotes here.
@@ -30,66 +100,12 @@ I'm constantly amazed by the lucidity of Maggie Nelson's writing and here's mult
 
 > [Lars] von Trier’s cruelty does not lie in any capacity to strip away cant or delusion, but rather in an ability to construct malignant, ultimately conventional fictions that masquerade as parables of profundity, or as protests against the cruelties of the man’s world in which we must inevitably live and suffer. Or, worse—and more likely—von Trier means to present these fictions with tongue so firmly in cheek that if we take them as parables of profundity, the joke may be on us. Von Trier imbues René Girard’s notion of sacrificial violence with an ironic, perhaps even a campy sensibility. But unlike the campiness of, say, Paul McCarthy or John Waters, von Trier keeps his cards close to his chest, as if to preserve his right—and the culture’s—to an entrenched, inevitable chauvinist malevolence. [...] Misogyny, when expressed or explored by men, remains a timeless classic. I suppose, in the end, I remain grateful to ›Breaking the Waves‹ for one thing: it spoke to a question I’ve had for some time—namely, what purpose could a female Christ serve in the (male) imagination? As writer Eileen Myles has put it, ›What would be the point in seeing [a woman] half nude and nailed up? Where’s the contradiction? [...]‹ The cruelty of Breaking the Waves is its revelation, intentional or not, that there could be no sustaining contradiction—that the redundancy of female victimization inflates into a sickening, fundamentally unbelievable martyrdom.
 
-## Gregory Bateson
+## Justin Smith-Ruiu
 
-> [I]n no system which shows mental characteristics can any part have unilateral control over the whole. In other words, the mental characteristics of the system are immanent, not in some part, but in the system as a whole.
-
-(_The Cybernetics of ›Self‹. A Theory of Alcoholism_)
+> Most of my fellow philologists are willing to concede, at least in whisper, that what we managed to capture from the Earth’s satellites just before the solar flare hit is rather slim pickins indeed: a few “Cuck Fantasy” gifs now constituting the Tumblr Codex; a handful of Crazy Frog videos [...] making up the Archivium Amphibianum; the YouTube Cache, which includes one video of some sort of celebratory numerological rite in worship of the series of natural numbers, another of an unidentified paramilitary faction boasting of its mighty war-engines, and, as we all know from day one of Intro to Codicology, a clip of the “Brooklyn science comedian” Molly Gottstauk getting robustly booed when she tries out her new one at open-mic night: “So the guy at Chopt said ‘Now pick your protein!’ And I was like, ‘Uh, guanine?’” (from [An Introduction to Philology](https://www.the-hinternet.com/p/an-introduction-to-philology)
 
 ## unknown
 
 > Eszter Bálint is sitting in a room in Florida different from the one you are in now. She is recording the sound of her speaking voice and she is going to play it back into the room again and again until the resonant frequencies of the room reinforce themselves so that any semblance of her speech, with perhaps the exception of rhythm, is destroyed. She regards this activity not so much as a demonstration of a physical fact, but more as a way to smooth out any irregularities her speech might have.
 
 (found in [Elisa's last.fm shoutbox](https://www.last.fm/user/herzschoenheit))
-
-## Friedrich Kittler
-
-> When your voice comes like breathing, everything is as it is: incomprehensible, beautiful and ephemeral. (“Forgetting”, 1981)
-
-> [I]f discourse analysis archivizes archives, it is not to reconstruct the unity and continuity of a history, but quite the contrary: to dissolve the phantasm of world history into many individual storage devices which themselves were forgotten and/or retained. (“Forgetting”, 1981)
-
-> Symbolic elements, however, have their position and their existence in networks. [...] Every link in the chain derives its function from its delimitation. (“Forgetting”, 1981)
-
-## Astral Codex Ten
-
-> If you want good advice about how to walk, ask someone with cerebral palsy. They experience walking as a constant battle to overcome their natural constitution, and so accumulate tips and tricks throughout their lives. Or ask a physical therapist who works with these people and studies them. Just don’t ask someone you see walking especially briskly down the street. ([source](https://www.astralcodexten.com/p/you-dont-hate-polyamory-you-hate))
-
-> You live in a world choked with ideas, where anything that rises to your consideration has necessarily won a Darwinian battle among hyper-specialized memetic replicators competing for your attention. By definition most of what you come across through semi-formal channels will be preachy, pushy, and associated with the kind of people who are obsessed with talking about themselves. If you learn about some lifestyles through informal channels (eg your family and friends), and others through semiformal channels (eg media and books), the latter will look obviously inferior. ([source](https://www.astralcodexten.com/p/you-dont-hate-polyamory-you-hate))
-
-## John Cheever
-
-> It was one of those midsummer Sundays when everyone sits around saying, “I drank too much last night.” You might have heard it whispered by the parishioners leaving church, heard it from the lips of the priest himself, struggling with his cassock in the vestiarium, heard it on the golf links and the tennis courts, heard it in the wildlife preserve, where the leader of the Audubon group was suffering from a terrible hangover. (from “[The Swimmer](https://archive.is/JSj0R)”)
-
-## Erich Kästner
-
-Admittedly, I didn't particularly like that book. Not just because this kind of tame and objective literature that aims to be instructive reminded me of German classes in school too much. Most of all, I guess I just don't like Kästner's language. I concede that it's an interesting snapshot of German history and a pertinent warning against Nazi totalitarianism. It might also be the 93-year gap to this book's publication, but the humor in »Fabian« doesn't spark  at all, plus the characters are ultimately too indifferent, too normal and the book's episodes come off as too deliberate, which makes the book lack an appropriate political punch. I have [Walter Benjamin](http://www.glanzundelend.de/Artikel/abc/b/benjamin_melancholie.htm) on my side in my disfavor who also thought that Kästner's leftism was more entertainment than intervention. Nevertheless, I did find a few strong sentences in it:
-
-> Was sollen wir anfangen? Wenn wir einen Mann liebhaben, liefern wir uns ihm aus. Wir trennen uns von allem, was vorher war, und kommen zu ihm. "Da bin ich", sagen wir freundlich lächelnd. "Ja", sagt er, "da bist du", und kratzt sich hinterm Ohr. Allmächtiger, denkt er, nun habe ich sie auf dem Hals. Leichten Herzens schenken wir ihm, was wir haben. Und er flucht. Die Geschenke sind ihm lästig. Erst flucht er leise, dann flucht er laut. Und wir sind allein wie nie zuvor. Ich bin fünfundzwanzig Jahre alt, und von zwei Männern wurde ich stehengelassen. Stehengelassen wie ein Schirm, den man absichtlich irgendwo vergisst.
-
-> "Ich kann doch nichts."
-> <br /><br />"Du kannst vieles."
-> <br /><br />"Das ist dasselbe", meinte Fabian. "Ich kann vieles und will nichts. Wozu soll ich vorwärtskommen? Wofür und wogegen? Nehmen wir einmal an, ich sei der Träger einer Funktion. Wo ist das System, in dem ich funktionieren kann? Es ist nicht da, und nichts hat Sinn."
-
-> Ich kann, wenn ich meinen augenblicklichen Zustand betrachte, sagen: Die ganze Richtung paßt mir nicht! Aus den Bezirken, in die ich gehöre, wies man mich aus. Dort, wo man mich aufnehmen will, will ich nicht hin. Sei mir nicht böse, mein Guter, ich haue ab. Europa wird auch ohne mich weiterleben oder zugrunde gehen, es hat mich nicht nötig.
-
-> "Der biß zu und kämpfte und schlug mit dem Federhalter um sich, als sei der Gänsekiel ein Schleppsäbel. Der war zum Kämpfen da, du nicht. Der lebte gar nicht seinetwegen, den gab es gar nicht privat, der wollte gar nichts für sich. Und als er sich doch auf sich besann, als er vom Schicksal Frau und Kind verlangte, da brach alles über ihm zusammen und begrub ihn. Und das war in Ordnung. Wer für die anderen dasein will, der muß sich selber fremd bleiben. Er muß wie ein Arzt sein, dessen Wartezimmer Tag und Nacht voller Menschen ist, und einer muß mitten darunter sitzen, der nie an die Reihe kommt und nie darüber klagt: das ist er selber. Hättest du so zu leben vermocht?"
-
-> "Früher verschenkte man sich und wurde wie ein Geschenk bewahrt. Heute wird man bezahlt und eines Tages, wie jede bezahlte und benutzte Ware, weggetan. Bezahlung ist billiger, denkt der Mann."
-> <br /><br />"Früher war das Geschenk etwas ganz anderes als die Ware. Heute ist das Geschenk eine Ware, die null Mark kostet. Diese Billigkeit macht den Käufer mißtrauisch. Sicher ein faules Geschäft, denkt er. Und meist hat er recht. Denn später präsentiert ihm die Frau die Rechnung. Plötzlich soll er den moralischen Preis des Geschenks rückvergüten. In seelischer Valuta. Als Lebensrente zu zahlen."
-> <br /><br />"Genauso ist es", sagte sie. "Genauso denken die Männer. Aber warum nennen Sie dann dieses Atelier einen Saustall? Hier sind doch die Frauen so ähnlich, wie ihr sie haben wollt! Oder etwa nicht? Ich weiß, was euch zu eurem Glück noch fehlt. Wir sollen zwar kommen und gehen, wann ihr es wollt. Aber wir sollen weinen, wenn ihr uns fortschickt. Und wir sollen selig sein, wenn ihr uns winkt. Ihr wollt den Warencharakter der Liebe, aber die Ware soll verliebt sein. Ihr zu allem berechtigt und zu nichts verpflichtet, wir zu allem verpflichtet und zu nichts berechtigt, so sieht euer Paradies aus. Doch das geht zu weit!" Fräulein Battenberg putzte sich die Nase. Dann fuhr sie fort: "Wenn wir euch nicht behalten dürfen, wollen wir euch auch nicht lieben. Wenn ihr uns kaufen wollt, dann sollt ihr teuer dafür bezahlen." Sie schwieg.
-
-## Justin Smith-Ruiu
-
-> Most of my fellow philologists are willing to concede, at least in whisper, that what we managed to capture from the Earth’s satellites just before the solar flare hit is rather slim pickins indeed: a few “Cuck Fantasy” gifs now constituting the Tumblr Codex; a handful of Crazy Frog videos [...] making up the Archivium Amphibianum; the YouTube Cache, which includes one video of some sort of celebratory numerological rite in worship of the series of natural numbers, another of an unidentified paramilitary faction boasting of its mighty war-engines, and, as we all know from day one of Intro to Codicology, a clip of the “Brooklyn science comedian” Molly Gottstauk getting robustly booed when she tries out her new one at open-mic night: “So the guy at Chopt said ‘Now pick your protein!’ And I was like, ‘Uh, guanine?’” (from [An Introduction to Philology](https://www.the-hinternet.com/p/an-introduction-to-philology)
-
-## Rachel Cusk
-
-> Tonie feels a kind of nostalgia for her, as she might for a particular song that fits like a key into the lock of time and lets the past come rushing out.(The Bradshaw Variations)
-
-> Yes, it is bewildering, unfathomable, to find that love and loss and despair and hope are cellular, partitive; that in the fragment of each the structure of the whole is present, like the specimens scientists examine under microscopes; the whole structure and character of her life present in these moments of terror and elation.(The Bradshaw Variations)
-
-> It strikes her now that life is not linear, a journey, a passage, but a static process of irreversible accretion. It is perspective that moves, passing over it all like the sun, now illuminating, now casting into shadow. The angle changes, the relation of one thing to another, the proportion of dark to light; but experience itself is block-like, is cumulative and fixed.(The Bradshaw Variations)
-
-## Cory Doctorow
-
-> As a working artist in his third decade of professional life, I've concluded that the point of art is to take a big, numinous, irreducible feeling that fills the artist's mind, and attempt to infuse that feeling into some artistic vessel – a book, a painting, a song, a dance, a sculpture, etc – in the hopes that this work will cause a loose facsimile of that numinous, irreducible feeling to manifest in someone else's mind. [...] One of my novels may be good and it may be bad, but one thing it definitely is is rich in communicative intent. ([source](https://pluralistic.net/2025/03/25/communicative-intent/))
