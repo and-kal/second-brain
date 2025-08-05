@@ -33,7 +33,7 @@ when no arguments are supplied, it will take you to your home directory (so `cd`
 
 `export`
 \
--> ...displays all exported variables, when no arguments given
+-> displays all exported variables, when no arguments given
 \
 exports a variable, which can then be verified with `printenv`
 \
@@ -65,7 +65,7 @@ with the `-f` it lets you export functions
 
 `kill`
 \
--> ...kills a process
+-> kills a process
 
 `ln`
 \
@@ -105,7 +105,7 @@ new aliases can be defined like so: `alias name='action'`
 
 `sort`
 \
--> ...sorts lines of text into ascending order
+-> sorts lines of text into ascending order
 \
 `-r` flag for descending order
 \
@@ -117,7 +117,7 @@ new aliases can be defined like so: `alias name='action'`
 
 `time`
 \
--> ...followed by a command prints the time it took to run the command
+-> followed by a command prints the time it took to run the command
 
 `uniq`
 \
@@ -159,17 +159,23 @@ new aliases can be defined like so: `alias name='action'`
 \
 -> print the manual for a program
 
-<!-- `su`
+`su`
 \
--> -->
+-> let's you switch the user
 
 `sudo`
 \
--> ›superuser do‹
+-> presumably stands for ›superuser do‹
 
 `tr`
 \
 -> replaces some character with another; e.g. `echo "This is a string." | tr " " "\n"` replaces all whitespaces in the string with a new line character
+
+`watch`
+\
+-> repeatedly run a command or job in regular intervals (useful for building admin dashboards with tmux)
+\
+e.g. `watch -tn60 du -hs ~/*` would update the disk usages of all files/folders in your home folder every 60 seconds
 
 `wc`
 \
@@ -179,7 +185,7 @@ new aliases can be defined like so: `alias name='action'`
 
 `whoami`
 \
--> ›Print the user name associated with the current effective user ID.‹
+-> ›print the user name associated with the current effective user ID‹
 
 ## cut
 
