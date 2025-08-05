@@ -15,7 +15,7 @@ So lesen sich die vier Kapitel aber auch in gewisser Hinsicht als Bildungsroman.
 
 > Nachts dachte ich: und wenn kein großer Unterschied ist zwischen der Liebe zueinander und der Liebe zu einer Tätigkeit? Auch die Liebe ist eine Produktion.
 
-Kast zeigt in den späteren Kapiteln weniger Bindungsängt und erkennt Liebe auch als Selbstentfaltung, was seine allzu adoleszenten Auslassungen in den ersten beiden Kapiteln entschuldigt.
+Kast zeigt in den späteren Kapiteln weniger Bindungsängte und erkennt Liebe auch als Selbstentfaltung, was seine allzu adoleszenten Auslassungen in den ersten beiden Kapiteln entschuldigt.
 
 # »[W]as wir wollen ist gut, und was wir nicht wollen, ist nicht schlecht; und wir müssen es immer neu entscheiden.«
 
