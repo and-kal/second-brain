@@ -54,14 +54,6 @@ Admittedly, I didn't particularly like that book. Not just because this kind of 
 > <br /><br />"Früher war das Geschenk etwas ganz anderes als die Ware. Heute ist das Geschenk eine Ware, die null Mark kostet. Diese Billigkeit macht den Käufer mißtrauisch. Sicher ein faules Geschäft, denkt er. Und meist hat er recht. Denn später präsentiert ihm die Frau die Rechnung. Plötzlich soll er den moralischen Preis des Geschenks rückvergüten. In seelischer Valuta. Als Lebensrente zu zahlen."
 > <br /><br />"Genauso ist es", sagte sie. "Genauso denken die Männer. Aber warum nennen Sie dann dieses Atelier einen Saustall? Hier sind doch die Frauen so ähnlich, wie ihr sie haben wollt! Oder etwa nicht? Ich weiß, was euch zu eurem Glück noch fehlt. Wir sollen zwar kommen und gehen, wann ihr es wollt. Aber wir sollen weinen, wenn ihr uns fortschickt. Und wir sollen selig sein, wenn ihr uns winkt. Ihr wollt den Warencharakter der Liebe, aber die Ware soll verliebt sein. Ihr zu allem berechtigt und zu nichts verpflichtet, wir zu allem verpflichtet und zu nichts berechtigt, so sieht euer Paradies aus. Doch das geht zu weit!" Fräulein Battenberg putzte sich die Nase. Dann fuhr sie fort: "Wenn wir euch nicht behalten dürfen, wollen wir euch auch nicht lieben. Wenn ihr uns kaufen wollt, dann sollt ihr teuer dafür bezahlen." Sie schwieg.
 
-## Friedrich Kittler
-
-> When your voice comes like breathing, everything is as it is: incomprehensible, beautiful and ephemeral. (“Forgetting”, 1981)
-
-> [I]f discourse analysis archivizes archives, it is not to reconstruct the unity and continuity of a history, but quite the contrary: to dissolve the phantasm of world history into many individual storage devices which themselves were forgotten and/or retained. (“Forgetting”, 1981)
-
-> Symbolic elements, however, have their position and their existence in networks. [...] Every link in the chain derives its function from its delimitation. (“Forgetting”, 1981)
-
 ## Alexander Kluge
 
 > Als er dann über Frau, Kinder und eine Anwaltspraxis verfügte, war sie sich immer noch unsicher, ob er dieses Leben nicht nur provisorisch führte. Ein Mensch der sich auf Wahrnehmung konzentriert, verfügt über eine dichte Erfahrung, er ist UNABHÄNGIG. Tatsächlich erschien mir Hellmut Becker nicht als bindungsunfähig, sondern als bindungsunwillig, als warte er auf die Ankunft einer noch anderen Realität, die ihm ein höheres Maß an Respekt abfordern würde. (“30. April 1945”)

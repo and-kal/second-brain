@@ -9,3 +9,7 @@ tags:
 Writing is not the capturing of speech.
 
 ## Logophonocentrism
+
+---
+
+Derrida hat philosophischen Diskurs entzaubert als eine Art von Text, die vorspielt keiner zu sein, sondern "the soundless voice of reason itself" (_[Forgetting](./kittler)_)

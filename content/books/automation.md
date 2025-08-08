@@ -42,3 +42,4 @@ if productivity grows faster than the industrial output (which is governed by su
 ?? [...]
 
 > as Brenner has argued, rising manufacturing capacity across the globe quickly generated overcapacity, issuing in a “long downturn” in manufacturing-output growth rates
+

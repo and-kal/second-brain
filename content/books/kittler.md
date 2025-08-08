@@ -24,3 +24,33 @@ siehe auch Augustinus' Bekenntnisse, Buch XI:
 - das Sein der Zeit besteht in Wandel und Veränderung (wäre die Gegenwart sich selbst gleich wäre sie unvergängliche Gegenwart, also Ewigkeit)
 - messbare Zeit ist entsprechend nicht die eigentliche Zeit
 - vgl. auch Derridas _Metaphysik der Präsenz_
+
+# Forgetting (1981)
+
+> When your voice comes like breathing, everything is as it is: incomprehensible, beautiful and ephemeral.
+
+> There can only be texts when a gap opens up between utterance and statement.
+
+> Symbolic elements, however, have their position and their existence in networks. [...] Every link in the chain derives its function from its delimitation.
+
+- vergessen zu vergessen, was man sagen wollte (wie das Tier bei Nietzsche ("Vom Nutzen und Nachteil der Historie für das Leben")) hieße nicht mehr Gedächtnis Geschichte, Sprache
+  -> der Mensch/die Sprache arbeitet hiergegen an und vergisst dabei diese Differenz
+
+  - Nietzsche birgt diese wieder (Menschsein und Sprache-Haben ist aktives Vergessen des Anderen, an das N. uns erinnert)
+
+- Aufschreibesysteme (Techniken und Institutionen) werden erst vor dem Hintergrund des spurlosen Verschwindens, Erodierens, Zersetzens spezifisch sichtbar
+  - wobei auch diese diesen Prozessen unterworfen sind
+  - und zudem sind sie selektiv
+
+> There is no storage device which could retain once and for all the ongoing drift of words. Precisely for that reason individual storage apparatuses are both functional and describable. They retain certain types of information and not others... [I]f discourse analysis archivizes archives, it is not to reconstruct the unity and continuity of a history, but quite the contrary: to dissolve the phantasm of world history into many individual storage devices which themselves were forgotten and/or retained.
+
+jeder Erinnerungsakt muss auf Aufschreibesysteme ("memory-making machines") zurückgreifen
+-> falscher Schluss (etwa der romantischen Hermeneutik) Geschichte und Erinnerung dem menschlichen Erinnerungsvermögen als etwas dem Menschen Inhärentes anzurechnen, anstatt dieses Vermögen als Zusammenspiel verschiedener Techniken gegen das Vergessen zu sehen
+
+> People, once simply PROM's who were programmed once and for all through baptism, village schools, and the order of estates, became RAM's. In order to supply storage space for new books, new knowledge, new programs, information had to be made erasable - and according to Nietzsche understanding is the erasure of signifiers.
+
+auch Lesen ist eine äußere (externe) Technik, die wir für eigenes (internes) Erfassen halten
+
+Kittlers Kritik am hermeneitschen Zirkel: [...]
+
+- falsches bild ovm endlosen Meer an Interpretierbarkeit / Unausschöpfbarkeit von Text
