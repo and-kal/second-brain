@@ -51,6 +51,19 @@ jeder Erinnerungsakt muss auf Aufschreibesysteme ("memory-making machines") zur�
 
 auch Lesen ist eine äußere (externe) Technik, die wir für eigenes (internes) Erfassen halten
 
-Kittlers Kritik am hermeneitschen Zirkel: [...]
+Kittlers Kritik am hermeneutischen Zirkel: [...]
 
-- falsches bild ovm endlosen Meer an Interpretierbarkeit / Unausschöpfbarkeit von Text
+- es gibt nicht nur einen Zirkel (vom Teil zum Ganzen...), sondern viele: vom Werk zum Autor, vom Werk zum Genre, Werk zur Epoche
+- falsches Bild vom endlosen Meer an Interpretierbarkeit / Unausschöpfbarkeit von Text (?)
+- gleichzeitig: Gefahr Verstehen als etwas Deterministisches zu erklären
+- Hermeneutik mag Universalitätsanspruch erheben
+
+> Ever since poets have been allowed/ required to write free of rules, ever since the obligation to Bildung has allowed them to forget in the middle of writing the beginnings of their works, ever since it is the unconscious which guides their pen, forgetting and remembering have reversed positions.
+
+-> ???
+
+> [T]he "necessary prerequisites" of a single book extend well beyond all the reading and speaking and writing time that death allows us.
+
+-> Kanonisierung kann also nicht die Voraussetzung von Textverstehen sein, zumal diese auch willkürlich ist
+
+vor Hegel war Philosophie eine Sammlung interlinearer Standardtexte, i.e. ...
