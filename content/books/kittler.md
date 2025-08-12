@@ -41,6 +41,7 @@ siehe auch Augustinus' Bekenntnisse, Buch XI:
 - Aufschreibesysteme (Techniken und Institutionen) werden erst vor dem Hintergrund des spurlosen Verschwindens, Erodierens, Zersetzens spezifisch sichtbar
   - wobei auch diese diesen Prozessen unterworfen sind
   - und zudem sind sie selektiv
+- 404
 
 > There is no storage device which could retain once and for all the ongoing drift of words. Precisely for that reason individual storage apparatuses are both functional and describable. They retain certain types of information and not others... [I]f discourse analysis archivizes archives, it is not to reconstruct the unity and continuity of a history, but quite the contrary: to dissolve the phantasm of world history into many individual storage devices which themselves were forgotten and/or retained.
 
@@ -67,3 +68,28 @@ Kittlers Kritik am hermeneutischen Zirkel: [...]
 -> Kanonisierung kann also nicht die Voraussetzung von Textverstehen sein, zumal diese auch willkürlich ist
 
 vor Hegel war Philosophie eine Sammlung interlinearer Standardtexte, i.e. ...
+
+Wittgenstein: Verstehen ist nur eines von vielen Sprachspielen
+
+> To classical thought, uncertainty as to what a sign might signify, was lack of knowledge of what it represented - to modern thought, uncer- tainty as to what a sign might signify will characterize any discourse that touches on the interlocutor's existence. (Heinrich Bosse)
+
+- Hermeneutik zu sehr dem Paradigma der Exegese verhaftet, während Verstehen eine Art von Interpretieren eines Gegenüber ist
+  - dieses gegenüber macht im Sprechen und Schreiben bestimmte unbewusste Annahme (etwa in gedanklichen Übergängen), die der/die Interpretierende wieder zu Gedankenketten zusammenfügen muss
+
+> Psychoanalysis is supposed to demonstrate to philosophical hermeneutics, which departs from successful communication within traditional con- texts, that pseudonormal communication and merely apparent consensus do occur. And in this way it is supposed to trace systematically distorted communication back to specific forms of domination and conditions of socialization.
+
+-> ???
+
+> “Der Körper unter der Haut ist eine überhitzte Fabrik” (Artaud)
+
+Solche "systematically distorted communication" (Schizophrenie etc.) wird von der Hermeneutik ausgeklammert
+-> obwohl grade sie auf die eigentliche Basis des Sprechens hinweisen?
+-> gibt es einen Verstehen von Geräuschen und Kritzeleien?
+
+Texte sind in ein Machtgefüge eingebettet, dass dafür sorgt, "that 'texts themselves' continue not to have a sense but are bestowed with one"
+
+Vergessen zu vergessen -> "Speaking is a technology of ecstasy"
+
+Diskurs findet nicht mehr nur in linearen Büchern statt, wie die Hermeneutik sie im Kopf hatte; auch in Code, Datenbanken, ...
+
+Letzte Fußnote fehlt -> willentlicher Akt des Vergessens seitens Kittler?
