@@ -776,11 +776,18 @@ _As pattern_ »allows you to bind some value in the match while at the same time
 
 ## Monads, Monoids, applicative functors, functors
 
-<!-- TODO:
 
-Monadic contexts...
+[adit.io](https://www.adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) writes:
+- *functors*: apply a function to a wrapped value using `fmap` or `<$>`
+- *applicatives*: apply a wrapped function to a wrapped value using `<*>` or `liftA`
+- *monads*: apply a function that returns a wrapped value, to a wrapped value using `>>=` or `liftM`
 
 ### Context
+
+In Haskell, when saying something like, »a value is wrapped in a context« it woudl mean that that value is encapsulated within a data structure that provides additional information or behavior (computational effects or constraints). It is mostly referred to in the case of the `Maybe`, `IO`, `List` and `Either` type constructors.
+
+<!-- TODO:
+Monadic contexts...
 
 [...]
 
@@ -792,23 +799,40 @@ Monadic contexts...
 
 ### Functors
 
-`fmap`, or `<$>` (which is the infix variant of `fmap`) »is a way to map a function that _preserves the shape_ and _changes the result_.« (Le, 2024)
-
-A `Functor` in Haskell is a typeclass and it is generally something that you can apply a mapping function to, which is following some laws and preserves a certain aspect of what it is applied to. »[A] _Functor_ gives you a way to ›map over‹ values in a way that _preserves shape_. And what is ›shape‹? A shape is _the thing that fmap preserves_«, or the _conserved quantity_ (Le, 2024). For example, when applying `fmap` to a list, the length and ordering of the list is preserved.
+A `Functor` in Haskell is a *typeclass* and it is generally something that you can apply a mapping function to, which is following some laws and preserves a certain aspect of what it is applied to. »[A] _Functor_ gives you a way to ›map over‹ values in a way that _preserves shape_. And what is ›shape‹? A shape is _the thing that fmap preserves_«, or the _conserved quantity_ (Le, 2024). For example, when applying `fmap` to a list, the length and ordering of the list is preserved.
 
 **Functors let you apply functions to a value wrapped in a context.**
+
+Examples for functors in Haskell are `Maybe` or lists. So these data types define how `fmap` (and other functions) apply to them. 
+
+`fmap`, or `<$>` (which is the infix variant of `fmap`), by the way, »is a way to map a function that _preserves the shape_ and _changes the result_.« (Le, 2024)
+
 
 ### Applicative functors
 
 **Applicatives let you apply functions wrapped in a context to a value wrapped in a context.**
 
-<!-- `liftA`, or `<*>` -->
+This happens mostly in the form of `<*>` (as defined in `Control.Applicative`). 
+
+<!-- 
+`<*>` can take any number of unwrapped values
+`liftA`, `liftA2` 
+-->
 
 ### Monads
 
-»Monads apply a function that returns a wrapped value to a wrapped value. Monads have a function `liftM` or `>>=` (pronounced ›bind‹) to do this.«
+»Monads apply a function that returns a wrapped value to a wrapped value. Monads have a function `liftM` or `>>=` (pronounced ›bind‹) to do this.« (Lipovaca, 2011) `bind` will unwrap the value and pass it to the function, which will then return a wrapped value again.
 
 »In a way, Monad simply ›is‹ the way to combine _Functor_ shapes together where the final shape is allowed to depend on the results.« (Le, 2024)
+
+An important monad is `IO`, which has these three functions among others:
+```haskell
+getLine :: IO String
+
+readFile :: FilePath -> IO String
+
+putStrLn :: String -> IO ()
+```
 
 ### Monoids
 
