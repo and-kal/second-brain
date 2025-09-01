@@ -1,7 +1,9 @@
 ---
-title: "Concert review: Moospirscher + Ulkurzkul + Mythenmetz"
-date: "2025-08-21"
+title: "Concert review: Moospirscher + Ulkurzkul + Mythenmetz | Aug 9, 2025"
+date: "2025-08-11"
 draft: true
+tags:
+  - concert review
 ---
 
 There's certain types of music, where when you go to an underground show, you want to make sure beforehand that you're not stepping into some pit of right-wingers. Black Metal being the obvious one. Noise and industrial as well, though much less so these days I'd say. I wouldn't have considered Dungeon Synth to fall into this category, too. Especially not that branch of it that is using [cutesy 8-bit aesthetics](https://sweet8bitterness.bandcamp.com/). But there I was, hearing about Moospirscher, Ulkurzkul & Mythenmetz playing a secret open air show on a ramshackle bridge at sundown (which promised to be quite a vibey experience - which it was) and having never heard of these acts before, checking them out online online to find some of them posing with the most obvious retro 90s German neonazi insignia on their IG: [jump boots and a bulldog](https://www.instagram.com/moospirscher/p/DAjaHcnCsbf/), and a [Böhse Onkels (sic!) shirt](https://www.instagram.com/teufelsmoor1/p/C8myQ1fCdTs). 
