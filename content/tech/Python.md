@@ -58,15 +58,16 @@ Only if no server was found, the `else` will be evaluated.
 
 # High-level structure of a Python project
 
-I recently had Cursor IDE generate some Python boilerplate for me, where the suggested structure of the app folders was the following:
+*[The following is ostly AI generated. Sorry for forcing that on you, but I like the suggested structure for building a API with Python.]*
 
+So I recently had Cursor IDE generate some boilerplate for building an API in Python for me, where the suggested structure of the app folders was the following:
 
 - /app/adapters/
     - Boundary to external systems (APIs, S3, etc.).
     - Wrap vendor SDKs/HTTP calls into small, pure functions (send_message, put_object, presign_get).
     - Keep provider-specific details isolated from the rest of the app.
 - /app/domain/
-    - App/business logic that’s provider-agnostic (render keyboards/captions, recommend items, policies).
+    - App/business logic that's provider-agnostic (render keyboards/captions, recommend items, policies).
     - Should not import SDKs or infrastructure; depends only on pure utilities and data types.
 - /app/jobs/
     - Background tasks for slow/async work (e.g., AI processing, batch tasks, stuff run by RQ workers).
