@@ -313,6 +313,18 @@ awk options 'selection_criteria { action }' input-file > output-file
 
 - deletes all file ending with ".xyz.jpg" in a folder and all subfolders: `find /path/to/folder -type f -name '*.xyz.jpg' -delete`
 
+## Unison
+
+`rsync` is a good tool for one-way file transfers, but it's not ideal for true bidirectional merging, because there is a risk of overwriting on conflicts. A useful tool for bidirectional folder synchronization is `Unison` [[1]](https://github.com/bcpierce00/unison), which lets us sync two folders using the following command:
+
+```sh
+unison -ui text -batch /mnt/c/files/ ssh://user@remote-host//home/me/files/
+```
+
+- `ui text`: forces text-based interface (default in terminal)
+- `-batch`: automates non-conflicting changes (e.g., adds missing files), but prompts for conflicts
+- `-auto`: accepts non-conflicting propagations (similar to `-batch`)
+
 ## Books
 
 - Daniel J. Barrett: Efficient Linux at the Command Line (O'Reilly Media, 2022)

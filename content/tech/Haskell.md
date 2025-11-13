@@ -526,7 +526,7 @@ in
     [a+b | (a,b) <- xs, even a, even b]
 ```
 
-and would get `[6]` as a result; the `, even a, even b` part are the ›predicates‹. Together, the generator and the predicates arecalled a ›qualifier‹.
+and would get `[6]` as a result; the `even a, even b` part are the ›predicates‹. Together, the generator and the predicates are called a ›qualifier‹.
 
 Using list comprehensions is similar to using `map` and mostly they're interchangeable.
 
@@ -864,7 +864,7 @@ Virtual/isolated environments in Haskell can be created with so called ›resolv
 
 - [Functional Programming by Example](https://caiorss.github.io/Functional-Programming/index.html) by Caio Rodrigues (2018)
 - [Functors to Monads: A Story of Shapes](https://blog.jle.im/entry/functors-to-monads-a-story-of-shapes.html) by Justin Le (2024)
-- [Haskell Cheat Sheet](https://hackage.haskell.org/package/CheatSheet-1.10/src/CheatSheet.pdf) by Justin Bailey (2009)
+- [Haskell Cheat Sheet](https://hackage.haskell.org/package/CheatSheet-1.10/src/CheatSheet.pdf) by Justin Bailey (2009) ← *this one has a bunch of formatting errors* 
 - [Learn X in Y minutes. Where X=Lambda Calculus](https://learnxinyminutes.com/docs/lambda-calculus/) by Max Sun et al. (2023)
 - Learn You a Haskell for Great Good! A Beginner's Guide by Miran Lipovaca (2011, No Starch Press)
 - Practical Haskell. A Real-World Guide to Functional Programming by Alejandro Serrano Mena (2022, Apress)
