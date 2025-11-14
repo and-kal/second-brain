@@ -3,7 +3,7 @@ title: "Tools for debloating Windows and stuff"
 date: "2023-10-12"
 draft: false
 tags:
-    - Windows
+  - Windows
 ---
 
 ## Debloaters
@@ -22,6 +22,8 @@ If you don't care about seeing the weather and temperature in your taskbar, you 
 ```powershell
 irm https://massgrave.dev/get | iex
 ```
+
+As of November 2025, Windows seems to have targeted MAS. Check [the repo](https://github.com/massgravel/Microsoft-Activation-Scripts) for updates. Or try [manual HWID activation](https://massgrave.dev/manual_hwid_activation).
 
 ## Utilities
 
