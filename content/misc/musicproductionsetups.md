@@ -115,6 +115,7 @@ draft: false
 # further resources
 
 - [large collection of waveforms for Vital etc.](https://www.reddit.com/r/edmproduction/comments/2jhew1/1700_waveforms_for_serums_wavetable_download_link/)
+- [list of FOSS clap plugins that work for Linux ](https://github.com/RustoMCSpit/awesome-linux-clap-list)
 - [more Linux LV2 plugins](https://audioonlinux.blogspot.com/2018/10/plugins-lv2.html)
 - [plugins4free.com](https://plugins4free.com/)
 - [VST alternatives for Linux](https://audioonlinux.blogspot.com/2019/07/alternativas-de-vst-para-linux-sim.html)
