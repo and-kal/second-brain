@@ -13,3 +13,6 @@ A rather recent (though already 10 years old) album of Japanese tape/CDr artist 
 He had a bunch of tapes, CDs and CDrs (and a vinyl compilation) with him, but I opted for this one, because I remembered already looking for it, but finding no copy online. I'm sharing this collection of minced 50s US movie samples and whatnot here for your delight. Consider buying his stuff though. [Nao's on Discogs](https://www.discogs.com/de/seller/Yximalloo/profile).
 
 [Yximalloo: Autosider](https://mega.nz/file/9EojEIiD#snkDwia18sCVz2nbcMmRLs8D9xWfyXXzrh20d30xVX4) (Sakura wrechords – cdr-13, 2010)
+
+![Yximalloo: Autosider](../static/yximalloo/IMG_20250725_134924.jpg)
+![Yximalloo: Autosider](../static/yximalloo/IMG_20250725_134931.jpg)
