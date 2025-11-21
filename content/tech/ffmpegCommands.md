@@ -93,3 +93,11 @@ Here's a command that splits a long MP3 file into 1-hour chunks, including a fin
 ```powershell
 ffmpeg -i input.mp3 -f segment -segment_time 3600 -c copy -map 0 output_%03d.mp3
 ```
+
+## Delete metadata from an image
+
+```powershell
+ffmpeg -i input.jpg -map_metadata -1 -c:v copy output.jpg
+```
+
+`-map_metadata -1` will exclude all metadata and `-c:v copy` copies without re-encoding thus preserving quality.
