@@ -96,6 +96,10 @@ I'm constantly amazed by the lucidity of Maggie Nelson's writing and here's mult
 
 > Most of my fellow philologists are willing to concede, at least in whisper, that what we managed to capture from the Earth’s satellites just before the solar flare hit is rather slim pickins indeed: a few “Cuck Fantasy” gifs now constituting the Tumblr Codex; a handful of Crazy Frog videos [...] making up the Archivium Amphibianum; the YouTube Cache, which includes one video of some sort of celebratory numerological rite in worship of the series of natural numbers, another of an unidentified paramilitary faction boasting of its mighty war-engines, and, as we all know from day one of Intro to Codicology, a clip of the “Brooklyn science comedian” Molly Gottstauk getting robustly booed when she tries out her new one at open-mic night: “So the guy at Chopt said ‘Now pick your protein!’ And I was like, ‘Uh, guanine?’” (from [An Introduction to Philology](https://www.the-hinternet.com/p/an-introduction-to-philology)
 
+## Wolfgang Welt
+
+> Was wollte ich in Bochum. Ich dachte, es fielen Atombomben, jeden Takt von 'Short People', den ich vor mit hersang. Ich ging in einen Buchladen in der City Passage. Ich sah ein Buch von Spinoza. Ich dachte an H.R. Kunze, der über ihn promovieren wollte. Dann kam es mir so vor, als seien es die Memoiren von David Spinozza, dem Sessionmusiker vieler Leute..." (Fischsuppe, S. 68) 
+
 ## unknown
 
 > Eszter Bálint is sitting in a room in Florida different from the one you are in now. She is recording the sound of her speaking voice and she is going to play it back into the room again and again until the resonant frequencies of the room reinforce themselves so that any semblance of her speech, with perhaps the exception of rhythm, is destroyed. She regards this activity not so much as a demonstration of a physical fact, but more as a way to smooth out any irregularities her speech might have.
