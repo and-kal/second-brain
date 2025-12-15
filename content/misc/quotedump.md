@@ -98,7 +98,7 @@ I'm constantly amazed by the lucidity of Maggie Nelson's writing and here's mult
 
 ## Wolfgang Welt
 
-> Was wollte ich in Bochum. Ich dachte, es fielen Atombomben, jeden Takt von 'Short People', den ich vor mit hersang. Ich ging in einen Buchladen in der City Passage. Ich sah ein Buch von Spinoza. Ich dachte an H.R. Kunze, der über ihn promovieren wollte. Dann kam es mir so vor, als seien es die Memoiren von David Spinozza, dem Sessionmusiker vieler Leute..." (Fischsuppe, S. 68) 
+> Was wollte ich in Bochum. Ich dachte, es fielen Atombomben, jeden Takt von 'Short People', den ich vor mit hersang. Ich ging in einen Buchladen in der City Passage. Ich sah ein Buch von Spinoza. Ich dachte an H.R. Kunze, der über ihn promovieren wollte. Dann kam es mir so vor, als seien es die Memoiren von David Spinozza, dem Sessionmusiker vieler Leute... (Fischsuppe, S. 68) 
 
 ## unknown
 
