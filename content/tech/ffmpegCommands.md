@@ -101,3 +101,13 @@ ffmpeg -i input.jpg -map_metadata -1 -c:v copy output.jpg
 ```
 
 `-map_metadata -1` will exclude all metadata and `-c:v copy` copies without re-encoding thus preserving quality.
+
+## Add second audio and optional subtitles to a video (remux)
+
+Say you have an MP4 video file, an OPUS audio file and a SRT subtitle file and you want to pack them all into a single MKV file, where the OPUS file whould be the second audio track and the SRT title an optional (not hardcoded) subtitles track, you can do this:
+
+Since we are using `-c copy` this will be a remux, i.e. no re-encoding will happen, bitrate, sample-rate etc. are left untouched.
+
+```powershell
+ffmpeg -i video.mp4 -i audio.opus -i subs.srt -map 0:v -map 0:a? -map 1:a -map 2:s -c copy -c:s srt output.mkv
+```
