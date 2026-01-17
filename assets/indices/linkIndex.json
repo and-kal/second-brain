@@ -4,8 +4,8 @@
       "/": [
         {
           "source": "/",
-          "target": "/books",
-          "text": "/books"
+          "target": "/booksandfilms",
+          "text": "/booksandfilms"
         },
         {
           "source": "/",
@@ -159,11 +159,11 @@
           "text": "/arguments"
         }
       ],
-      "/books": [
+      "/booksandfilms": [
         {
           "source": "/",
-          "target": "/books",
-          "text": "/books"
+          "target": "/booksandfilms",
+          "text": "/booksandfilms"
         }
       ],
       "/miscellaneous": [
@@ -192,8 +192,8 @@
   "links": [
     {
       "source": "/",
-      "target": "/books",
-      "text": "/books"
+      "target": "/booksandfilms",
+      "text": "/booksandfilms"
     },
     {
       "source": "/",

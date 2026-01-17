@@ -37,6 +37,8 @@ but: labor productivity is not rising fast, growth rates are even falling ("prod
 ΔO – ΔP = ΔE
 if productivity grows faster than the industrial output (which is governed by supply and demand?), employment is gonna drop (“output-led deindustrialization”)
 
+--> this has been going on for decades, contrary to what many automation theorists expected or believe
+
 > More and more is produced with fewer workers, as the automation theorists claim, but not because technological change has given rise to high rates of productivity growth. Far from it—productivity growth in manufacturing has appeared rapid only because the yardstick of output growth, against which it is measured, has been shrinking. Following economist Robert Brenner, I argue that global waves of deindustrialization find their origins not in runaway technical change, but first and foremost in a worsening overcapacity in world markets for manufactured goods.
 
 ?? [...]
