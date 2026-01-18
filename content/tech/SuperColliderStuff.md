@@ -23,6 +23,20 @@ tags:
 
 - well commented [patches from Daniel Mayer's SuperCollider course](../static/cmaktuell.zip) at TU Berlin
 
+## Extensions
+
+- [f0plugins](https://github.com/redFrik/f0plugins)
+- FluidCorpusManipulation
+<!-- - ixi_lang_v3_classes -->
+- [mi-UGens](https://github.com/v7b1/mi-UGens)
+- MKPlugins
+- [MyUGens](https://github.com/sonoro1234/MyUGens)
+- [PortedPlugins](https://github.com/madskjeldgaard/portedplugins)
+- SC3plugins
+- [Squine](https://github.com/required-field/squinewave/)
+- [vbUGens](https://github.com/v7b1/vb_UGens)
+<!-- - VSTPlugin -->
+
 ## A bunch of useful SuperCollider links
 
 - [asStream](http://subnaught.org/supercollider/)
