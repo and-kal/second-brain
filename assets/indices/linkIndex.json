@@ -4,13 +4,18 @@
       "/": [
         {
           "source": "/",
-          "target": "/booksandfilms",
-          "text": "/booksandfilms"
+          "target": "/books",
+          "text": "/books"
         },
         {
           "source": "/",
-          "target": "/musicblog",
-          "text": "/musicblog"
+          "target": "/movies",
+          "text": "/movies"
+        },
+        {
+          "source": "/",
+          "target": "/music",
+          "text": "/music"
         },
         {
           "source": "/",
@@ -159,11 +164,18 @@
           "text": "/arguments"
         }
       ],
-      "/booksandfilms": [
+      "/books": [
         {
           "source": "/",
-          "target": "/booksandfilms",
-          "text": "/booksandfilms"
+          "target": "/books",
+          "text": "/books"
+        }
+      ],
+      "/movies": [
+        {
+          "source": "/",
+          "target": "/movies",
+          "text": "/movies"
         }
       ],
       "/miscellaneous": [
@@ -173,11 +185,11 @@
           "text": "/miscellaneous"
         }
       ],
-      "/musicblog": [
+      "/music": [
         {
           "source": "/",
-          "target": "/musicblog",
-          "text": "/musicblog"
+          "target": "/music",
+          "text": "/music"
         }
       ],
       "/tech": [
@@ -192,13 +204,18 @@
   "links": [
     {
       "source": "/",
-      "target": "/booksandfilms",
-      "text": "/booksandfilms"
+      "target": "/books",
+      "text": "/books"
     },
     {
       "source": "/",
-      "target": "/musicblog",
-      "text": "/musicblog"
+      "target": "/movies",
+      "text": "/movies"
+    },
+    {
+      "source": "/",
+      "target": "/music",
+      "text": "/music"
     },
     {
       "source": "/",

@@ -7,8 +7,9 @@ Hello! this here is my blog / second brain / digital garden. No comment function
 
 ## /dir
 
-1. [/booksandfilms](/booksandfilms) — book and movie reviews, personal lecture notes and excerpts
-2. [/music](/music) — sharing music and thoughts on music
-3. [/tech](/tech) — coding and tech-related notes-to-self
-4. [/arguments](/arguments) — pondering various topics
-5. [/misc](/misc) — this and that and all
+1. [/music](/music) — sharing music and thoughts on music
+2. [/books](/booksandfilms) — book reviews, personal lecture notes and excerpts
+3. [/movies](/movies) — rash thoughts while watching stuff
+4. [/tech](/tech) — coding and tech-related notes-to-self
+5. [/arguments](/arguments) — pondering various topics
+6. [/misc](/misc) — this and that and all
