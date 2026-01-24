@@ -2,6 +2,8 @@
 title: "WordPress knowledge dump"
 date: "2024-06-25"
 draft: false
+tags:
+    - wordpress
 ---
 
 # WordPress snippets I might need again at some point

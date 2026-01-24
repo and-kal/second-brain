@@ -2,6 +2,8 @@
 title: "Setting up a www subdomain on a self-hosted Ghost blog"
 date: "2024-05-22"
 draft: false
+tags:
+    - selfhosting
 ---
 
 [Ghost](https://ghost.org) CMS makes it fairly easy to link your blog to your own domain and set up SSL. The `ghost setup` command in [ghost-cli](https://ghost.org/docs/ghost-cli/) basically does it for you. However, for me it didn't automatically set up a www subdomain. So I could access, say, `https://myblog.lol`, but `https://www.myblog.lol` would result in a `502`. I was thinking of just adding a CNAME or ALIAS record in my provider's DNS settings, but that didn't work somehow. So I just set an A record to point from www to the IP of my Ghost blog, which worked fine, but I didn't have any SSL then on my www subdomain. Thus, I had to tinker a bit in the nginx configs of Ghost, so that it automatically redirects all www traffic to the apex. I think that that's a pretty safe solution.
