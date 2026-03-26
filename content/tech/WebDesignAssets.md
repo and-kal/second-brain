@@ -39,6 +39,7 @@ Developing your own design and style system for a website can take a very long t
 
 ### fun stuff
 
+- [88x31 banners](https://matdoes.dev/buttons) - a collection of tens of thousands of such banners
 - [aesthetic-css](https://github.com/torch2424/aesthetic-css/) - Windows98 & XP style CSS framework
 - [NES.css](https://github.com/nostalgic-css/NES.css/) - NES/Famicom style CSS framework
 - [Presentation at Erfa Essen: ›Retro-Websites bauen‹](https://media.ccc.de/v/petitfoo-4241-retro-websites-bauen) - in German
