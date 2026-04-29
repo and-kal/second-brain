@@ -3,7 +3,7 @@ title: "Cool Axoloti patches"
 date: "2023-05-02"
 draft: false
 tags:
-    - oshw
+  - oshw
 ---
 
 This is a list and collection of interesting patches for the [Axoloti](http://www.axoloti.com/) instrument, which seems to be slowly dying as a project, unfortunately. At the moment of writing this, [the community forum](http://community.axoloti.com/) is giving me a `Bad Gateway` error and the project seems to be [kind of abandoned](https://github.com/axoloti/axoloti) by its creator. Though there was a handful of people still active in the forum. Maybe the forum, which was also a place for sharing patches, will be back soon. But just in case, here's some great patches I salvaged from there:
@@ -14,7 +14,7 @@ This is a list and collection of interesting patches for the [Axoloti](http://ww
 - [midi looper basic cheap v5.0.axp](../static/Axoloti_patches/midi-looper-basic-cheap-v5.0.axp) by MattilynMattroe
 - [mono2poly.axp](../static/Axoloti_patches/mono2poly.axp) by Ott
 - [ORGAN_1](../static/Axoloti_patches/ORGAN_1) by floodcomics
-- [supergran_v1.0.axp](<../static/Axoloti_patches/supergran v1.0 upload.axp>) by MattilynMattroe
+- [supergran_v1.0.axp](../static/Axoloti_patches/supergran v1.0 upload.axp) by MattilynMattroe
 
 And here's some patches I found elsewhere:
 
@@ -28,3 +28,7 @@ The Axoloti really is a great platform and probably the most affordable soundboa
 **UPDATE**
 
 There's [an initiative now in the llllllll forum](https://llllllll.co/t/axoloti-core-derivatives/3591/162) to back up the Axoloti forum. There's also a recreation of the Axoloti based on modularity called [Ksoloti (Core)](https://www.instagram.com/ksoloti.axo/), which is also discussed in the llllllll forum and in [a thread on modwiggler](https://www.modwiggler.com/forum/viewtopic.php?t=277847).
+
+You can actually use the newer Ksoloti patcher for Axoloti Core devices, too, if you set the `firmware mode` in settings to _legacy_. However, I haven't tested it yet, because I had some trouble switching from the [2.0.0 firmware](https://github.com/axoloti/axoloti/releases/tag/2.0.0) (which was a pre-alpha release), to the firmware required by the Ksoloti patcher.
+
+Furthermore, someone backed up the [community forum on Github Pages](https://sebiik.github.io/community.axoloti.com.backup). However, the links in there aren't working all. I think it's just the paths not resolving correctly, but [the files are there in the repo](https://github.com/sebiik/community.axoloti.com.backup/tree/master/uploads/default/original) and you can look for them manually, if you want to download a certain file.
