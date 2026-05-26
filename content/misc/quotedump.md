@@ -16,6 +16,28 @@ draft: false
 
 (_The Cybernetics of ›Self‹. A Theory of Alcoholism_)
 
+## Brigitte Reimann
+
+> Später erst, auf der Hochschule, als ich selbst hundertmal verletzt und gedemütigt wurde, verstand ich, warum er sich mißtraute, sich schuldig fühlte: so bezahlten wir für die Sünden unserer Väter. Er mußte an sich selbst zweifeln, wenn er nicht an der Gesellschaft zweifeln wollte. Er versuchte sich einzuordnen — einzuordnen, sage ich, nicht anzupassen wie ein Tier, das sich mit einer Schutzfarbe schlau dem Wald anpaßt, und nicht bloß um des lieben Friedens willen. Er mühte sich, ich versichere dir — aber was sollte er mit Klasseninstinkt anfangen?
+
+> Wollten wir mit unserem Eifer die anderen überzeugen? Das ist nur halb-ahr. Wir waren Renegaten... Weißt du, was ich heute dariiber denke? Wir muften uns selbst immer wieder bestätigen, daß wir richtig gewählt hatten, daß wir übergelaufen waren in die schönste aller Welten - sie mußte vollkommen sein, wir durften uns nicht geirrt haben.
+
+> Die sieben Gäste saßen an sieben Tischen, jeder für sich allein, jeder eingeschlossen in seinen Kreis einer besonderen Einsamkeit, die keines anderen Menschen Einsamkeit vergleichbar war, weil seine Geschichte mit keiner anderen zu vergleichen war, die besondere, besonders schmerzliche Geschichte seiner Niederlagen und verlorenen Illusionen.
+
+> Später erst habe ich begriffen, daß in einer Gesellschaft, die den Frauen gleichen Lohn für gleiche Arbeit zahlt (daüber gibt es nichts zu reden), daß bei uns noch andere ungeschriebene Gesetze walten, die in einer von Männern beherrschten Welt gemacht worden sind, - die werden mitgeschleppt, zäh und dumm und als ein Joch, unter das man unseren Nacken beugt, nicht anders als das verfluchte Man-tut-das-nicht meiner Eltern.
+
+> ...und den letzten Tanz, Good night, Irene, den tanzen sie Wange an Wange [...] und die Augen sind leer vor Erwartung, noch ein paar Takte, die letzte taumelnde Drehung, noch eine Zugabe, durch heftiges Klatschen erzwungen, und die geflüsterten Abmachungen, der Heimweg, ein Park, der Hausflur — soviel Hoffnung für die Zeit zwischen dem letzten Tanz und Montagmorgen.
+
+> Franziska sah den perlmuttfarbenen Himmel durch die Kastanienzweige, die schüchternen Fingerblatter, die Knospen, die wie Fliigeldecken von Maikafern glanzten. Sie stieß einen Schrei aus. Den Schrei ihres schönen Freundes, wenn er über die Betonbahn raste, wenn die Baume vorüberschwirrten, mit dem Laut springender Saiten: Wir fliegen! Sie breitete die Arme aus, sie umfing den Morgen, den Kastanienbaum, seine natürliche Zuversicht, den künftigen Schimmer seiner weißen, lachsrot gefleckten Blütenkerzen und die Luft, die den Perser trug, nach Hause, und das Pferd mit dem blauen Fell seiner Flanken, seiner vom Feuer vergoldeten Mähne.
+
+> Er hatte in den Jahren danach kein Bedauern empfunden wie manche, wie viele in seinem Alter, die zurückblicken auf _meine Jugend_, auf _unseren Anfang_, wehmütig, weil man nicht geblieben ist der man war, oder schuldbewußt, wie auf einen Verrat, oder stolz (wir hatten es schwer, uns ist nichts geschenkt worden), oder spöttisch - aus Einsicht? aus Reisgnation? - zitierend die Blütenträume, die nicht alle reifen, oder müde, schmollend, verärgert, zornig, weil man nicht geworden ist, was man hätte werden können...
+
+> ...das dünne Lexikon meiner Sprache, ein Herbarium von Klischees, in dem die gepreßten und zartstaubigen Wortblätter rascheln... Vertrauen also: zu dir und zu mir... als genüge der Protest “Sie vergeuden sich!”, um [...] den Mann und mein Bild von ihm, zu verschmelzen: ein ungebrochener Mensch, der Vergangenheit abstreift, schmerzlos wie abgestorbenes Zellgewebe; als warst du imstande, aus der schwindelhaften Existenz eines Außenseiters herauszutreten so gelassen, mit der Nonchalance, wie du über die Absperrkette gestiegen bist, auf jene Straße, die ich betreten hatte wie einen neuen Kontinent...
+
+<!-- [Howard Fast, jimmy Higgins, Tom Paine, Franz Dahlem] -->
+
+(_Franziska Linkerhand_)
+
 ## John Cheever
 
 > It was one of those midsummer Sundays when everyone sits around saying, “I drank too much last night.” You might have heard it whispered by the parishioners leaving church, heard it from the lips of the priest himself, struggling with his cassock in the vestiarium, heard it on the golf links and the tennis courts, heard it in the wildlife preserve, where the leader of the Audubon group was suffering from a terrible hangover. (from “[The Swimmer](https://archive.is/JSj0R)”)
@@ -24,7 +46,7 @@ draft: false
 
 > Tonie feels a kind of nostalgia for her, as she might for a particular song that fits like a key into the lock of time and lets the past come rushing out. (“The Bradshaw Variations”)
 
-> Yes, it is bewildering, unfathomable, to find that love and loss and despair and hope are cellular, partitive; that in the fragment of each the structure of the whole is present, like the specimens scientists examine under microscopes; the whole structure and character of her life present in these moments of terror and elation.(\*\*)
+> Yes, it is bewildering, unfathomable, to find that love and loss and despair and hope are cellular, partitive; that in the fragment of each the structure of the whole is present, like the specimens scientists examine under microscopes; the whole structure and character of her life present in these moments of terror and elation.(“The Bradshaw Variations”)
 
 > It strikes her now that life is not linear, a journey, a passage, but a static process of irreversible accretion. It is perspective that moves, passing over it all like the sun, now illuminating, now casting into shadow. The angle changes, the relation of one thing to another, the proportion of dark to light; but experience itself is block-like, is cumulative and fixed. (“The Bradshaw Variations”)
 
@@ -98,7 +120,7 @@ I'm constantly amazed by the lucidity of Maggie Nelson's writing and here's mult
 
 ## Wolfgang Welt
 
-> Was wollte ich in Bochum. Ich dachte, es fielen Atombomben, jeden Takt von 'Short People', den ich vor mit hersang. Ich ging in einen Buchladen in der City Passage. Ich sah ein Buch von Spinoza. Ich dachte an H.R. Kunze, der über ihn promovieren wollte. Dann kam es mir so vor, als seien es die Memoiren von David Spinozza, dem Sessionmusiker vieler Leute... (Fischsuppe, S. 68) 
+> Was wollte ich in Bochum. Ich dachte, es fielen Atombomben, jeden Takt von 'Short People', den ich vor mit hersang. Ich ging in einen Buchladen in der City Passage. Ich sah ein Buch von Spinoza. Ich dachte an H.R. Kunze, der über ihn promovieren wollte. Dann kam es mir so vor, als seien es die Memoiren von David Spinozza, dem Sessionmusiker vieler Leute... (Fischsuppe, S. 68)
 
 ## unknown
 

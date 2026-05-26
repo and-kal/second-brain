@@ -18,6 +18,16 @@ ffmpeg -i input.mp4 \
 
 It tends to be kind of slow. So you might be better off creating it by hand in a video editing software if it's a longer video.
 
+## GIF from MP4
+
+Creating a GIF from a video file can be done like this:
+
+```sh
+ffmpeg -i demo-video.mp4 -vf "setpts=0.25*PTS" -r 10 -loop 0 output.gif
+```
+
+`-r 10` sets the playback frame rate to 10 and `-vf "setpts=0.25*PTS"` changes the presentation timestamp so that the GIF will play 4 times as fast as video.
+
 ## Create an animated webp
 
 Animated webp is more lightweight usually than a GIF. In order to create an animated webp from a GIF, run:
