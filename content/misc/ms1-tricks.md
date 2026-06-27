@@ -41,7 +41,7 @@ OPTIONAL STEPS
 
 ## Keygate Sequencer Chop
 
-alright so the microsampler lacks a mark button, and chopping by percent can be a hassle. the keygate is also not as cool as i thought it would be due to need for silences (it's still pretty dope though.) here's a workaround for mark-style Chopping.
+the microsampler lacks a mark button, and chopping by percent can be a hassle. the keygate is also not as cool as i thought it would be due to need for silences (it's still pretty dope though.) here's a workaround for mark-style Chopping.
 
 1. get your sample looped how you want
 2. put sample into sequencer
@@ -61,3 +61,7 @@ alright so the 1 keyboard part can be a bitch. usually what is recommended is re
 5. now just start the pattern, push the key with the keyboard part on it at the appropriate time, and you have the keyboard part on the pattern, the keyboard mode is now free, and all levels remain adjustable.
 
 <!-- https://www.youtube.com/watch?v=guJR-WxaTSY -->
+
+## Further resources
+
+- Patrick Richardson has some more MS1 shenanigans covered in [this article](https://thepatrickrichardson.com/2017/01/24/review-microsampler/)
