@@ -64,11 +64,8 @@ Developing your own design and style system for a website can take a very long t
 
 If you really don't want to do any coding at all, you can try one of these no-code website builders. They all offer free tiers with certain limitations; usually, you can only host one page and only on their servers/domains.
 
-- [Readymag](https://readymag.com/)
-- [Squarespace](https://squarespace.com)
-- [straw.page](https://straw.page) - I really like this one; more brutalist than the others and extremely simple
-- [Tilda](https://tilda.cc/)
-- [webflow](https://webflow.com/)
+- [straw.page](https://straw.page) - really like this one; more brutalist than the others and extremely simple
+- [wwwobble](https://wwwobble.org/)
 
 ## Static Site Generators
 
@@ -90,11 +87,10 @@ If you really don't want to do any coding at all, you can try one of these no-co
 ## Hosting and Domains
 
 - [afraid.org's FreeDNS](https://freedns.afraid.org/) - offers six subdomains for free from their vast portfolio of random and strange domains
-- [glitch.me](https://glitch.com/features/) - simple and powerful platform for hosting, sharing, remixing and developing websites and web apps
+- ~~[glitch.me](https://glitch.com/features/) - simple and powerful platform for hosting, sharing, remixing and developing websites and web apps~~
 - [neocities](https://neocities.org)
 - [repl.it](https://replit.com/) - online REPL / IDE
 - [sdfeu.org](https://sdfeu.org/w/tutorials:building_a_website) - you can host a website on the SDF Public Access Unix System, if you are a validated user (it will cost 5 Euros as a token of trust and it's really for a good cause)
-- [Surge, Firebase, Vercel, Github Pages, Netlify](https://dev.to/afozbek/5-ways-to-host-your-applications-4d77/) are other popular options
 - [tildepages.org](https://tildepages.org/) - you can host static pages on their [Pubnix](https://projectsegfau.lt/pubnix/faq) systems
 
 ## Content management systems
