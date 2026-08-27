@@ -543,20 +543,7 @@ Using list comprehensions is similar to using `map` and mostly they're interchan
 
 Containers are data types that contain any number of elements of a homogeneous type, e.g. graphs, sets, maps, and trees. In order to work with these data types, you need to include `containers` package, because they are not provided by `Prelude`.
 
-Maps are lists of key-value tuples. Sets are list with only unique items. <!-- Graphs are... -->
-
-Trees are a data structure that consist of an element called a node, which points to an element on the left and an element on the
-right. In a balanced tree, elements on the left are always smaller than the right elements. These elements can again be trees (so-called sub-trees) and point again to two elements / nodes, or to only one element (a so-called singleton), or to none.
-
-```haskell
-data Tree a = EmptyTree | Node a (Tree a) (Tree a) deriving (Show, Read, Eq)
-```
-
-Or using record syntax:
-
-```haskell
-data Tree a = EmptyTree | Node {leftBranch :: Tree a, rightBranch :: Tree a} deriving (Show, Read, Eq)
-```
+Maps are lists of key-value tuples. Sets are list with only unique items. <!-- Graphs are... --> For more information on trees check [./treesandstreams](./treesandstreams).
 
 ### Conditions & Control structures
 
@@ -654,6 +641,20 @@ class Eq a  where
 ```
 
 »The definition states that if a type `a` is to be made an instance of the class `Eq` it must support the functions `(==)` and `(/=)` - the class methods - both of them having type `a -> a -> Bool`.« ([source](https://en.wikibooks.org/wiki/Haskell/Classes_and_types#Classes_and_instances))
+
+### Kinds
+
+The _kind_ of a type can be retrieved via `:k` (just like the type of a value can be retrieved via `:t`).
+
+```haskell
+:k Int
+-- will print:
+Int :: * -- the star means it's a concrete type
+
+:k Maybe
+-- will print:
+Maybe :: * -> *
+```
 
 ## Syntax
 
@@ -776,11 +777,11 @@ _As pattern_ »allows you to bind some value in the match while at the same time
 
 ## Monads, Monoids, applicative functors, functors
 
-
 [adit.io](https://www.adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) writes:
-- *functors*: apply a function to a wrapped value using `fmap` or `<$>`
-- *applicatives*: apply a wrapped function to a wrapped value using `<*>` or `liftA`
-- *monads*: apply a function that returns a wrapped value, to a wrapped value using `>>=` or `liftM`
+
+- _functors_: apply a function to a wrapped value using `fmap` or `<$>`
+- _applicatives_: apply a wrapped function to a wrapped value using `<*>` or `liftA`
+- _monads_: apply a function that returns a wrapped value, to a wrapped value using `>>=` or `liftM`
 
 ### Context
 
@@ -799,24 +800,25 @@ Monadic contexts...
 
 ### Functors
 
-A `Functor` in Haskell is a *typeclass* and it is generally something that you can apply a mapping function to, which is following some laws and preserves a certain aspect of what it is applied to. »[A] _Functor_ gives you a way to ›map over‹ values in a way that _preserves shape_. And what is ›shape‹? A shape is _the thing that fmap preserves_«, or the _conserved quantity_ (Le, 2024). For example, when applying `fmap` to a list, the length and ordering of the list is preserved.
+A `Functor` in Haskell is a _typeclass_ and it is generally something that you can apply a mapping function to, which is following some laws and preserves a certain aspect of what it is applied to. Lists are part of the functor typeclass, but also `Maybe`, `Either` and `Tree`, for example.
+
+»[A] _Functor_ gives you a way to ›map over‹ values in a way that _preserves shape_. And what is ›shape‹? A shape is _the thing that fmap preserves_«, or the _conserved quantity_ (Le, 2024). For example, when applying `fmap` to a list, the length and ordering of the list is preserved.
 
 **Functors let you apply functions to a value wrapped in a context.**
 
-Examples for functors in Haskell are `Maybe` or lists. So these data types define how `fmap` (and other functions) apply to them. 
+Examples for functors in Haskell are `Maybe` or lists. So these data types define how `fmap` (and other functions) apply to them.
 
 `fmap`, or `<$>` (which is the infix variant of `fmap`), by the way, »is a way to map a function that _preserves the shape_ and _changes the result_.« (Le, 2024)
-
 
 ### Applicative functors
 
 **Applicatives let you apply functions wrapped in a context to a value wrapped in a context.**
 
-This happens mostly in the form of `<*>` (as defined in `Control.Applicative`). 
+This happens mostly in the form of `<*>` (as defined in `Control.Applicative`).
 
-<!-- 
+<!--
 `<*>` can take any number of unwrapped values
-`liftA`, `liftA2` 
+`liftA`, `liftA2`
 -->
 
 ### Monads
@@ -826,6 +828,7 @@ This happens mostly in the form of `<*>` (as defined in `Control.Applicative`).
 »In a way, Monad simply ›is‹ the way to combine _Functor_ shapes together where the final shape is allowed to depend on the results.« (Le, 2024)
 
 An important monad is `IO`, which has these three functions among others:
+
 ```haskell
 getLine :: IO String
 
@@ -864,7 +867,7 @@ Virtual/isolated environments in Haskell can be created with so called ›resolv
 
 - [Functional Programming by Example](https://caiorss.github.io/Functional-Programming/index.html) by Caio Rodrigues (2018)
 - [Functors to Monads: A Story of Shapes](https://blog.jle.im/entry/functors-to-monads-a-story-of-shapes.html) by Justin Le (2024)
-- [Haskell Cheat Sheet](https://hackage.haskell.org/package/CheatSheet-1.10/src/CheatSheet.pdf) by Justin Bailey (2009) ← *this one has a bunch of formatting errors* 
+- [Haskell Cheat Sheet](https://hackage.haskell.org/package/CheatSheet-1.10/src/CheatSheet.pdf) by Justin Bailey (2009) ← _this one has a bunch of formatting errors_
 - [Learn X in Y minutes. Where X=Lambda Calculus](https://learnxinyminutes.com/docs/lambda-calculus/) by Max Sun et al. (2023)
 - Learn You a Haskell for Great Good! A Beginner's Guide by Miran Lipovaca (2011, No Starch Press)
 - Practical Haskell. A Real-World Guide to Functional Programming by Alejandro Serrano Mena (2022, Apress)
