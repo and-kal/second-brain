@@ -3,7 +3,7 @@ title: "An ongoing list of interesting Max/MSP patches and M4L devices"
 date: "2023-01-18"
 draft: false
 tags:
-    - dsp
+  - dsp
 ---
 
 Here's an expanding list of Max/MSP and Max4Live patches that I have discovered, used, or just thought seemed worth checking out. Lots of interesting DSP, algorithmic composition and sample manipulation stuff.
@@ -51,17 +51,18 @@ Here's an expanding list of Max/MSP and Max4Live patches that I have discovered,
 - fors.fm: [Opal](https://opal.fors.fm/) ($), [Pluck](https://fors.fm/pluck) et al.
 - [granolatech-M4L](https://github.com/akokai/granolatech-M4L)
 - [K-Devices Max For Live](https://k-devices.com/product-category/m4l/) ($)
-- [k-teck devices](https://k-teck.co.uk/max-for-live) ($)
+- [k-teck devices](https://isotonikstudios.com/product-category/isotonik-collective/k-teck/) ($)
 - [kentaro.tools](https://www.kentaro.tools/) ($)
 - [Lo](https://lndf.fr/Downloads/NOI-LO.amxd) and [Sent](https://lndf.fr/Downloads/Sent.amxd) by L N F D
 - [MCLFO](https://irisdevices.gumroad.com/l/MCLFO)
-- [MIDI UTILITIES by Mono Tale](https://www.monotale.com.ar/) ($)
+- [MIDI UTILITIES by Mono Tale](https://monotalefx.gumroad.com/l/tiliqi/) ($)
 - [Modulation Lerp](https://github.com/zsteinkamp/m4l-Modulation-Lerp)
 - [Monolasem4l](https://llllllll.co/t/monolasem4l/24916)
 - [PolyMind](https://maxforlive.com/library/device/2192/polymind)
 - [proc—c](https://proccpri.bandcamp.com/album/prini-proc-c-patch)
 - [prosody](https://github.com/andr-ew/prosody) collection (by [andr-ew](https://github.com/andr-ew/))
 - [Remo De Vico](https://www.remodevicocomposer.eu/maxforlive/)'s several devices
+- [Skip](https://github.com/Bienoise/Skip) ($)
 - [Stepic](https://devicemeister.com/stepic-for-live/) ($)
 - [swirlytape](https://maxforlive.com/library/device/3014/swirlytape)
 - [VIZZable-2](https://github.com/zealtv/VIZZable-2)

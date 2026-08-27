@@ -106,6 +106,7 @@ If you want to have your own CMS and run a blog or something, you can get some a
 - [CSS background design patterns](https://www.magicpattern.design/tools/css-backgrounds/)
 - [Favic-o-Matic](https://favicomatic.com/)
 - [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts/) - helps you to host Google fonts locally instead of relying on Google APIs
+- [modernfontstacks.com](https://modernfontstacks.com/) - system font stack CSS organized by typeface classification
 - [Icon Buddy](https://iconbuddy.app) - customizable, open source SVG icons
 
 ## random stuff
