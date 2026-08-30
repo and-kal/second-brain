@@ -1,5 +1,5 @@
 ---
-title: "Capabilities (M. Nussbaum etc.)"
+title: "Capabilities (Nussbaum, Marx etc.)"
 date: "2026-08-27"
 draft: true
 ---
