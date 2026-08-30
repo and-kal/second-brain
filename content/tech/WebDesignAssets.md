@@ -67,6 +67,14 @@ If you really don't want to do any coding at all, you can try one of these no-co
 - [straw.page](https://straw.page) - really like this one; more brutalist than the others and extremely simple
 - [wwwobble](https://wwwobble.org/)
 
+### WYSIWYG editors
+
+I haven't tried any of those and so I can't vouch for them, but they might be worth giving a go:
+
+- [SeaMonkey](https://www.seamonkey-project.org/)
+- [nova IDE](https://help.nova.app/previews/overview/)
+- [Publii CMS](https://getpublii.com/docs/creating-your-website.html)
+
 ## Static Site Generators
 
 - [11ty/eleventy](https://www.11ty.dev/)
