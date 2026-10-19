@@ -872,3 +872,7 @@ Virtual/isolated environments in Haskell can be created with so called ›resolv
 - Learn You a Haskell for Great Good! A Beginner's Guide by Miran Lipovaca (2011, No Starch Press)
 - Practical Haskell. A Real-World Guide to Functional Programming by Alejandro Serrano Mena (2022, Apress)
 - [Why Haskell?](https://www.gtf.io/musings/why-haskell)
+
+<!--
+NFA & DFA: https://hackmd.io/@alexhkurz/HylLKujCP
+ -->
